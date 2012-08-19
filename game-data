@@ -7,29 +7,47 @@ WHEN:
 	B - Bowl game
 
 SITE:
-	H - Home
-	A - Away
-	N - Neutral site
+	R - Regular Season game at Team1
+	N - Regular Season Neutral site (including conf championships)
+	B - Bowl site
 
 #KICKOFF_TIME:
 #	E - 2pm or earlier (local time)
 #	M - 2pm-5:59pm
 #	N - 6pm or later
 
+O_SCORE_SUM
+  [INT] - sum of team's offensive scoring avg and opponent's defensive scoring avg
+
 O_SCORING_DIFF
 	[INT] - difference between team's offensive scoring avg and opponent's defensive scoring avg
+
+D_SCORING_SUM
+	[INT] - sum of team's defensive scoring avg and opponent's offensive scoring avg
 
 D_SCORING_DIFF
 	[INT] - difference between team's defensive scoring avg and opponent's offensive scoring avg
 
+O_RUSHING_SUM
+	[INT] - sum of team's offensive rushing yds/gm and opponent's defensive rushing yds/gm
+
 O_RUSHING_DIFF
 	[INT] - difference between team's offensive rushing yds/gm and opponent's defensive rushing yds/gm
+
+D_RUSHING_SUM
+	[INT] - sum of team's defensive rushing yds/gm and opponent's offensive rushing yds/gm
 
 D_RUSHING_DIFF
 	[INT] - difference between team's defensive rushing yds/gm and opponent's offensive rushing yds/gm
 
+O_PASSING_SUM
+	[INT] - sum of team's offensive passing yds/gm and opponent's defensive passing yds/gm
+
 O_PASSING_DIFF
 	[INT] - difference between team's offensive passing yds/gm and opponent's defensive passing yds/gm
+
+D_PASSING_SUM
+	[INT] - sum of team's defensive passing yds/gm and opponent's offensive passing yds/gm
 
 D_PASSING_DIFF
 	[INT] - difference between team's defensive passing yds/gm and opponent's offensive passing yds/gm

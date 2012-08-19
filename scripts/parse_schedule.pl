@@ -68,17 +68,14 @@ while ( my $line = <CSV> ) {
 	      Dumper($stats{$team1}), "T2: $team2\n", Dumper($stats{$team2}) if $print_debug;
 
 	my @attributes1 = ();
-	my @attributes2 = ();
 	my $i = 0;
 
 	unless ( $ENV{PREDICTION_GEN} ) {
 		# determine result
 		$attributes1[$i] = $t1_pts - $t2_pts;
-		$attributes2[$i] = $t2_pts - $t1_pts;
 		if ( $print_debug ) {
 			print DBG
-				"T1_POINT_DIFF: ", $attributes1[$i], "\n",
-				"T2_POINT_DIFF: ", $attributes2[$i], "\n";
+				"FINAL_POINT_DIFF: ", $attributes1[$i], "\n",
 		}
 		$i++;
 	}
@@ -93,169 +90,136 @@ while ( my $line = <CSV> ) {
 	}
 	$attributes1[$i] = '"B"' if $notes =~ m/Bowl|BCS Championship/o;
 	$attributes1[$i] = '""' if $ENV{PREDICTION_GEN};
-	$attributes2[$i] = $attributes1[$i];
 	if ( $print_debug ) {
 		print DBG
-			"T1_WHEN: ", $attributes1[$i], "\n",
-			"T2_WHEN: ", $attributes2[$i], "\n";
+			"WHEN: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# site
 	$attributes1[$i] = '"N"';
-	$attributes2[$i] = '"N"';
 	if ( $site eq 'T1' ) {
-		$attributes1[$i] = '"H"';
-		$attributes2[$i] = '"A"';
+		$attributes1[$i] = '"R"';
 	} elsif ( $site eq 'T2' ){
-		$attributes1[$i] = '"A"';
-		$attributes2[$i] = '"H"';
+		$attributes1[$i] = '"R"';
+	} elsif ( $attributes1[$i-1] eq '"B"' ) {
+		$attributes1[$i] = '"B"';
 	}
 	if ( $print_debug ) {
 		print DBG
-			"T1_SITE: ", $attributes1[$i], "\n",
-			"T2_SITE: ", $attributes2[$i], "\n";
+			"SITE: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# off scoring total
 	$attributes1[$i] = int( $stats{$team1}->{'ppg'} + $stats{$team2}->{'opp_ppg'} );
-	$attributes2[$i] = int( $stats{$team2}->{'ppg'} + $stats{$team1}->{'opp_ppg'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_O_SCORE_SUM: ", $attributes1[$i], "\n",
-			"T2_O_SCORE_SUM: ", $attributes2[$i], "\n";
+			"O_SCORE_SUM: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# off scoring differential
 	$attributes1[$i] = int( $stats{$team1}->{'ppg'} - $stats{$team2}->{'opp_ppg'} );
-	$attributes2[$i] = int( $stats{$team2}->{'ppg'} - $stats{$team1}->{'opp_ppg'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_O_SCORE_DIFF: ", $attributes1[$i], "\n",
-			"T2_O_SCORE_DIFF: ", $attributes2[$i], "\n";
+			"O_SCORE_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# def scoring total
 	$attributes1[$i] = int( $stats{$team1}->{'opp_ppg'} + $stats{$team2}->{'ppg'} );
-	$attributes2[$i] = int( $stats{$team2}->{'opp_ppg'} + $stats{$team1}->{'ppg'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_D_SCORE_SUM: ", $attributes1[$i], "\n",
-			"T2_D_SCORE_SUM: ", $attributes2[$i], "\n";
+			"D_SCORE_SUM: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# def scoring differential
 	$attributes1[$i] = int( $stats{$team1}->{'opp_ppg'} - $stats{$team2}->{'ppg'} );
-	$attributes2[$i] = int( $stats{$team2}->{'opp_ppg'} - $stats{$team1}->{'ppg'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_D_SCORE_DIFF: ", $attributes1[$i], "\n",
-			"T2_D_SCORE_DIFF: ", $attributes2[$i], "\n";
+			"D_SCORE_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# off rushing sum
 	$attributes1[$i] = int( $stats{$team1}->{'o_rush_yds'} + $stats{$team2}->{'d_rush_yds'} );
-	$attributes2[$i] = int( $stats{$team2}->{'o_rush_yds'} + $stats{$team1}->{'d_rush_yds'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_O_RUSH_SUM: ", $attributes1[$i], "\n",
-			"T2_O_RUSH_SUM: ", $attributes2[$i], "\n";
+			"O_RUSH_SUM: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# off rushing differential
 	$attributes1[$i] = int( $stats{$team1}->{'o_rush_yds'} - $stats{$team2}->{'d_rush_yds'} );
-	$attributes2[$i] = int( $stats{$team2}->{'o_rush_yds'} - $stats{$team1}->{'d_rush_yds'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_O_RUSH_DIFF: ", $attributes1[$i], "\n",
-			"T2_O_RUSH_DIFF: ", $attributes2[$i], "\n";
+			"O_RUSH_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# def rushing sum
 	$attributes1[$i] = int( $stats{$team1}->{'d_rush_yds'} + $stats{$team2}->{'o_rush_yds'} );
-	$attributes2[$i] = int( $stats{$team2}->{'d_rush_yds'} + $stats{$team1}->{'o_rush_yds'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_D_RUSH_SUM: ", $attributes1[$i], "\n",
-			"T2_D_RUSH_SUM: ", $attributes2[$i], "\n";
+			"D_RUSH_SUM: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# def rushing differential
 	$attributes1[$i] = int( $stats{$team1}->{'d_rush_yds'} - $stats{$team2}->{'o_rush_yds'} );
-	$attributes2[$i] = int( $stats{$team2}->{'d_rush_yds'} - $stats{$team1}->{'o_rush_yds'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_D_RUSH_DIFF: ", $attributes1[$i], "\n",
-			"T2_D_RUSH_DIFF: ", $attributes2[$i], "\n";
+			"D_RUSH_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# off passing sum
 	$attributes1[$i] = int( $stats{$team1}->{'o_pass_yds'} + $stats{$team2}->{'d_pass_yds'} );
-	$attributes2[$i] = int( $stats{$team2}->{'o_pass_yds'} + $stats{$team1}->{'d_pass_yds'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_O_PASS_SUM: ", $attributes1[$i], "\n",
-			"T2_O_PASS_SUM: ", $attributes2[$i], "\n";
+			"O_PASS_SUM: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# off passing differential
 	$attributes1[$i] = int( $stats{$team1}->{'o_pass_yds'} - $stats{$team2}->{'d_pass_yds'} );
-	$attributes2[$i] = int( $stats{$team2}->{'o_pass_yds'} - $stats{$team1}->{'d_pass_yds'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_O_PASS_DIFF: ", $attributes1[$i], "\n",
-			"T2_O_PASS_DIFF: ", $attributes2[$i], "\n";
+			"O_PASS_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# def passing sum
 	$attributes1[$i] = int( $stats{$team1}->{'d_pass_yds'} + $stats{$team2}->{'o_pass_yds'} );
-	$attributes2[$i] = int( $stats{$team2}->{'d_pass_yds'} + $stats{$team1}->{'o_pass_yds'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_D_PASS_SUM: ", $attributes1[$i], "\n",
-			"T2_D_PASS_SUM: ", $attributes2[$i], "\n";
+			"D_PASS_SUM: ", $attributes1[$i], "\n",
 	}
 
 	# def passing differential
 	$attributes1[$i] = int( $stats{$team1}->{'d_pass_yds'} - $stats{$team2}->{'o_pass_yds'} );
-	$attributes2[$i] = int( $stats{$team2}->{'d_pass_yds'} - $stats{$team1}->{'o_pass_yds'} );
 	if ( $print_debug ) {
 		print DBG
-			"T1_D_PASS_DIFF: ", $attributes1[$i], "\n",
-			"T2_D_PASS_DIFF: ", $attributes2[$i], "\n";
+			"D_PASS_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# penalty differential
 	$attributes1[$i] = int( ($stats{$team1}->{'o_pen_yds'}+$stats{$team1}->{'d_pen_yds'})
 	                      - ($stats{$team2}->{'o_pen_yds'}+$stats{$team2}->{'d_pen_yds'}) );
-	$attributes2[$i] = int( ($stats{$team2}->{'o_pen_yds'}+$stats{$team2}->{'d_pen_yds'})
-	                      - ($stats{$team1}->{'o_pen_yds'}+$stats{$team1}->{'d_pen_yds'}) );
 	if ( $print_debug ) {
 		print DBG
-			"T1_PEN_DIFF: ", $attributes1[$i], "\n",
-			"T2_PEN_DIFF: ", $attributes2[$i], "\n";
+			"PEN_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# turnover differential
 	$attributes1[$i] = sprintf '%0.2f', $stats{$team1}->{'d_to'} - $stats{$team1}->{'o_to'} - $stats{$team2}->{'d_to'} + $stats{$team2}->{'o_to'};
-	$attributes2[$i] = sprintf '%0.2f', $stats{$team2}->{'d_to'} - $stats{$team2}->{'o_to'} - $stats{$team1}->{'d_to'} + $stats{$team1}->{'o_to'};
 	if ( $print_debug ) {
 		print DBG
-			"T1_TO_DIFF: ", $attributes1[$i], "\n",
-			"T2_TO_DIFF: ", $attributes2[$i], "\n";
+			"TO_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 	
@@ -266,40 +230,31 @@ while ( my $line = <CSV> ) {
 	$team2_rest = 14 if $team2_rest > 14;
 	# rest differential
 	$attributes1[$i] = $team1_rest - $team2_rest;
-	$attributes2[$i] = $team2_rest - $team1_rest;
 	if ( $print_debug ) {
 		print DBG
-			"T1_REST_DIFF: ", $attributes1[$i], "\n",
-			"T2_REST_DIFF: ", $attributes2[$i], "\n";
+			"REST_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# win differential
 	$attributes1[$i] = sprintf '%0.3f', $stats{$team1}->{'wins'}/$stats{$team1}->{'games'}
 	                                  - $stats{$team2}->{'wins'}/$stats{$team2}->{'games'};
-	$attributes2[$i] = sprintf '%0.3f', $stats{$team2}->{'wins'}/$stats{$team2}->{'games'}
-	                                  - $stats{$team1}->{'wins'}/$stats{$team1}->{'games'};
 	if ( $print_debug ) {
 		print DBG
-			"T1_WIN_DIFF: ", $attributes1[$i], "\n",
-			"T2_WIN_DIFF: ", $attributes2[$i], "\n";
+			"WIN_DIFF: ", $attributes1[$i], "\n",
 	}
 	$i++;
 
 	# conference
 	$attributes1[$i] = '"'.$stats{$team1}->{'conference'}.'"';
-	$attributes2[$i] = '"'.$stats{$team2}->{'conference'}.'"';
 	$i++;
 	$attributes1[$i] = '"'.$stats{$team2}->{'conference'}.'"';
-	$attributes2[$i] = '"'.$stats{$team1}->{'conference'}.'"';
 
 	print join(',',@attributes1), "\n";
-	print join(',',@attributes2), "\n" unless $ENV{PREDICTION_GEN};
 
 	if ( $print_debug ) {
 		print DBG
-			"T1_DATA: ", join(',',@attributes1), "\n",
-			"T2_DATA: ", join(',',@attributes2), "\n";
+			"DATA: ", join(',',@attributes1), "\n",
 	}
 }
 close CSV;
