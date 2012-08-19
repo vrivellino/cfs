@@ -1,15 +1,16 @@
 RESULT:
 	[INT] - difference between team's score and opponent's score
-WHEN:
-	S - September
-	O - October
-	N - November/December
-	B - Bowl game
+
+#WHEN:
+#	S - September
+#	O - October
+#	N - November/December
+#	B - Bowl game
 
 SITE:
-	R - Regular Season game at Team1
-	N - Regular Season Neutral site (including conf championships)
-	B - Bowl site
+	T1 - Regular Season game at Team1
+	N  - Regular Season Neutral site (including conf championships)
+	B  - Bowl site
 
 #KICKOFF_TIME:
 #	E - 2pm or earlier (local time)

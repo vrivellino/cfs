@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS `stats`;
 DROP TABLE IF EXISTS `schools`;
 
 CREATE TABLE `schools` (
-	name CHAR(31) NOT NULL,
+	name VARCHAR(31) NOT NULL,
 
 	yr_from YEAR(4) NOT NULL DEFAULT '1901',
 	yr_to YEAR(4) NOT NULL DEFAULT '2012',
@@ -35,9 +35,9 @@ CREATE TABLE `schools` (
 );
 
 CREATE TABLE `stats` (
-	name CHAR(31) NOT NULL,
+	name VARCHAR(31) NOT NULL,
 	season YEAR(4) NOT NULL DEFAULT '0000',
-	conference CHAR(10) NOT NULL DEFAULT '',
+	conference VARCHAR(10) NOT NULL DEFAULT '',
 
 	games TINYINT UNSIGNED NOT NULL DEFAULT 0,
 	win TINYINT UNSIGNED NOT NULL DEFAULT 0,
@@ -68,13 +68,13 @@ CREATE TABLE `past_games` (
 	gm_date DATE NOT NULL DEFAULT '0000-00-00',
 	gm_day ENUM('Sun','Mon','Tue','Wed','Thu','Fri','Sat') NOT NULL DEFAULT 'Sat',
 
-	t1_name CHAR(32) NOT NULL DEFAULT '',
+	t1_name VARCHAR(32) NOT NULL DEFAULT '',
 	t1_score TINYINT UNSIGNED DEFAULT NULL,
 	t1_last DATE NOT NULL DEFAULT '0000-00-00',
 
 	site ENUM('T1','N','B') DEFAULT 'T1',
 
-	t2_name CHAR(32) NOT NULL DEFAULT '',
+	t2_name VARCHAR(32) NOT NULL DEFAULT '',
 	t2_score TINYINT UNSIGNED DEFAULT NULL,
 	t2_last DATE NOT NULL DEFAULT '0000-00-00',
 
@@ -87,3 +87,53 @@ CREATE TABLE `past_games` (
 	CONSTRAINT sched_team2 FOREIGN KEY (t2_name)
 		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+
+CREATE OR REPLACE VIEW v_training_data AS SELECT
+  pg.season as season,
+  pg.gm_date as gamedate,
+  t1.name as team1,
+  t2.name as team2,
+  -- final score differential
+  CONVERT(pg.t1_score, SIGNED) - CONVERT(pg.t2_score, SIGNED) as t_score_diff,
+  -- site
+  pg.site as t_site,
+  -- offensive scoring total / differential
+  t1.ppg + t2.opp_ppg as t_o_score_sum,
+  t1.ppg - t2.opp_ppg as t_o_score_diff,
+  -- defensive scoring total / differential
+  t1.opp_ppg + t2.ppg as t_d_score_sum,
+  t1.opp_ppg - t2.ppg as t_d_score_diff,
+  -- offensive rushing total / differential
+  t1.o_rush_yds + t2.d_rush_yds as t_o_rush_sum,
+  t1.o_rush_yds - t2.d_rush_yds as t_o_rush_diff,
+  -- defensive rushing total / differential
+  t1.d_rush_yds + t2.o_rush_yds as t_d_rush_sum,
+  t1.d_rush_yds - t2.o_rush_yds as t_d_rush_diff,
+  -- offensive passing total / differential
+  t1.o_pass_yds + t2.d_pass_yds as t_o_pass_sum,
+  t1.o_pass_yds - t2.d_pass_yds as t_o_pass_diff,
+  -- defensive passing total / differential
+  t1.d_pass_yds + t2.o_pass_yds as t_d_pass_sum,
+  t1.d_pass_yds - t2.o_pass_yds as t_d_pass_diff,
+  -- penalty yards differential
+  (t1.o_pen_yds + t1.d_pen_yds) - (t2.o_pen_yds + t2.d_pen_yds) as t_pen_diff,
+  -- turnover differential
+  t1.d_to - t1.o_to - t2.d_to + t2.o_to as t_to_diff,
+  -- rest interface (assume max of 14 days rest per team)
+  IF(pg.t1_last, CASE WHEN DATEDIFF(pg.gm_date,pg.t1_last) > 14 THEN 14 ELSE DATEDIFF(pg.gm_date,pg.t1_last) END, 14) - 
+    IF(pg.t2_last, CASE WHEN DATEDIFF(pg.gm_date,pg.t2_last) > 14 THEN 14 ELSE DATEDIFF(pg.gm_date,pg.t2_last) END, 14)
+    as t_rest_diff,
+  -- winning pct diff
+  CONVERT(t1.win/t1.games - t2.win/t2.games, DECIMAL(4,3)) as t_winpct_diff,
+  -- conference affiliations
+  t1.conference as t_t1_conf,
+  t2.conference as t_t2_conf
+  
+FROM
+  past_games as pg,
+  stats as t1,
+  stats as t2
+
+WHERE
+  pg.season = t1.season AND t1.name = pg.t1_name AND pg.season = t2.season AND t2.name = pg.t2_name;

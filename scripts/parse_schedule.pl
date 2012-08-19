@@ -80,21 +80,21 @@ while ( my $line = <CSV> ) {
 		$i++;
 	}
 
-	# determine month played
-	if ( $month eq 'Sep' || $month eq 'Aug' ) {
-		$attributes1[$i] = '"S"';
-	} elsif ( $month eq 'Oct' ) {
-		$attributes1[$i] = '"O"';
-	} elsif ( $month eq 'Nov' || $month eq 'Dec' ) {
-		$attributes1[$i] = '"N"';
-	}
-	$attributes1[$i] = '"B"' if $notes =~ m/Bowl|BCS Championship/o;
-	$attributes1[$i] = '""' if $ENV{PREDICTION_GEN};
-	if ( $print_debug ) {
-		print DBG
-			"WHEN: ", $attributes1[$i], "\n",
-	}
-	$i++;
+	## determine month played
+	#if ( $month eq 'Sep' || $month eq 'Aug' ) {
+	#	$attributes1[$i] = '"S"';
+	#} elsif ( $month eq 'Oct' ) {
+	#	$attributes1[$i] = '"O"';
+	#} elsif ( $month eq 'Nov' || $month eq 'Dec' ) {
+	#	$attributes1[$i] = '"N"';
+	#}
+	#$attributes1[$i] = '"B"' if $notes =~ m/Bowl|BCS Championship/o;
+	#$attributes1[$i] = '""' if $ENV{PREDICTION_GEN};
+	#if ( $print_debug ) {
+	#	print DBG
+	#		"WHEN: ", $attributes1[$i], "\n",
+	#}
+	#$i++;
 
 	# site
 	$attributes1[$i] = '"N"';
@@ -197,6 +197,7 @@ while ( my $line = <CSV> ) {
 		print DBG
 			"D_PASS_SUM: ", $attributes1[$i], "\n",
 	}
+	$i++;
 
 	# def passing differential
 	$attributes1[$i] = int( $stats{$team1}->{'d_pass_yds'} - $stats{$team2}->{'o_pass_yds'} );

@@ -8,7 +8,7 @@ __PACKAGE__->meta->setup(
   table   => 'schools',
 
   columns => [
-    name        => { type => 'character', length => 31, not_null => 1 },
+    name        => { type => 'varchar', length => 31, not_null => 1 },
     yr_from     => { type => 'scalar', default => 1901, length => 4, not_null => 1 },
     yr_to       => { type => 'scalar', default => 2012, length => 4, not_null => 1 },
     yrs         => { type => 'integer', default => '0', not_null => 1 },

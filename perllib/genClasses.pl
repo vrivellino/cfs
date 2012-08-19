@@ -9,7 +9,7 @@ sub mk_path($);
 
 my $loader = Rose::DB::Object::Loader->new(db => CFS::DB->new(),
              class_prefix => 'CFS');
-my @classes = $loader->make_classes;
+my @classes = $loader->make_classes(include_views => 1, require_primary_key => 0);
 
 foreach my $class (@classes)
 {
