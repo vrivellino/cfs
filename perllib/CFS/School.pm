@@ -32,22 +32,24 @@ __PACKAGE__->meta->setup(
   primary_key_columns => [ 'name' ],
 
   relationships => [
-    schedules => {
-      class      => 'CFS::Schedule',
-      column_map => { name => 't1_name' },
-      type       => 'one to many',
-    },
-
-    schedules_objs => {
-      class      => 'CFS::Schedule',
-      column_map => { name => 't2_name' },
-      type       => 'one to many',
-    },
-
     stats => {
       class      => 'CFS::Stat',
       column_map => { name => 'name' },
       type       => 'one to many',
+    },
+
+    t1s => {
+      map_class => 'CFS::PastSchedule',
+      map_from  => 't2',
+      map_to    => 't1',
+      type      => 'many to many',
+    },
+
+    t2s => {
+      map_class => 'CFS::PastSchedule',
+      map_from  => 't1',
+      map_to    => 't2',
+      type      => 'many to many',
     },
   ],
 );

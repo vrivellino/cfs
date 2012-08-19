@@ -1,6 +1,6 @@
 USE cfs;
 
-DROP TABLE IF EXISTS `schedules`;
+DROP TABLE IF EXISTS `past_schedules`;
 DROP TABLE IF EXISTS `stats`;
 DROP TABLE IF EXISTS `schools`;
 
@@ -61,7 +61,7 @@ CREATE TABLE `stats` (
 		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE `schedules` (
+CREATE TABLE `past_schedules` (
 	season YEAR(4) NOT NULL DEFAULT '0000',
 	week TINYINT UNSIGNED NOT NULL DEFAULT 0,
 
