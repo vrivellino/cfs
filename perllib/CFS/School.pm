@@ -39,14 +39,14 @@ __PACKAGE__->meta->setup(
     },
 
     t1s => {
-      map_class => 'CFS::PastSchedule',
+      map_class => 'CFS::PastGame',
       map_from  => 't2',
       map_to    => 't1',
       type      => 'many to many',
     },
 
     t2s => {
-      map_class => 'CFS::PastSchedule',
+      map_class => 'CFS::PastGame',
       map_from  => 't1',
       map_to    => 't2',
       type      => 'many to many',

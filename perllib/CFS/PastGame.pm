@@ -1,11 +1,11 @@
-package CFS::PastSchedule;
+package CFS::PastGame;
 
 use strict;
 
 use base qw(CFS::DB::Object::AutoBase1);
 
 __PACKAGE__->meta->setup(
-  table   => 'past_schedules',
+  table   => 'past_games',
 
   columns => [
     season   => { type => 'scalar', length => 4, not_null => 1 },
