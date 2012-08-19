@@ -1,0 +1,120 @@
+  1) Alabama                          0.9914
+  2) Louisiana State                  0.9785
+  3) Stanford                         0.9744
+  4) Oregon                           0.9701
+  5) Oklahoma State                   0.9701
+  6) Wisconsin                        0.9700
+  7) Boise State                      0.9528
+  8) Oklahoma                         0.9274
+  9) Houston                          0.9270
+ 10) Arkansas                         0.9142
+ 11) Southern California              0.9103
+ 12) Florida State                    0.8970
+ 13) Texas Christian                  0.8932
+ 14) South Carolina                   0.8932
+ 15) Georgia                          0.8884
+ 16) Texas A&M                        0.8504
+ 17) Michigan                         0.8435
+ 18) Virginia Tech                    0.8298
+ 19) Missouri                         0.8240
+ 20) Cincinnati                       0.8112
+ 21) Baylor                           0.8069
+ 22) Michigan State                   0.8000
+ 23) Utah                             0.7821
+ 24) West Virginia                    0.7811
+ 25) Southern Mississippi             0.7735
+ 26) Mississippi State                0.7682
+ 27) Arizona State                    0.7682
+ 28) Kansas State                     0.7639
+ 29) Georgia Tech                     0.7639
+ 30) Texas                            0.7607
+ 31) Vanderbilt                       0.7564
+ 32) California                       0.7511
+ 33) Florida                          0.7425
+ 34) Rutgers                          0.7319
+ 35) Miami (FL)                       0.7210
+ 36) Temple                           0.7179
+ 37) North Carolina State             0.7124
+ 38) Brigham Young                    0.7124
+ 39) Clemson                          0.7082
+ 40) Nebraska                         0.6867
+ 41) North Carolina                   0.6438
+ 42) South Florida                    0.6111
+ 43) Iowa                             0.6094
+ 44) Notre Dame                       0.6068
+ 45) Penn State                       0.5855
+ 46) Washington                       0.5769
+ 47) Ohio State                       0.5726
+ 48) Washington State                 0.5622
+ 49) Illinois                         0.5579
+ 50) Toledo                           0.5513
+ 51) Northwestern                     0.5470
+ 52) Arkansas State                   0.5451
+ 53) Air Force                        0.5451
+ 54) Tennessee                        0.5385
+ 55) San Diego State                  0.5385
+ 56) Central Florida                  0.5365
+ 57) Auburn                           0.5365
+ 58) Virginia                         0.5342
+ 59) Wake Forest                      0.5256
+ 60) Louisiana Tech                   0.5193
+ 61) Louisville                       0.5193
+ 62) Purdue                           0.5128
+ 63) Arizona                          0.5107
+ 64) Pittsburgh                       0.5000
+ 65) Northern Illinois                0.4850
+ 66) Tulsa                            0.4744
+ 67) Connecticut                      0.4721
+ 68) Ohio                             0.4701
+ 69) Nevada                           0.4549
+ 70) Utah State                       0.4359
+ 71) Texas Tech                       0.4316
+ 72) Western Michigan                 0.4077
+ 73) Navy                             0.3991
+ 74) UCLA                             0.3974
+ 75) Southern Methodist               0.3846
+ 76) Iowa State                       0.3820
+ 77) Boston College                   0.3777
+ 78) Florida International            0.3734
+ 79) Wyoming                          0.3734
+ 80) Oregon State                     0.3675
+ 81) Hawaii                           0.3648
+ 82) Kentucky                         0.3648
+ 83) Syracuse                         0.3504
+ 84) Louisiana-Lafayette              0.3305
+ 85) Duke                             0.3004
+ 86) Army                             0.2489
+ 87) Maryland                         0.2403
+ 88) Texas-El Paso                    0.2308
+ 89) Colorado                         0.2232
+ 90) Louisiana-Monroe                 0.2232
+ 91) Western Kentucky                 0.2189
+ 92) Marshall                         0.2189
+ 93) Miami (OH)                       0.2115
+ 94) East Carolina                    0.2103
+ 95) San Jose State                   0.2094
+ 96) Bowling Green State              0.2060
+ 97) Eastern Michigan                 0.2060
+ 98) Colorado State                   0.1931
+ 99) Fresno State                     0.1888
+100) North Texas                      0.1752
+101) Rice                             0.1624
+102) Kent State                       0.1588
+103) Mississippi                      0.1350
+104) Indiana                          0.1330
+105) Buffalo                          0.1202
+106) Minnesota                        0.1197
+107) Ball State                       0.1116
+108) Kansas                           0.1073
+109) New Mexico State                 0.1030
+110) Idaho                            0.0858
+111) Central Michigan                 0.0730
+112) Troy                             0.0684
+113) Alabama-Birmingham               0.0601
+114) Tulane                           0.0556
+115) Nevada-Las Vegas                 0.0515
+116) Memphis                          0.0515
+117) Middle Tennessee State           0.0261
+118) New Mexico                       0.0086
+119) Akron                            0.0086
+120) Florida Atlantic                 0.0086

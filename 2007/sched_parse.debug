@@ -1,0 +1,7031 @@
+
+------
+Site: T1 DoY: 244
+T1: Boston College
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '54.8',
+          'games' => '14',
+          'd_pass_yds' => '253.9',
+          'o_rush_yds' => '101.1',
+          'ppg' => '28.3',
+          'wins' => '11',
+          'losses' => '3',
+          'o_to' => '1.9',
+          'o_pen_yds' => '61.4',
+          'o_pass_yds' => '323.9',
+          'conference' => 'ACC',
+          'opp_ppg' => '20.4',
+          'last_game' => 0,
+          'd_rush_yds' => '75.5'
+        };
+T2: Wake Forest
+$VAR1 = {
+          'd_to' => '2.7',
+          'd_pen_yds' => '43.1',
+          'games' => '13',
+          'd_pass_yds' => '231.0',
+          'o_rush_yds' => '143.2',
+          'ppg' => '27.8',
+          'wins' => '9',
+          'losses' => '4',
+          'o_to' => '2.0',
+          'o_pen_yds' => '47.8',
+          'o_pass_yds' => '197.2',
+          'conference' => 'ACC',
+          'opp_ppg' => '22.2',
+          'last_game' => 0,
+          'd_rush_yds' => '109.4'
+        };
+T1_POINT_DIFF: 10
+T2_POINT_DIFF: -10
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 50
+T2_O_SCORE_SUM: 48
+T1_O_SCORE_DIFF: 6
+T2_O_SCORE_DIFF: 7
+T1_D_SCORE_SUM: 48
+T2_D_SCORE_SUM: 50
+T1_D_SCORE_DIFF: -7
+T2_D_SCORE_DIFF: -6
+T1_O_RUSH_SUM: 210
+T2_O_RUSH_SUM: 218
+T1_O_RUSH_DIFF: -8
+T2_O_RUSH_DIFF: 67
+T1_D_RUSH_SUM: 218
+T2_D_RUSH_SUM: 210
+T1_D_RUSH_DIFF: -67
+T2_D_RUSH_DIFF: 8
+T1_O_PASS_SUM: 554
+T2_O_PASS_SUM: 451
+T1_O_PASS_DIFF: 92
+T2_O_PASS_DIFF: -56
+T1_D_PASS_SUM: 451
+T2_D_PASS_SUM: 554
+T1_D_PASS_DIFF: 56
+T2_D_PASS_DIFF: -92
+T1_PEN_DIFF: 25
+T2_PEN_DIFF: -25
+T1_TO_DIFF: -0.20
+T2_TO_DIFF: 0.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.093
+T2_WIN_DIFF: -0.093
+T1_DATA: 10,"S","H",50,6,48,-7,210,-8,218,-67,554,92,56,25,-0.20,0,0.093,"ACC","ACC"
+T2_DATA: -10,"S","A",48,7,50,-6,218,67,210,8,451,-56,-92,-25,0.20,0,-0.093,"ACC","ACC"
+
+------
+Site: T2 DoY: 244
+T1: Central Florida
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '53.5',
+          'games' => '14',
+          'd_pass_yds' => '233.3',
+          'o_rush_yds' => '234.8',
+          'ppg' => '35.9',
+          'wins' => '10',
+          'losses' => '4',
+          'o_to' => '1.9',
+          'o_pen_yds' => '47.5',
+          'o_pass_yds' => '176.9',
+          'conference' => 'CUSA',
+          'opp_ppg' => '26.6',
+          'last_game' => 0,
+          'd_rush_yds' => '133.1'
+        };
+T2: North Carolina State
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '53.0',
+          'games' => '12',
+          'd_pass_yds' => '207.5',
+          'o_rush_yds' => '89.3',
+          'ppg' => '20.8',
+          'wins' => '5',
+          'losses' => '7',
+          'o_to' => '2.7',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '245.7',
+          'conference' => 'ACC',
+          'opp_ppg' => '28.2',
+          'last_game' => 0,
+          'd_rush_yds' => '186.4'
+        };
+T1_POINT_DIFF: 2
+T2_POINT_DIFF: -2
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 64
+T2_O_SCORE_SUM: 47
+T1_O_SCORE_DIFF: 7
+T2_O_SCORE_DIFF: -5
+T1_D_SCORE_SUM: 47
+T2_D_SCORE_SUM: 64
+T1_D_SCORE_DIFF: 5
+T2_D_SCORE_DIFF: -7
+T1_O_RUSH_SUM: 421
+T2_O_RUSH_SUM: 222
+T1_O_RUSH_DIFF: 48
+T2_O_RUSH_DIFF: -43
+T1_D_RUSH_SUM: 222
+T2_D_RUSH_SUM: 421
+T1_D_RUSH_DIFF: 43
+T2_D_RUSH_DIFF: -48
+T1_O_PASS_SUM: 384
+T2_O_PASS_SUM: 479
+T1_O_PASS_DIFF: -30
+T2_O_PASS_DIFF: 12
+T1_D_PASS_SUM: 479
+T2_D_PASS_SUM: 384
+T1_D_PASS_DIFF: -12
+T2_D_PASS_DIFF: 30
+T1_PEN_DIFF: -6
+T2_PEN_DIFF: 6
+T1_TO_DIFF: 1.50
+T2_TO_DIFF: -1.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.298
+T2_WIN_DIFF: -0.298
+T1_DATA: 2,"S","A",64,7,47,5,421,48,222,43,384,-30,-12,-6,1.50,0,0.298,"CUSA","ACC"
+T2_DATA: -2,"S","H",47,-5,64,-7,222,-43,421,-48,479,12,30,6,-1.50,0,-0.298,"ACC","CUSA"
+
+------
+Site: N DoY: 244
+T1: Colorado
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '52.1',
+          'games' => '13',
+          'd_pass_yds' => '261.3',
+          'o_rush_yds' => '144.2',
+          'ppg' => '27.3',
+          'wins' => '6',
+          'losses' => '7',
+          'o_to' => '2.1',
+          'o_pen_yds' => '55.8',
+          'o_pass_yds' => '234.3',
+          'conference' => 'Big 12',
+          'opp_ppg' => '29.5',
+          'last_game' => 0,
+          'd_rush_yds' => '128.0'
+        };
+T2: Colorado State
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '46.0',
+          'games' => '12',
+          'd_pass_yds' => '207.9',
+          'o_rush_yds' => '166.7',
+          'ppg' => '25.3',
+          'wins' => '3',
+          'losses' => '9',
+          'o_to' => '1.8',
+          'o_pen_yds' => '43.4',
+          'o_pass_yds' => '212.2',
+          'conference' => 'MWC',
+          'opp_ppg' => '30.8',
+          'last_game' => 0,
+          'd_rush_yds' => '207.3'
+        };
+T1_POINT_DIFF: 3
+T2_POINT_DIFF: -3
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "N"
+T2_SITE: "N"
+T1_O_SCORE_SUM: 58
+T2_O_SCORE_SUM: 54
+T1_O_SCORE_DIFF: -3
+T2_O_SCORE_DIFF: -4
+T1_D_SCORE_SUM: 54
+T2_D_SCORE_SUM: 58
+T1_D_SCORE_DIFF: 4
+T2_D_SCORE_DIFF: 3
+T1_O_RUSH_SUM: 351
+T2_O_RUSH_SUM: 294
+T1_O_RUSH_DIFF: -63
+T2_O_RUSH_DIFF: 38
+T1_D_RUSH_SUM: 294
+T2_D_RUSH_SUM: 351
+T1_D_RUSH_DIFF: -38
+T2_D_RUSH_DIFF: 63
+T1_O_PASS_SUM: 442
+T2_O_PASS_SUM: 473
+T1_O_PASS_DIFF: 26
+T2_O_PASS_DIFF: -49
+T1_D_PASS_SUM: 473
+T2_D_PASS_SUM: 442
+T1_D_PASS_DIFF: 49
+T2_D_PASS_DIFF: -26
+T1_PEN_DIFF: 18
+T2_PEN_DIFF: -18
+T1_TO_DIFF: -0.30
+T2_TO_DIFF: 0.30
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.212
+T2_WIN_DIFF: -0.212
+T1_DATA: 3,"S","N",58,-3,54,4,351,-63,294,-38,442,26,49,18,-0.30,0,0.212,"Big 12","MWC"
+T2_DATA: -3,"S","N",54,-4,58,3,294,38,351,63,473,-49,-26,-18,0.30,0,-0.212,"MWC","Big 12"
+
+------
+Site: T1 DoY: 244
+T1: Florida
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '46.2',
+          'games' => '13',
+          'd_pass_yds' => '258.5',
+          'o_rush_yds' => '200.2',
+          'ppg' => '42.5',
+          'wins' => '9',
+          'losses' => '4',
+          'o_to' => '1.2',
+          'o_pen_yds' => '61.9',
+          'o_pass_yds' => '257.0',
+          'conference' => 'SEC',
+          'opp_ppg' => '25.5',
+          'last_game' => 0,
+          'd_rush_yds' => '103.3'
+        };
+T2: Western Kentucky
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '53.0',
+          'games' => '12',
+          'd_pass_yds' => '184.6',
+          'o_rush_yds' => '247.2',
+          'ppg' => '33.2',
+          'wins' => '7',
+          'losses' => '5',
+          'o_to' => '2.3',
+          'o_pen_yds' => '69.1',
+          'o_pass_yds' => '161.7',
+          'conference' => 'Ind',
+          'opp_ppg' => '20.8',
+          'last_game' => 0,
+          'd_rush_yds' => '135.0'
+        };
+T1_POINT_DIFF: 46
+T2_POINT_DIFF: -46
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 63
+T2_O_SCORE_SUM: 58
+T1_O_SCORE_DIFF: 21
+T2_O_SCORE_DIFF: 7
+T1_D_SCORE_SUM: 58
+T2_D_SCORE_SUM: 63
+T1_D_SCORE_DIFF: -7
+T2_D_SCORE_DIFF: -21
+T1_O_RUSH_SUM: 335
+T2_O_RUSH_SUM: 350
+T1_O_RUSH_DIFF: 65
+T2_O_RUSH_DIFF: 143
+T1_D_RUSH_SUM: 350
+T2_D_RUSH_SUM: 335
+T1_D_RUSH_DIFF: -143
+T2_D_RUSH_DIFF: -65
+T1_O_PASS_SUM: 441
+T2_O_PASS_SUM: 420
+T1_O_PASS_DIFF: 72
+T2_O_PASS_DIFF: -96
+T1_D_PASS_SUM: 420
+T2_D_PASS_SUM: 441
+T1_D_PASS_DIFF: 96
+T2_D_PASS_DIFF: -72
+T1_PEN_DIFF: -14
+T2_PEN_DIFF: 14
+T1_TO_DIFF: 0.20
+T2_TO_DIFF: -0.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.109
+T2_WIN_DIFF: -0.109
+T1_DATA: 46,"S","H",63,21,58,-7,335,65,350,-143,441,72,96,-14,0.20,0,0.109,"SEC","Ind"
+T2_DATA: -46,"S","A",58,7,63,-21,350,143,335,-65,420,-96,-72,14,-0.20,0,-0.109,"Ind","SEC"
+
+------
+Site: T1 DoY: 244
+T1: Kansas
+$VAR1 = {
+          'd_to' => '2.7',
+          'd_pen_yds' => '57.9',
+          'games' => '13',
+          'd_pass_yds' => '222.5',
+          'o_rush_yds' => '188.8',
+          'ppg' => '42.8',
+          'wins' => '12',
+          'losses' => '1',
+          'o_to' => '1.1',
+          'o_pen_yds' => '39.1',
+          'o_pass_yds' => '291.0',
+          'conference' => 'Big 12',
+          'opp_ppg' => '16.4',
+          'last_game' => 0,
+          'd_rush_yds' => '94.8'
+        };
+T2: Central Michigan
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '49.3',
+          'games' => '14',
+          'd_pass_yds' => '303.5',
+          'o_rush_yds' => '180.0',
+          'ppg' => '34.8',
+          'wins' => '8',
+          'losses' => '6',
+          'o_to' => '1.7',
+          'o_pen_yds' => '59.6',
+          'o_pass_yds' => '267.0',
+          'conference' => 'MAC',
+          'opp_ppg' => '36.9',
+          'last_game' => 0,
+          'd_rush_yds' => '156.5'
+        };
+T1_POINT_DIFF: 45
+T2_POINT_DIFF: -45
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 79
+T2_O_SCORE_SUM: 51
+T1_O_SCORE_DIFF: 5
+T2_O_SCORE_DIFF: 18
+T1_D_SCORE_SUM: 51
+T2_D_SCORE_SUM: 79
+T1_D_SCORE_DIFF: -18
+T2_D_SCORE_DIFF: -5
+T1_O_RUSH_SUM: 345
+T2_O_RUSH_SUM: 274
+T1_O_RUSH_DIFF: 32
+T2_O_RUSH_DIFF: 85
+T1_D_RUSH_SUM: 274
+T2_D_RUSH_SUM: 345
+T1_D_RUSH_DIFF: -85
+T2_D_RUSH_DIFF: -32
+T1_O_PASS_SUM: 594
+T2_O_PASS_SUM: 489
+T1_O_PASS_DIFF: -12
+T2_O_PASS_DIFF: 44
+T1_D_PASS_SUM: 489
+T2_D_PASS_SUM: 594
+T1_D_PASS_DIFF: -44
+T2_D_PASS_DIFF: 12
+T1_PEN_DIFF: -11
+T2_PEN_DIFF: 11
+T1_TO_DIFF: 1.20
+T2_TO_DIFF: -1.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.352
+T2_WIN_DIFF: -0.352
+T1_DATA: 45,"S","H",79,5,51,-18,345,32,274,-85,594,-12,-44,-11,1.20,0,0.352,"Big 12","MAC"
+T2_DATA: -45,"S","A",51,18,79,-5,274,85,345,-32,489,44,12,11,-1.20,0,-0.352,"MAC","Big 12"
+
+------
+Site: T1 DoY: 244
+T1: Southern California
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '46.4',
+          'games' => '13',
+          'd_pass_yds' => '189.0',
+          'o_rush_yds' => '197.2',
+          'ppg' => '32.6',
+          'wins' => '11',
+          'losses' => '2',
+          'o_to' => '2.0',
+          'o_pen_yds' => '74.4',
+          'o_pass_yds' => '237.7',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '16.0',
+          'last_game' => 0,
+          'd_rush_yds' => '84.2'
+        };
+T2: Idaho
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '53.0',
+          'games' => '12',
+          'd_pass_yds' => '257.3',
+          'o_rush_yds' => '158.2',
+          'ppg' => '21.5',
+          'wins' => '1',
+          'losses' => '11',
+          'o_to' => '2.8',
+          'o_pen_yds' => '63.5',
+          'o_pass_yds' => '191.5',
+          'conference' => 'WAC',
+          'opp_ppg' => '36.9',
+          'last_game' => 0,
+          'd_rush_yds' => '161.4'
+        };
+T1_POINT_DIFF: 28
+T2_POINT_DIFF: -28
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 69
+T2_O_SCORE_SUM: 37
+T1_O_SCORE_DIFF: -4
+T2_O_SCORE_DIFF: 5
+T1_D_SCORE_SUM: 37
+T2_D_SCORE_SUM: 69
+T1_D_SCORE_DIFF: -5
+T2_D_SCORE_DIFF: 4
+T1_O_RUSH_SUM: 358
+T2_O_RUSH_SUM: 242
+T1_O_RUSH_DIFF: 35
+T2_O_RUSH_DIFF: 73
+T1_D_RUSH_SUM: 242
+T2_D_RUSH_SUM: 358
+T1_D_RUSH_DIFF: -73
+T2_D_RUSH_DIFF: -35
+T1_O_PASS_SUM: 495
+T2_O_PASS_SUM: 380
+T1_O_PASS_DIFF: -19
+T2_O_PASS_DIFF: 2
+T1_D_PASS_SUM: 380
+T2_D_PASS_SUM: 495
+T1_D_PASS_DIFF: -2
+T2_D_PASS_DIFF: 19
+T1_PEN_DIFF: 4
+T2_PEN_DIFF: -4
+T1_TO_DIFF: 0.90
+T2_TO_DIFF: -0.90
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.763
+T2_WIN_DIFF: -0.763
+T1_DATA: 28,"S","H",69,-4,37,-5,358,35,242,-73,495,-19,-2,4,0.90,0,0.763,"Pac-10","WAC"
+T2_DATA: -28,"S","A",37,5,69,4,242,73,358,-35,380,2,19,-4,-0.90,0,-0.763,"WAC","Pac-10"
+
+------
+Site: T1 DoY: 244
+T1: Virginia Tech
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '49.1',
+          'games' => '14',
+          'd_pass_yds' => '210.3',
+          'o_rush_yds' => '133.6',
+          'ppg' => '28.7',
+          'wins' => '11',
+          'losses' => '3',
+          'o_to' => '1.4',
+          'o_pen_yds' => '55.6',
+          'o_pass_yds' => '196.9',
+          'conference' => 'ACC',
+          'opp_ppg' => '16.1',
+          'last_game' => 0,
+          'd_rush_yds' => '86.6'
+        };
+T2: East Carolina
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '53.8',
+          'games' => '13',
+          'd_pass_yds' => '289.0',
+          'o_rush_yds' => '182.9',
+          'ppg' => '31.0',
+          'wins' => '8',
+          'losses' => '5',
+          'o_to' => '1.1',
+          'o_pen_yds' => '63.6',
+          'o_pass_yds' => '202.5',
+          'conference' => 'CUSA',
+          'opp_ppg' => '30.4',
+          'last_game' => 0,
+          'd_rush_yds' => '142.2'
+        };
+T1_POINT_DIFF: 10
+T2_POINT_DIFF: -10
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 59
+T2_O_SCORE_SUM: 47
+T1_O_SCORE_DIFF: -1
+T2_O_SCORE_DIFF: 14
+T1_D_SCORE_SUM: 47
+T2_D_SCORE_SUM: 59
+T1_D_SCORE_DIFF: -14
+T2_D_SCORE_DIFF: 1
+T1_O_RUSH_SUM: 275
+T2_O_RUSH_SUM: 269
+T1_O_RUSH_DIFF: -8
+T2_O_RUSH_DIFF: 96
+T1_D_RUSH_SUM: 269
+T2_D_RUSH_SUM: 275
+T1_D_RUSH_DIFF: -96
+T2_D_RUSH_DIFF: 8
+T1_O_PASS_SUM: 485
+T2_O_PASS_SUM: 412
+T1_O_PASS_DIFF: -92
+T2_O_PASS_DIFF: -7
+T1_D_PASS_SUM: 412
+T2_D_PASS_SUM: 485
+T1_D_PASS_DIFF: 7
+T2_D_PASS_DIFF: 92
+T1_PEN_DIFF: -12
+T2_PEN_DIFF: 12
+T1_TO_DIFF: -0.50
+T2_TO_DIFF: 0.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.170
+T2_WIN_DIFF: -0.170
+T1_DATA: 10,"S","H",59,-1,47,-14,275,-8,269,-96,485,-92,7,-12,-0.50,0,0.170,"ACC","CUSA"
+T2_DATA: -10,"S","A",47,14,59,1,269,96,275,8,412,-7,92,12,0.50,0,-0.170,"CUSA","ACC"
+
+------
+Site: T1 DoY: 249
+T1: Cincinnati
+$VAR1 = {
+          'd_to' => '3.2',
+          'd_pen_yds' => '67.1',
+          'games' => '13',
+          'd_pass_yds' => '254.0',
+          'o_rush_yds' => '147.8',
+          'ppg' => '36.3',
+          'wins' => '10',
+          'losses' => '3',
+          'o_to' => '2.0',
+          'o_pen_yds' => '79.1',
+          'o_pass_yds' => '286.2',
+          'conference' => 'Big East',
+          'opp_ppg' => '18.8',
+          'last_game' => 0,
+          'd_rush_yds' => '114.2'
+        };
+T2: Oregon State
+$VAR1 = {
+          'd_to' => '2.6',
+          'd_pen_yds' => '49.8',
+          'games' => 13,
+          'd_pass_yds' => '235.5',
+          'o_rush_yds' => '174.9',
+          'ppg' => '27.8',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.6',
+          'o_pen_yds' => '58.2',
+          'o_pass_yds' => '196.7',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '22.6',
+          'last_game' => 0,
+          'd_rush_yds' => '70.6'
+        };
+T1_POINT_DIFF: 31
+T2_POINT_DIFF: -31
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 58
+T2_O_SCORE_SUM: 46
+T1_O_SCORE_DIFF: 13
+T2_O_SCORE_DIFF: 9
+T1_D_SCORE_SUM: 46
+T2_D_SCORE_SUM: 58
+T1_D_SCORE_DIFF: -9
+T2_D_SCORE_DIFF: -13
+T1_O_RUSH_SUM: 218
+T2_O_RUSH_SUM: 289
+T1_O_RUSH_DIFF: 77
+T2_O_RUSH_DIFF: 60
+T1_D_RUSH_SUM: 289
+T2_D_RUSH_SUM: 218
+T1_D_RUSH_DIFF: -60
+T2_D_RUSH_DIFF: -77
+T1_O_PASS_SUM: 521
+T2_O_PASS_SUM: 450
+T1_O_PASS_DIFF: 50
+T2_O_PASS_DIFF: -57
+T1_D_PASS_SUM: 450
+T2_D_PASS_SUM: 521
+T1_D_PASS_DIFF: 57
+T2_D_PASS_DIFF: -50
+T1_PEN_DIFF: 38
+T2_PEN_DIFF: -38
+T1_TO_DIFF: 1.20
+T2_TO_DIFF: -1.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.077
+T2_WIN_DIFF: -0.077
+T1_DATA: 31,"S","H",58,13,46,-9,218,77,289,-60,521,50,57,38,1.20,0,0.077,"Big East","Pac-10"
+T2_DATA: -31,"S","A",46,9,58,-13,289,60,218,-77,450,-57,-50,-38,-1.20,0,-0.077,"Pac-10","Big East"
+
+------
+Site: T1 DoY: 251
+T1: Boston College
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '54.8',
+          'games' => 14,
+          'd_pass_yds' => '253.9',
+          'o_rush_yds' => '101.1',
+          'ppg' => '28.3',
+          'wins' => 11,
+          'losses' => '3',
+          'o_to' => '1.9',
+          'o_pen_yds' => '61.4',
+          'o_pass_yds' => '323.9',
+          'conference' => 'ACC',
+          'opp_ppg' => '20.4',
+          'last_game' => 0,
+          'd_rush_yds' => '75.5'
+        };
+T2: North Carolina State
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '53.0',
+          'games' => 12,
+          'd_pass_yds' => '207.5',
+          'o_rush_yds' => '89.3',
+          'ppg' => '20.8',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.7',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '245.7',
+          'conference' => 'ACC',
+          'opp_ppg' => '28.2',
+          'last_game' => 0,
+          'd_rush_yds' => '186.4'
+        };
+T1_POINT_DIFF: 20
+T2_POINT_DIFF: -20
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 56
+T2_O_SCORE_SUM: 41
+T1_O_SCORE_DIFF: 0
+T2_O_SCORE_DIFF: 0
+T1_D_SCORE_SUM: 41
+T2_D_SCORE_SUM: 56
+T1_D_SCORE_DIFF: 0
+T2_D_SCORE_DIFF: 0
+T1_O_RUSH_SUM: 287
+T2_O_RUSH_SUM: 164
+T1_O_RUSH_DIFF: -85
+T2_O_RUSH_DIFF: 13
+T1_D_RUSH_SUM: 164
+T2_D_RUSH_SUM: 287
+T1_D_RUSH_DIFF: -13
+T2_D_RUSH_DIFF: 85
+T1_O_PASS_SUM: 531
+T2_O_PASS_SUM: 499
+T1_O_PASS_DIFF: 116
+T2_O_PASS_DIFF: -8
+T1_D_PASS_SUM: 499
+T2_D_PASS_SUM: 531
+T1_D_PASS_DIFF: 8
+T2_D_PASS_DIFF: -116
+T1_PEN_DIFF: 8
+T2_PEN_DIFF: -8
+T1_TO_DIFF: 1.90
+T2_TO_DIFF: -1.90
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.369
+T2_WIN_DIFF: -0.369
+T1_DATA: 20,"S","H",56,0,41,0,287,-85,164,-13,531,116,8,8,1.90,0,0.369,"ACC","ACC"
+T2_DATA: -20,"S","A",41,0,56,0,164,13,287,85,499,-8,-116,-8,-1.90,0,-0.369,"ACC","ACC"
+
+------
+Site: T1 DoY: 251
+T1: Clemson
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '50.9',
+          'games' => 13,
+          'd_pass_yds' => '188.5',
+          'o_rush_yds' => '161.2',
+          'ppg' => '33.1',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '0.9',
+          'o_pen_yds' => '43.1',
+          'o_pass_yds' => '242.1',
+          'conference' => 'ACC',
+          'opp_ppg' => '18.7',
+          'last_game' => 0,
+          'd_rush_yds' => '118.3'
+        };
+T2: Louisiana-Monroe
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '49.3',
+          'games' => 12,
+          'd_pass_yds' => '260.8',
+          'o_rush_yds' => '209.0',
+          'ppg' => '23.5',
+          'wins' => 6,
+          'losses' => '6',
+          'o_to' => '1.7',
+          'o_pen_yds' => '67.9',
+          'o_pass_yds' => '176.7',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '27.7',
+          'last_game' => 0,
+          'd_rush_yds' => '153.5'
+        };
+T1_POINT_DIFF: 23
+T2_POINT_DIFF: -23
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 60
+T2_O_SCORE_SUM: 42
+T1_O_SCORE_DIFF: 5
+T2_O_SCORE_DIFF: 4
+T1_D_SCORE_SUM: 42
+T2_D_SCORE_SUM: 60
+T1_D_SCORE_DIFF: -4
+T2_D_SCORE_DIFF: -5
+T1_O_RUSH_SUM: 314
+T2_O_RUSH_SUM: 327
+T1_O_RUSH_DIFF: 7
+T2_O_RUSH_DIFF: 90
+T1_D_RUSH_SUM: 327
+T2_D_RUSH_SUM: 314
+T1_D_RUSH_DIFF: -90
+T2_D_RUSH_DIFF: -7
+T1_O_PASS_SUM: 502
+T2_O_PASS_SUM: 365
+T1_O_PASS_DIFF: -18
+T2_O_PASS_DIFF: -11
+T1_D_PASS_SUM: 365
+T2_D_PASS_SUM: 502
+T1_D_PASS_DIFF: 11
+T2_D_PASS_DIFF: 18
+T1_PEN_DIFF: -23
+T2_PEN_DIFF: 23
+T1_TO_DIFF: 0.90
+T2_TO_DIFF: -0.90
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.192
+T2_WIN_DIFF: -0.192
+T1_DATA: 23,"S","H",60,5,42,-4,314,7,327,-90,502,-18,11,-23,0.90,0,0.192,"ACC","Sun Belt"
+T2_DATA: -23,"S","A",42,4,60,-5,327,90,314,-7,365,-11,18,23,-0.90,0,-0.192,"Sun Belt","ACC"
+
+------
+Site: T1 DoY: 251
+T1: Florida
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '46.2',
+          'games' => 13,
+          'd_pass_yds' => '258.5',
+          'o_rush_yds' => '200.2',
+          'ppg' => '42.5',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.2',
+          'o_pen_yds' => '61.9',
+          'o_pass_yds' => '257.0',
+          'conference' => 'SEC',
+          'opp_ppg' => '25.5',
+          'last_game' => 0,
+          'd_rush_yds' => '103.3'
+        };
+T2: Troy
+$VAR1 = {
+          'd_to' => '2.5',
+          'd_pen_yds' => '60.4',
+          'games' => 12,
+          'd_pass_yds' => '183.1',
+          'o_rush_yds' => '182.6',
+          'ppg' => '34.0',
+          'wins' => 8,
+          'losses' => '4',
+          'o_to' => '2.6',
+          'o_pen_yds' => '58.1',
+          'o_pass_yds' => '270.3',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '24.6',
+          'last_game' => 0,
+          'd_rush_yds' => '195.2'
+        };
+T1_POINT_DIFF: 28
+T2_POINT_DIFF: -28
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 67
+T2_O_SCORE_SUM: 59
+T1_O_SCORE_DIFF: 17
+T2_O_SCORE_DIFF: 8
+T1_D_SCORE_SUM: 59
+T2_D_SCORE_SUM: 67
+T1_D_SCORE_DIFF: -8
+T2_D_SCORE_DIFF: -17
+T1_O_RUSH_SUM: 395
+T2_O_RUSH_SUM: 285
+T1_O_RUSH_DIFF: 5
+T2_O_RUSH_DIFF: 79
+T1_D_RUSH_SUM: 285
+T2_D_RUSH_SUM: 395
+T1_D_RUSH_DIFF: -79
+T2_D_RUSH_DIFF: -5
+T1_O_PASS_SUM: 440
+T2_O_PASS_SUM: 528
+T1_O_PASS_DIFF: 73
+T2_O_PASS_DIFF: 11
+T1_D_PASS_SUM: 528
+T2_D_PASS_SUM: 440
+T1_D_PASS_DIFF: -11
+T2_D_PASS_DIFF: -73
+T1_PEN_DIFF: -10
+T2_PEN_DIFF: 10
+T1_TO_DIFF: 0.40
+T2_TO_DIFF: -0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.026
+T2_WIN_DIFF: -0.026
+T1_DATA: 28,"S","H",67,17,59,-8,395,5,285,-79,440,73,-11,-10,0.40,0,0.026,"SEC","Sun Belt"
+T2_DATA: -28,"S","A",59,8,67,-17,285,79,395,-5,528,11,-73,10,-0.40,0,-0.026,"Sun Belt","SEC"
+
+------
+Site: T1 DoY: 251
+T1: Iowa
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '40.6',
+          'games' => 12,
+          'd_pass_yds' => '229.2',
+          'o_rush_yds' => '126.3',
+          'ppg' => '18.5',
+          'wins' => 6,
+          'losses' => '6',
+          'o_to' => '1.1',
+          'o_pen_yds' => '50.9',
+          'o_pass_yds' => '190.1',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '18.8',
+          'last_game' => 0,
+          'd_rush_yds' => '122.0'
+        };
+T2: Syracuse
+$VAR1 = {
+          'd_to' => '1.2',
+          'd_pen_yds' => '73.8',
+          'games' => 12,
+          'd_pass_yds' => '260.9',
+          'o_rush_yds' => '62.8',
+          'ppg' => '16.4',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '1.7',
+          'o_pen_yds' => '58.9',
+          'o_pass_yds' => '229.2',
+          'conference' => 'Big East',
+          'opp_ppg' => '34.8',
+          'last_game' => 0,
+          'd_rush_yds' => '207.8'
+        };
+T1_POINT_DIFF: 35
+T2_POINT_DIFF: -35
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 53
+T2_O_SCORE_SUM: 35
+T1_O_SCORE_DIFF: -16
+T2_O_SCORE_DIFF: -2
+T1_D_SCORE_SUM: 35
+T2_D_SCORE_SUM: 53
+T1_D_SCORE_DIFF: 2
+T2_D_SCORE_DIFF: 16
+T1_O_RUSH_SUM: 334
+T2_O_RUSH_SUM: 184
+T1_O_RUSH_DIFF: -81
+T2_O_RUSH_DIFF: -59
+T1_D_RUSH_SUM: 184
+T2_D_RUSH_SUM: 334
+T1_D_RUSH_DIFF: 59
+T2_D_RUSH_DIFF: 81
+T1_O_PASS_SUM: 451
+T2_O_PASS_SUM: 458
+T1_O_PASS_DIFF: -70
+T2_O_PASS_DIFF: 0
+T1_D_PASS_SUM: 458
+T2_D_PASS_SUM: 451
+T1_D_PASS_DIFF: 0
+T2_D_PASS_DIFF: 70
+T1_PEN_DIFF: -41
+T2_PEN_DIFF: 41
+T1_TO_DIFF: 1.20
+T2_TO_DIFF: -1.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.333
+T2_WIN_DIFF: -0.333
+T1_DATA: 35,"S","H",53,-16,35,2,334,-81,184,59,451,-70,0,-41,1.20,0,0.333,"Big Ten","Big East"
+T2_DATA: -35,"S","A",35,-2,53,16,184,-59,334,81,458,0,70,41,-1.20,0,-0.333,"Big East","Big Ten"
+
+------
+Site: T2 DoY: 251
+T1: Maryland
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '44.5',
+          'games' => '13',
+          'd_pass_yds' => '210.7',
+          'o_rush_yds' => '137.5',
+          'ppg' => '24.1',
+          'wins' => '6',
+          'losses' => '7',
+          'o_to' => '1.3',
+          'o_pen_yds' => '45.3',
+          'o_pass_yds' => '203.4',
+          'conference' => 'ACC',
+          'opp_ppg' => '21.5',
+          'last_game' => 0,
+          'd_rush_yds' => '147.3'
+        };
+T2: Florida International
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '56.8',
+          'games' => 12,
+          'd_pass_yds' => '243.6',
+          'o_rush_yds' => '119.1',
+          'ppg' => '15.1',
+          'wins' => 1,
+          'losses' => '11',
+          'o_to' => '2.8',
+          'o_pen_yds' => '46.4',
+          'o_pass_yds' => '150.6',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '39.1',
+          'last_game' => 0,
+          'd_rush_yds' => '203.8'
+        };
+T1_POINT_DIFF: 16
+T2_POINT_DIFF: -16
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 63
+T2_O_SCORE_SUM: 36
+T1_O_SCORE_DIFF: -15
+T2_O_SCORE_DIFF: -6
+T1_D_SCORE_SUM: 36
+T2_D_SCORE_SUM: 63
+T1_D_SCORE_DIFF: 6
+T2_D_SCORE_DIFF: 15
+T1_O_RUSH_SUM: 341
+T2_O_RUSH_SUM: 266
+T1_O_RUSH_DIFF: -66
+T2_O_RUSH_DIFF: -28
+T1_D_RUSH_SUM: 266
+T2_D_RUSH_SUM: 341
+T1_D_RUSH_DIFF: 28
+T2_D_RUSH_DIFF: 66
+T1_O_PASS_SUM: 447
+T2_O_PASS_SUM: 361
+T1_O_PASS_DIFF: -40
+T2_O_PASS_DIFF: -60
+T1_D_PASS_SUM: 361
+T2_D_PASS_SUM: 447
+T1_D_PASS_DIFF: 60
+T2_D_PASS_DIFF: 40
+T1_PEN_DIFF: -13
+T2_PEN_DIFF: 13
+T1_TO_DIFF: 1.80
+T2_TO_DIFF: -1.80
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.378
+T2_WIN_DIFF: -0.378
+T1_DATA: 16,"S","A",63,-15,36,6,341,-66,266,28,447,-40,60,-13,1.80,0,0.378,"ACC","Sun Belt"
+T2_DATA: -16,"S","H",36,-6,63,15,266,-28,341,66,361,-60,40,13,-1.80,0,-0.378,"Sun Belt","ACC"
+
+------
+Site: T1 DoY: 251
+T1: Oklahoma
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '56.6',
+          'games' => 14,
+          'd_pass_yds' => '228.1',
+          'o_rush_yds' => '190.7',
+          'ppg' => '42.3',
+          'wins' => 11,
+          'losses' => '3',
+          'o_to' => '1.4',
+          'o_pen_yds' => '57.5',
+          'o_pass_yds' => '258.2',
+          'conference' => 'Big 12',
+          'opp_ppg' => '20.3',
+          'last_game' => 0,
+          'd_rush_yds' => '110.3'
+        };
+T2: Miami (FL)
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '50.9',
+          'games' => 12,
+          'd_pass_yds' => '212.2',
+          'o_rush_yds' => '145.6',
+          'ppg' => '20.6',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.6',
+          'o_pen_yds' => '51.8',
+          'o_pass_yds' => '169.5',
+          'conference' => 'ACC',
+          'opp_ppg' => '26.0',
+          'last_game' => 0,
+          'd_rush_yds' => '133.8'
+        };
+T1_POINT_DIFF: 38
+T2_POINT_DIFF: -38
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 68
+T2_O_SCORE_SUM: 40
+T1_O_SCORE_DIFF: 16
+T2_O_SCORE_DIFF: 0
+T1_D_SCORE_SUM: 40
+T2_D_SCORE_SUM: 68
+T1_D_SCORE_DIFF: 0
+T2_D_SCORE_DIFF: -16
+T1_O_RUSH_SUM: 324
+T2_O_RUSH_SUM: 255
+T1_O_RUSH_DIFF: 56
+T2_O_RUSH_DIFF: 35
+T1_D_RUSH_SUM: 255
+T2_D_RUSH_SUM: 324
+T1_D_RUSH_DIFF: -35
+T2_D_RUSH_DIFF: -56
+T1_O_PASS_SUM: 470
+T2_O_PASS_SUM: 397
+T1_O_PASS_DIFF: 46
+T2_O_PASS_DIFF: -58
+T1_D_PASS_SUM: 397
+T2_D_PASS_SUM: 470
+T1_D_PASS_DIFF: 58
+T2_D_PASS_DIFF: -46
+T1_PEN_DIFF: 11
+T2_PEN_DIFF: -11
+T1_TO_DIFF: 1.10
+T2_TO_DIFF: -1.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.369
+T2_WIN_DIFF: -0.369
+T1_DATA: 38,"S","H",68,16,40,0,324,56,255,-35,470,46,58,11,1.10,0,0.369,"Big 12","ACC"
+T2_DATA: -38,"S","A",40,0,68,-16,255,35,324,-56,397,-58,-46,-11,-1.10,0,-0.369,"ACC","Big 12"
+
+------
+Site: T1 DoY: 251
+T1: Wyoming
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '60.1',
+          'games' => 12,
+          'd_pass_yds' => '209.3',
+          'o_rush_yds' => '129.8',
+          'ppg' => '19.4',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.6',
+          'o_pen_yds' => '53.2',
+          'o_pass_yds' => '192.9',
+          'conference' => 'MWC',
+          'opp_ppg' => '25.9',
+          'last_game' => 0,
+          'd_rush_yds' => '122.8'
+        };
+T2: Utah State
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '63.8',
+          'games' => 12,
+          'd_pass_yds' => '254.2',
+          'o_rush_yds' => '124.9',
+          'ppg' => '20.6',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '1.7',
+          'o_pen_yds' => '54.0',
+          'o_pass_yds' => '153.0',
+          'conference' => 'WAC',
+          'opp_ppg' => '33.8',
+          'last_game' => 0,
+          'd_rush_yds' => '196.2'
+        };
+T1_POINT_DIFF: 14
+T2_POINT_DIFF: -14
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 53
+T2_O_SCORE_SUM: 46
+T1_O_SCORE_DIFF: -14
+T2_O_SCORE_DIFF: -5
+T1_D_SCORE_SUM: 46
+T2_D_SCORE_SUM: 53
+T1_D_SCORE_DIFF: 5
+T2_D_SCORE_DIFF: 14
+T1_O_RUSH_SUM: 326
+T2_O_RUSH_SUM: 247
+T1_O_RUSH_DIFF: -66
+T2_O_RUSH_DIFF: 2
+T1_D_RUSH_SUM: 247
+T2_D_RUSH_SUM: 326
+T1_D_RUSH_DIFF: -2
+T2_D_RUSH_DIFF: 66
+T1_O_PASS_SUM: 447
+T2_O_PASS_SUM: 362
+T1_O_PASS_DIFF: -61
+T2_O_PASS_DIFF: -56
+T1_D_PASS_SUM: 362
+T2_D_PASS_SUM: 447
+T1_D_PASS_DIFF: 56
+T2_D_PASS_DIFF: 61
+T1_PEN_DIFF: -4
+T2_PEN_DIFF: 4
+T1_TO_DIFF: -1.10
+T2_TO_DIFF: 1.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.250
+T2_WIN_DIFF: -0.250
+T1_DATA: 14,"S","H",53,-14,46,5,326,-66,247,-2,447,-61,56,-4,-1.10,0,0.250,"MWC","WAC"
+T2_DATA: -14,"S","A",46,-5,53,14,247,2,326,66,362,-56,61,4,1.10,0,-0.250,"WAC","MWC"
+
+------
+Site: T2 DoY: 258
+T1: Ball State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '63.9',
+          'games' => 13,
+          'd_pass_yds' => '228.0',
+          'o_rush_yds' => '148.9',
+          'ppg' => '31.5',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '0.8',
+          'o_pen_yds' => '55.6',
+          'o_pass_yds' => '284.9',
+          'conference' => 'MAC',
+          'opp_ppg' => '28.3',
+          'last_game' => 0,
+          'd_rush_yds' => '204.3'
+        };
+T2: Navy
+$VAR1 = {
+          'd_to' => '1.2',
+          'd_pen_yds' => '47.2',
+          'games' => 13,
+          'd_pass_yds' => '263.4',
+          'o_rush_yds' => '348.8',
+          'ppg' => '39.3',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '1.4',
+          'o_pen_yds' => '29.8',
+          'o_pass_yds' => '95.3',
+          'conference' => 'Ind',
+          'opp_ppg' => '36.4',
+          'last_game' => 0,
+          'd_rush_yds' => '175.8'
+        };
+T1_POINT_DIFF: 3
+T2_POINT_DIFF: -3
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 67
+T2_O_SCORE_SUM: 67
+T1_O_SCORE_DIFF: -4
+T2_O_SCORE_DIFF: 10
+T1_D_SCORE_SUM: 67
+T2_D_SCORE_SUM: 67
+T1_D_SCORE_DIFF: -10
+T2_D_SCORE_DIFF: 4
+T1_O_RUSH_SUM: 324
+T2_O_RUSH_SUM: 553
+T1_O_RUSH_DIFF: -26
+T2_O_RUSH_DIFF: 144
+T1_D_RUSH_SUM: 553
+T2_D_RUSH_SUM: 324
+T1_D_RUSH_DIFF: -144
+T2_D_RUSH_DIFF: 26
+T1_O_PASS_SUM: 548
+T2_O_PASS_SUM: 323
+T1_O_PASS_DIFF: 21
+T2_O_PASS_DIFF: -132
+T1_D_PASS_SUM: 323
+T2_D_PASS_SUM: 548
+T1_D_PASS_DIFF: 132
+T2_D_PASS_DIFF: -21
+T1_PEN_DIFF: 42
+T2_PEN_DIFF: -42
+T1_TO_DIFF: 1.60
+T2_TO_DIFF: -1.60
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.077
+T2_WIN_DIFF: 0.077
+T1_DATA: 3,"S","A",67,-4,67,-10,324,-26,553,-144,548,21,132,42,1.60,0,-0.077,"MAC","Ind"
+T2_DATA: -3,"S","H",67,10,67,4,553,144,324,26,323,-132,-21,-42,-1.60,0,0.077,"Ind","MAC"
+
+------
+Site: T1 DoY: 258
+T1: Boise State
+$VAR1 = {
+          'd_to' => '1.7',
+          'd_pen_yds' => '39.8',
+          'games' => 13,
+          'd_pass_yds' => '207.2',
+          'o_rush_yds' => '184.9',
+          'ppg' => '42.4',
+          'wins' => 10,
+          'losses' => '3',
+          'o_to' => '1.6',
+          'o_pen_yds' => '63.7',
+          'o_pass_yds' => '282.5',
+          'conference' => 'WAC',
+          'opp_ppg' => '21.6',
+          'last_game' => 0,
+          'd_rush_yds' => '130.8'
+        };
+T2: Wyoming
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '60.1',
+          'games' => 12,
+          'd_pass_yds' => '209.3',
+          'o_rush_yds' => '129.8',
+          'ppg' => '19.4',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.6',
+          'o_pen_yds' => '53.2',
+          'o_pass_yds' => '192.9',
+          'conference' => 'MWC',
+          'opp_ppg' => '25.9',
+          'last_game' => 0,
+          'd_rush_yds' => '122.8'
+        };
+T1_POINT_DIFF: 10
+T2_POINT_DIFF: -10
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 68
+T2_O_SCORE_SUM: 41
+T1_O_SCORE_DIFF: 16
+T2_O_SCORE_DIFF: -2
+T1_D_SCORE_SUM: 41
+T2_D_SCORE_SUM: 68
+T1_D_SCORE_DIFF: 2
+T2_D_SCORE_DIFF: -16
+T1_O_RUSH_SUM: 307
+T2_O_RUSH_SUM: 260
+T1_O_RUSH_DIFF: 62
+T2_O_RUSH_DIFF: -1
+T1_D_RUSH_SUM: 260
+T2_D_RUSH_SUM: 307
+T1_D_RUSH_DIFF: 1
+T2_D_RUSH_DIFF: -62
+T1_O_PASS_SUM: 491
+T2_O_PASS_SUM: 400
+T1_O_PASS_DIFF: 73
+T2_O_PASS_DIFF: -14
+T1_D_PASS_SUM: 400
+T2_D_PASS_SUM: 491
+T1_D_PASS_DIFF: 14
+T2_D_PASS_DIFF: -73
+T1_PEN_DIFF: -9
+T2_PEN_DIFF: 9
+T1_TO_DIFF: 1.10
+T2_TO_DIFF: -1.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.353
+T2_WIN_DIFF: -0.353
+T1_DATA: 10,"S","H",68,16,41,2,307,62,260,1,491,73,14,-9,1.10,0,0.353,"WAC","MWC"
+T2_DATA: -10,"S","A",41,-2,68,-16,260,-1,307,-62,400,-14,-73,9,-1.10,0,-0.353,"MWC","WAC"
+
+------
+Site: T1 DoY: 258
+T1: Kansas
+$VAR1 = {
+          'd_to' => '2.7',
+          'd_pen_yds' => '57.9',
+          'games' => 13,
+          'd_pass_yds' => '222.5',
+          'o_rush_yds' => '188.8',
+          'ppg' => '42.8',
+          'wins' => 12,
+          'losses' => '1',
+          'o_to' => '1.1',
+          'o_pen_yds' => '39.1',
+          'o_pass_yds' => '291.0',
+          'conference' => 'Big 12',
+          'opp_ppg' => '16.4',
+          'last_game' => 0,
+          'd_rush_yds' => '94.8'
+        };
+T2: Toledo
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '44.8',
+          'games' => 12,
+          'd_pass_yds' => '229.2',
+          'o_rush_yds' => '209.2',
+          'ppg' => '32.9',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.1',
+          'o_pen_yds' => '64.0',
+          'o_pass_yds' => '239.3',
+          'conference' => 'MAC',
+          'opp_ppg' => '39.2',
+          'last_game' => 0,
+          'd_rush_yds' => '214.9'
+        };
+T1_POINT_DIFF: 32
+T2_POINT_DIFF: -32
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 82
+T2_O_SCORE_SUM: 49
+T1_O_SCORE_DIFF: 3
+T2_O_SCORE_DIFF: 16
+T1_D_SCORE_SUM: 49
+T2_D_SCORE_SUM: 82
+T1_D_SCORE_DIFF: -16
+T2_D_SCORE_DIFF: -3
+T1_O_RUSH_SUM: 403
+T2_O_RUSH_SUM: 304
+T1_O_RUSH_DIFF: -26
+T2_O_RUSH_DIFF: 114
+T1_D_RUSH_SUM: 304
+T2_D_RUSH_SUM: 403
+T1_D_RUSH_DIFF: -114
+T2_D_RUSH_DIFF: 26
+T1_O_PASS_SUM: 520
+T2_O_PASS_SUM: 461
+T1_O_PASS_DIFF: 61
+T2_O_PASS_DIFF: 16
+T1_D_PASS_SUM: 461
+T2_D_PASS_SUM: 520
+T1_D_PASS_DIFF: -16
+T2_D_PASS_DIFF: -61
+T1_PEN_DIFF: -11
+T2_PEN_DIFF: 11
+T1_TO_DIFF: 1.50
+T2_TO_DIFF: -1.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.506
+T2_WIN_DIFF: -0.506
+T1_DATA: 32,"S","H",82,3,49,-16,403,-26,304,-114,520,61,-16,-11,1.50,0,0.506,"Big 12","MAC"
+T2_DATA: -32,"S","A",49,16,82,-3,304,114,403,26,461,16,-61,11,-1.50,0,-0.506,"MAC","Big 12"
+
+------
+Site: T2 DoY: 258
+T1: Mississippi State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '53.5',
+          'games' => 13,
+          'd_pass_yds' => '174.9',
+          'o_rush_yds' => '137.2',
+          'ppg' => '21.5',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '2.2',
+          'o_pen_yds' => '52.3',
+          'o_pass_yds' => '159.9',
+          'conference' => 'SEC',
+          'opp_ppg' => '23.2',
+          'last_game' => 0,
+          'd_rush_yds' => '156.8'
+        };
+T2: Auburn
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '55.0',
+          'games' => 13,
+          'd_pass_yds' => '173.2',
+          'o_rush_yds' => '156.9',
+          'ppg' => '24.2',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.8',
+          'o_pen_yds' => '47.6',
+          'o_pass_yds' => '178.2',
+          'conference' => 'SEC',
+          'opp_ppg' => '16.9',
+          'last_game' => 0,
+          'd_rush_yds' => '124.7'
+        };
+T1_POINT_DIFF: 5
+T2_POINT_DIFF: -5
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 38
+T2_O_SCORE_SUM: 47
+T1_O_SCORE_DIFF: 4
+T2_O_SCORE_DIFF: 1
+T1_D_SCORE_SUM: 47
+T2_D_SCORE_SUM: 38
+T1_D_SCORE_DIFF: -1
+T2_D_SCORE_DIFF: -4
+T1_O_RUSH_SUM: 261
+T2_O_RUSH_SUM: 313
+T1_O_RUSH_DIFF: 12
+T2_O_RUSH_DIFF: 0
+T1_D_RUSH_SUM: 313
+T2_D_RUSH_SUM: 261
+T1_D_RUSH_DIFF: 0
+T2_D_RUSH_DIFF: -12
+T1_O_PASS_SUM: 333
+T2_O_PASS_SUM: 353
+T1_O_PASS_DIFF: -13
+T2_O_PASS_DIFF: 3
+T1_D_PASS_SUM: 353
+T2_D_PASS_SUM: 333
+T1_D_PASS_DIFF: -3
+T2_D_PASS_DIFF: 13
+T1_PEN_DIFF: 3
+T2_PEN_DIFF: -3
+T1_TO_DIFF: 0.00
+T2_TO_DIFF: 0.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.077
+T2_WIN_DIFF: 0.077
+T1_DATA: 5,"S","A",38,4,47,-1,261,12,313,0,333,-13,-3,3,0.00,0,-0.077,"SEC","SEC"
+T2_DATA: -5,"S","H",47,1,38,-4,313,0,261,-12,353,3,13,-3,0.00,0,0.077,"SEC","SEC"
+
+------
+Site: T1 DoY: 258
+T1: Missouri
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '55.6',
+          'games' => 14,
+          'd_pass_yds' => '256.9',
+          'o_rush_yds' => '176.2',
+          'ppg' => '39.9',
+          'wins' => 12,
+          'losses' => '2',
+          'o_to' => '1.4',
+          'o_pen_yds' => '46.3',
+          'o_pass_yds' => '314.1',
+          'conference' => 'Big 12',
+          'opp_ppg' => '23.3',
+          'last_game' => 0,
+          'd_rush_yds' => '122.1'
+        };
+T2: Western Michigan
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '48.8',
+          'games' => 12,
+          'd_pass_yds' => '220.2',
+          'o_rush_yds' => '130.4',
+          'ppg' => '26.9',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.4',
+          'o_pen_yds' => '65.4',
+          'o_pass_yds' => '267.6',
+          'conference' => 'MAC',
+          'opp_ppg' => '28.9',
+          'last_game' => 0,
+          'd_rush_yds' => '179.1'
+        };
+T1_POINT_DIFF: 28
+T2_POINT_DIFF: -28
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 68
+T2_O_SCORE_SUM: 50
+T1_O_SCORE_DIFF: 11
+T2_O_SCORE_DIFF: 3
+T1_D_SCORE_SUM: 50
+T2_D_SCORE_SUM: 68
+T1_D_SCORE_DIFF: -3
+T2_D_SCORE_DIFF: -11
+T1_O_RUSH_SUM: 355
+T2_O_RUSH_SUM: 252
+T1_O_RUSH_DIFF: -2
+T2_O_RUSH_DIFF: 8
+T1_D_RUSH_SUM: 252
+T2_D_RUSH_SUM: 355
+T1_D_RUSH_DIFF: -8
+T2_D_RUSH_DIFF: 2
+T1_O_PASS_SUM: 534
+T2_O_PASS_SUM: 524
+T1_O_PASS_DIFF: 93
+T2_O_PASS_DIFF: 10
+T1_D_PASS_SUM: 524
+T2_D_PASS_SUM: 534
+T1_D_PASS_DIFF: -10
+T2_D_PASS_DIFF: -93
+T1_PEN_DIFF: -12
+T2_PEN_DIFF: 12
+T1_TO_DIFF: 1.40
+T2_TO_DIFF: -1.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.440
+T2_WIN_DIFF: -0.440
+T1_DATA: 28,"S","H",68,11,50,-3,355,-2,252,-8,534,93,-10,-12,1.40,0,0.440,"Big 12","MAC"
+T2_DATA: -28,"S","A",50,3,68,-11,252,8,355,2,524,10,-93,12,-1.40,0,-0.440,"MAC","Big 12"
+
+------
+Site: T2 DoY: 258
+T1: New Mexico
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '47.2',
+          'games' => 13,
+          'd_pass_yds' => '197.4',
+          'o_rush_yds' => '135.9',
+          'ppg' => '24.7',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.9',
+          'o_pen_yds' => '52.9',
+          'o_pass_yds' => '236.2',
+          'conference' => 'MWC',
+          'opp_ppg' => '19.0',
+          'last_game' => 0,
+          'd_rush_yds' => '122.5'
+        };
+T2: Arizona
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '63.3',
+          'games' => 12,
+          'd_pass_yds' => '234.2',
+          'o_rush_yds' => '76.8',
+          'ppg' => '28.0',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.1',
+          'o_pen_yds' => '53.0',
+          'o_pass_yds' => '308.5',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '26.8',
+          'last_game' => 0,
+          'd_rush_yds' => '138.0'
+        };
+T1_POINT_DIFF: 2
+T2_POINT_DIFF: -2
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 51
+T2_O_SCORE_SUM: 47
+T1_O_SCORE_DIFF: -2
+T2_O_SCORE_DIFF: 9
+T1_D_SCORE_SUM: 47
+T2_D_SCORE_SUM: 51
+T1_D_SCORE_DIFF: -9
+T2_D_SCORE_DIFF: 2
+T1_O_RUSH_SUM: 273
+T2_O_RUSH_SUM: 199
+T1_O_RUSH_DIFF: -2
+T2_O_RUSH_DIFF: -45
+T1_D_RUSH_SUM: 199
+T2_D_RUSH_SUM: 273
+T1_D_RUSH_DIFF: 45
+T2_D_RUSH_DIFF: 2
+T1_O_PASS_SUM: 470
+T2_O_PASS_SUM: 505
+T1_O_PASS_DIFF: 2
+T2_O_PASS_DIFF: 111
+T1_D_PASS_SUM: 505
+T2_D_PASS_SUM: 470
+T1_D_PASS_DIFF: -111
+T2_D_PASS_DIFF: -2
+T1_PEN_DIFF: -16
+T2_PEN_DIFF: 16
+T1_TO_DIFF: 0.10
+T2_TO_DIFF: -0.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.276
+T2_WIN_DIFF: -0.276
+T1_DATA: 2,"S","A",51,-2,47,-9,273,-2,199,45,470,2,-111,-16,0.10,0,0.276,"MWC","Pac-10"
+T2_DATA: -2,"S","H",47,9,51,2,199,-45,273,2,505,111,-2,16,-0.10,0,-0.276,"Pac-10","MWC"
+
+------
+Site: T1 DoY: 265
+T1: Arizona State
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '61.5',
+          'games' => 13,
+          'd_pass_yds' => '228.9',
+          'o_rush_yds' => '137.0',
+          'ppg' => '32.3',
+          'wins' => 10,
+          'losses' => '3',
+          'o_to' => '1.8',
+          'o_pen_yds' => '56.8',
+          'o_pass_yds' => '262.6',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '22.5',
+          'last_game' => 0,
+          'd_rush_yds' => '116.2'
+        };
+T2: Oregon State
+$VAR1 = {
+          'd_to' => '2.6',
+          'd_pen_yds' => '49.8',
+          'games' => 13,
+          'd_pass_yds' => '235.5',
+          'o_rush_yds' => '174.9',
+          'ppg' => '27.8',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.6',
+          'o_pen_yds' => '58.2',
+          'o_pass_yds' => '196.7',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '22.6',
+          'last_game' => 0,
+          'd_rush_yds' => '70.6'
+        };
+T1_POINT_DIFF: 12
+T2_POINT_DIFF: -12
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 54
+T2_O_SCORE_SUM: 50
+T1_O_SCORE_DIFF: 9
+T2_O_SCORE_DIFF: 5
+T1_D_SCORE_SUM: 50
+T2_D_SCORE_SUM: 54
+T1_D_SCORE_DIFF: -5
+T2_D_SCORE_DIFF: -9
+T1_O_RUSH_SUM: 207
+T2_O_RUSH_SUM: 291
+T1_O_RUSH_DIFF: 66
+T2_O_RUSH_DIFF: 58
+T1_D_RUSH_SUM: 291
+T2_D_RUSH_SUM: 207
+T1_D_RUSH_DIFF: -58
+T2_D_RUSH_DIFF: -66
+T1_O_PASS_SUM: 498
+T2_O_PASS_SUM: 425
+T1_O_PASS_DIFF: 27
+T2_O_PASS_DIFF: -32
+T1_D_PASS_SUM: 425
+T2_D_PASS_SUM: 498
+T1_D_PASS_DIFF: 32
+T2_D_PASS_DIFF: -27
+T1_PEN_DIFF: 10
+T2_PEN_DIFF: -10
+T1_TO_DIFF: 0.20
+T2_TO_DIFF: -0.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.077
+T2_WIN_DIFF: -0.077
+T1_DATA: 12,"S","H",54,9,50,-5,207,66,291,-58,498,27,32,10,0.20,0,0.077,"Pac-10","Pac-10"
+T2_DATA: -12,"S","A",50,5,54,-9,291,58,207,-66,425,-32,-27,-10,-0.20,0,-0.077,"Pac-10","Pac-10"
+
+------
+Site: T1 DoY: 265
+T1: Bowling Green State
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '51.5',
+          'games' => 13,
+          'd_pass_yds' => '216.6',
+          'o_rush_yds' => '123.6',
+          'ppg' => '30.2',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '2.0',
+          'o_pen_yds' => '56.2',
+          'o_pass_yds' => '278.8',
+          'conference' => 'MAC',
+          'opp_ppg' => '32.1',
+          'last_game' => 0,
+          'd_rush_yds' => '207.8'
+        };
+T2: Temple
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '54.8',
+          'games' => 12,
+          'd_pass_yds' => '198.8',
+          'o_rush_yds' => '93.3',
+          'ppg' => '16.4',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '2.2',
+          'o_pen_yds' => '48.5',
+          'o_pass_yds' => '207.6',
+          'conference' => 'MAC',
+          'opp_ppg' => '26.2',
+          'last_game' => 0,
+          'd_rush_yds' => '164.7'
+        };
+T1_POINT_DIFF: 13
+T2_POINT_DIFF: -13
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 56
+T2_O_SCORE_SUM: 48
+T1_O_SCORE_DIFF: 4
+T2_O_SCORE_DIFF: -15
+T1_D_SCORE_SUM: 48
+T2_D_SCORE_SUM: 56
+T1_D_SCORE_DIFF: 15
+T2_D_SCORE_DIFF: -4
+T1_O_RUSH_SUM: 288
+T2_O_RUSH_SUM: 301
+T1_O_RUSH_DIFF: -41
+T2_O_RUSH_DIFF: -114
+T1_D_RUSH_SUM: 301
+T2_D_RUSH_SUM: 288
+T1_D_RUSH_DIFF: 114
+T2_D_RUSH_DIFF: 41
+T1_O_PASS_SUM: 477
+T2_O_PASS_SUM: 424
+T1_O_PASS_DIFF: 80
+T2_O_PASS_DIFF: -9
+T1_D_PASS_SUM: 424
+T2_D_PASS_SUM: 477
+T1_D_PASS_DIFF: 9
+T2_D_PASS_DIFF: -80
+T1_PEN_DIFF: 4
+T2_PEN_DIFF: -4
+T1_TO_DIFF: 0.00
+T2_TO_DIFF: 0.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.282
+T2_WIN_DIFF: -0.282
+T1_DATA: 13,"S","H",56,4,48,15,288,-41,301,114,477,80,9,4,0.00,0,0.282,"MAC","MAC"
+T2_DATA: -13,"S","A",48,-15,56,-4,301,-114,288,41,424,-9,-80,-4,0.00,0,-0.282,"MAC","MAC"
+
+------
+Site: T1 DoY: 265
+T1: Colorado
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '52.1',
+          'games' => 13,
+          'd_pass_yds' => '261.3',
+          'o_rush_yds' => '144.2',
+          'ppg' => '27.3',
+          'wins' => 6,
+          'losses' => '7',
+          'o_to' => '2.1',
+          'o_pen_yds' => '55.8',
+          'o_pass_yds' => '234.3',
+          'conference' => 'Big 12',
+          'opp_ppg' => '29.5',
+          'last_game' => 0,
+          'd_rush_yds' => '128.0'
+        };
+T2: Miami (OH)
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '53.6',
+          'games' => 13,
+          'd_pass_yds' => '206.8',
+          'o_rush_yds' => '130.7',
+          'ppg' => '19.2',
+          'wins' => 6,
+          'losses' => '7',
+          'o_to' => '2.2',
+          'o_pen_yds' => '47.1',
+          'o_pass_yds' => '236.2',
+          'conference' => 'MAC',
+          'opp_ppg' => '25.6',
+          'last_game' => 0,
+          'd_rush_yds' => '168.5'
+        };
+T1_POINT_DIFF: 42
+T2_POINT_DIFF: -42
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 52
+T2_O_SCORE_SUM: 48
+T1_O_SCORE_DIFF: 1
+T2_O_SCORE_DIFF: -10
+T1_D_SCORE_SUM: 48
+T2_D_SCORE_SUM: 52
+T1_D_SCORE_DIFF: 10
+T2_D_SCORE_DIFF: -1
+T1_O_RUSH_SUM: 312
+T2_O_RUSH_SUM: 258
+T1_O_RUSH_DIFF: -24
+T2_O_RUSH_DIFF: 2
+T1_D_RUSH_SUM: 258
+T2_D_RUSH_SUM: 312
+T1_D_RUSH_DIFF: -2
+T2_D_RUSH_DIFF: 24
+T1_O_PASS_SUM: 441
+T2_O_PASS_SUM: 497
+T1_O_PASS_DIFF: 27
+T2_O_PASS_DIFF: -25
+T1_D_PASS_SUM: 497
+T2_D_PASS_SUM: 441
+T1_D_PASS_DIFF: 25
+T2_D_PASS_DIFF: -27
+T1_PEN_DIFF: 7
+T2_PEN_DIFF: -7
+T1_TO_DIFF: 0.00
+T2_TO_DIFF: -0.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 42,"S","H",52,1,48,10,312,-24,258,-2,441,27,25,7,0.00,0,0.000,"Big 12","MAC"
+T2_DATA: -42,"S","A",48,-10,52,-1,258,2,312,24,497,-25,-27,-7,-0.00,0,0.000,"MAC","Big 12"
+
+------
+Site: T1 DoY: 265
+T1: Houston
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '51.8',
+          'games' => 13,
+          'd_pass_yds' => '225.8',
+          'o_rush_yds' => '223.9',
+          'ppg' => '34.5',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '2.3',
+          'o_pen_yds' => '67.7',
+          'o_pass_yds' => '278.0',
+          'conference' => 'CUSA',
+          'opp_ppg' => '29.2',
+          'last_game' => 0,
+          'd_rush_yds' => '139.8'
+        };
+T2: Colorado State
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '46.0',
+          'games' => 12,
+          'd_pass_yds' => '207.9',
+          'o_rush_yds' => '166.7',
+          'ppg' => '25.3',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '1.8',
+          'o_pen_yds' => '43.4',
+          'o_pass_yds' => '212.2',
+          'conference' => 'MWC',
+          'opp_ppg' => '30.8',
+          'last_game' => 0,
+          'd_rush_yds' => '207.3'
+        };
+T1_POINT_DIFF: 11
+T2_POINT_DIFF: -11
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 65
+T2_O_SCORE_SUM: 54
+T1_O_SCORE_DIFF: 3
+T2_O_SCORE_DIFF: -3
+T1_D_SCORE_SUM: 54
+T2_D_SCORE_SUM: 65
+T1_D_SCORE_DIFF: 3
+T2_D_SCORE_DIFF: -3
+T1_O_RUSH_SUM: 431
+T2_O_RUSH_SUM: 306
+T1_O_RUSH_DIFF: 16
+T2_O_RUSH_DIFF: 26
+T1_D_RUSH_SUM: 306
+T2_D_RUSH_SUM: 431
+T1_D_RUSH_DIFF: -26
+T2_D_RUSH_DIFF: -16
+T1_O_PASS_SUM: 485
+T2_O_PASS_SUM: 438
+T1_O_PASS_DIFF: 70
+T2_O_PASS_DIFF: -13
+T1_D_PASS_SUM: 438
+T2_D_PASS_SUM: 485
+T1_D_PASS_DIFF: 13
+T2_D_PASS_DIFF: -70
+T1_PEN_DIFF: 30
+T2_PEN_DIFF: -30
+T1_TO_DIFF: -0.50
+T2_TO_DIFF: 0.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.365
+T2_WIN_DIFF: -0.365
+T1_DATA: 11,"S","H",65,3,54,3,431,16,306,-26,485,70,13,30,-0.50,0,0.365,"CUSA","MWC"
+T2_DATA: -11,"S","A",54,-3,65,-3,306,26,431,-16,438,-13,-70,-30,0.50,0,-0.365,"MWC","CUSA"
+
+------
+Site: T2 DoY: 265
+T1: Illinois
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '47.3',
+          'games' => 13,
+          'd_pass_yds' => '244.6',
+          'o_rush_yds' => '256.8',
+          'ppg' => '27.8',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.1',
+          'o_pen_yds' => '48.9',
+          'o_pass_yds' => '168.2',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '21.8',
+          'last_game' => 0,
+          'd_rush_yds' => '132.2'
+        };
+T2: Indiana
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '62.6',
+          'games' => 13,
+          'd_pass_yds' => '243.7',
+          'o_rush_yds' => '157.4',
+          'ppg' => '31.7',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '2.2',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '236.4',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '28.5',
+          'last_game' => 0,
+          'd_rush_yds' => '159.7'
+        };
+T1_POINT_DIFF: 13
+T2_POINT_DIFF: -13
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 56
+T2_O_SCORE_SUM: 53
+T1_O_SCORE_DIFF: 0
+T2_O_SCORE_DIFF: 9
+T1_D_SCORE_SUM: 53
+T2_D_SCORE_SUM: 56
+T1_D_SCORE_DIFF: -9
+T2_D_SCORE_DIFF: 0
+T1_O_RUSH_SUM: 416
+T2_O_RUSH_SUM: 289
+T1_O_RUSH_DIFF: 97
+T2_O_RUSH_DIFF: 25
+T1_D_RUSH_SUM: 289
+T2_D_RUSH_SUM: 416
+T1_D_RUSH_DIFF: -25
+T2_D_RUSH_DIFF: -97
+T1_O_PASS_SUM: 411
+T2_O_PASS_SUM: 481
+T1_O_PASS_DIFF: -75
+T2_O_PASS_DIFF: -8
+T1_D_PASS_SUM: 481
+T2_D_PASS_SUM: 411
+T1_D_PASS_DIFF: 8
+T2_D_PASS_DIFF: 75
+T1_PEN_DIFF: -20
+T2_PEN_DIFF: 20
+T1_TO_DIFF: -0.40
+T2_TO_DIFF: 0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.154
+T2_WIN_DIFF: -0.154
+T1_DATA: 13,"S","A",56,0,53,-9,416,97,289,-25,411,-75,8,-20,-0.40,0,0.154,"Big Ten","Big Ten"
+T2_DATA: -13,"S","H",53,9,56,0,289,25,416,-97,481,-8,75,20,0.40,0,-0.154,"Big Ten","Big Ten"
+
+------
+Site: T2 DoY: 265
+T1: Michigan State
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '41.7',
+          'games' => 13,
+          'd_pass_yds' => '219.7',
+          'o_rush_yds' => '198.2',
+          'ppg' => '33.1',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '1.4',
+          'o_pen_yds' => '48.4',
+          'o_pass_yds' => '218.6',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '26.6',
+          'last_game' => 0,
+          'd_rush_yds' => '125.8'
+        };
+T2: Notre Dame
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '61.8',
+          'games' => 12,
+          'd_pass_yds' => '161.6',
+          'o_rush_yds' => '75.3',
+          'ppg' => '16.4',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '2.1',
+          'o_pen_yds' => '57.8',
+          'o_pass_yds' => '167.0',
+          'conference' => 'Ind',
+          'opp_ppg' => '28.8',
+          'last_game' => 0,
+          'd_rush_yds' => '195.4'
+        };
+T1_POINT_DIFF: 17
+T2_POINT_DIFF: -17
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 61
+T2_O_SCORE_SUM: 43
+T1_O_SCORE_DIFF: 4
+T2_O_SCORE_DIFF: -10
+T1_D_SCORE_SUM: 43
+T2_D_SCORE_SUM: 61
+T1_D_SCORE_DIFF: 10
+T2_D_SCORE_DIFF: -4
+T1_O_RUSH_SUM: 393
+T2_O_RUSH_SUM: 201
+T1_O_RUSH_DIFF: 2
+T2_O_RUSH_DIFF: -50
+T1_D_RUSH_SUM: 201
+T2_D_RUSH_SUM: 393
+T1_D_RUSH_DIFF: 50
+T2_D_RUSH_DIFF: -2
+T1_O_PASS_SUM: 380
+T2_O_PASS_SUM: 386
+T1_O_PASS_DIFF: 57
+T2_O_PASS_DIFF: -52
+T1_D_PASS_SUM: 386
+T2_D_PASS_SUM: 380
+T1_D_PASS_DIFF: 52
+T2_D_PASS_DIFF: -57
+T1_PEN_DIFF: -29
+T2_PEN_DIFF: 29
+T1_TO_DIFF: 0.10
+T2_TO_DIFF: -0.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.288
+T2_WIN_DIFF: -0.288
+T1_DATA: 17,"S","A",61,4,43,10,393,2,201,50,380,57,52,-29,0.10,0,0.288,"Big Ten","Ind"
+T2_DATA: -17,"S","H",43,-10,61,-4,201,-50,393,-2,386,-52,-57,29,-0.10,0,-0.288,"Ind","Big Ten"
+
+------
+Site: T1 DoY: 265
+T1: Nevada-Las Vegas
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '61.2',
+          'games' => 12,
+          'd_pass_yds' => '203.3',
+          'o_rush_yds' => '140.7',
+          'ppg' => '18.2',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '1.8',
+          'o_pen_yds' => '61.2',
+          'o_pass_yds' => '212.5',
+          'conference' => 'MWC',
+          'opp_ppg' => '28.6',
+          'last_game' => 0,
+          'd_rush_yds' => '183.6'
+        };
+T2: Utah
+$VAR1 = {
+          'd_to' => '2.5',
+          'd_pen_yds' => '47.5',
+          'games' => 13,
+          'd_pass_yds' => '184.2',
+          'o_rush_yds' => '167.5',
+          'ppg' => '26.2',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.7',
+          'o_pen_yds' => '58.6',
+          'o_pass_yds' => '202.2',
+          'conference' => 'MWC',
+          'opp_ppg' => '16.8',
+          'last_game' => 0,
+          'd_rush_yds' => '144.3'
+        };
+T1_POINT_DIFF: 27
+T2_POINT_DIFF: -27
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 35
+T2_O_SCORE_SUM: 54
+T1_O_SCORE_DIFF: 1
+T2_O_SCORE_DIFF: -2
+T1_D_SCORE_SUM: 54
+T2_D_SCORE_SUM: 35
+T1_D_SCORE_DIFF: 2
+T2_D_SCORE_DIFF: -1
+T1_O_RUSH_SUM: 285
+T2_O_RUSH_SUM: 351
+T1_O_RUSH_DIFF: -3
+T2_O_RUSH_DIFF: -16
+T1_D_RUSH_SUM: 351
+T2_D_RUSH_SUM: 285
+T1_D_RUSH_DIFF: 16
+T2_D_RUSH_DIFF: 3
+T1_O_PASS_SUM: 396
+T2_O_PASS_SUM: 405
+T1_O_PASS_DIFF: 28
+T2_O_PASS_DIFF: -1
+T1_D_PASS_SUM: 405
+T2_D_PASS_SUM: 396
+T1_D_PASS_DIFF: 1
+T2_D_PASS_DIFF: -28
+T1_PEN_DIFF: 16
+T2_PEN_DIFF: -16
+T1_TO_DIFF: -0.80
+T2_TO_DIFF: 0.80
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.526
+T2_WIN_DIFF: 0.526
+T1_DATA: 27,"S","H",35,1,54,2,285,-3,351,16,396,28,1,16,-0.80,0,-0.526,"MWC","MWC"
+T2_DATA: -27,"S","A",54,-2,35,-1,351,-16,285,3,405,-1,-28,-16,0.80,0,0.526,"MWC","MWC"
+
+------
+Site: T1 DoY: 265
+T1: Ohio State
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '37.2',
+          'games' => 13,
+          'd_pass_yds' => '150.2',
+          'o_rush_yds' => '196.9',
+          'ppg' => '31.4',
+          'wins' => 11,
+          'losses' => '2',
+          'o_to' => '1.7',
+          'o_pen_yds' => '44.2',
+          'o_pass_yds' => '196.8',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '12.8',
+          'last_game' => 0,
+          'd_rush_yds' => '82.8'
+        };
+T2: Northwestern
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '56.8',
+          'games' => 12,
+          'd_pass_yds' => '243.4',
+          'o_rush_yds' => '119.8',
+          'ppg' => '25.8',
+          'wins' => 6,
+          'losses' => '6',
+          'o_to' => '2.1',
+          'o_pen_yds' => '46.9',
+          'o_pass_yds' => '307.9',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '31.0',
+          'last_game' => 0,
+          'd_rush_yds' => '167.1'
+        };
+T1_POINT_DIFF: 51
+T2_POINT_DIFF: -51
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 62
+T2_O_SCORE_SUM: 38
+T1_O_SCORE_DIFF: 0
+T2_O_SCORE_DIFF: 13
+T1_D_SCORE_SUM: 38
+T2_D_SCORE_SUM: 62
+T1_D_SCORE_DIFF: -13
+T2_D_SCORE_DIFF: 0
+T1_O_RUSH_SUM: 364
+T2_O_RUSH_SUM: 202
+T1_O_RUSH_DIFF: 29
+T2_O_RUSH_DIFF: 37
+T1_D_RUSH_SUM: 202
+T2_D_RUSH_SUM: 364
+T1_D_RUSH_DIFF: -37
+T2_D_RUSH_DIFF: -29
+T1_O_PASS_SUM: 440
+T2_O_PASS_SUM: 458
+T1_O_PASS_DIFF: -46
+T2_O_PASS_DIFF: 157
+T1_D_PASS_SUM: 458
+T2_D_PASS_SUM: 440
+T1_D_PASS_DIFF: -157
+T2_D_PASS_DIFF: 46
+T1_PEN_DIFF: -22
+T2_PEN_DIFF: 22
+T1_TO_DIFF: 0.60
+T2_TO_DIFF: -0.60
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.346
+T2_WIN_DIFF: -0.346
+T1_DATA: 51,"S","H",62,0,38,-13,364,29,202,-37,440,-46,-157,-22,0.60,0,0.346,"Big Ten","Big Ten"
+T2_DATA: -51,"S","A",38,13,62,0,202,37,364,-29,458,157,46,22,-0.60,0,-0.346,"Big Ten","Big Ten"
+
+------
+Site: T1 DoY: 265
+T1: West Virginia
+$VAR1 = {
+          'd_to' => '2.6',
+          'd_pen_yds' => '56.7',
+          'games' => 13,
+          'd_pass_yds' => '188.8',
+          'o_rush_yds' => '297.2',
+          'ppg' => '39.6',
+          'wins' => 11,
+          'losses' => '2',
+          'o_to' => '1.6',
+          'o_pen_yds' => '52.8',
+          'o_pass_yds' => '159.0',
+          'conference' => 'Big East',
+          'opp_ppg' => '18.1',
+          'last_game' => 0,
+          'd_rush_yds' => '112.9'
+        };
+T2: East Carolina
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '53.8',
+          'games' => 13,
+          'd_pass_yds' => '289.0',
+          'o_rush_yds' => '182.9',
+          'ppg' => '31.0',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '1.1',
+          'o_pen_yds' => '63.6',
+          'o_pass_yds' => '202.5',
+          'conference' => 'CUSA',
+          'opp_ppg' => '30.4',
+          'last_game' => 0,
+          'd_rush_yds' => '142.2'
+        };
+T1_POINT_DIFF: 41
+T2_POINT_DIFF: -41
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 70
+T2_O_SCORE_SUM: 49
+T1_O_SCORE_DIFF: 9
+T2_O_SCORE_DIFF: 12
+T1_D_SCORE_SUM: 49
+T2_D_SCORE_SUM: 70
+T1_D_SCORE_DIFF: -12
+T2_D_SCORE_DIFF: -9
+T1_O_RUSH_SUM: 439
+T2_O_RUSH_SUM: 295
+T1_O_RUSH_DIFF: 155
+T2_O_RUSH_DIFF: 70
+T1_D_RUSH_SUM: 295
+T2_D_RUSH_SUM: 439
+T1_D_RUSH_DIFF: -70
+T2_D_RUSH_DIFF: -155
+T1_O_PASS_SUM: 448
+T2_O_PASS_SUM: 391
+T1_O_PASS_DIFF: -130
+T2_O_PASS_DIFF: 13
+T1_D_PASS_SUM: 391
+T2_D_PASS_SUM: 448
+T1_D_PASS_DIFF: -13
+T2_D_PASS_DIFF: 130
+T1_PEN_DIFF: -7
+T2_PEN_DIFF: 7
+T1_TO_DIFF: -0.30
+T2_TO_DIFF: 0.30
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.231
+T2_WIN_DIFF: -0.231
+T1_DATA: 41,"S","H",70,9,49,-12,439,155,295,-70,448,-130,-13,-7,-0.30,0,0.231,"Big East","CUSA"
+T2_DATA: -41,"S","A",49,12,70,-9,295,70,439,-155,391,13,130,7,0.30,0,-0.231,"CUSA","Big East"
+
+------
+Site: T1 DoY: 272
+T1: Central Michigan
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '49.3',
+          'games' => 14,
+          'd_pass_yds' => '303.5',
+          'o_rush_yds' => '180.0',
+          'ppg' => '34.8',
+          'wins' => 8,
+          'losses' => '6',
+          'o_to' => '1.7',
+          'o_pen_yds' => '59.6',
+          'o_pass_yds' => '267.0',
+          'conference' => 'MAC',
+          'opp_ppg' => '36.9',
+          'last_game' => 0,
+          'd_rush_yds' => '156.5'
+        };
+T2: Northern Illinois
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '59.0',
+          'games' => 12,
+          'd_pass_yds' => '224.2',
+          'o_rush_yds' => '135.5',
+          'ppg' => '19.1',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '2.7',
+          'o_pen_yds' => '46.6',
+          'o_pass_yds' => '202.4',
+          'conference' => 'MAC',
+          'opp_ppg' => '30.8',
+          'last_game' => 0,
+          'd_rush_yds' => '210.1'
+        };
+T1_POINT_DIFF: 25
+T2_POINT_DIFF: -25
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 65
+T2_O_SCORE_SUM: 56
+T1_O_SCORE_DIFF: 3
+T2_O_SCORE_DIFF: -17
+T1_D_SCORE_SUM: 56
+T2_D_SCORE_SUM: 65
+T1_D_SCORE_DIFF: 17
+T2_D_SCORE_DIFF: -3
+T1_O_RUSH_SUM: 390
+T2_O_RUSH_SUM: 292
+T1_O_RUSH_DIFF: -30
+T2_O_RUSH_DIFF: -21
+T1_D_RUSH_SUM: 292
+T2_D_RUSH_SUM: 390
+T1_D_RUSH_DIFF: 21
+T2_D_RUSH_DIFF: 30
+T1_O_PASS_SUM: 491
+T2_O_PASS_SUM: 505
+T1_O_PASS_DIFF: 42
+T2_O_PASS_DIFF: -101
+T1_D_PASS_SUM: 505
+T2_D_PASS_SUM: 491
+T1_D_PASS_DIFF: 101
+T2_D_PASS_DIFF: -42
+T1_PEN_DIFF: 3
+T2_PEN_DIFF: -3
+T1_TO_DIFF: 1.80
+T2_TO_DIFF: -1.80
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.405
+T2_WIN_DIFF: -0.405
+T1_DATA: 25,"S","H",65,3,56,17,390,-30,292,21,491,42,101,3,1.80,0,0.405,"MAC","MAC"
+T2_DATA: -25,"S","A",56,-17,65,-3,292,-21,390,30,505,-101,-42,-3,-1.80,0,-0.405,"MAC","MAC"
+
+------
+Site: T1 DoY: 272
+T1: Kentucky
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '56.7',
+          'games' => 13,
+          'd_pass_yds' => '206.1',
+          'o_rush_yds' => '155.5',
+          'ppg' => '36.5',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '2.2',
+          'o_pen_yds' => '55.2',
+          'o_pass_yds' => '287.9',
+          'conference' => 'SEC',
+          'opp_ppg' => '29.6',
+          'last_game' => 0,
+          'd_rush_yds' => '191.1'
+        };
+T2: Florida Atlantic
+$VAR1 = {
+          'd_to' => '2.5',
+          'd_pen_yds' => '62.3',
+          'games' => 13,
+          'd_pass_yds' => '240.9',
+          'o_rush_yds' => '126.0',
+          'ppg' => '31.2',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '1.2',
+          'o_pen_yds' => '51.8',
+          'o_pass_yds' => '291.1',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '33.2',
+          'last_game' => 0,
+          'd_rush_yds' => '174.7'
+        };
+T1_POINT_DIFF: 28
+T2_POINT_DIFF: -28
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 69
+T2_O_SCORE_SUM: 60
+T1_O_SCORE_DIFF: 3
+T2_O_SCORE_DIFF: 1
+T1_D_SCORE_SUM: 60
+T2_D_SCORE_SUM: 69
+T1_D_SCORE_DIFF: -1
+T2_D_SCORE_DIFF: -3
+T1_O_RUSH_SUM: 330
+T2_O_RUSH_SUM: 317
+T1_O_RUSH_DIFF: -19
+T2_O_RUSH_DIFF: -65
+T1_D_RUSH_SUM: 317
+T2_D_RUSH_SUM: 330
+T1_D_RUSH_DIFF: 65
+T2_D_RUSH_DIFF: 19
+T1_O_PASS_SUM: 528
+T2_O_PASS_SUM: 497
+T1_O_PASS_DIFF: 46
+T2_O_PASS_DIFF: 85
+T1_D_PASS_SUM: 497
+T2_D_PASS_SUM: 528
+T1_D_PASS_DIFF: -85
+T2_D_PASS_DIFF: -46
+T1_PEN_DIFF: -2
+T2_PEN_DIFF: 2
+T1_TO_DIFF: -1.40
+T2_TO_DIFF: 1.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 28,"S","H",69,3,60,-1,330,-19,317,65,528,46,-85,-2,-1.40,0,0.000,"SEC","Sun Belt"
+T2_DATA: -28,"S","A",60,1,69,-3,317,-65,330,19,497,85,-46,2,1.40,0,0.000,"Sun Belt","SEC"
+
+------
+Site: T2 DoY: 272
+T1: Louisiana State
+$VAR1 = {
+          'd_to' => '2.6',
+          'd_pen_yds' => '40.4',
+          'games' => 14,
+          'd_pass_yds' => '182.7',
+          'o_rush_yds' => '214.1',
+          'ppg' => '38.6',
+          'wins' => 12,
+          'losses' => '2',
+          'o_to' => '1.1',
+          'o_pen_yds' => '62.9',
+          'o_pass_yds' => '225.3',
+          'conference' => 'SEC',
+          'opp_ppg' => '19.9',
+          'last_game' => 0,
+          'd_rush_yds' => '106.1'
+        };
+T2: Tulane
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '58.2',
+          'games' => 12,
+          'd_pass_yds' => '287.7',
+          'o_rush_yds' => '201.0',
+          'ppg' => '24.4',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '1.8',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '194.9',
+          'conference' => 'CUSA',
+          'opp_ppg' => '31.2',
+          'last_game' => 0,
+          'd_rush_yds' => '132.6'
+        };
+T1_POINT_DIFF: 25
+T2_POINT_DIFF: -25
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 69
+T2_O_SCORE_SUM: 44
+T1_O_SCORE_DIFF: 7
+T2_O_SCORE_DIFF: 4
+T1_D_SCORE_SUM: 44
+T2_D_SCORE_SUM: 69
+T1_D_SCORE_DIFF: -4
+T2_D_SCORE_DIFF: -7
+T1_O_RUSH_SUM: 346
+T2_O_RUSH_SUM: 307
+T1_O_RUSH_DIFF: 81
+T2_O_RUSH_DIFF: 94
+T1_D_RUSH_SUM: 307
+T2_D_RUSH_SUM: 346
+T1_D_RUSH_DIFF: -94
+T2_D_RUSH_DIFF: -81
+T1_O_PASS_SUM: 513
+T2_O_PASS_SUM: 377
+T1_O_PASS_DIFF: -62
+T2_O_PASS_DIFF: 12
+T1_D_PASS_SUM: 377
+T2_D_PASS_SUM: 513
+T1_D_PASS_DIFF: -12
+T2_D_PASS_DIFF: 62
+T1_PEN_DIFF: -9
+T2_PEN_DIFF: 9
+T1_TO_DIFF: 1.70
+T2_TO_DIFF: -1.70
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.524
+T2_WIN_DIFF: -0.524
+T1_DATA: 25,"S","A",69,7,44,-4,346,81,307,-94,513,-62,-12,-9,1.70,0,0.524,"SEC","CUSA"
+T2_DATA: -25,"S","H",44,4,69,-7,307,94,346,-81,377,12,62,9,-1.70,0,-0.524,"CUSA","SEC"
+
+------
+Site: T1 DoY: 272
+T1: Purdue
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '49.4',
+          'games' => 13,
+          'd_pass_yds' => '240.2',
+          'o_rush_yds' => '128.8',
+          'ppg' => '34.3',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '2.0',
+          'o_pen_yds' => '48.3',
+          'o_pass_yds' => '307.2',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '26.5',
+          'last_game' => 0,
+          'd_rush_yds' => '148.9'
+        };
+T2: Notre Dame
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '61.8',
+          'games' => 12,
+          'd_pass_yds' => '161.6',
+          'o_rush_yds' => '75.3',
+          'ppg' => '16.4',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '2.1',
+          'o_pen_yds' => '57.8',
+          'o_pass_yds' => '167.0',
+          'conference' => 'Ind',
+          'opp_ppg' => '28.8',
+          'last_game' => 0,
+          'd_rush_yds' => '195.4'
+        };
+T1_POINT_DIFF: 14
+T2_POINT_DIFF: -14
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 63
+T2_O_SCORE_SUM: 42
+T1_O_SCORE_DIFF: 5
+T2_O_SCORE_DIFF: -10
+T1_D_SCORE_SUM: 42
+T2_D_SCORE_SUM: 63
+T1_D_SCORE_DIFF: 10
+T2_D_SCORE_DIFF: -5
+T1_O_RUSH_SUM: 324
+T2_O_RUSH_SUM: 224
+T1_O_RUSH_DIFF: -66
+T2_O_RUSH_DIFF: -73
+T1_D_RUSH_SUM: 224
+T2_D_RUSH_SUM: 324
+T1_D_RUSH_DIFF: 73
+T2_D_RUSH_DIFF: 66
+T1_O_PASS_SUM: 468
+T2_O_PASS_SUM: 407
+T1_O_PASS_DIFF: 145
+T2_O_PASS_DIFF: -73
+T1_D_PASS_SUM: 407
+T2_D_PASS_SUM: 468
+T1_D_PASS_DIFF: 73
+T2_D_PASS_DIFF: -145
+T1_PEN_DIFF: -21
+T2_PEN_DIFF: 21
+T1_TO_DIFF: 0.10
+T2_TO_DIFF: -0.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.365
+T2_WIN_DIFF: -0.365
+T1_DATA: 14,"S","H",63,5,42,10,324,-66,224,73,468,145,73,-21,0.10,0,0.365,"Big Ten","Ind"
+T2_DATA: -14,"S","A",42,-10,63,-5,224,-73,324,66,407,-73,-145,21,-0.10,0,-0.365,"Ind","Big Ten"
+
+------
+Site: T2 DoY: 272
+T1: Texas-El Paso
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '64.2',
+          'games' => 12,
+          'd_pass_yds' => '301.8',
+          'o_rush_yds' => '147.7',
+          'ppg' => '33.6',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '1.7',
+          'o_pen_yds' => '66.4',
+          'o_pass_yds' => '275.2',
+          'conference' => 'CUSA',
+          'opp_ppg' => '37.1',
+          'last_game' => 0,
+          'd_rush_yds' => '202.9'
+        };
+T2: Southern Methodist
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '69.3',
+          'games' => 12,
+          'd_pass_yds' => '301.4',
+          'o_rush_yds' => '170.2',
+          'ppg' => '28.3',
+          'wins' => 1,
+          'losses' => '11',
+          'o_to' => '2.6',
+          'o_pen_yds' => '69.4',
+          'o_pass_yds' => '252.1',
+          'conference' => 'CUSA',
+          'opp_ppg' => '39.8',
+          'last_game' => 0,
+          'd_rush_yds' => '197.3'
+        };
+T1_POINT_DIFF: 3
+T2_POINT_DIFF: -3
+T1_WHEN: "S"
+T2_WHEN: "S"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 73
+T2_O_SCORE_SUM: 65
+T1_O_SCORE_DIFF: -6
+T2_O_SCORE_DIFF: -8
+T1_D_SCORE_SUM: 65
+T2_D_SCORE_SUM: 73
+T1_D_SCORE_DIFF: 8
+T2_D_SCORE_DIFF: 6
+T1_O_RUSH_SUM: 345
+T2_O_RUSH_SUM: 373
+T1_O_RUSH_DIFF: -49
+T2_O_RUSH_DIFF: -32
+T1_D_RUSH_SUM: 373
+T2_D_RUSH_SUM: 345
+T1_D_RUSH_DIFF: 32
+T2_D_RUSH_DIFF: 49
+T1_O_PASS_SUM: 576
+T2_O_PASS_SUM: 553
+T1_O_PASS_DIFF: -26
+T2_O_PASS_DIFF: -49
+T1_D_PASS_SUM: 553
+T2_D_PASS_SUM: 576
+T1_D_PASS_DIFF: 49
+T2_D_PASS_DIFF: 26
+T1_PEN_DIFF: -8
+T2_PEN_DIFF: 8
+T1_TO_DIFF: 1.50
+T2_TO_DIFF: -1.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.250
+T2_WIN_DIFF: -0.250
+T1_DATA: 3,"S","A",73,-6,65,8,345,-49,373,32,576,-26,49,-8,1.50,0,0.250,"CUSA","CUSA"
+T2_DATA: -3,"S","H",65,-8,73,6,373,-32,345,49,553,-49,26,8,-1.50,0,-0.250,"CUSA","CUSA"
+
+------
+Site: T1 DoY: 279
+T1: Army
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '59.3',
+          'games' => 12,
+          'd_pass_yds' => '190.0',
+          'o_rush_yds' => '87.4',
+          'ppg' => '16.9',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '2.6',
+          'o_pen_yds' => '31.3',
+          'o_pass_yds' => '188.1',
+          'conference' => 'Ind',
+          'opp_ppg' => '30.3',
+          'last_game' => 0,
+          'd_rush_yds' => '233.5'
+        };
+T2: Tulane
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '58.2',
+          'games' => 12,
+          'd_pass_yds' => '287.7',
+          'o_rush_yds' => '201.0',
+          'ppg' => '24.4',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '1.8',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '194.9',
+          'conference' => 'CUSA',
+          'opp_ppg' => '31.2',
+          'last_game' => 0,
+          'd_rush_yds' => '132.6'
+        };
+T1_POINT_DIFF: 3
+T2_POINT_DIFF: -3
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 48
+T2_O_SCORE_SUM: 54
+T1_O_SCORE_DIFF: -14
+T2_O_SCORE_DIFF: -5
+T1_D_SCORE_SUM: 54
+T2_D_SCORE_SUM: 48
+T1_D_SCORE_DIFF: 5
+T2_D_SCORE_DIFF: 14
+T1_O_RUSH_SUM: 220
+T2_O_RUSH_SUM: 434
+T1_O_RUSH_DIFF: -45
+T2_O_RUSH_DIFF: -32
+T1_D_RUSH_SUM: 434
+T2_D_RUSH_SUM: 220
+T1_D_RUSH_DIFF: 32
+T2_D_RUSH_DIFF: 45
+T1_O_PASS_SUM: 475
+T2_O_PASS_SUM: 384
+T1_O_PASS_DIFF: -99
+T2_O_PASS_DIFF: 4
+T1_D_PASS_SUM: 384
+T2_D_PASS_SUM: 475
+T1_D_PASS_DIFF: -4
+T2_D_PASS_DIFF: 99
+T1_PEN_DIFF: -22
+T2_PEN_DIFF: 22
+T1_TO_DIFF: -0.60
+T2_TO_DIFF: 0.60
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.083
+T2_WIN_DIFF: 0.083
+T1_DATA: 3,"O","H",48,-14,54,5,220,-45,434,32,475,-99,-4,-22,-0.60,0,-0.083,"Ind","CUSA"
+T2_DATA: -3,"O","A",54,-5,48,14,434,-32,220,45,384,4,99,22,0.60,0,0.083,"CUSA","Ind"
+
+------
+Site: T1 DoY: 279
+T1: Penn State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '45.8',
+          'games' => 13,
+          'd_pass_yds' => '214.5',
+          'o_rush_yds' => '193.8',
+          'ppg' => '30.3',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.0',
+          'o_pen_yds' => '34.3',
+          'o_pass_yds' => '206.3',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '17.5',
+          'last_game' => 0,
+          'd_rush_yds' => '93.8'
+        };
+T2: Iowa
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '40.6',
+          'games' => 12,
+          'd_pass_yds' => '229.2',
+          'o_rush_yds' => '126.3',
+          'ppg' => '18.5',
+          'wins' => 6,
+          'losses' => '6',
+          'o_to' => '1.1',
+          'o_pen_yds' => '50.9',
+          'o_pass_yds' => '190.1',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '18.8',
+          'last_game' => 0,
+          'd_rush_yds' => '122.0'
+        };
+T1_POINT_DIFF: 20
+T2_POINT_DIFF: -20
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 49
+T2_O_SCORE_SUM: 36
+T1_O_SCORE_DIFF: 11
+T2_O_SCORE_DIFF: 1
+T1_D_SCORE_SUM: 36
+T2_D_SCORE_SUM: 49
+T1_D_SCORE_DIFF: -1
+T2_D_SCORE_DIFF: -11
+T1_O_RUSH_SUM: 315
+T2_O_RUSH_SUM: 220
+T1_O_RUSH_DIFF: 71
+T2_O_RUSH_DIFF: 32
+T1_D_RUSH_SUM: 220
+T2_D_RUSH_SUM: 315
+T1_D_RUSH_DIFF: -32
+T2_D_RUSH_DIFF: -71
+T1_O_PASS_SUM: 435
+T2_O_PASS_SUM: 404
+T1_O_PASS_DIFF: -22
+T2_O_PASS_DIFF: -24
+T1_D_PASS_SUM: 404
+T2_D_PASS_SUM: 435
+T1_D_PASS_DIFF: 24
+T2_D_PASS_DIFF: 22
+T1_PEN_DIFF: -11
+T2_PEN_DIFF: 11
+T1_TO_DIFF: -0.50
+T2_TO_DIFF: 0.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.192
+T2_WIN_DIFF: -0.192
+T1_DATA: 20,"O","H",49,11,36,-1,315,71,220,-32,435,-22,24,-11,-0.50,0,0.192,"Big Ten","Big Ten"
+T2_DATA: -20,"O","A",36,1,49,-11,220,32,315,-71,404,-24,22,11,0.50,0,-0.192,"Big Ten","Big Ten"
+
+------
+Site: T1 DoY: 279
+T1: Texas Tech
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '58.2',
+          'games' => 13,
+          'd_pass_yds' => '188.4',
+          'o_rush_yds' => '59.3',
+          'ppg' => '40.9',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.0',
+          'o_pen_yds' => '71.8',
+          'o_pass_yds' => '470.3',
+          'conference' => 'Big 12',
+          'opp_ppg' => '25.9',
+          'last_game' => 0,
+          'd_rush_yds' => '177.0'
+        };
+T2: Iowa State
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '52.0',
+          'games' => 12,
+          'd_pass_yds' => '254.3',
+          'o_rush_yds' => '123.7',
+          'ppg' => '18.2',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '2.1',
+          'o_pen_yds' => '42.4',
+          'o_pass_yds' => '203.3',
+          'conference' => 'Big 12',
+          'opp_ppg' => '31.8',
+          'last_game' => 0,
+          'd_rush_yds' => '136.1'
+        };
+T1_POINT_DIFF: 25
+T2_POINT_DIFF: -25
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 72
+T2_O_SCORE_SUM: 44
+T1_O_SCORE_DIFF: 9
+T2_O_SCORE_DIFF: -7
+T1_D_SCORE_SUM: 44
+T2_D_SCORE_SUM: 72
+T1_D_SCORE_DIFF: 7
+T2_D_SCORE_DIFF: -9
+T1_O_RUSH_SUM: 195
+T2_O_RUSH_SUM: 300
+T1_O_RUSH_DIFF: -76
+T2_O_RUSH_DIFF: -53
+T1_D_RUSH_SUM: 300
+T2_D_RUSH_SUM: 195
+T1_D_RUSH_DIFF: 53
+T2_D_RUSH_DIFF: 76
+T1_O_PASS_SUM: 724
+T2_O_PASS_SUM: 391
+T1_O_PASS_DIFF: 216
+T2_O_PASS_DIFF: 14
+T1_D_PASS_SUM: 391
+T2_D_PASS_SUM: 724
+T1_D_PASS_DIFF: -14
+T2_D_PASS_DIFF: -216
+T1_PEN_DIFF: 35
+T2_PEN_DIFF: -35
+T1_TO_DIFF: 0.20
+T2_TO_DIFF: -0.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.442
+T2_WIN_DIFF: -0.442
+T1_DATA: 25,"O","H",72,9,44,7,195,-76,300,53,724,216,-14,35,0.20,0,0.442,"Big 12","Big 12"
+T2_DATA: -25,"O","A",44,-7,72,-9,300,-53,195,76,391,14,-216,-35,-0.20,0,-0.442,"Big 12","Big 12"
+
+------
+Site: T2 DoY: 279
+T1: Virginia Tech
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '49.1',
+          'games' => 14,
+          'd_pass_yds' => '210.3',
+          'o_rush_yds' => '133.6',
+          'ppg' => '28.7',
+          'wins' => 11,
+          'losses' => '3',
+          'o_to' => '1.4',
+          'o_pen_yds' => '55.6',
+          'o_pass_yds' => '196.9',
+          'conference' => 'ACC',
+          'opp_ppg' => '16.1',
+          'last_game' => 0,
+          'd_rush_yds' => '86.6'
+        };
+T2: Clemson
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '50.9',
+          'games' => 13,
+          'd_pass_yds' => '188.5',
+          'o_rush_yds' => '161.2',
+          'ppg' => '33.1',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '0.9',
+          'o_pen_yds' => '43.1',
+          'o_pass_yds' => '242.1',
+          'conference' => 'ACC',
+          'opp_ppg' => '18.7',
+          'last_game' => 0,
+          'd_rush_yds' => '118.3'
+        };
+T1_POINT_DIFF: 18
+T2_POINT_DIFF: -18
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 47
+T2_O_SCORE_SUM: 49
+T1_O_SCORE_DIFF: 10
+T2_O_SCORE_DIFF: 17
+T1_D_SCORE_SUM: 49
+T2_D_SCORE_SUM: 47
+T1_D_SCORE_DIFF: -17
+T2_D_SCORE_DIFF: -10
+T1_O_RUSH_SUM: 251
+T2_O_RUSH_SUM: 247
+T1_O_RUSH_DIFF: 15
+T2_O_RUSH_DIFF: 74
+T1_D_RUSH_SUM: 247
+T2_D_RUSH_SUM: 251
+T1_D_RUSH_DIFF: -74
+T2_D_RUSH_DIFF: -15
+T1_O_PASS_SUM: 385
+T2_O_PASS_SUM: 452
+T1_O_PASS_DIFF: 8
+T2_O_PASS_DIFF: 31
+T1_D_PASS_SUM: 452
+T2_D_PASS_SUM: 385
+T1_D_PASS_DIFF: -31
+T2_D_PASS_DIFF: -8
+T1_PEN_DIFF: 10
+T2_PEN_DIFF: -10
+T1_TO_DIFF: -0.20
+T2_TO_DIFF: 0.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.093
+T2_WIN_DIFF: -0.093
+T1_DATA: 18,"O","A",47,10,49,-17,251,15,247,-74,385,8,-31,10,-0.20,0,0.093,"ACC","ACC"
+T2_DATA: -18,"O","H",49,17,47,-10,247,74,251,-15,452,31,-8,-10,0.20,0,-0.093,"ACC","ACC"
+
+------
+Site: T2 DoY: 279
+T1: Wake Forest
+$VAR1 = {
+          'd_to' => '2.7',
+          'd_pen_yds' => '43.1',
+          'games' => 13,
+          'd_pass_yds' => '231.0',
+          'o_rush_yds' => '143.2',
+          'ppg' => '27.8',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.0',
+          'o_pen_yds' => '47.8',
+          'o_pass_yds' => '197.2',
+          'conference' => 'ACC',
+          'opp_ppg' => '22.2',
+          'last_game' => 0,
+          'd_rush_yds' => '109.4'
+        };
+T2: Duke
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '68.7',
+          'games' => 12,
+          'd_pass_yds' => '244.1',
+          'o_rush_yds' => '64.0',
+          'ppg' => '17.9',
+          'wins' => 1,
+          'losses' => '11',
+          'o_to' => '1.8',
+          'o_pen_yds' => '52.9',
+          'o_pass_yds' => '207.1',
+          'conference' => 'ACC',
+          'opp_ppg' => '33.2',
+          'last_game' => 0,
+          'd_rush_yds' => '180.3'
+        };
+T1_POINT_DIFF: 5
+T2_POINT_DIFF: -5
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 61
+T2_O_SCORE_SUM: 40
+T1_O_SCORE_DIFF: -5
+T2_O_SCORE_DIFF: -4
+T1_D_SCORE_SUM: 40
+T2_D_SCORE_SUM: 61
+T1_D_SCORE_DIFF: 4
+T2_D_SCORE_DIFF: 5
+T1_O_RUSH_SUM: 323
+T2_O_RUSH_SUM: 173
+T1_O_RUSH_DIFF: -37
+T2_O_RUSH_DIFF: -45
+T1_D_RUSH_SUM: 173
+T2_D_RUSH_SUM: 323
+T1_D_RUSH_DIFF: 45
+T2_D_RUSH_DIFF: 37
+T1_O_PASS_SUM: 441
+T2_O_PASS_SUM: 438
+T1_O_PASS_DIFF: -46
+T2_O_PASS_DIFF: -23
+T1_D_PASS_SUM: 438
+T2_D_PASS_SUM: 441
+T1_D_PASS_DIFF: 23
+T2_D_PASS_DIFF: 46
+T1_PEN_DIFF: -30
+T2_PEN_DIFF: 30
+T1_TO_DIFF: 1.00
+T2_TO_DIFF: -1.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.609
+T2_WIN_DIFF: -0.609
+T1_DATA: 5,"O","A",61,-5,40,4,323,-37,173,45,441,-46,23,-30,1.00,0,0.609,"ACC","ACC"
+T2_DATA: -5,"O","H",40,-4,61,5,173,-45,323,37,438,-23,46,30,-1.00,0,-0.609,"ACC","ACC"
+
+------
+Site: T2 DoY: 285
+T1: Hawaii
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '55.9',
+          'games' => 13,
+          'd_pass_yds' => '214.0',
+          'o_rush_yds' => '72.6',
+          'ppg' => '43.4',
+          'wins' => 12,
+          'losses' => '1',
+          'o_to' => '2.7',
+          'o_pen_yds' => '66.2',
+          'o_pass_yds' => '439.5',
+          'conference' => 'WAC',
+          'opp_ppg' => '25.5',
+          'last_game' => 0,
+          'd_rush_yds' => '133.8'
+        };
+T2: San Jose State
+$VAR1 = {
+          'd_to' => '2.3',
+          'd_pen_yds' => '66.1',
+          'games' => 12,
+          'd_pass_yds' => '242.6',
+          'o_rush_yds' => '83.8',
+          'ppg' => '20.4',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '1.2',
+          'o_pen_yds' => '45.8',
+          'o_pass_yds' => '264.3',
+          'conference' => 'WAC',
+          'opp_ppg' => '29.3',
+          'last_game' => 0,
+          'd_rush_yds' => '165.4'
+        };
+T1_POINT_DIFF: 7
+T2_POINT_DIFF: -7
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 72
+T2_O_SCORE_SUM: 45
+T1_O_SCORE_DIFF: 14
+T2_O_SCORE_DIFF: -5
+T1_D_SCORE_SUM: 45
+T2_D_SCORE_SUM: 72
+T1_D_SCORE_DIFF: 5
+T2_D_SCORE_DIFF: -14
+T1_O_RUSH_SUM: 238
+T2_O_RUSH_SUM: 217
+T1_O_RUSH_DIFF: -92
+T2_O_RUSH_DIFF: -50
+T1_D_RUSH_SUM: 217
+T2_D_RUSH_SUM: 238
+T1_D_RUSH_DIFF: 50
+T2_D_RUSH_DIFF: 92
+T1_O_PASS_SUM: 682
+T2_O_PASS_SUM: 478
+T1_O_PASS_DIFF: 196
+T2_O_PASS_DIFF: 50
+T1_D_PASS_SUM: 478
+T2_D_PASS_SUM: 682
+T1_D_PASS_DIFF: -50
+T2_D_PASS_DIFF: -196
+T1_PEN_DIFF: 10
+T2_PEN_DIFF: -10
+T1_TO_DIFF: -1.60
+T2_TO_DIFF: 1.60
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.506
+T2_WIN_DIFF: -0.506
+T1_DATA: 7,"O","A",72,14,45,5,238,-92,217,50,682,196,-50,10,-1.60,0,0.506,"WAC","WAC"
+T2_DATA: -7,"O","H",45,-5,72,-14,217,-50,238,92,478,50,-196,-10,1.60,0,-0.506,"WAC","WAC"
+
+------
+Site: T1 DoY: 286
+T1: Arkansas State
+$VAR1 = {
+          'd_to' => '1.7',
+          'd_pen_yds' => '48.8',
+          'games' => 12,
+          'd_pass_yds' => '197.3',
+          'o_rush_yds' => '176.0',
+          'ppg' => '24.2',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.0',
+          'o_pen_yds' => '61.2',
+          'o_pass_yds' => '203.8',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '27.6',
+          'last_game' => 0,
+          'd_rush_yds' => '165.0'
+        };
+T2: Louisiana-Lafayette
+$VAR1 = {
+          'd_to' => '1.4',
+          'd_pen_yds' => '51.8',
+          'games' => 12,
+          'd_pass_yds' => '218.3',
+          'o_rush_yds' => '251.6',
+          'ppg' => '23.8',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '1.8',
+          'o_pen_yds' => '52.5',
+          'o_pass_yds' => '155.5',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '35.8',
+          'last_game' => 0,
+          'd_rush_yds' => '228.4'
+        };
+T1_POINT_DIFF: 31
+T2_POINT_DIFF: -31
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 60
+T2_O_SCORE_SUM: 51
+T1_O_SCORE_DIFF: -11
+T2_O_SCORE_DIFF: -3
+T1_D_SCORE_SUM: 51
+T2_D_SCORE_SUM: 60
+T1_D_SCORE_DIFF: 3
+T2_D_SCORE_DIFF: 11
+T1_O_RUSH_SUM: 404
+T2_O_RUSH_SUM: 416
+T1_O_RUSH_DIFF: -52
+T2_O_RUSH_DIFF: 86
+T1_D_RUSH_SUM: 416
+T2_D_RUSH_SUM: 404
+T1_D_RUSH_DIFF: -86
+T2_D_RUSH_DIFF: 52
+T1_O_PASS_SUM: 422
+T2_O_PASS_SUM: 352
+T1_O_PASS_DIFF: -14
+T2_O_PASS_DIFF: -41
+T1_D_PASS_SUM: 352
+T2_D_PASS_SUM: 422
+T1_D_PASS_DIFF: 41
+T2_D_PASS_DIFF: 14
+T1_PEN_DIFF: 5
+T2_PEN_DIFF: -5
+T1_TO_DIFF: 0.10
+T2_TO_DIFF: -0.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.167
+T2_WIN_DIFF: -0.167
+T1_DATA: 31,"O","H",60,-11,51,3,404,-52,416,-86,422,-14,41,5,0.10,0,0.167,"Sun Belt","Sun Belt"
+T2_DATA: -31,"O","A",51,-3,60,11,416,86,404,52,352,-41,14,-5,-0.10,0,-0.167,"Sun Belt","Sun Belt"
+
+------
+Site: T1 DoY: 286
+T1: Ball State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '63.9',
+          'games' => 13,
+          'd_pass_yds' => '228.0',
+          'o_rush_yds' => '148.9',
+          'ppg' => '31.5',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '0.8',
+          'o_pen_yds' => '55.6',
+          'o_pass_yds' => '284.9',
+          'conference' => 'MAC',
+          'opp_ppg' => '28.3',
+          'last_game' => 0,
+          'd_rush_yds' => '204.3'
+        };
+T2: Western Kentucky
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '53.0',
+          'games' => 12,
+          'd_pass_yds' => '184.6',
+          'o_rush_yds' => '247.2',
+          'ppg' => '33.2',
+          'wins' => 7,
+          'losses' => '5',
+          'o_to' => '2.3',
+          'o_pen_yds' => '69.1',
+          'o_pass_yds' => '161.7',
+          'conference' => 'Ind',
+          'opp_ppg' => '20.8',
+          'last_game' => 0,
+          'd_rush_yds' => '135.0'
+        };
+T1_POINT_DIFF: 23
+T2_POINT_DIFF: -23
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 52
+T2_O_SCORE_SUM: 61
+T1_O_SCORE_DIFF: 10
+T2_O_SCORE_DIFF: 4
+T1_D_SCORE_SUM: 61
+T2_D_SCORE_SUM: 52
+T1_D_SCORE_DIFF: -4
+T2_D_SCORE_DIFF: -10
+T1_O_RUSH_SUM: 283
+T2_O_RUSH_SUM: 451
+T1_O_RUSH_DIFF: 13
+T2_O_RUSH_DIFF: 42
+T1_D_RUSH_SUM: 451
+T2_D_RUSH_SUM: 283
+T1_D_RUSH_DIFF: -42
+T2_D_RUSH_DIFF: -13
+T1_O_PASS_SUM: 469
+T2_O_PASS_SUM: 389
+T1_O_PASS_DIFF: 100
+T2_O_PASS_DIFF: -66
+T1_D_PASS_SUM: 389
+T2_D_PASS_SUM: 469
+T1_D_PASS_DIFF: 66
+T2_D_PASS_DIFF: -100
+T1_PEN_DIFF: -2
+T2_PEN_DIFF: 2
+T1_TO_DIFF: 1.30
+T2_TO_DIFF: -1.30
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.045
+T2_WIN_DIFF: 0.045
+T1_DATA: 23,"O","H",52,10,61,-4,283,13,451,-42,469,100,66,-2,1.30,0,-0.045,"MAC","Ind"
+T2_DATA: -23,"O","A",61,4,52,-10,451,42,283,-13,389,-66,-100,2,-1.30,0,0.045,"Ind","MAC"
+
+------
+Site: T2 DoY: 286
+T1: Brigham Young
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '44.7',
+          'games' => 13,
+          'd_pass_yds' => '210.4',
+          'o_rush_yds' => '144.4',
+          'ppg' => '30.1',
+          'wins' => 11,
+          'losses' => '2',
+          'o_to' => '2.0',
+          'o_pen_yds' => '60.2',
+          'o_pass_yds' => '298.4',
+          'conference' => 'MWC',
+          'opp_ppg' => '18.5',
+          'last_game' => 0,
+          'd_rush_yds' => '97.5'
+        };
+T2: Nevada-Las Vegas
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '61.2',
+          'games' => 12,
+          'd_pass_yds' => '203.3',
+          'o_rush_yds' => '140.7',
+          'ppg' => '18.2',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '1.8',
+          'o_pen_yds' => '61.2',
+          'o_pass_yds' => '212.5',
+          'conference' => 'MWC',
+          'opp_ppg' => '28.6',
+          'last_game' => 0,
+          'd_rush_yds' => '183.6'
+        };
+T1_POINT_DIFF: 10
+T2_POINT_DIFF: -10
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 58
+T2_O_SCORE_SUM: 36
+T1_O_SCORE_DIFF: 1
+T2_O_SCORE_DIFF: 0
+T1_D_SCORE_SUM: 36
+T2_D_SCORE_SUM: 58
+T1_D_SCORE_DIFF: 0
+T2_D_SCORE_DIFF: -1
+T1_O_RUSH_SUM: 328
+T2_O_RUSH_SUM: 238
+T1_O_RUSH_DIFF: -39
+T2_O_RUSH_DIFF: 43
+T1_D_RUSH_SUM: 238
+T2_D_RUSH_SUM: 328
+T1_D_RUSH_DIFF: -43
+T2_D_RUSH_DIFF: 39
+T1_O_PASS_SUM: 501
+T2_O_PASS_SUM: 422
+T1_O_PASS_DIFF: 95
+T2_O_PASS_DIFF: 2
+T1_D_PASS_SUM: 422
+T2_D_PASS_SUM: 501
+T1_D_PASS_DIFF: -2
+T2_D_PASS_DIFF: -95
+T1_PEN_DIFF: -17
+T2_PEN_DIFF: 17
+T1_TO_DIFF: -0.50
+T2_TO_DIFF: 0.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.679
+T2_WIN_DIFF: -0.679
+T1_DATA: 10,"O","A",58,1,36,0,328,-39,238,-43,501,95,-2,-17,-0.50,0,0.679,"MWC","MWC"
+T2_DATA: -10,"O","H",36,0,58,-1,238,43,328,39,422,2,-95,17,0.50,0,-0.679,"MWC","MWC"
+
+------
+Site: T1 DoY: 286
+T1: Houston
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '51.8',
+          'games' => 13,
+          'd_pass_yds' => '225.8',
+          'o_rush_yds' => '223.9',
+          'ppg' => '34.5',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '2.3',
+          'o_pen_yds' => '67.7',
+          'o_pass_yds' => '278.0',
+          'conference' => 'CUSA',
+          'opp_ppg' => '29.2',
+          'last_game' => 0,
+          'd_rush_yds' => '139.8'
+        };
+T2: Rice
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '73.3',
+          'games' => 12,
+          'd_pass_yds' => '312.4',
+          'o_rush_yds' => '110.9',
+          'ppg' => '31.4',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '2.3',
+          'o_pen_yds' => '43.7',
+          'o_pass_yds' => '293.1',
+          'conference' => 'CUSA',
+          'opp_ppg' => '42.9',
+          'last_game' => 0,
+          'd_rush_yds' => '198.4'
+        };
+T1_POINT_DIFF: 8
+T2_POINT_DIFF: -8
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 77
+T2_O_SCORE_SUM: 60
+T1_O_SCORE_DIFF: -8
+T2_O_SCORE_DIFF: 2
+T1_D_SCORE_SUM: 60
+T2_D_SCORE_SUM: 77
+T1_D_SCORE_DIFF: -2
+T2_D_SCORE_DIFF: 8
+T1_O_RUSH_SUM: 422
+T2_O_RUSH_SUM: 250
+T1_O_RUSH_DIFF: 25
+T2_O_RUSH_DIFF: -28
+T1_D_RUSH_SUM: 250
+T2_D_RUSH_SUM: 422
+T1_D_RUSH_DIFF: 28
+T2_D_RUSH_DIFF: -25
+T1_O_PASS_SUM: 590
+T2_O_PASS_SUM: 518
+T1_O_PASS_DIFF: -34
+T2_O_PASS_DIFF: 67
+T1_D_PASS_SUM: 518
+T2_D_PASS_SUM: 590
+T1_D_PASS_DIFF: -67
+T2_D_PASS_DIFF: 34
+T1_PEN_DIFF: 2
+T2_PEN_DIFF: -2
+T1_TO_DIFF: -0.40
+T2_TO_DIFF: 0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.365
+T2_WIN_DIFF: -0.365
+T1_DATA: 8,"O","H",77,-8,60,-2,422,25,250,28,590,-34,-67,2,-0.40,0,0.365,"CUSA","CUSA"
+T2_DATA: -8,"O","A",60,2,77,8,250,-28,422,-25,518,67,34,-2,0.40,0,-0.365,"CUSA","CUSA"
+
+------
+Site: T1 DoY: 286
+T1: Northwestern
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '56.8',
+          'games' => 12,
+          'd_pass_yds' => '243.4',
+          'o_rush_yds' => '119.8',
+          'ppg' => '25.8',
+          'wins' => 6,
+          'losses' => '6',
+          'o_to' => '2.1',
+          'o_pen_yds' => '46.9',
+          'o_pass_yds' => '307.9',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '31.0',
+          'last_game' => 0,
+          'd_rush_yds' => '167.1'
+        };
+T2: Minnesota
+$VAR1 = {
+          'd_to' => '1.2',
+          'd_pen_yds' => '42.4',
+          'games' => 12,
+          'd_pass_yds' => '289.3',
+          'o_rush_yds' => '161.8',
+          'ppg' => '26.2',
+          'wins' => 1,
+          'losses' => '11',
+          'o_to' => '2.4',
+          'o_pen_yds' => '41.8',
+          'o_pass_yds' => '245.8',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '36.7',
+          'last_game' => 0,
+          'd_rush_yds' => '229.3'
+        };
+T1_POINT_DIFF: 1
+T2_POINT_DIFF: -1
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 62
+T2_O_SCORE_SUM: 57
+T1_O_SCORE_DIFF: -10
+T2_O_SCORE_DIFF: -4
+T1_D_SCORE_SUM: 57
+T2_D_SCORE_SUM: 62
+T1_D_SCORE_DIFF: 4
+T2_D_SCORE_DIFF: 10
+T1_O_RUSH_SUM: 349
+T2_O_RUSH_SUM: 328
+T1_O_RUSH_DIFF: -109
+T2_O_RUSH_DIFF: -5
+T1_D_RUSH_SUM: 328
+T2_D_RUSH_SUM: 349
+T1_D_RUSH_DIFF: 5
+T2_D_RUSH_DIFF: 109
+T1_O_PASS_SUM: 597
+T2_O_PASS_SUM: 489
+T1_O_PASS_DIFF: 18
+T2_O_PASS_DIFF: 2
+T1_D_PASS_SUM: 489
+T2_D_PASS_SUM: 597
+T1_D_PASS_DIFF: -2
+T2_D_PASS_DIFF: -18
+T1_PEN_DIFF: 19
+T2_PEN_DIFF: -19
+T1_TO_DIFF: 0.40
+T2_TO_DIFF: -0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.417
+T2_WIN_DIFF: -0.417
+T1_DATA: 1,"O","H",62,-10,57,4,349,-109,328,5,597,18,-2,19,0.40,0,0.417,"Big Ten","Big Ten"
+T2_DATA: -1,"O","A",57,-4,62,10,328,-5,349,109,489,2,-18,-19,-0.40,0,-0.417,"Big Ten","Big Ten"
+
+------
+Site: T2 DoY: 286
+T1: Rutgers
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '62.8',
+          'games' => 13,
+          'd_pass_yds' => '170.6',
+          'o_rush_yds' => '198.0',
+          'ppg' => '32.8',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '1.9',
+          'o_pen_yds' => '59.6',
+          'o_pass_yds' => '251.3',
+          'conference' => 'Big East',
+          'opp_ppg' => '22.5',
+          'last_game' => 0,
+          'd_rush_yds' => '156.9'
+        };
+T2: Syracuse
+$VAR1 = {
+          'd_to' => '1.2',
+          'd_pen_yds' => '73.8',
+          'games' => 12,
+          'd_pass_yds' => '260.9',
+          'o_rush_yds' => '62.8',
+          'ppg' => '16.4',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '1.7',
+          'o_pen_yds' => '58.9',
+          'o_pass_yds' => '229.2',
+          'conference' => 'Big East',
+          'opp_ppg' => '34.8',
+          'last_game' => 0,
+          'd_rush_yds' => '207.8'
+        };
+T1_POINT_DIFF: 24
+T2_POINT_DIFF: -24
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 67
+T2_O_SCORE_SUM: 38
+T1_O_SCORE_DIFF: -2
+T2_O_SCORE_DIFF: -6
+T1_D_SCORE_SUM: 38
+T2_D_SCORE_SUM: 67
+T1_D_SCORE_DIFF: 6
+T2_D_SCORE_DIFF: 2
+T1_O_RUSH_SUM: 405
+T2_O_RUSH_SUM: 219
+T1_O_RUSH_DIFF: -9
+T2_O_RUSH_DIFF: -94
+T1_D_RUSH_SUM: 219
+T2_D_RUSH_SUM: 405
+T1_D_RUSH_DIFF: 94
+T2_D_RUSH_DIFF: 9
+T1_O_PASS_SUM: 512
+T2_O_PASS_SUM: 399
+T1_O_PASS_DIFF: -9
+T2_O_PASS_DIFF: 58
+T1_D_PASS_SUM: 399
+T2_D_PASS_SUM: 512
+T1_D_PASS_DIFF: -58
+T2_D_PASS_DIFF: 9
+T1_PEN_DIFF: -10
+T2_PEN_DIFF: 10
+T1_TO_DIFF: 0.10
+T2_TO_DIFF: -0.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.449
+T2_WIN_DIFF: -0.449
+T1_DATA: 24,"O","A",67,-2,38,6,405,-9,219,94,512,-9,-58,-10,0.10,0,0.449,"Big East","Big East"
+T2_DATA: -24,"O","H",38,-6,67,2,219,-94,405,9,399,58,9,10,-0.10,0,-0.449,"Big East","Big East"
+
+------
+Site: T2 DoY: 286
+T1: South Carolina
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '55.6',
+          'games' => 12,
+          'd_pass_yds' => '168.8',
+          'o_rush_yds' => '113.7',
+          'ppg' => '26.1',
+          'wins' => 6,
+          'losses' => '6',
+          'o_to' => '2.3',
+          'o_pen_yds' => '44.3',
+          'o_pass_yds' => '258.2',
+          'conference' => 'SEC',
+          'opp_ppg' => '23.5',
+          'last_game' => 0,
+          'd_rush_yds' => '209.3'
+        };
+T2: North Carolina
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '53.3',
+          'games' => 12,
+          'd_pass_yds' => '207.3',
+          'o_rush_yds' => '99.2',
+          'ppg' => '21.2',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '2.3',
+          'o_pen_yds' => '55.7',
+          'o_pass_yds' => '226.2',
+          'conference' => 'ACC',
+          'opp_ppg' => '24.5',
+          'last_game' => 0,
+          'd_rush_yds' => '142.5'
+        };
+T1_POINT_DIFF: 6
+T2_POINT_DIFF: -6
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 50
+T2_O_SCORE_SUM: 44
+T1_O_SCORE_DIFF: 1
+T2_O_SCORE_DIFF: -2
+T1_D_SCORE_SUM: 44
+T2_D_SCORE_SUM: 50
+T1_D_SCORE_DIFF: 2
+T2_D_SCORE_DIFF: -1
+T1_O_RUSH_SUM: 256
+T2_O_RUSH_SUM: 308
+T1_O_RUSH_DIFF: -28
+T2_O_RUSH_DIFF: -110
+T1_D_RUSH_SUM: 308
+T2_D_RUSH_SUM: 256
+T1_D_RUSH_DIFF: 110
+T2_D_RUSH_DIFF: 28
+T1_O_PASS_SUM: 465
+T2_O_PASS_SUM: 395
+T1_O_PASS_DIFF: 50
+T2_O_PASS_DIFF: 57
+T1_D_PASS_SUM: 395
+T2_D_PASS_SUM: 465
+T1_D_PASS_DIFF: -57
+T2_D_PASS_DIFF: -50
+T1_PEN_DIFF: -9
+T2_PEN_DIFF: 9
+T1_TO_DIFF: 0.00
+T2_TO_DIFF: 0.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.167
+T2_WIN_DIFF: -0.167
+T1_DATA: 6,"O","A",50,1,44,2,256,-28,308,110,465,50,-57,-9,0.00,0,0.167,"SEC","ACC"
+T2_DATA: -6,"O","H",44,-2,50,-1,308,-110,256,28,395,57,-50,9,0.00,0,-0.167,"ACC","SEC"
+
+------
+Site: T1 DoY: 286
+T1: Virginia
+$VAR1 = {
+          'd_to' => '1.7',
+          'd_pen_yds' => '49.7',
+          'games' => 13,
+          'd_pass_yds' => '225.5',
+          'o_rush_yds' => '135.6',
+          'ppg' => '24.4',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.5',
+          'o_pen_yds' => '40.9',
+          'o_pass_yds' => '194.8',
+          'conference' => 'ACC',
+          'opp_ppg' => '19.7',
+          'last_game' => 0,
+          'd_rush_yds' => '106.9'
+        };
+T2: Connecticut
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '52.6',
+          'games' => 13,
+          'd_pass_yds' => '194.0',
+          'o_rush_yds' => '161.4',
+          'ppg' => '26.5',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.2',
+          'o_pen_yds' => '45.7',
+          'o_pass_yds' => '185.8',
+          'conference' => 'Big East',
+          'opp_ppg' => '19.0',
+          'last_game' => 0,
+          'd_rush_yds' => '157.4'
+        };
+T1_POINT_DIFF: 1
+T2_POINT_DIFF: -1
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 43
+T2_O_SCORE_SUM: 46
+T1_O_SCORE_DIFF: 5
+T2_O_SCORE_DIFF: 6
+T1_D_SCORE_SUM: 46
+T2_D_SCORE_SUM: 43
+T1_D_SCORE_DIFF: -6
+T2_D_SCORE_DIFF: -5
+T1_O_RUSH_SUM: 293
+T2_O_RUSH_SUM: 268
+T1_O_RUSH_DIFF: -21
+T2_O_RUSH_DIFF: 54
+T1_D_RUSH_SUM: 268
+T2_D_RUSH_SUM: 293
+T1_D_RUSH_DIFF: -54
+T2_D_RUSH_DIFF: 21
+T1_O_PASS_SUM: 388
+T2_O_PASS_SUM: 411
+T1_O_PASS_DIFF: 0
+T2_O_PASS_DIFF: -39
+T1_D_PASS_SUM: 411
+T2_D_PASS_SUM: 388
+T1_D_PASS_DIFF: 39
+T2_D_PASS_DIFF: 0
+T1_PEN_DIFF: -7
+T2_PEN_DIFF: 7
+T1_TO_DIFF: -0.80
+T2_TO_DIFF: 0.80
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 1,"O","H",43,5,46,-6,293,-21,268,-54,388,0,39,-7,-0.80,0,0.000,"ACC","Big East"
+T2_DATA: -1,"O","A",46,6,43,-5,268,54,293,21,411,-39,0,7,0.80,0,0.000,"Big East","ACC"
+
+------
+Site: T2 DoY: 286
+T1: Western Michigan
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '48.8',
+          'games' => 12,
+          'd_pass_yds' => '220.2',
+          'o_rush_yds' => '130.4',
+          'ppg' => '26.9',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.4',
+          'o_pen_yds' => '65.4',
+          'o_pass_yds' => '267.6',
+          'conference' => 'MAC',
+          'opp_ppg' => '28.9',
+          'last_game' => 0,
+          'd_rush_yds' => '179.1'
+        };
+T2: Northern Illinois
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '59.0',
+          'games' => 12,
+          'd_pass_yds' => '224.2',
+          'o_rush_yds' => '135.5',
+          'ppg' => '19.1',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '2.7',
+          'o_pen_yds' => '46.6',
+          'o_pass_yds' => '202.4',
+          'conference' => 'MAC',
+          'opp_ppg' => '30.8',
+          'last_game' => 0,
+          'd_rush_yds' => '210.1'
+        };
+T1_POINT_DIFF: 4
+T2_POINT_DIFF: -4
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 57
+T2_O_SCORE_SUM: 48
+T1_O_SCORE_DIFF: -3
+T2_O_SCORE_DIFF: -9
+T1_D_SCORE_SUM: 48
+T2_D_SCORE_SUM: 57
+T1_D_SCORE_DIFF: 9
+T2_D_SCORE_DIFF: 3
+T1_O_RUSH_SUM: 340
+T2_O_RUSH_SUM: 314
+T1_O_RUSH_DIFF: -79
+T2_O_RUSH_DIFF: -43
+T1_D_RUSH_SUM: 314
+T2_D_RUSH_SUM: 340
+T1_D_RUSH_DIFF: 43
+T2_D_RUSH_DIFF: 79
+T1_O_PASS_SUM: 491
+T2_O_PASS_SUM: 422
+T1_O_PASS_DIFF: 43
+T2_O_PASS_DIFF: -17
+T1_D_PASS_SUM: 422
+T2_D_PASS_SUM: 491
+T1_D_PASS_DIFF: 17
+T2_D_PASS_DIFF: -43
+T1_PEN_DIFF: 8
+T2_PEN_DIFF: -8
+T1_TO_DIFF: 1.00
+T2_TO_DIFF: -1.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.250
+T2_WIN_DIFF: -0.250
+T1_DATA: 4,"O","A",57,-3,48,9,340,-79,314,43,491,43,17,8,1.00,0,0.250,"MAC","MAC"
+T2_DATA: -4,"O","H",48,-9,57,3,314,-43,340,79,422,-17,-43,-8,-1.00,0,-0.250,"MAC","MAC"
+
+------
+Site: T1 DoY: 292
+T1: Connecticut
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '52.6',
+          'games' => 13,
+          'd_pass_yds' => '194.0',
+          'o_rush_yds' => '161.4',
+          'ppg' => '26.5',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.2',
+          'o_pen_yds' => '45.7',
+          'o_pass_yds' => '185.8',
+          'conference' => 'Big East',
+          'opp_ppg' => '19.0',
+          'last_game' => 0,
+          'd_rush_yds' => '157.4'
+        };
+T2: Louisville
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '64.4',
+          'games' => 12,
+          'd_pass_yds' => '251.2',
+          'o_rush_yds' => '146.1',
+          'ppg' => '35.2',
+          'wins' => 6,
+          'losses' => '6',
+          'o_to' => '2.0',
+          'o_pen_yds' => '68.2',
+          'o_pass_yds' => '341.9',
+          'conference' => 'Big East',
+          'opp_ppg' => '31.4',
+          'last_game' => 0,
+          'd_rush_yds' => '165.3'
+        };
+T1_POINT_DIFF: 4
+T2_POINT_DIFF: -4
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 57
+T2_O_SCORE_SUM: 54
+T1_O_SCORE_DIFF: -4
+T2_O_SCORE_DIFF: 16
+T1_D_SCORE_SUM: 54
+T2_D_SCORE_SUM: 57
+T1_D_SCORE_DIFF: -16
+T2_D_SCORE_DIFF: 4
+T1_O_RUSH_SUM: 326
+T2_O_RUSH_SUM: 303
+T1_O_RUSH_DIFF: -3
+T2_O_RUSH_DIFF: -11
+T1_D_RUSH_SUM: 303
+T2_D_RUSH_SUM: 326
+T1_D_RUSH_DIFF: 11
+T2_D_RUSH_DIFF: 3
+T1_O_PASS_SUM: 437
+T2_O_PASS_SUM: 535
+T1_O_PASS_DIFF: -65
+T2_O_PASS_DIFF: 147
+T1_D_PASS_SUM: 535
+T2_D_PASS_SUM: 437
+T1_D_PASS_DIFF: -147
+T2_D_PASS_DIFF: 65
+T1_PEN_DIFF: -34
+T2_PEN_DIFF: 34
+T1_TO_DIFF: 1.00
+T2_TO_DIFF: -1.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.192
+T2_WIN_DIFF: -0.192
+T1_DATA: 4,"O","H",57,-4,54,-16,326,-3,303,11,437,-65,-147,-34,1.00,0,0.192,"Big East","Big East"
+T2_DATA: -4,"O","A",54,16,57,4,303,-11,326,3,535,147,65,34,-1.00,0,-0.192,"Big East","Big East"
+
+------
+Site: T1 DoY: 293
+T1: Louisiana-Monroe
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '49.3',
+          'games' => 12,
+          'd_pass_yds' => '260.8',
+          'o_rush_yds' => '209.0',
+          'ppg' => '23.5',
+          'wins' => 6,
+          'losses' => '6',
+          'o_to' => '1.7',
+          'o_pen_yds' => '67.9',
+          'o_pass_yds' => '176.7',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '27.7',
+          'last_game' => 0,
+          'd_rush_yds' => '153.5'
+        };
+T2: Florida International
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '56.8',
+          'games' => 12,
+          'd_pass_yds' => '243.6',
+          'o_rush_yds' => '119.1',
+          'ppg' => '15.1',
+          'wins' => 1,
+          'losses' => '11',
+          'o_to' => '2.8',
+          'o_pen_yds' => '46.4',
+          'o_pass_yds' => '150.6',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '39.1',
+          'last_game' => 0,
+          'd_rush_yds' => '203.8'
+        };
+T1_POINT_DIFF: 14
+T2_POINT_DIFF: -14
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 62
+T2_O_SCORE_SUM: 42
+T1_O_SCORE_DIFF: -15
+T2_O_SCORE_DIFF: -12
+T1_D_SCORE_SUM: 42
+T2_D_SCORE_SUM: 62
+T1_D_SCORE_DIFF: 12
+T2_D_SCORE_DIFF: 15
+T1_O_RUSH_SUM: 412
+T2_O_RUSH_SUM: 272
+T1_O_RUSH_DIFF: 5
+T2_O_RUSH_DIFF: -34
+T1_D_RUSH_SUM: 272
+T2_D_RUSH_SUM: 412
+T1_D_RUSH_DIFF: 34
+T2_D_RUSH_DIFF: -5
+T1_O_PASS_SUM: 420
+T2_O_PASS_SUM: 411
+T1_O_PASS_DIFF: -66
+T2_O_PASS_DIFF: -110
+T1_D_PASS_SUM: 411
+T2_D_PASS_SUM: 420
+T1_D_PASS_DIFF: 110
+T2_D_PASS_DIFF: 66
+T1_PEN_DIFF: 14
+T2_PEN_DIFF: -14
+T1_TO_DIFF: 1.30
+T2_TO_DIFF: -1.30
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.417
+T2_WIN_DIFF: -0.417
+T1_DATA: 14,"O","H",62,-15,42,12,412,5,272,34,420,-66,110,14,1.30,0,0.417,"Sun Belt","Sun Belt"
+T2_DATA: -14,"O","A",42,-12,62,15,272,-34,412,-5,411,-110,66,-14,-1.30,0,-0.417,"Sun Belt","Sun Belt"
+
+------
+Site: T1 DoY: 293
+T1: New Mexico State
+$VAR1 = {
+          'd_to' => '1.1',
+          'd_pen_yds' => '56.3',
+          'games' => 13,
+          'd_pass_yds' => '261.9',
+          'o_rush_yds' => '91.5',
+          'ppg' => '24.0',
+          'wins' => 4,
+          'losses' => '9',
+          'o_to' => '2.2',
+          'o_pen_yds' => '46.2',
+          'o_pass_yds' => '331.9',
+          'conference' => 'WAC',
+          'opp_ppg' => '36.2',
+          'last_game' => 0,
+          'd_rush_yds' => '168.0'
+        };
+T2: Idaho
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '53.0',
+          'games' => 12,
+          'd_pass_yds' => '257.3',
+          'o_rush_yds' => '158.2',
+          'ppg' => '21.5',
+          'wins' => 1,
+          'losses' => '11',
+          'o_to' => '2.8',
+          'o_pen_yds' => '63.5',
+          'o_pass_yds' => '191.5',
+          'conference' => 'WAC',
+          'opp_ppg' => '36.9',
+          'last_game' => 0,
+          'd_rush_yds' => '161.4'
+        };
+T1_POINT_DIFF: 14
+T2_POINT_DIFF: -14
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 60
+T2_O_SCORE_SUM: 57
+T1_O_SCORE_DIFF: -12
+T2_O_SCORE_DIFF: -14
+T1_D_SCORE_SUM: 57
+T2_D_SCORE_SUM: 60
+T1_D_SCORE_DIFF: 14
+T2_D_SCORE_DIFF: 12
+T1_O_RUSH_SUM: 252
+T2_O_RUSH_SUM: 326
+T1_O_RUSH_DIFF: -69
+T2_O_RUSH_DIFF: -9
+T1_D_RUSH_SUM: 326
+T2_D_RUSH_SUM: 252
+T1_D_RUSH_DIFF: 9
+T2_D_RUSH_DIFF: 69
+T1_O_PASS_SUM: 589
+T2_O_PASS_SUM: 453
+T1_O_PASS_DIFF: 74
+T2_O_PASS_DIFF: -70
+T1_D_PASS_SUM: 453
+T2_D_PASS_SUM: 589
+T1_D_PASS_DIFF: 70
+T2_D_PASS_DIFF: -74
+T1_PEN_DIFF: -14
+T2_PEN_DIFF: 14
+T1_TO_DIFF: -0.40
+T2_TO_DIFF: 0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.224
+T2_WIN_DIFF: -0.224
+T1_DATA: 14,"O","H",60,-12,57,14,252,-69,326,9,589,74,70,-14,-0.40,0,0.224,"WAC","WAC"
+T2_DATA: -14,"O","A",57,-14,60,12,326,-9,252,69,453,-70,-74,14,0.40,0,-0.224,"WAC","WAC"
+
+------
+Site: T2 DoY: 293
+T1: North Carolina State
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '53.0',
+          'games' => 12,
+          'd_pass_yds' => '207.5',
+          'o_rush_yds' => '89.3',
+          'ppg' => '20.8',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.7',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '245.7',
+          'conference' => 'ACC',
+          'opp_ppg' => '28.2',
+          'last_game' => 0,
+          'd_rush_yds' => '186.4'
+        };
+T2: East Carolina
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '53.8',
+          'games' => 13,
+          'd_pass_yds' => '289.0',
+          'o_rush_yds' => '182.9',
+          'ppg' => '31.0',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '1.1',
+          'o_pen_yds' => '63.6',
+          'o_pass_yds' => '202.5',
+          'conference' => 'CUSA',
+          'opp_ppg' => '30.4',
+          'last_game' => 0,
+          'd_rush_yds' => '142.2'
+        };
+T1_POINT_DIFF: 14
+T2_POINT_DIFF: -14
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 51
+T2_O_SCORE_SUM: 59
+T1_O_SCORE_DIFF: -9
+T2_O_SCORE_DIFF: 2
+T1_D_SCORE_SUM: 59
+T2_D_SCORE_SUM: 51
+T1_D_SCORE_DIFF: -2
+T2_D_SCORE_DIFF: 9
+T1_O_RUSH_SUM: 231
+T2_O_RUSH_SUM: 369
+T1_O_RUSH_DIFF: -52
+T2_O_RUSH_DIFF: -3
+T1_D_RUSH_SUM: 369
+T2_D_RUSH_SUM: 231
+T1_D_RUSH_DIFF: 3
+T2_D_RUSH_DIFF: 52
+T1_O_PASS_SUM: 534
+T2_O_PASS_SUM: 410
+T1_O_PASS_DIFF: -43
+T2_O_PASS_DIFF: -5
+T1_D_PASS_SUM: 410
+T2_D_PASS_SUM: 534
+T1_D_PASS_DIFF: 5
+T2_D_PASS_DIFF: 43
+T1_PEN_DIFF: -9
+T2_PEN_DIFF: 9
+T1_TO_DIFF: -2.70
+T2_TO_DIFF: 2.70
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.199
+T2_WIN_DIFF: 0.199
+T1_DATA: 14,"O","A",51,-9,59,-2,231,-52,369,3,534,-43,5,-9,-2.70,0,-0.199,"ACC","CUSA"
+T2_DATA: -14,"O","H",59,2,51,9,369,-3,231,52,410,-5,43,9,2.70,0,0.199,"CUSA","ACC"
+
+------
+Site: T2 DoY: 293
+T1: Oregon
+$VAR1 = {
+          'd_to' => '2.5',
+          'd_pen_yds' => '53.5',
+          'games' => 13,
+          'd_pass_yds' => '249.2',
+          'o_rush_yds' => '251.7',
+          'ppg' => '38.2',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.8',
+          'o_pen_yds' => '55.0',
+          'o_pass_yds' => '215.8',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '23.6',
+          'last_game' => 0,
+          'd_rush_yds' => '132.8'
+        };
+T2: Washington
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '63.5',
+          'games' => 13,
+          'd_pass_yds' => '261.4',
+          'o_rush_yds' => '203.1',
+          'ppg' => '29.2',
+          'wins' => 4,
+          'losses' => '9',
+          'o_to' => '1.9',
+          'o_pen_yds' => '47.2',
+          'o_pass_yds' => '191.2',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '31.6',
+          'last_game' => 0,
+          'd_rush_yds' => '185.0'
+        };
+T1_POINT_DIFF: 21
+T2_POINT_DIFF: -21
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 69
+T2_O_SCORE_SUM: 52
+T1_O_SCORE_DIFF: 6
+T2_O_SCORE_DIFF: 5
+T1_D_SCORE_SUM: 52
+T2_D_SCORE_SUM: 69
+T1_D_SCORE_DIFF: -5
+T2_D_SCORE_DIFF: -6
+T1_O_RUSH_SUM: 436
+T2_O_RUSH_SUM: 335
+T1_O_RUSH_DIFF: 66
+T2_O_RUSH_DIFF: 70
+T1_D_RUSH_SUM: 335
+T2_D_RUSH_SUM: 436
+T1_D_RUSH_DIFF: -70
+T2_D_RUSH_DIFF: -66
+T1_O_PASS_SUM: 477
+T2_O_PASS_SUM: 440
+T1_O_PASS_DIFF: -45
+T2_O_PASS_DIFF: -58
+T1_D_PASS_SUM: 440
+T2_D_PASS_SUM: 477
+T1_D_PASS_DIFF: 58
+T2_D_PASS_DIFF: 45
+T1_PEN_DIFF: -2
+T2_PEN_DIFF: 2
+T1_TO_DIFF: 0.80
+T2_TO_DIFF: -0.80
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.385
+T2_WIN_DIFF: -0.385
+T1_DATA: 21,"O","A",69,6,52,-5,436,66,335,-70,477,-45,58,-2,0.80,0,0.385,"Pac-10","Pac-10"
+T2_DATA: -21,"O","H",52,5,69,-6,335,70,436,-66,440,-58,45,2,-0.80,0,-0.385,"Pac-10","Pac-10"
+
+------
+Site: T2 DoY: 293
+T1: Penn State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '45.8',
+          'games' => 13,
+          'd_pass_yds' => '214.5',
+          'o_rush_yds' => '193.8',
+          'ppg' => '30.3',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.0',
+          'o_pen_yds' => '34.3',
+          'o_pass_yds' => '206.3',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '17.5',
+          'last_game' => 0,
+          'd_rush_yds' => '93.8'
+        };
+T2: Indiana
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '62.6',
+          'games' => 13,
+          'd_pass_yds' => '243.7',
+          'o_rush_yds' => '157.4',
+          'ppg' => '31.7',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '2.2',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '236.4',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '28.5',
+          'last_game' => 0,
+          'd_rush_yds' => '159.7'
+        };
+T1_POINT_DIFF: 5
+T2_POINT_DIFF: -5
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 58
+T2_O_SCORE_SUM: 49
+T1_O_SCORE_DIFF: 1
+T2_O_SCORE_DIFF: 14
+T1_D_SCORE_SUM: 49
+T2_D_SCORE_SUM: 58
+T1_D_SCORE_DIFF: -14
+T2_D_SCORE_DIFF: -1
+T1_O_RUSH_SUM: 353
+T2_O_RUSH_SUM: 251
+T1_O_RUSH_DIFF: 34
+T2_O_RUSH_DIFF: 63
+T1_D_RUSH_SUM: 251
+T2_D_RUSH_SUM: 353
+T1_D_RUSH_DIFF: -63
+T2_D_RUSH_DIFF: -34
+T1_O_PASS_SUM: 450
+T2_O_PASS_SUM: 450
+T1_O_PASS_DIFF: -37
+T2_O_PASS_DIFF: 21
+T1_D_PASS_SUM: 450
+T2_D_PASS_SUM: 450
+T1_D_PASS_DIFF: -21
+T2_D_PASS_DIFF: 37
+T1_PEN_DIFF: -37
+T2_PEN_DIFF: 37
+T1_TO_DIFF: 0.00
+T2_TO_DIFF: -0.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.154
+T2_WIN_DIFF: -0.154
+T1_DATA: 5,"O","A",58,1,49,-14,353,34,251,-63,450,-37,-21,-37,0.00,0,0.154,"Big Ten","Big Ten"
+T2_DATA: -5,"O","H",49,14,58,-1,251,63,353,-34,450,21,37,37,-0.00,0,-0.154,"Big Ten","Big Ten"
+
+------
+Site: T2 DoY: 293
+T1: Stanford
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '56.3',
+          'games' => 12,
+          'd_pass_yds' => '266.2',
+          'o_rush_yds' => '111.2',
+          'ppg' => '19.6',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '1.9',
+          'o_pen_yds' => '50.3',
+          'o_pass_yds' => '211.3',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '28.2',
+          'last_game' => 0,
+          'd_rush_yds' => '169.3'
+        };
+T2: Arizona
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '63.3',
+          'games' => 12,
+          'd_pass_yds' => '234.2',
+          'o_rush_yds' => '76.8',
+          'ppg' => '28.0',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.1',
+          'o_pen_yds' => '53.0',
+          'o_pass_yds' => '308.5',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '26.8',
+          'last_game' => 0,
+          'd_rush_yds' => '138.0'
+        };
+T1_POINT_DIFF: 1
+T2_POINT_DIFF: -1
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 46
+T2_O_SCORE_SUM: 56
+T1_O_SCORE_DIFF: -7
+T2_O_SCORE_DIFF: 0
+T1_D_SCORE_SUM: 56
+T2_D_SCORE_SUM: 46
+T1_D_SCORE_DIFF: 0
+T2_D_SCORE_DIFF: 7
+T1_O_RUSH_SUM: 249
+T2_O_RUSH_SUM: 246
+T1_O_RUSH_DIFF: -26
+T2_O_RUSH_DIFF: -92
+T1_D_RUSH_SUM: 246
+T2_D_RUSH_SUM: 249
+T1_D_RUSH_DIFF: 92
+T2_D_RUSH_DIFF: 26
+T1_O_PASS_SUM: 445
+T2_O_PASS_SUM: 574
+T1_O_PASS_DIFF: -22
+T2_O_PASS_DIFF: 42
+T1_D_PASS_SUM: 574
+T2_D_PASS_SUM: 445
+T1_D_PASS_DIFF: -42
+T2_D_PASS_DIFF: 22
+T1_PEN_DIFF: -9
+T2_PEN_DIFF: 9
+T1_TO_DIFF: 0.40
+T2_TO_DIFF: -0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.083
+T2_WIN_DIFF: 0.083
+T1_DATA: 1,"O","A",46,-7,56,0,249,-26,246,92,445,-22,-42,-9,0.40,0,-0.083,"Pac-10","Pac-10"
+T2_DATA: -1,"O","H",56,0,46,7,246,-92,249,26,574,42,22,9,-0.40,0,0.083,"Pac-10","Pac-10"
+
+------
+Site: T2 DoY: 293
+T1: Virginia
+$VAR1 = {
+          'd_to' => '1.7',
+          'd_pen_yds' => '49.7',
+          'games' => 13,
+          'd_pass_yds' => '225.5',
+          'o_rush_yds' => '135.6',
+          'ppg' => '24.4',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.5',
+          'o_pen_yds' => '40.9',
+          'o_pass_yds' => '194.8',
+          'conference' => 'ACC',
+          'opp_ppg' => '19.7',
+          'last_game' => 0,
+          'd_rush_yds' => '106.9'
+        };
+T2: Maryland
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '44.5',
+          'games' => 13,
+          'd_pass_yds' => '210.7',
+          'o_rush_yds' => '137.5',
+          'ppg' => '24.1',
+          'wins' => 6,
+          'losses' => '7',
+          'o_to' => '1.3',
+          'o_pen_yds' => '45.3',
+          'o_pass_yds' => '203.4',
+          'conference' => 'ACC',
+          'opp_ppg' => '21.5',
+          'last_game' => 0,
+          'd_rush_yds' => '147.3'
+        };
+T1_POINT_DIFF: 1
+T2_POINT_DIFF: -1
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 45
+T2_O_SCORE_SUM: 43
+T1_O_SCORE_DIFF: 2
+T2_O_SCORE_DIFF: 4
+T1_D_SCORE_SUM: 43
+T2_D_SCORE_SUM: 45
+T1_D_SCORE_DIFF: -4
+T2_D_SCORE_DIFF: -2
+T1_O_RUSH_SUM: 282
+T2_O_RUSH_SUM: 244
+T1_O_RUSH_DIFF: -11
+T2_O_RUSH_DIFF: 30
+T1_D_RUSH_SUM: 244
+T2_D_RUSH_SUM: 282
+T1_D_RUSH_DIFF: -30
+T2_D_RUSH_DIFF: 11
+T1_O_PASS_SUM: 405
+T2_O_PASS_SUM: 428
+T1_O_PASS_DIFF: -15
+T2_O_PASS_DIFF: -22
+T1_D_PASS_SUM: 428
+T2_D_PASS_SUM: 405
+T1_D_PASS_DIFF: 22
+T2_D_PASS_DIFF: 15
+T1_PEN_DIFF: 0
+T2_PEN_DIFF: 0
+T1_TO_DIFF: -0.40
+T2_TO_DIFF: 0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.231
+T2_WIN_DIFF: -0.231
+T1_DATA: 1,"O","A",45,2,43,-4,282,-11,244,-30,405,-15,22,0,-0.40,0,0.231,"ACC","ACC"
+T2_DATA: -1,"O","H",43,4,45,-2,244,30,282,11,428,-22,15,0,0.40,0,-0.231,"ACC","ACC"
+
+------
+Site: T1 DoY: 300
+T1: East Carolina
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '53.8',
+          'games' => 13,
+          'd_pass_yds' => '289.0',
+          'o_rush_yds' => '182.9',
+          'ppg' => '31.0',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '1.1',
+          'o_pen_yds' => '63.6',
+          'o_pass_yds' => '202.5',
+          'conference' => 'CUSA',
+          'opp_ppg' => '30.4',
+          'last_game' => 0,
+          'd_rush_yds' => '142.2'
+        };
+T2: Alabama-Birmingham
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '63.4',
+          'games' => 12,
+          'd_pass_yds' => '230.8',
+          'o_rush_yds' => '110.3',
+          'ppg' => '19.6',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '1.7',
+          'o_pen_yds' => '50.9',
+          'o_pass_yds' => '215.3',
+          'conference' => 'CUSA',
+          'opp_ppg' => '35.1',
+          'last_game' => 0,
+          'd_rush_yds' => '256.8'
+        };
+T1_POINT_DIFF: 35
+T2_POINT_DIFF: -35
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 66
+T2_O_SCORE_SUM: 50
+T1_O_SCORE_DIFF: -4
+T2_O_SCORE_DIFF: -10
+T1_D_SCORE_SUM: 50
+T2_D_SCORE_SUM: 66
+T1_D_SCORE_DIFF: 10
+T2_D_SCORE_DIFF: 4
+T1_O_RUSH_SUM: 439
+T2_O_RUSH_SUM: 252
+T1_O_RUSH_DIFF: -73
+T2_O_RUSH_DIFF: -31
+T1_D_RUSH_SUM: 252
+T2_D_RUSH_SUM: 439
+T1_D_RUSH_DIFF: 31
+T2_D_RUSH_DIFF: 73
+T1_O_PASS_SUM: 433
+T2_O_PASS_SUM: 504
+T1_O_PASS_DIFF: -28
+T2_O_PASS_DIFF: -73
+T1_D_PASS_SUM: 504
+T2_D_PASS_SUM: 433
+T1_D_PASS_DIFF: 73
+T2_D_PASS_DIFF: 28
+T1_PEN_DIFF: 3
+T2_PEN_DIFF: -3
+T1_TO_DIFF: 1.70
+T2_TO_DIFF: -1.70
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.449
+T2_WIN_DIFF: -0.449
+T1_DATA: 35,"O","H",66,-4,50,10,439,-73,252,31,433,-28,73,3,1.70,0,0.449,"CUSA","CUSA"
+T2_DATA: -35,"O","A",50,-10,66,4,252,-31,439,73,504,-73,28,-3,-1.70,0,-0.449,"CUSA","CUSA"
+
+------
+Site: T2 DoY: 300
+T1: Kansas
+$VAR1 = {
+          'd_to' => '2.7',
+          'd_pen_yds' => '57.9',
+          'games' => 13,
+          'd_pass_yds' => '222.5',
+          'o_rush_yds' => '188.8',
+          'ppg' => '42.8',
+          'wins' => 12,
+          'losses' => '1',
+          'o_to' => '1.1',
+          'o_pen_yds' => '39.1',
+          'o_pass_yds' => '291.0',
+          'conference' => 'Big 12',
+          'opp_ppg' => '16.4',
+          'last_game' => 0,
+          'd_rush_yds' => '94.8'
+        };
+T2: Texas A&M
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '37.8',
+          'games' => 13,
+          'd_pass_yds' => '254.8',
+          'o_rush_yds' => '211.6',
+          'ppg' => '27.9',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '1.3',
+          'o_pen_yds' => '47.2',
+          'o_pass_yds' => '185.4',
+          'conference' => 'Big 12',
+          'opp_ppg' => '25.9',
+          'last_game' => 0,
+          'd_rush_yds' => '160.9'
+        };
+T1_POINT_DIFF: 8
+T2_POINT_DIFF: -8
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 68
+T2_O_SCORE_SUM: 44
+T1_O_SCORE_DIFF: 16
+T2_O_SCORE_DIFF: 11
+T1_D_SCORE_SUM: 44
+T2_D_SCORE_SUM: 68
+T1_D_SCORE_DIFF: -11
+T2_D_SCORE_DIFF: -16
+T1_O_RUSH_SUM: 349
+T2_O_RUSH_SUM: 306
+T1_O_RUSH_DIFF: 27
+T2_O_RUSH_DIFF: 116
+T1_D_RUSH_SUM: 306
+T2_D_RUSH_SUM: 349
+T1_D_RUSH_DIFF: -116
+T2_D_RUSH_DIFF: -27
+T1_O_PASS_SUM: 545
+T2_O_PASS_SUM: 407
+T1_O_PASS_DIFF: 36
+T2_O_PASS_DIFF: -37
+T1_D_PASS_SUM: 407
+T2_D_PASS_SUM: 545
+T1_D_PASS_DIFF: 37
+T2_D_PASS_DIFF: -36
+T1_PEN_DIFF: 12
+T2_PEN_DIFF: -12
+T1_TO_DIFF: 1.10
+T2_TO_DIFF: -1.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.385
+T2_WIN_DIFF: -0.385
+T1_DATA: 8,"O","A",68,16,44,-11,349,27,306,-116,545,36,37,12,1.10,0,0.385,"Big 12","Big 12"
+T2_DATA: -8,"O","H",44,11,68,-16,306,116,349,-27,407,-37,-36,-12,-1.10,0,-0.385,"Big 12","Big 12"
+
+------
+Site: T1 DoY: 300
+T1: Marshall
+$VAR1 = {
+          'd_to' => '0.6',
+          'd_pen_yds' => '43.7',
+          'games' => 12,
+          'd_pass_yds' => '259.8',
+          'o_rush_yds' => '141.8',
+          'ppg' => '24.8',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '1.4',
+          'o_pen_yds' => '57.9',
+          'o_pass_yds' => '271.1',
+          'conference' => 'CUSA',
+          'opp_ppg' => '34.2',
+          'last_game' => 0,
+          'd_rush_yds' => '191.0'
+        };
+T2: Rice
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '73.3',
+          'games' => 12,
+          'd_pass_yds' => '312.4',
+          'o_rush_yds' => '110.9',
+          'ppg' => '31.4',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '2.3',
+          'o_pen_yds' => '43.7',
+          'o_pass_yds' => '293.1',
+          'conference' => 'CUSA',
+          'opp_ppg' => '42.9',
+          'last_game' => 0,
+          'd_rush_yds' => '198.4'
+        };
+T1_POINT_DIFF: 13
+T2_POINT_DIFF: -13
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 67
+T2_O_SCORE_SUM: 65
+T1_O_SCORE_DIFF: -18
+T2_O_SCORE_DIFF: -2
+T1_D_SCORE_SUM: 65
+T2_D_SCORE_SUM: 67
+T1_D_SCORE_DIFF: 2
+T2_D_SCORE_DIFF: 18
+T1_O_RUSH_SUM: 340
+T2_O_RUSH_SUM: 301
+T1_O_RUSH_DIFF: -56
+T2_O_RUSH_DIFF: -80
+T1_D_RUSH_SUM: 301
+T2_D_RUSH_SUM: 340
+T1_D_RUSH_DIFF: 80
+T2_D_RUSH_DIFF: 56
+T1_O_PASS_SUM: 583
+T2_O_PASS_SUM: 552
+T1_O_PASS_DIFF: -41
+T2_O_PASS_DIFF: 33
+T1_D_PASS_SUM: 552
+T2_D_PASS_SUM: 583
+T1_D_PASS_DIFF: -33
+T2_D_PASS_DIFF: 41
+T1_PEN_DIFF: -15
+T2_PEN_DIFF: 15
+T1_TO_DIFF: -0.70
+T2_TO_DIFF: 0.70
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 13,"O","H",67,-18,65,2,340,-56,301,80,583,-41,-33,-15,-0.70,0,0.000,"CUSA","CUSA"
+T2_DATA: -13,"O","A",65,-2,67,18,301,-80,340,56,552,33,41,15,0.70,0,0.000,"CUSA","CUSA"
+
+------
+Site: T1 DoY: 300
+T1: Missouri
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '55.6',
+          'games' => 14,
+          'd_pass_yds' => '256.9',
+          'o_rush_yds' => '176.2',
+          'ppg' => '39.9',
+          'wins' => 12,
+          'losses' => '2',
+          'o_to' => '1.4',
+          'o_pen_yds' => '46.3',
+          'o_pass_yds' => '314.1',
+          'conference' => 'Big 12',
+          'opp_ppg' => '23.3',
+          'last_game' => 0,
+          'd_rush_yds' => '122.1'
+        };
+T2: Iowa State
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '52.0',
+          'games' => 12,
+          'd_pass_yds' => '254.3',
+          'o_rush_yds' => '123.7',
+          'ppg' => '18.2',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '2.1',
+          'o_pen_yds' => '42.4',
+          'o_pass_yds' => '203.3',
+          'conference' => 'Big 12',
+          'opp_ppg' => '31.8',
+          'last_game' => 0,
+          'd_rush_yds' => '136.1'
+        };
+T1_POINT_DIFF: 14
+T2_POINT_DIFF: -14
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 71
+T2_O_SCORE_SUM: 41
+T1_O_SCORE_DIFF: 8
+T2_O_SCORE_DIFF: -5
+T1_D_SCORE_SUM: 41
+T2_D_SCORE_SUM: 71
+T1_D_SCORE_DIFF: 5
+T2_D_SCORE_DIFF: -8
+T1_O_RUSH_SUM: 312
+T2_O_RUSH_SUM: 245
+T1_O_RUSH_DIFF: 40
+T2_O_RUSH_DIFF: 1
+T1_D_RUSH_SUM: 245
+T2_D_RUSH_SUM: 312
+T1_D_RUSH_DIFF: -1
+T2_D_RUSH_DIFF: -40
+T1_O_PASS_SUM: 568
+T2_O_PASS_SUM: 460
+T1_O_PASS_DIFF: 59
+T2_O_PASS_DIFF: -53
+T1_D_PASS_SUM: 460
+T2_D_PASS_SUM: 568
+T1_D_PASS_DIFF: 53
+T2_D_PASS_DIFF: -59
+T1_PEN_DIFF: 7
+T2_PEN_DIFF: -7
+T1_TO_DIFF: 1.60
+T2_TO_DIFF: -1.60
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.607
+T2_WIN_DIFF: -0.607
+T1_DATA: 14,"O","H",71,8,41,5,312,40,245,-1,568,59,53,7,1.60,0,0.607,"Big 12","Big 12"
+T2_DATA: -14,"O","A",41,-5,71,-8,245,1,312,-40,460,-53,-59,-7,-1.60,0,-0.607,"Big 12","Big 12"
+
+------
+Site: T1 DoY: 300
+T1: Texas
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '52.5',
+          'games' => 13,
+          'd_pass_yds' => '277.8',
+          'o_rush_yds' => '207.5',
+          'ppg' => '37.2',
+          'wins' => 10,
+          'losses' => '3',
+          'o_to' => '2.0',
+          'o_pen_yds' => '55.4',
+          'o_pass_yds' => '255.4',
+          'conference' => 'Big 12',
+          'opp_ppg' => '25.3',
+          'last_game' => 0,
+          'd_rush_yds' => '93.4'
+        };
+T2: Nebraska
+$VAR1 = {
+          'd_to' => '0.9',
+          'd_pen_yds' => '49.8',
+          'games' => 12,
+          'd_pass_yds' => '244.7',
+          'o_rush_yds' => '144.4',
+          'ppg' => '33.4',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.3',
+          'o_pen_yds' => '49.1',
+          'o_pass_yds' => '323.8',
+          'conference' => 'Big 12',
+          'opp_ppg' => '37.9',
+          'last_game' => 0,
+          'd_rush_yds' => '232.2'
+        };
+T1_POINT_DIFF: 3
+T2_POINT_DIFF: -3
+T1_WHEN: "O"
+T2_WHEN: "O"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 75
+T2_O_SCORE_SUM: 58
+T1_O_SCORE_DIFF: 0
+T2_O_SCORE_DIFF: 8
+T1_D_SCORE_SUM: 58
+T2_D_SCORE_SUM: 75
+T1_D_SCORE_DIFF: -8
+T2_D_SCORE_DIFF: 0
+T1_O_RUSH_SUM: 439
+T2_O_RUSH_SUM: 237
+T1_O_RUSH_DIFF: -24
+T2_O_RUSH_DIFF: 51
+T1_D_RUSH_SUM: 237
+T2_D_RUSH_SUM: 439
+T1_D_RUSH_DIFF: -51
+T2_D_RUSH_DIFF: 24
+T1_O_PASS_SUM: 500
+T2_O_PASS_SUM: 601
+T1_O_PASS_DIFF: 10
+T2_O_PASS_DIFF: 46
+T1_D_PASS_SUM: 601
+T2_D_PASS_SUM: 500
+T1_D_PASS_DIFF: -46
+T2_D_PASS_DIFF: -10
+T1_PEN_DIFF: 9
+T2_PEN_DIFF: -9
+T1_TO_DIFF: 1.50
+T2_TO_DIFF: -1.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.353
+T2_WIN_DIFF: -0.353
+T1_DATA: 3,"O","H",75,0,58,-8,439,-24,237,-51,500,10,-46,9,1.50,0,0.353,"Big 12","Big 12"
+T2_DATA: -3,"O","A",58,8,75,0,237,51,439,24,601,46,-10,-9,-1.50,0,-0.353,"Big 12","Big 12"
+
+------
+Site: T2 DoY: 305
+T1: Virginia Tech
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '49.1',
+          'games' => 14,
+          'd_pass_yds' => '210.3',
+          'o_rush_yds' => '133.6',
+          'ppg' => '28.7',
+          'wins' => 11,
+          'losses' => '3',
+          'o_to' => '1.4',
+          'o_pen_yds' => '55.6',
+          'o_pass_yds' => '196.9',
+          'conference' => 'ACC',
+          'opp_ppg' => '16.1',
+          'last_game' => 0,
+          'd_rush_yds' => '86.6'
+        };
+T2: Georgia Tech
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '51.4',
+          'games' => 13,
+          'd_pass_yds' => '215.9',
+          'o_rush_yds' => '199.3',
+          'ppg' => '26.2',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '1.8',
+          'o_pen_yds' => '59.3',
+          'o_pass_yds' => '185.6',
+          'conference' => 'ACC',
+          'opp_ppg' => '20.8',
+          'last_game' => 0,
+          'd_rush_yds' => '114.5'
+        };
+T1_POINT_DIFF: 24
+T2_POINT_DIFF: -24
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 49
+T2_O_SCORE_SUM: 42
+T1_O_SCORE_DIFF: 7
+T2_O_SCORE_DIFF: 10
+T1_D_SCORE_SUM: 42
+T2_D_SCORE_SUM: 49
+T1_D_SCORE_DIFF: -10
+T2_D_SCORE_DIFF: -7
+T1_O_RUSH_SUM: 248
+T2_O_RUSH_SUM: 285
+T1_O_RUSH_DIFF: 19
+T2_O_RUSH_DIFF: 112
+T1_D_RUSH_SUM: 285
+T2_D_RUSH_SUM: 248
+T1_D_RUSH_DIFF: -112
+T2_D_RUSH_DIFF: -19
+T1_O_PASS_SUM: 412
+T2_O_PASS_SUM: 395
+T1_O_PASS_DIFF: -19
+T2_O_PASS_DIFF: -24
+T1_D_PASS_SUM: 395
+T2_D_PASS_SUM: 412
+T1_D_PASS_DIFF: 24
+T2_D_PASS_DIFF: 19
+T1_PEN_DIFF: -5
+T2_PEN_DIFF: 5
+T1_TO_DIFF: 1.10
+T2_TO_DIFF: -1.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.247
+T2_WIN_DIFF: -0.247
+T1_DATA: 24,"N","A",49,7,42,-10,248,19,285,-112,412,-19,24,-5,1.10,0,0.247,"ACC","ACC"
+T2_DATA: -24,"N","H",42,10,49,-7,285,112,248,-19,395,-24,19,5,-1.10,0,-0.247,"ACC","ACC"
+
+------
+Site: T1 DoY: 307
+T1: Indiana
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '62.6',
+          'games' => 13,
+          'd_pass_yds' => '243.7',
+          'o_rush_yds' => '157.4',
+          'ppg' => '31.7',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '2.2',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '236.4',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '28.5',
+          'last_game' => 0,
+          'd_rush_yds' => '159.7'
+        };
+T2: Ball State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '63.9',
+          'games' => 13,
+          'd_pass_yds' => '228.0',
+          'o_rush_yds' => '148.9',
+          'ppg' => '31.5',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '0.8',
+          'o_pen_yds' => '55.6',
+          'o_pass_yds' => '284.9',
+          'conference' => 'MAC',
+          'opp_ppg' => '28.3',
+          'last_game' => 0,
+          'd_rush_yds' => '204.3'
+        };
+T1_POINT_DIFF: 18
+T2_POINT_DIFF: -18
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 60
+T2_O_SCORE_SUM: 60
+T1_O_SCORE_DIFF: 3
+T2_O_SCORE_DIFF: 3
+T1_D_SCORE_SUM: 60
+T2_D_SCORE_SUM: 60
+T1_D_SCORE_DIFF: -3
+T2_D_SCORE_DIFF: -3
+T1_O_RUSH_SUM: 361
+T2_O_RUSH_SUM: 308
+T1_O_RUSH_DIFF: -46
+T2_O_RUSH_DIFF: -10
+T1_D_RUSH_SUM: 308
+T2_D_RUSH_SUM: 361
+T1_D_RUSH_DIFF: 10
+T2_D_RUSH_DIFF: 46
+T1_O_PASS_SUM: 464
+T2_O_PASS_SUM: 528
+T1_O_PASS_DIFF: 8
+T2_O_PASS_DIFF: 41
+T1_D_PASS_SUM: 528
+T2_D_PASS_SUM: 464
+T1_D_PASS_DIFF: -41
+T2_D_PASS_DIFF: -8
+T1_PEN_DIFF: -2
+T2_PEN_DIFF: 2
+T1_TO_DIFF: -1.20
+T2_TO_DIFF: 1.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 18,"N","H",60,3,60,-3,361,-46,308,10,464,8,-41,-2,-1.20,0,0.000,"Big Ten","MAC"
+T2_DATA: -18,"N","A",60,3,60,-3,308,-10,361,46,528,41,-8,2,1.20,0,0.000,"MAC","Big Ten"
+
+------
+Site: T1 DoY: 307
+T1: Iowa State
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '52.0',
+          'games' => 12,
+          'd_pass_yds' => '254.3',
+          'o_rush_yds' => '123.7',
+          'ppg' => '18.2',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '2.1',
+          'o_pen_yds' => '42.4',
+          'o_pass_yds' => '203.3',
+          'conference' => 'Big 12',
+          'opp_ppg' => '31.8',
+          'last_game' => 0,
+          'd_rush_yds' => '136.1'
+        };
+T2: Kansas State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '57.8',
+          'games' => 12,
+          'd_pass_yds' => '259.0',
+          'o_rush_yds' => '132.8',
+          'ppg' => '35.2',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '1.8',
+          'o_pen_yds' => '75.3',
+          'o_pass_yds' => '285.4',
+          'conference' => 'Big 12',
+          'opp_ppg' => '30.8',
+          'last_game' => 0,
+          'd_rush_yds' => '141.6'
+        };
+T1_POINT_DIFF: 11
+T2_POINT_DIFF: -11
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 49
+T2_O_SCORE_SUM: 67
+T1_O_SCORE_DIFF: -12
+T2_O_SCORE_DIFF: 3
+T1_D_SCORE_SUM: 67
+T2_D_SCORE_SUM: 49
+T1_D_SCORE_DIFF: -3
+T2_D_SCORE_DIFF: 12
+T1_O_RUSH_SUM: 265
+T2_O_RUSH_SUM: 268
+T1_O_RUSH_DIFF: -17
+T2_O_RUSH_DIFF: -3
+T1_D_RUSH_SUM: 268
+T2_D_RUSH_SUM: 265
+T1_D_RUSH_DIFF: 3
+T2_D_RUSH_DIFF: 17
+T1_O_PASS_SUM: 462
+T2_O_PASS_SUM: 539
+T1_O_PASS_DIFF: -55
+T2_O_PASS_DIFF: 31
+T1_D_PASS_SUM: 539
+T2_D_PASS_SUM: 462
+T1_D_PASS_DIFF: -31
+T2_D_PASS_DIFF: 55
+T1_PEN_DIFF: -38
+T2_PEN_DIFF: 38
+T1_TO_DIFF: -1.00
+T2_TO_DIFF: 1.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.167
+T2_WIN_DIFF: 0.167
+T1_DATA: 11,"N","H",49,-12,67,-3,265,-17,268,3,462,-55,-31,-38,-1.00,0,-0.167,"Big 12","Big 12"
+T2_DATA: -11,"N","A",67,3,49,12,268,-3,265,17,539,31,55,38,1.00,0,0.167,"Big 12","Big 12"
+
+------
+Site: T1 DoY: 307
+T1: Tennessee
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '45.8',
+          'games' => 14,
+          'd_pass_yds' => '238.6',
+          'o_rush_yds' => '139.0',
+          'ppg' => '32.5',
+          'wins' => 10,
+          'losses' => '4',
+          'o_to' => '1.3',
+          'o_pen_yds' => '45.8',
+          'o_pass_yds' => '262.5',
+          'conference' => 'SEC',
+          'opp_ppg' => '27.3',
+          'last_game' => 0,
+          'd_rush_yds' => '164.6'
+        };
+T2: Louisiana-Lafayette
+$VAR1 = {
+          'd_to' => '1.4',
+          'd_pen_yds' => '51.8',
+          'games' => 12,
+          'd_pass_yds' => '218.3',
+          'o_rush_yds' => '251.6',
+          'ppg' => '23.8',
+          'wins' => 3,
+          'losses' => '9',
+          'o_to' => '1.8',
+          'o_pen_yds' => '52.5',
+          'o_pass_yds' => '155.5',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '35.8',
+          'last_game' => 0,
+          'd_rush_yds' => '228.4'
+        };
+T1_POINT_DIFF: 52
+T2_POINT_DIFF: -52
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 68
+T2_O_SCORE_SUM: 51
+T1_O_SCORE_DIFF: -3
+T2_O_SCORE_DIFF: -3
+T1_D_SCORE_SUM: 51
+T2_D_SCORE_SUM: 68
+T1_D_SCORE_DIFF: 3
+T2_D_SCORE_DIFF: 3
+T1_O_RUSH_SUM: 367
+T2_O_RUSH_SUM: 416
+T1_O_RUSH_DIFF: -89
+T2_O_RUSH_DIFF: 87
+T1_D_RUSH_SUM: 416
+T2_D_RUSH_SUM: 367
+T1_D_RUSH_DIFF: -87
+T2_D_RUSH_DIFF: 89
+T1_O_PASS_SUM: 480
+T2_O_PASS_SUM: 394
+T1_O_PASS_DIFF: 44
+T2_O_PASS_DIFF: -83
+T1_D_PASS_SUM: 394
+T2_D_PASS_SUM: 480
+T1_D_PASS_DIFF: 83
+T2_D_PASS_DIFF: -44
+T1_PEN_DIFF: -12
+T2_PEN_DIFF: 12
+T1_TO_DIFF: 0.90
+T2_TO_DIFF: -0.90
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.464
+T2_WIN_DIFF: -0.464
+T1_DATA: 52,"N","H",68,-3,51,3,367,-89,416,-87,480,44,83,-12,0.90,0,0.464,"SEC","Sun Belt"
+T2_DATA: -52,"N","A",51,-3,68,3,416,87,367,89,394,-83,-44,12,-0.90,0,-0.464,"Sun Belt","SEC"
+
+------
+Site: T1 DoY: 312
+T1: Brigham Young
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '44.7',
+          'games' => 13,
+          'd_pass_yds' => '210.4',
+          'o_rush_yds' => '144.4',
+          'ppg' => '30.1',
+          'wins' => 11,
+          'losses' => '2',
+          'o_to' => '2.0',
+          'o_pen_yds' => '60.2',
+          'o_pass_yds' => '298.4',
+          'conference' => 'MWC',
+          'opp_ppg' => '18.5',
+          'last_game' => 0,
+          'd_rush_yds' => '97.5'
+        };
+T2: Texas Christian
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '54.9',
+          'games' => 13,
+          'd_pass_yds' => '220.2',
+          'o_rush_yds' => '165.0',
+          'ppg' => '26.1',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '2.2',
+          'o_pen_yds' => '57.9',
+          'o_pass_yds' => '221.6',
+          'conference' => 'MWC',
+          'opp_ppg' => '18.7',
+          'last_game' => 0,
+          'd_rush_yds' => '103.5'
+        };
+T1_POINT_DIFF: 5
+T2_POINT_DIFF: -5
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 48
+T2_O_SCORE_SUM: 44
+T1_O_SCORE_DIFF: 11
+T2_O_SCORE_DIFF: 7
+T1_D_SCORE_SUM: 44
+T2_D_SCORE_SUM: 48
+T1_D_SCORE_DIFF: -7
+T2_D_SCORE_DIFF: -11
+T1_O_RUSH_SUM: 247
+T2_O_RUSH_SUM: 262
+T1_O_RUSH_DIFF: 40
+T2_O_RUSH_DIFF: 67
+T1_D_RUSH_SUM: 262
+T2_D_RUSH_SUM: 247
+T1_D_RUSH_DIFF: -67
+T2_D_RUSH_DIFF: -40
+T1_O_PASS_SUM: 518
+T2_O_PASS_SUM: 432
+T1_O_PASS_DIFF: 78
+T2_O_PASS_DIFF: 11
+T1_D_PASS_SUM: 432
+T2_D_PASS_SUM: 518
+T1_D_PASS_DIFF: -11
+T2_D_PASS_DIFF: -78
+T1_PEN_DIFF: -7
+T2_PEN_DIFF: 7
+T1_TO_DIFF: 0.10
+T2_TO_DIFF: -0.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.231
+T2_WIN_DIFF: -0.231
+T1_DATA: 5,"N","H",48,11,44,-7,247,40,262,-67,518,78,-11,-7,0.10,0,0.231,"MWC","MWC"
+T2_DATA: -5,"N","A",44,7,48,-11,262,67,247,-40,432,11,-78,7,-0.10,0,-0.231,"MWC","MWC"
+
+------
+Site: T2 DoY: 314
+T1: Illinois
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '47.3',
+          'games' => 13,
+          'd_pass_yds' => '244.6',
+          'o_rush_yds' => '256.8',
+          'ppg' => '27.8',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.1',
+          'o_pen_yds' => '48.9',
+          'o_pass_yds' => '168.2',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '21.8',
+          'last_game' => 0,
+          'd_rush_yds' => '132.2'
+        };
+T2: Ohio State
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '37.2',
+          'games' => 13,
+          'd_pass_yds' => '150.2',
+          'o_rush_yds' => '196.9',
+          'ppg' => '31.4',
+          'wins' => 11,
+          'losses' => '2',
+          'o_to' => '1.7',
+          'o_pen_yds' => '44.2',
+          'o_pass_yds' => '196.8',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '12.8',
+          'last_game' => 0,
+          'd_rush_yds' => '82.8'
+        };
+T1_POINT_DIFF: 7
+T2_POINT_DIFF: -7
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 40
+T2_O_SCORE_SUM: 53
+T1_O_SCORE_DIFF: 15
+T2_O_SCORE_DIFF: 9
+T1_D_SCORE_SUM: 53
+T2_D_SCORE_SUM: 40
+T1_D_SCORE_DIFF: -9
+T2_D_SCORE_DIFF: -15
+T1_O_RUSH_SUM: 339
+T2_O_RUSH_SUM: 329
+T1_O_RUSH_DIFF: 174
+T2_O_RUSH_DIFF: 64
+T1_D_RUSH_SUM: 329
+T2_D_RUSH_SUM: 339
+T1_D_RUSH_DIFF: -64
+T2_D_RUSH_DIFF: -174
+T1_O_PASS_SUM: 318
+T2_O_PASS_SUM: 441
+T1_O_PASS_DIFF: 18
+T2_O_PASS_DIFF: -47
+T1_D_PASS_SUM: 441
+T2_D_PASS_SUM: 318
+T1_D_PASS_DIFF: 47
+T2_D_PASS_DIFF: -18
+T1_PEN_DIFF: 14
+T2_PEN_DIFF: -14
+T1_TO_DIFF: -0.00
+T2_TO_DIFF: 0.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.154
+T2_WIN_DIFF: 0.154
+T1_DATA: 7,"N","A",40,15,53,-9,339,174,329,-64,318,18,47,14,-0.00,0,-0.154,"Big Ten","Big Ten"
+T2_DATA: -7,"N","H",53,9,40,-15,329,64,339,-174,441,-47,-18,-14,0.00,0,0.154,"Big Ten","Big Ten"
+
+------
+Site: T1 DoY: 314
+T1: Oregon State
+$VAR1 = {
+          'd_to' => '2.6',
+          'd_pen_yds' => '49.8',
+          'games' => 13,
+          'd_pass_yds' => '235.5',
+          'o_rush_yds' => '174.9',
+          'ppg' => '27.8',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.6',
+          'o_pen_yds' => '58.2',
+          'o_pass_yds' => '196.7',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '22.6',
+          'last_game' => 0,
+          'd_rush_yds' => '70.6'
+        };
+T2: Washington
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '63.5',
+          'games' => 13,
+          'd_pass_yds' => '261.4',
+          'o_rush_yds' => '203.1',
+          'ppg' => '29.2',
+          'wins' => 4,
+          'losses' => '9',
+          'o_to' => '1.9',
+          'o_pen_yds' => '47.2',
+          'o_pass_yds' => '191.2',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '31.6',
+          'last_game' => 0,
+          'd_rush_yds' => '185.0'
+        };
+T1_POINT_DIFF: 6
+T2_POINT_DIFF: -6
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 59
+T2_O_SCORE_SUM: 51
+T1_O_SCORE_DIFF: -3
+T2_O_SCORE_DIFF: 6
+T1_D_SCORE_SUM: 51
+T2_D_SCORE_SUM: 59
+T1_D_SCORE_DIFF: -6
+T2_D_SCORE_DIFF: 3
+T1_O_RUSH_SUM: 359
+T2_O_RUSH_SUM: 273
+T1_O_RUSH_DIFF: -10
+T2_O_RUSH_DIFF: 132
+T1_D_RUSH_SUM: 273
+T2_D_RUSH_SUM: 359
+T1_D_RUSH_DIFF: -132
+T2_D_RUSH_DIFF: 10
+T1_O_PASS_SUM: 458
+T2_O_PASS_SUM: 426
+T1_O_PASS_DIFF: -64
+T2_O_PASS_DIFF: -44
+T1_D_PASS_SUM: 426
+T2_D_PASS_SUM: 458
+T1_D_PASS_DIFF: 44
+T2_D_PASS_DIFF: 64
+T1_PEN_DIFF: -2
+T2_PEN_DIFF: 2
+T1_TO_DIFF: 0.10
+T2_TO_DIFF: -0.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.385
+T2_WIN_DIFF: -0.385
+T1_DATA: 6,"N","H",59,-3,51,-6,359,-10,273,-132,458,-64,44,-2,0.10,0,0.385,"Pac-10","Pac-10"
+T2_DATA: -6,"N","A",51,6,59,3,273,132,359,10,426,-44,64,2,-0.10,0,-0.385,"Pac-10","Pac-10"
+
+------
+Site: T1 DoY: 314
+T1: San Jose State
+$VAR1 = {
+          'd_to' => '2.3',
+          'd_pen_yds' => '66.1',
+          'games' => 12,
+          'd_pass_yds' => '242.6',
+          'o_rush_yds' => '83.8',
+          'ppg' => '20.4',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '1.2',
+          'o_pen_yds' => '45.8',
+          'o_pass_yds' => '264.3',
+          'conference' => 'WAC',
+          'opp_ppg' => '29.3',
+          'last_game' => 0,
+          'd_rush_yds' => '165.4'
+        };
+T2: New Mexico State
+$VAR1 = {
+          'd_to' => '1.1',
+          'd_pen_yds' => '56.3',
+          'games' => 13,
+          'd_pass_yds' => '261.9',
+          'o_rush_yds' => '91.5',
+          'ppg' => '24.0',
+          'wins' => 4,
+          'losses' => '9',
+          'o_to' => '2.2',
+          'o_pen_yds' => '46.2',
+          'o_pass_yds' => '331.9',
+          'conference' => 'WAC',
+          'opp_ppg' => '36.2',
+          'last_game' => 0,
+          'd_rush_yds' => '168.0'
+        };
+T1_POINT_DIFF: 34
+T2_POINT_DIFF: -34
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 56
+T2_O_SCORE_SUM: 53
+T1_O_SCORE_DIFF: -15
+T2_O_SCORE_DIFF: -5
+T1_D_SCORE_SUM: 53
+T2_D_SCORE_SUM: 56
+T1_D_SCORE_DIFF: 5
+T2_D_SCORE_DIFF: 15
+T1_O_RUSH_SUM: 251
+T2_O_RUSH_SUM: 256
+T1_O_RUSH_DIFF: -84
+T2_O_RUSH_DIFF: -73
+T1_D_RUSH_SUM: 256
+T2_D_RUSH_SUM: 251
+T1_D_RUSH_DIFF: 73
+T2_D_RUSH_DIFF: 84
+T1_O_PASS_SUM: 526
+T2_O_PASS_SUM: 574
+T1_O_PASS_DIFF: 2
+T2_O_PASS_DIFF: 89
+T1_D_PASS_SUM: 574
+T2_D_PASS_SUM: 526
+T1_D_PASS_DIFF: -89
+T2_D_PASS_DIFF: -2
+T1_PEN_DIFF: 9
+T2_PEN_DIFF: -9
+T1_TO_DIFF: 2.20
+T2_TO_DIFF: -2.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.109
+T2_WIN_DIFF: -0.109
+T1_DATA: 34,"N","H",56,-15,53,5,251,-84,256,73,526,2,-89,9,2.20,0,0.109,"WAC","WAC"
+T2_DATA: -34,"N","A",53,-5,56,15,256,-73,251,84,574,89,-2,-9,-2.20,0,-0.109,"WAC","WAC"
+
+------
+Site: T2 DoY: 314
+T1: Troy
+$VAR1 = {
+          'd_to' => '2.5',
+          'd_pen_yds' => '60.4',
+          'games' => 12,
+          'd_pass_yds' => '183.1',
+          'o_rush_yds' => '182.6',
+          'ppg' => '34.0',
+          'wins' => 8,
+          'losses' => '4',
+          'o_to' => '2.6',
+          'o_pen_yds' => '58.1',
+          'o_pass_yds' => '270.3',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '24.6',
+          'last_game' => 0,
+          'd_rush_yds' => '195.2'
+        };
+T2: Western Kentucky
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '53.0',
+          'games' => 12,
+          'd_pass_yds' => '184.6',
+          'o_rush_yds' => '247.2',
+          'ppg' => '33.2',
+          'wins' => 7,
+          'losses' => '5',
+          'o_to' => '2.3',
+          'o_pen_yds' => '69.1',
+          'o_pass_yds' => '161.7',
+          'conference' => 'Ind',
+          'opp_ppg' => '20.8',
+          'last_game' => 0,
+          'd_rush_yds' => '135.0'
+        };
+T1_POINT_DIFF: 4
+T2_POINT_DIFF: -4
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 54
+T2_O_SCORE_SUM: 57
+T1_O_SCORE_DIFF: 13
+T2_O_SCORE_DIFF: 8
+T1_D_SCORE_SUM: 57
+T2_D_SCORE_SUM: 54
+T1_D_SCORE_DIFF: -8
+T2_D_SCORE_DIFF: -13
+T1_O_RUSH_SUM: 317
+T2_O_RUSH_SUM: 442
+T1_O_RUSH_DIFF: 47
+T2_O_RUSH_DIFF: 52
+T1_D_RUSH_SUM: 442
+T2_D_RUSH_SUM: 317
+T1_D_RUSH_DIFF: -52
+T2_D_RUSH_DIFF: -47
+T1_O_PASS_SUM: 454
+T2_O_PASS_SUM: 344
+T1_O_PASS_DIFF: 85
+T2_O_PASS_DIFF: -21
+T1_D_PASS_SUM: 344
+T2_D_PASS_SUM: 454
+T1_D_PASS_DIFF: 21
+T2_D_PASS_DIFF: -85
+T1_PEN_DIFF: -3
+T2_PEN_DIFF: 3
+T1_TO_DIFF: -0.20
+T2_TO_DIFF: 0.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.083
+T2_WIN_DIFF: -0.083
+T1_DATA: 4,"N","A",54,13,57,-8,317,47,442,-52,454,85,21,-3,-0.20,0,0.083,"Sun Belt","Ind"
+T2_DATA: -4,"N","H",57,8,54,-13,442,52,317,-47,344,-21,-85,3,0.20,0,-0.083,"Ind","Sun Belt"
+
+------
+Site: T1 DoY: 314
+T1: Tulane
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '58.2',
+          'games' => 12,
+          'd_pass_yds' => '287.7',
+          'o_rush_yds' => '201.0',
+          'ppg' => '24.4',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '1.8',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '194.9',
+          'conference' => 'CUSA',
+          'opp_ppg' => '31.2',
+          'last_game' => 0,
+          'd_rush_yds' => '132.6'
+        };
+T2: Texas-El Paso
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '64.2',
+          'games' => 12,
+          'd_pass_yds' => '301.8',
+          'o_rush_yds' => '147.7',
+          'ppg' => '33.6',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '1.7',
+          'o_pen_yds' => '66.4',
+          'o_pass_yds' => '275.2',
+          'conference' => 'CUSA',
+          'opp_ppg' => '37.1',
+          'last_game' => 0,
+          'd_rush_yds' => '202.9'
+        };
+T1_POINT_DIFF: 15
+T2_POINT_DIFF: -15
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 61
+T2_O_SCORE_SUM: 64
+T1_O_SCORE_DIFF: -12
+T2_O_SCORE_DIFF: 2
+T1_D_SCORE_SUM: 64
+T2_D_SCORE_SUM: 61
+T1_D_SCORE_DIFF: -2
+T2_D_SCORE_DIFF: 12
+T1_O_RUSH_SUM: 403
+T2_O_RUSH_SUM: 280
+T1_O_RUSH_DIFF: -1
+T2_O_RUSH_DIFF: 15
+T1_D_RUSH_SUM: 280
+T2_D_RUSH_SUM: 403
+T1_D_RUSH_DIFF: -15
+T2_D_RUSH_DIFF: 1
+T1_O_PASS_SUM: 496
+T2_O_PASS_SUM: 562
+T1_O_PASS_DIFF: -106
+T2_O_PASS_DIFF: -12
+T1_D_PASS_SUM: 562
+T2_D_PASS_SUM: 496
+T1_D_PASS_DIFF: 12
+T2_D_PASS_DIFF: 106
+T1_PEN_DIFF: -17
+T2_PEN_DIFF: 17
+T1_TO_DIFF: -0.90
+T2_TO_DIFF: 0.90
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 15,"N","H",61,-12,64,-2,403,-1,280,-15,496,-106,12,-17,-0.90,0,0.000,"CUSA","CUSA"
+T2_DATA: -15,"N","A",64,2,61,12,280,15,403,1,562,-12,106,17,0.90,0,0.000,"CUSA","CUSA"
+
+------
+Site: T1 DoY: 314
+T1: Virginia Tech
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '49.1',
+          'games' => 14,
+          'd_pass_yds' => '210.3',
+          'o_rush_yds' => '133.6',
+          'ppg' => '28.7',
+          'wins' => 11,
+          'losses' => '3',
+          'o_to' => '1.4',
+          'o_pen_yds' => '55.6',
+          'o_pass_yds' => '196.9',
+          'conference' => 'ACC',
+          'opp_ppg' => '16.1',
+          'last_game' => 0,
+          'd_rush_yds' => '86.6'
+        };
+T2: Florida State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '65.9',
+          'games' => 13,
+          'd_pass_yds' => '245.4',
+          'o_rush_yds' => '127.5',
+          'ppg' => '23.3',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '1.7',
+          'o_pen_yds' => '66.9',
+          'o_pass_yds' => '241.8',
+          'conference' => 'ACC',
+          'opp_ppg' => '22.9',
+          'last_game' => 0,
+          'd_rush_yds' => '116.6'
+        };
+T1_POINT_DIFF: 19
+T2_POINT_DIFF: -19
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 51
+T2_O_SCORE_SUM: 39
+T1_O_SCORE_DIFF: 5
+T2_O_SCORE_DIFF: 7
+T1_D_SCORE_SUM: 39
+T2_D_SCORE_SUM: 51
+T1_D_SCORE_DIFF: -7
+T2_D_SCORE_DIFF: -5
+T1_O_RUSH_SUM: 250
+T2_O_RUSH_SUM: 214
+T1_O_RUSH_DIFF: 17
+T2_O_RUSH_DIFF: 40
+T1_D_RUSH_SUM: 214
+T2_D_RUSH_SUM: 250
+T1_D_RUSH_DIFF: -40
+T2_D_RUSH_DIFF: -17
+T1_O_PASS_SUM: 442
+T2_O_PASS_SUM: 452
+T1_O_PASS_DIFF: -48
+T2_O_PASS_DIFF: 31
+T1_D_PASS_SUM: 452
+T2_D_PASS_SUM: 442
+T1_D_PASS_DIFF: -31
+T2_D_PASS_DIFF: 48
+T1_PEN_DIFF: -28
+T2_PEN_DIFF: 28
+T1_TO_DIFF: 0.30
+T2_TO_DIFF: -0.30
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.247
+T2_WIN_DIFF: -0.247
+T1_DATA: 19,"N","H",51,5,39,-7,250,17,214,-40,442,-48,-31,-28,0.30,0,0.247,"ACC","ACC"
+T2_DATA: -19,"N","A",39,7,51,-5,214,40,250,-17,452,31,48,28,-0.30,0,-0.247,"ACC","ACC"
+
+------
+Site: T2 DoY: 321
+T1: Boston College
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '54.8',
+          'games' => 14,
+          'd_pass_yds' => '253.9',
+          'o_rush_yds' => '101.1',
+          'ppg' => '28.3',
+          'wins' => 11,
+          'losses' => '3',
+          'o_to' => '1.9',
+          'o_pen_yds' => '61.4',
+          'o_pass_yds' => '323.9',
+          'conference' => 'ACC',
+          'opp_ppg' => '20.4',
+          'last_game' => 0,
+          'd_rush_yds' => '75.5'
+        };
+T2: Clemson
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '50.9',
+          'games' => 13,
+          'd_pass_yds' => '188.5',
+          'o_rush_yds' => '161.2',
+          'ppg' => '33.1',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '0.9',
+          'o_pen_yds' => '43.1',
+          'o_pass_yds' => '242.1',
+          'conference' => 'ACC',
+          'opp_ppg' => '18.7',
+          'last_game' => 0,
+          'd_rush_yds' => '118.3'
+        };
+T1_POINT_DIFF: 3
+T2_POINT_DIFF: -3
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 47
+T2_O_SCORE_SUM: 53
+T1_O_SCORE_DIFF: 9
+T2_O_SCORE_DIFF: 12
+T1_D_SCORE_SUM: 53
+T2_D_SCORE_SUM: 47
+T1_D_SCORE_DIFF: -12
+T2_D_SCORE_DIFF: -9
+T1_O_RUSH_SUM: 219
+T2_O_RUSH_SUM: 236
+T1_O_RUSH_DIFF: -17
+T2_O_RUSH_DIFF: 85
+T1_D_RUSH_SUM: 236
+T2_D_RUSH_SUM: 219
+T1_D_RUSH_DIFF: -85
+T2_D_RUSH_DIFF: 17
+T1_O_PASS_SUM: 512
+T2_O_PASS_SUM: 496
+T1_O_PASS_DIFF: 135
+T2_O_PASS_DIFF: -11
+T1_D_PASS_SUM: 496
+T2_D_PASS_SUM: 512
+T1_D_PASS_DIFF: 11
+T2_D_PASS_DIFF: -135
+T1_PEN_DIFF: 22
+T2_PEN_DIFF: -22
+T1_TO_DIFF: -0.50
+T2_TO_DIFF: 0.50
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.093
+T2_WIN_DIFF: -0.093
+T1_DATA: 3,"N","A",47,9,53,-12,219,-17,236,-85,512,135,11,22,-0.50,0,0.093,"ACC","ACC"
+T2_DATA: -3,"N","H",53,12,47,-9,236,85,219,17,496,-11,-135,-22,0.50,0,-0.093,"ACC","ACC"
+
+------
+Site: T2 DoY: 321
+T1: Bowling Green State
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '51.5',
+          'games' => 13,
+          'd_pass_yds' => '216.6',
+          'o_rush_yds' => '123.6',
+          'ppg' => '30.2',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '2.0',
+          'o_pen_yds' => '56.2',
+          'o_pass_yds' => '278.8',
+          'conference' => 'MAC',
+          'opp_ppg' => '32.1',
+          'last_game' => 0,
+          'd_rush_yds' => '207.8'
+        };
+T2: Buffalo
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '47.6',
+          'games' => 12,
+          'd_pass_yds' => '230.9',
+          'o_rush_yds' => '130.0',
+          'ppg' => '24.2',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '1.3',
+          'o_pen_yds' => '56.4',
+          'o_pass_yds' => '217.9',
+          'conference' => 'MAC',
+          'opp_ppg' => '27.6',
+          'last_game' => 0,
+          'd_rush_yds' => '174.7'
+        };
+T1_POINT_DIFF: 14
+T2_POINT_DIFF: -14
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 57
+T2_O_SCORE_SUM: 56
+T1_O_SCORE_DIFF: 2
+T2_O_SCORE_DIFF: -7
+T1_D_SCORE_SUM: 56
+T2_D_SCORE_SUM: 57
+T1_D_SCORE_DIFF: 7
+T2_D_SCORE_DIFF: -2
+T1_O_RUSH_SUM: 298
+T2_O_RUSH_SUM: 337
+T1_O_RUSH_DIFF: -51
+T2_O_RUSH_DIFF: -77
+T1_D_RUSH_SUM: 337
+T2_D_RUSH_SUM: 298
+T1_D_RUSH_DIFF: 77
+T2_D_RUSH_DIFF: 51
+T1_O_PASS_SUM: 509
+T2_O_PASS_SUM: 434
+T1_O_PASS_DIFF: 47
+T2_O_PASS_DIFF: 1
+T1_D_PASS_SUM: 434
+T2_D_PASS_SUM: 509
+T1_D_PASS_DIFF: -1
+T2_D_PASS_DIFF: -47
+T1_PEN_DIFF: 3
+T2_PEN_DIFF: -3
+T1_TO_DIFF: -0.30
+T2_TO_DIFF: 0.30
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.199
+T2_WIN_DIFF: -0.199
+T1_DATA: 14,"N","A",57,2,56,7,298,-51,337,77,509,47,-1,3,-0.30,0,0.199,"MAC","MAC"
+T2_DATA: -14,"N","H",56,-7,57,-2,337,-77,298,51,434,1,-47,-3,0.30,0,-0.199,"MAC","MAC"
+
+------
+Site: T1 DoY: 321
+T1: Louisiana Tech
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '57.1',
+          'games' => 12,
+          'd_pass_yds' => '287.1',
+          'o_rush_yds' => '155.3',
+          'ppg' => '20.8',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.1',
+          'o_pen_yds' => '66.8',
+          'o_pass_yds' => '195.7',
+          'conference' => 'WAC',
+          'opp_ppg' => '30.7',
+          'last_game' => 0,
+          'd_rush_yds' => '137.1'
+        };
+T2: San Jose State
+$VAR1 = {
+          'd_to' => '2.3',
+          'd_pen_yds' => '66.1',
+          'games' => 12,
+          'd_pass_yds' => '242.6',
+          'o_rush_yds' => '83.8',
+          'ppg' => '20.4',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '1.2',
+          'o_pen_yds' => '45.8',
+          'o_pass_yds' => '264.3',
+          'conference' => 'WAC',
+          'opp_ppg' => '29.3',
+          'last_game' => 0,
+          'd_rush_yds' => '165.4'
+        };
+T1_POINT_DIFF: 4
+T2_POINT_DIFF: -4
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 50
+T2_O_SCORE_SUM: 51
+T1_O_SCORE_DIFF: -8
+T2_O_SCORE_DIFF: -10
+T1_D_SCORE_SUM: 51
+T2_D_SCORE_SUM: 50
+T1_D_SCORE_DIFF: 10
+T2_D_SCORE_DIFF: 8
+T1_O_RUSH_SUM: 320
+T2_O_RUSH_SUM: 220
+T1_O_RUSH_DIFF: -10
+T2_O_RUSH_DIFF: -53
+T1_D_RUSH_SUM: 220
+T2_D_RUSH_SUM: 320
+T1_D_RUSH_DIFF: 53
+T2_D_RUSH_DIFF: 10
+T1_O_PASS_SUM: 438
+T2_O_PASS_SUM: 551
+T1_O_PASS_DIFF: -46
+T2_O_PASS_DIFF: -22
+T1_D_PASS_SUM: 551
+T2_D_PASS_SUM: 438
+T1_D_PASS_DIFF: 22
+T2_D_PASS_DIFF: 46
+T1_PEN_DIFF: 12
+T2_PEN_DIFF: -12
+T1_TO_DIFF: -1.00
+T2_TO_DIFF: 1.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 4,"N","H",50,-8,51,10,320,-10,220,53,438,-46,22,12,-1.00,0,0.000,"WAC","WAC"
+T2_DATA: -4,"N","A",51,-10,50,8,220,-53,320,10,551,-22,46,-12,1.00,0,0.000,"WAC","WAC"
+
+------
+Site: T1 DoY: 321
+T1: Navy
+$VAR1 = {
+          'd_to' => '1.2',
+          'd_pen_yds' => '47.2',
+          'games' => 13,
+          'd_pass_yds' => '263.4',
+          'o_rush_yds' => '348.8',
+          'ppg' => '39.3',
+          'wins' => 8,
+          'losses' => '5',
+          'o_to' => '1.4',
+          'o_pen_yds' => '29.8',
+          'o_pass_yds' => '95.3',
+          'conference' => 'Ind',
+          'opp_ppg' => '36.4',
+          'last_game' => 0,
+          'd_rush_yds' => '175.8'
+        };
+T2: Northern Illinois
+$VAR1 = {
+          'd_to' => '1.3',
+          'd_pen_yds' => '59.0',
+          'games' => 12,
+          'd_pass_yds' => '224.2',
+          'o_rush_yds' => '135.5',
+          'ppg' => '19.1',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '2.7',
+          'o_pen_yds' => '46.6',
+          'o_pass_yds' => '202.4',
+          'conference' => 'MAC',
+          'opp_ppg' => '30.8',
+          'last_game' => 0,
+          'd_rush_yds' => '210.1'
+        };
+T1_POINT_DIFF: 11
+T2_POINT_DIFF: -11
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 70
+T2_O_SCORE_SUM: 55
+T1_O_SCORE_DIFF: 8
+T2_O_SCORE_DIFF: -17
+T1_D_SCORE_SUM: 55
+T2_D_SCORE_SUM: 70
+T1_D_SCORE_DIFF: 17
+T2_D_SCORE_DIFF: -8
+T1_O_RUSH_SUM: 558
+T2_O_RUSH_SUM: 311
+T1_O_RUSH_DIFF: 138
+T2_O_RUSH_DIFF: -40
+T1_D_RUSH_SUM: 311
+T2_D_RUSH_SUM: 558
+T1_D_RUSH_DIFF: 40
+T2_D_RUSH_DIFF: -138
+T1_O_PASS_SUM: 319
+T2_O_PASS_SUM: 465
+T1_O_PASS_DIFF: -128
+T2_O_PASS_DIFF: -60
+T1_D_PASS_SUM: 465
+T2_D_PASS_SUM: 319
+T1_D_PASS_DIFF: 60
+T2_D_PASS_DIFF: 128
+T1_PEN_DIFF: -28
+T2_PEN_DIFF: 28
+T1_TO_DIFF: 1.20
+T2_TO_DIFF: -1.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.449
+T2_WIN_DIFF: -0.449
+T1_DATA: 11,"N","H",70,8,55,17,558,138,311,40,319,-128,60,-28,1.20,0,0.449,"Ind","MAC"
+T2_DATA: -11,"N","A",55,-17,70,-8,311,-40,558,-138,465,-60,128,28,-1.20,0,-0.449,"MAC","Ind"
+
+------
+Site: T2 DoY: 321
+T1: Southern Mississippi
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '54.5',
+          'games' => 13,
+          'd_pass_yds' => '232.1',
+          'o_rush_yds' => '201.6',
+          'ppg' => '27.8',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '2.2',
+          'o_pen_yds' => '53.8',
+          'o_pass_yds' => '188.1',
+          'conference' => 'CUSA',
+          'opp_ppg' => '24.2',
+          'last_game' => 0,
+          'd_rush_yds' => '134.3'
+        };
+T2: Texas-El Paso
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '64.2',
+          'games' => 12,
+          'd_pass_yds' => '301.8',
+          'o_rush_yds' => '147.7',
+          'ppg' => '33.6',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '1.7',
+          'o_pen_yds' => '66.4',
+          'o_pass_yds' => '275.2',
+          'conference' => 'CUSA',
+          'opp_ppg' => '37.1',
+          'last_game' => 0,
+          'd_rush_yds' => '202.9'
+        };
+T1_POINT_DIFF: 26
+T2_POINT_DIFF: -26
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "A"
+T2_SITE: "H"
+T1_O_SCORE_SUM: 64
+T2_O_SCORE_SUM: 57
+T1_O_SCORE_DIFF: -9
+T2_O_SCORE_DIFF: 9
+T1_D_SCORE_SUM: 57
+T2_D_SCORE_SUM: 64
+T1_D_SCORE_DIFF: -9
+T2_D_SCORE_DIFF: 9
+T1_O_RUSH_SUM: 404
+T2_O_RUSH_SUM: 282
+T1_O_RUSH_DIFF: -1
+T2_O_RUSH_DIFF: 13
+T1_D_RUSH_SUM: 282
+T2_D_RUSH_SUM: 404
+T1_D_RUSH_DIFF: -13
+T2_D_RUSH_DIFF: 1
+T1_O_PASS_SUM: 489
+T2_O_PASS_SUM: 507
+T1_O_PASS_DIFF: -113
+T2_O_PASS_DIFF: 43
+T1_D_PASS_SUM: 507
+T2_D_PASS_SUM: 489
+T1_D_PASS_DIFF: -43
+T2_D_PASS_DIFF: 113
+T1_PEN_DIFF: -22
+T2_PEN_DIFF: 22
+T1_TO_DIFF: -0.70
+T2_TO_DIFF: 0.70
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.205
+T2_WIN_DIFF: -0.205
+T1_DATA: 26,"N","A",64,-9,57,-9,404,-1,282,-13,489,-113,-43,-22,-0.70,0,0.205,"CUSA","CUSA"
+T2_DATA: -26,"N","H",57,9,64,9,282,13,404,1,507,43,113,22,0.70,0,-0.205,"CUSA","CUSA"
+
+------
+Site: T1 DoY: 324
+T1: Troy
+$VAR1 = {
+          'd_to' => '2.5',
+          'd_pen_yds' => '60.4',
+          'games' => 12,
+          'd_pass_yds' => '183.1',
+          'o_rush_yds' => '182.6',
+          'ppg' => '34.0',
+          'wins' => 8,
+          'losses' => '4',
+          'o_to' => '2.6',
+          'o_pen_yds' => '58.1',
+          'o_pass_yds' => '270.3',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '24.6',
+          'last_game' => 0,
+          'd_rush_yds' => '195.2'
+        };
+T2: Middle Tennessee State
+$VAR1 = {
+          'd_to' => '2.5',
+          'd_pen_yds' => '72.5',
+          'games' => 12,
+          'd_pass_yds' => '215.3',
+          'o_rush_yds' => '134.8',
+          'ppg' => '25.7',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '1.6',
+          'o_pen_yds' => '55.9',
+          'o_pass_yds' => '202.1',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '28.2',
+          'last_game' => 0,
+          'd_rush_yds' => '199.8'
+        };
+T1_POINT_DIFF: 38
+T2_POINT_DIFF: -38
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 62
+T2_O_SCORE_SUM: 50
+T1_O_SCORE_DIFF: 5
+T2_O_SCORE_DIFF: 1
+T1_D_SCORE_SUM: 50
+T2_D_SCORE_SUM: 62
+T1_D_SCORE_DIFF: -1
+T2_D_SCORE_DIFF: -5
+T1_O_RUSH_SUM: 382
+T2_O_RUSH_SUM: 330
+T1_O_RUSH_DIFF: -17
+T2_O_RUSH_DIFF: -60
+T1_D_RUSH_SUM: 330
+T2_D_RUSH_SUM: 382
+T1_D_RUSH_DIFF: 60
+T2_D_RUSH_DIFF: 17
+T1_O_PASS_SUM: 485
+T2_O_PASS_SUM: 385
+T1_O_PASS_DIFF: 55
+T2_O_PASS_DIFF: 19
+T1_D_PASS_SUM: 385
+T2_D_PASS_SUM: 485
+T1_D_PASS_DIFF: -19
+T2_D_PASS_DIFF: -55
+T1_PEN_DIFF: -9
+T2_PEN_DIFF: 9
+T1_TO_DIFF: -1.00
+T2_TO_DIFF: 1.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.250
+T2_WIN_DIFF: -0.250
+T1_DATA: 38,"N","H",62,5,50,-1,382,-17,330,60,485,55,-19,-9,-1.00,0,0.250,"Sun Belt","Sun Belt"
+T2_DATA: -38,"N","A",50,1,62,-5,330,-60,382,17,385,19,-55,9,1.00,0,-0.250,"Sun Belt","Sun Belt"
+
+------
+Site: T1 DoY: 328
+T1: Western Michigan
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '48.8',
+          'games' => 12,
+          'd_pass_yds' => '220.2',
+          'o_rush_yds' => '130.4',
+          'ppg' => '26.9',
+          'wins' => 5,
+          'losses' => '7',
+          'o_to' => '2.4',
+          'o_pen_yds' => '65.4',
+          'o_pass_yds' => '267.6',
+          'conference' => 'MAC',
+          'opp_ppg' => '28.9',
+          'last_game' => 0,
+          'd_rush_yds' => '179.1'
+        };
+T2: Temple
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '54.8',
+          'games' => 12,
+          'd_pass_yds' => '198.8',
+          'o_rush_yds' => '93.3',
+          'ppg' => '16.4',
+          'wins' => 4,
+          'losses' => '8',
+          'o_to' => '2.2',
+          'o_pen_yds' => '48.5',
+          'o_pass_yds' => '207.6',
+          'conference' => 'MAC',
+          'opp_ppg' => '26.2',
+          'last_game' => 0,
+          'd_rush_yds' => '164.7'
+        };
+T1_POINT_DIFF: 13
+T2_POINT_DIFF: -13
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 53
+T2_O_SCORE_SUM: 45
+T1_O_SCORE_DIFF: 0
+T2_O_SCORE_DIFF: -12
+T1_D_SCORE_SUM: 45
+T2_D_SCORE_SUM: 53
+T1_D_SCORE_DIFF: 12
+T2_D_SCORE_DIFF: 0
+T1_O_RUSH_SUM: 295
+T2_O_RUSH_SUM: 272
+T1_O_RUSH_DIFF: -34
+T2_O_RUSH_DIFF: -85
+T1_D_RUSH_SUM: 272
+T2_D_RUSH_SUM: 295
+T1_D_RUSH_DIFF: 85
+T2_D_RUSH_DIFF: 34
+T1_O_PASS_SUM: 466
+T2_O_PASS_SUM: 427
+T1_O_PASS_DIFF: 68
+T2_O_PASS_DIFF: -12
+T1_D_PASS_SUM: 427
+T2_D_PASS_SUM: 466
+T1_D_PASS_DIFF: 12
+T2_D_PASS_DIFF: -68
+T1_PEN_DIFF: 10
+T2_PEN_DIFF: -10
+T1_TO_DIFF: -0.40
+T2_TO_DIFF: 0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.083
+T2_WIN_DIFF: -0.083
+T1_DATA: 13,"N","H",53,0,45,12,295,-34,272,85,466,68,12,10,-0.40,0,0.083,"MAC","MAC"
+T2_DATA: -13,"N","A",45,-12,53,0,272,-85,295,34,427,-12,-68,-10,0.40,0,-0.083,"MAC","MAC"
+
+------
+Site: T1 DoY: 335
+T1: Florida International
+$VAR1 = {
+          'd_to' => '1.6',
+          'd_pen_yds' => '56.8',
+          'games' => 12,
+          'd_pass_yds' => '243.6',
+          'o_rush_yds' => '119.1',
+          'ppg' => '15.1',
+          'wins' => 1,
+          'losses' => '11',
+          'o_to' => '2.8',
+          'o_pen_yds' => '46.4',
+          'o_pass_yds' => '150.6',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '39.1',
+          'last_game' => 0,
+          'd_rush_yds' => '203.8'
+        };
+T2: North Texas
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '66.3',
+          'games' => 12,
+          'd_pass_yds' => '256.8',
+          'o_rush_yds' => '118.8',
+          'ppg' => '24.8',
+          'wins' => 2,
+          'losses' => '10',
+          'o_to' => '2.9',
+          'o_pen_yds' => '66.1',
+          'o_pass_yds' => '289.7',
+          'conference' => 'Sun Belt',
+          'opp_ppg' => '45.1',
+          'last_game' => 0,
+          'd_rush_yds' => '229.7'
+        };
+T1_POINT_DIFF: 19
+T2_POINT_DIFF: -19
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "H"
+T2_SITE: "A"
+T1_O_SCORE_SUM: 60
+T2_O_SCORE_SUM: 63
+T1_O_SCORE_DIFF: -30
+T2_O_SCORE_DIFF: -14
+T1_D_SCORE_SUM: 63
+T2_D_SCORE_SUM: 60
+T1_D_SCORE_DIFF: 14
+T2_D_SCORE_DIFF: 30
+T1_O_RUSH_SUM: 348
+T2_O_RUSH_SUM: 322
+T1_O_RUSH_DIFF: -110
+T2_O_RUSH_DIFF: -85
+T1_D_RUSH_SUM: 322
+T2_D_RUSH_SUM: 348
+T1_D_RUSH_DIFF: 85
+T2_D_RUSH_DIFF: 110
+T1_O_PASS_SUM: 407
+T2_O_PASS_SUM: 533
+T1_O_PASS_DIFF: -106
+T2_O_PASS_DIFF: 46
+T1_D_PASS_SUM: 533
+T2_D_PASS_SUM: 407
+T1_D_PASS_DIFF: -46
+T2_D_PASS_DIFF: 106
+T1_PEN_DIFF: -29
+T2_PEN_DIFF: 29
+T1_TO_DIFF: -0.30
+T2_TO_DIFF: 0.30
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.083
+T2_WIN_DIFF: 0.083
+T1_DATA: 19,"N","H",60,-30,63,14,348,-110,322,85,407,-106,-46,-29,-0.30,0,-0.083,"Sun Belt","Sun Belt"
+T2_DATA: -19,"N","A",63,-14,60,30,322,-85,348,110,533,46,106,29,0.30,0,0.083,"Sun Belt","Sun Belt"
+
+------
+Site: N DoY: 335
+T1: Louisiana State
+$VAR1 = {
+          'd_to' => '2.6',
+          'd_pen_yds' => '40.4',
+          'games' => 14,
+          'd_pass_yds' => '182.7',
+          'o_rush_yds' => '214.1',
+          'ppg' => '38.6',
+          'wins' => 12,
+          'losses' => '2',
+          'o_to' => '1.1',
+          'o_pen_yds' => '62.9',
+          'o_pass_yds' => '225.3',
+          'conference' => 'SEC',
+          'opp_ppg' => '19.9',
+          'last_game' => 0,
+          'd_rush_yds' => '106.1'
+        };
+T2: Tennessee
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '45.8',
+          'games' => 14,
+          'd_pass_yds' => '238.6',
+          'o_rush_yds' => '139.0',
+          'ppg' => '32.5',
+          'wins' => 10,
+          'losses' => '4',
+          'o_to' => '1.3',
+          'o_pen_yds' => '45.8',
+          'o_pass_yds' => '262.5',
+          'conference' => 'SEC',
+          'opp_ppg' => '27.3',
+          'last_game' => 0,
+          'd_rush_yds' => '164.6'
+        };
+T1_POINT_DIFF: 7
+T2_POINT_DIFF: -7
+T1_WHEN: "N"
+T2_WHEN: "N"
+T1_SITE: "N"
+T2_SITE: "N"
+T1_O_SCORE_SUM: 65
+T2_O_SCORE_SUM: 52
+T1_O_SCORE_DIFF: 11
+T2_O_SCORE_DIFF: 12
+T1_D_SCORE_SUM: 52
+T2_D_SCORE_SUM: 65
+T1_D_SCORE_DIFF: -12
+T2_D_SCORE_DIFF: -11
+T1_O_RUSH_SUM: 378
+T2_O_RUSH_SUM: 245
+T1_O_RUSH_DIFF: 49
+T2_O_RUSH_DIFF: 32
+T1_D_RUSH_SUM: 245
+T2_D_RUSH_SUM: 378
+T1_D_RUSH_DIFF: -32
+T2_D_RUSH_DIFF: -49
+T1_O_PASS_SUM: 463
+T2_O_PASS_SUM: 445
+T1_O_PASS_DIFF: -13
+T2_O_PASS_DIFF: 79
+T1_D_PASS_SUM: 445
+T2_D_PASS_SUM: 463
+T1_D_PASS_DIFF: -79
+T2_D_PASS_DIFF: 13
+T1_PEN_DIFF: 11
+T2_PEN_DIFF: -11
+T1_TO_DIFF: 1.00
+T2_TO_DIFF: -1.00
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.143
+T2_WIN_DIFF: -0.143
+T1_DATA: 7,"N","N",65,11,52,-12,378,49,245,-32,463,-13,-79,11,1.00,0,0.143,"SEC","SEC"
+T2_DATA: -7,"N","N",52,12,65,-11,245,32,378,-49,445,79,13,-11,-1.00,0,-0.143,"SEC","SEC"
+
+------
+Site: N DoY: 361
+T1: Texas
+$VAR1 = {
+          'd_to' => '2.1',
+          'd_pen_yds' => '52.5',
+          'games' => 13,
+          'd_pass_yds' => '277.8',
+          'o_rush_yds' => '207.5',
+          'ppg' => '37.2',
+          'wins' => 10,
+          'losses' => '3',
+          'o_to' => '2.0',
+          'o_pen_yds' => '55.4',
+          'o_pass_yds' => '255.4',
+          'conference' => 'Big 12',
+          'opp_ppg' => '25.3',
+          'last_game' => 0,
+          'd_rush_yds' => '93.4'
+        };
+T2: Arizona State
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '61.5',
+          'games' => 13,
+          'd_pass_yds' => '228.9',
+          'o_rush_yds' => '137.0',
+          'ppg' => '32.3',
+          'wins' => 10,
+          'losses' => '3',
+          'o_to' => '1.8',
+          'o_pen_yds' => '56.8',
+          'o_pass_yds' => '262.6',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '22.5',
+          'last_game' => 0,
+          'd_rush_yds' => '116.2'
+        };
+T1_POINT_DIFF: 18
+T2_POINT_DIFF: -18
+T1_WHEN: "B"
+T2_WHEN: "B"
+T1_SITE: "N"
+T2_SITE: "N"
+T1_O_SCORE_SUM: 59
+T2_O_SCORE_SUM: 57
+T1_O_SCORE_DIFF: 14
+T2_O_SCORE_DIFF: 6
+T1_D_SCORE_SUM: 57
+T2_D_SCORE_SUM: 59
+T1_D_SCORE_DIFF: -6
+T2_D_SCORE_DIFF: -14
+T1_O_RUSH_SUM: 323
+T2_O_RUSH_SUM: 230
+T1_O_RUSH_DIFF: 91
+T2_O_RUSH_DIFF: 43
+T1_D_RUSH_SUM: 230
+T2_D_RUSH_SUM: 323
+T1_D_RUSH_DIFF: -43
+T2_D_RUSH_DIFF: -91
+T1_O_PASS_SUM: 484
+T2_O_PASS_SUM: 540
+T1_O_PASS_DIFF: 26
+T2_O_PASS_DIFF: -15
+T1_D_PASS_SUM: 540
+T2_D_PASS_SUM: 484
+T1_D_PASS_DIFF: 15
+T2_D_PASS_DIFF: -26
+T1_PEN_DIFF: -10
+T2_PEN_DIFF: 10
+T1_TO_DIFF: -0.10
+T2_TO_DIFF: 0.10
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 18,"B","N",59,14,57,-6,323,91,230,-43,484,26,15,-10,-0.10,0,0.000,"Big 12","Pac-10"
+T2_DATA: -18,"B","N",57,6,59,-14,230,43,323,-91,540,-15,-26,10,0.10,0,0.000,"Pac-10","Big 12"
+
+------
+Site: N DoY: 363
+T1: Penn State
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '45.8',
+          'games' => 13,
+          'd_pass_yds' => '214.5',
+          'o_rush_yds' => '193.8',
+          'ppg' => '30.3',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.0',
+          'o_pen_yds' => '34.3',
+          'o_pass_yds' => '206.3',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '17.5',
+          'last_game' => 0,
+          'd_rush_yds' => '93.8'
+        };
+T2: Texas A&M
+$VAR1 = {
+          'd_to' => '1.8',
+          'd_pen_yds' => '37.8',
+          'games' => 13,
+          'd_pass_yds' => '254.8',
+          'o_rush_yds' => '211.6',
+          'ppg' => '27.9',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '1.3',
+          'o_pen_yds' => '47.2',
+          'o_pass_yds' => '185.4',
+          'conference' => 'Big 12',
+          'opp_ppg' => '25.9',
+          'last_game' => 0,
+          'd_rush_yds' => '160.9'
+        };
+T1_POINT_DIFF: 7
+T2_POINT_DIFF: -7
+T1_WHEN: "B"
+T2_WHEN: "B"
+T1_SITE: "N"
+T2_SITE: "N"
+T1_O_SCORE_SUM: 56
+T2_O_SCORE_SUM: 45
+T1_O_SCORE_DIFF: 4
+T2_O_SCORE_DIFF: 10
+T1_D_SCORE_SUM: 45
+T2_D_SCORE_SUM: 56
+T1_D_SCORE_DIFF: -10
+T2_D_SCORE_DIFF: -4
+T1_O_RUSH_SUM: 354
+T2_O_RUSH_SUM: 305
+T1_O_RUSH_DIFF: 32
+T2_O_RUSH_DIFF: 117
+T1_D_RUSH_SUM: 305
+T2_D_RUSH_SUM: 354
+T1_D_RUSH_DIFF: -117
+T2_D_RUSH_DIFF: -32
+T1_O_PASS_SUM: 461
+T2_O_PASS_SUM: 399
+T1_O_PASS_DIFF: -48
+T2_O_PASS_DIFF: -29
+T1_D_PASS_SUM: 399
+T2_D_PASS_SUM: 461
+T1_D_PASS_DIFF: 29
+T2_D_PASS_DIFF: 48
+T1_PEN_DIFF: -4
+T2_PEN_DIFF: 4
+T1_TO_DIFF: -0.30
+T2_TO_DIFF: 0.30
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.154
+T2_WIN_DIFF: -0.154
+T1_DATA: 7,"B","N",56,4,45,-10,354,32,305,-117,461,-48,29,-4,-0.30,0,0.154,"Big Ten","Big 12"
+T2_DATA: -7,"B","N",45,10,56,-4,305,117,354,-32,399,-29,48,4,0.30,0,-0.154,"Big 12","Big Ten"
+
+------
+Site: N DoY: 365
+T1: Fresno State
+$VAR1 = {
+          'd_to' => '1.0',
+          'd_pen_yds' => '55.2',
+          'games' => 13,
+          'd_pass_yds' => '226.4',
+          'o_rush_yds' => '210.9',
+          'ppg' => '32.8',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '1.7',
+          'o_pen_yds' => '54.9',
+          'o_pass_yds' => '208.6',
+          'conference' => 'WAC',
+          'opp_ppg' => '27.0',
+          'last_game' => 0,
+          'd_rush_yds' => '181.1'
+        };
+T2: Georgia Tech
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '51.4',
+          'games' => 13,
+          'd_pass_yds' => '215.9',
+          'o_rush_yds' => '199.3',
+          'ppg' => '26.2',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '1.8',
+          'o_pen_yds' => '59.3',
+          'o_pass_yds' => '185.6',
+          'conference' => 'ACC',
+          'opp_ppg' => '20.8',
+          'last_game' => 0,
+          'd_rush_yds' => '114.5'
+        };
+T1_POINT_DIFF: 12
+T2_POINT_DIFF: -12
+T1_WHEN: "B"
+T2_WHEN: "B"
+T1_SITE: "N"
+T2_SITE: "N"
+T1_O_SCORE_SUM: 53
+T2_O_SCORE_SUM: 53
+T1_O_SCORE_DIFF: 11
+T2_O_SCORE_DIFF: 0
+T1_D_SCORE_SUM: 53
+T2_D_SCORE_SUM: 53
+T1_D_SCORE_DIFF: 0
+T2_D_SCORE_DIFF: -11
+T1_O_RUSH_SUM: 325
+T2_O_RUSH_SUM: 380
+T1_O_RUSH_DIFF: 96
+T2_O_RUSH_DIFF: 18
+T1_D_RUSH_SUM: 380
+T2_D_RUSH_SUM: 325
+T1_D_RUSH_DIFF: -18
+T2_D_RUSH_DIFF: -96
+T1_O_PASS_SUM: 424
+T2_O_PASS_SUM: 412
+T1_O_PASS_DIFF: -7
+T2_O_PASS_DIFF: -40
+T1_D_PASS_SUM: 412
+T2_D_PASS_SUM: 424
+T1_D_PASS_DIFF: 40
+T2_D_PASS_DIFF: 7
+T1_PEN_DIFF: 0
+T2_PEN_DIFF: 0
+T1_TO_DIFF: -0.40
+T2_TO_DIFF: 0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.154
+T2_WIN_DIFF: -0.154
+T1_DATA: 12,"B","N",53,11,53,0,325,96,380,-18,424,-7,40,0,-0.40,0,0.154,"WAC","ACC"
+T2_DATA: -12,"B","N",53,0,53,-11,380,18,325,-96,412,-40,7,0,0.40,0,-0.154,"ACC","WAC"
+
+------
+Site: N DoY: 365
+T1: Oklahoma State
+$VAR1 = {
+          'd_to' => '1.5',
+          'd_pen_yds' => '49.4',
+          'games' => 13,
+          'd_pass_yds' => '287.2',
+          'o_rush_yds' => '243.2',
+          'ppg' => '34.6',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '1.7',
+          'o_pen_yds' => '66.6',
+          'o_pass_yds' => '243.2',
+          'conference' => 'Big 12',
+          'opp_ppg' => '29.5',
+          'last_game' => 0,
+          'd_rush_yds' => '155.8'
+        };
+T2: Indiana
+$VAR1 = {
+          'd_to' => '2.4',
+          'd_pen_yds' => '62.6',
+          'games' => 13,
+          'd_pass_yds' => '243.7',
+          'o_rush_yds' => '157.4',
+          'ppg' => '31.7',
+          'wins' => 7,
+          'losses' => '6',
+          'o_to' => '2.2',
+          'o_pen_yds' => '54.5',
+          'o_pass_yds' => '236.4',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '28.5',
+          'last_game' => 0,
+          'd_rush_yds' => '159.7'
+        };
+T1_POINT_DIFF: 16
+T2_POINT_DIFF: -16
+T1_WHEN: "B"
+T2_WHEN: "B"
+T1_SITE: "N"
+T2_SITE: "N"
+T1_O_SCORE_SUM: 63
+T2_O_SCORE_SUM: 61
+T1_O_SCORE_DIFF: 6
+T2_O_SCORE_DIFF: 2
+T1_D_SCORE_SUM: 61
+T2_D_SCORE_SUM: 63
+T1_D_SCORE_DIFF: -2
+T2_D_SCORE_DIFF: -6
+T1_O_RUSH_SUM: 402
+T2_O_RUSH_SUM: 313
+T1_O_RUSH_DIFF: 83
+T2_O_RUSH_DIFF: 1
+T1_D_RUSH_SUM: 313
+T2_D_RUSH_SUM: 402
+T1_D_RUSH_DIFF: -1
+T2_D_RUSH_DIFF: -83
+T1_O_PASS_SUM: 486
+T2_O_PASS_SUM: 523
+T1_O_PASS_DIFF: 0
+T2_O_PASS_DIFF: -50
+T1_D_PASS_SUM: 523
+T2_D_PASS_SUM: 486
+T1_D_PASS_DIFF: 50
+T2_D_PASS_DIFF: 0
+T1_PEN_DIFF: -1
+T2_PEN_DIFF: 1
+T1_TO_DIFF: -0.40
+T2_TO_DIFF: 0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.000
+T2_WIN_DIFF: 0.000
+T1_DATA: 16,"B","N",63,6,61,-2,402,83,313,-1,486,0,50,-1,-0.40,0,0.000,"Big 12","Big Ten"
+T2_DATA: -16,"B","N",61,2,63,-6,313,1,402,-83,523,-50,0,1,0.40,0,0.000,"Big Ten","Big 12"
+
+------
+Site: N DoY: 1
+T1: Georgia
+$VAR1 = {
+          'd_to' => '2.0',
+          'd_pen_yds' => '53.2',
+          'games' => 13,
+          'd_pass_yds' => '213.3',
+          'o_rush_yds' => '177.2',
+          'ppg' => '32.6',
+          'wins' => 11,
+          'losses' => '2',
+          'o_to' => '1.3',
+          'o_pen_yds' => '58.5',
+          'o_pass_yds' => '198.4',
+          'conference' => 'SEC',
+          'opp_ppg' => '20.2',
+          'last_game' => 0,
+          'd_rush_yds' => '109.9'
+        };
+T2: Hawaii
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '55.9',
+          'games' => 13,
+          'd_pass_yds' => '214.0',
+          'o_rush_yds' => '72.6',
+          'ppg' => '43.4',
+          'wins' => 12,
+          'losses' => '1',
+          'o_to' => '2.7',
+          'o_pen_yds' => '66.2',
+          'o_pass_yds' => '439.5',
+          'conference' => 'WAC',
+          'opp_ppg' => '25.5',
+          'last_game' => 0,
+          'd_rush_yds' => '133.8'
+        };
+T1_POINT_DIFF: 31
+T2_POINT_DIFF: -31
+T1_WHEN: "B"
+T2_WHEN: "B"
+T1_SITE: "N"
+T2_SITE: "N"
+T1_O_SCORE_SUM: 58
+T2_O_SCORE_SUM: 63
+T1_O_SCORE_DIFF: 7
+T2_O_SCORE_DIFF: 23
+T1_D_SCORE_SUM: 63
+T2_D_SCORE_SUM: 58
+T1_D_SCORE_DIFF: -23
+T2_D_SCORE_DIFF: -7
+T1_O_RUSH_SUM: 311
+T2_O_RUSH_SUM: 182
+T1_O_RUSH_DIFF: 43
+T2_O_RUSH_DIFF: -37
+T1_D_RUSH_SUM: 182
+T2_D_RUSH_SUM: 311
+T1_D_RUSH_DIFF: 37
+T2_D_RUSH_DIFF: -43
+T1_O_PASS_SUM: 412
+T2_O_PASS_SUM: 652
+T1_O_PASS_DIFF: -15
+T2_O_PASS_DIFF: 226
+T1_D_PASS_SUM: 652
+T2_D_PASS_SUM: 412
+T1_D_PASS_DIFF: -226
+T2_D_PASS_DIFF: 15
+T1_PEN_DIFF: -10
+T2_PEN_DIFF: 10
+T1_TO_DIFF: 1.20
+T2_TO_DIFF: -1.20
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: -0.077
+T2_WIN_DIFF: 0.077
+T1_DATA: 31,"B","N",58,7,63,-23,311,43,182,37,412,-15,-226,-10,1.20,0,-0.077,"SEC","WAC"
+T2_DATA: -31,"B","N",63,23,58,-7,182,-37,311,-43,652,226,15,10,-1.20,0,0.077,"WAC","SEC"
+
+------
+Site: N DoY: 1
+T1: Southern California
+$VAR1 = {
+          'd_to' => '2.2',
+          'd_pen_yds' => '46.4',
+          'games' => 13,
+          'd_pass_yds' => '189.0',
+          'o_rush_yds' => '197.2',
+          'ppg' => '32.6',
+          'wins' => 11,
+          'losses' => '2',
+          'o_to' => '2.0',
+          'o_pen_yds' => '74.4',
+          'o_pass_yds' => '237.7',
+          'conference' => 'Pac-10',
+          'opp_ppg' => '16.0',
+          'last_game' => 0,
+          'd_rush_yds' => '84.2'
+        };
+T2: Illinois
+$VAR1 = {
+          'd_to' => '1.9',
+          'd_pen_yds' => '47.3',
+          'games' => 13,
+          'd_pass_yds' => '244.6',
+          'o_rush_yds' => '256.8',
+          'ppg' => '27.8',
+          'wins' => 9,
+          'losses' => '4',
+          'o_to' => '2.1',
+          'o_pen_yds' => '48.9',
+          'o_pass_yds' => '168.2',
+          'conference' => 'Big Ten',
+          'opp_ppg' => '21.8',
+          'last_game' => 0,
+          'd_rush_yds' => '132.2'
+        };
+T1_POINT_DIFF: 32
+T2_POINT_DIFF: -32
+T1_WHEN: "B"
+T2_WHEN: "B"
+T1_SITE: "N"
+T2_SITE: "N"
+T1_O_SCORE_SUM: 54
+T2_O_SCORE_SUM: 43
+T1_O_SCORE_DIFF: 10
+T2_O_SCORE_DIFF: 11
+T1_D_SCORE_SUM: 43
+T2_D_SCORE_SUM: 54
+T1_D_SCORE_DIFF: -11
+T2_D_SCORE_DIFF: -10
+T1_O_RUSH_SUM: 329
+T2_O_RUSH_SUM: 341
+T1_O_RUSH_DIFF: 65
+T2_O_RUSH_DIFF: 172
+T1_D_RUSH_SUM: 341
+T2_D_RUSH_SUM: 329
+T1_D_RUSH_DIFF: -172
+T2_D_RUSH_DIFF: -65
+T1_O_PASS_SUM: 482
+T2_O_PASS_SUM: 357
+T1_O_PASS_DIFF: -6
+T2_O_PASS_DIFF: -20
+T1_D_PASS_SUM: 357
+T2_D_PASS_SUM: 482
+T1_D_PASS_DIFF: 20
+T2_D_PASS_DIFF: 6
+T1_PEN_DIFF: 24
+T2_PEN_DIFF: -24
+T1_TO_DIFF: 0.40
+T2_TO_DIFF: -0.40
+T1_REST_DIFF: 0
+T2_REST_DIFF: 0
+T1_WIN_DIFF: 0.154
+T2_WIN_DIFF: -0.154
+T1_DATA: 32,"B","N",54,10,43,-11,329,65,341,-172,482,-6,20,24,0.40,0,0.154,"Pac-10","Big Ten"
+T2_DATA: -32,"B","N",43,11,54,-10,341,172,329,-65,357,-20,6,-24,-0.40,0,-0.154,"Big Ten","Pac-10"

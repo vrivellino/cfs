@@ -1,0 +1,54 @@
+RESULT:
+	[INT] - difference between team's score and opponent's score
+WHEN:
+	S - September
+	O - October
+	N - November/December
+	B - Bowl game
+
+SITE:
+	H - Home
+	A - Away
+	N - Neutral site
+
+#KICKOFF_TIME:
+#	E - 2pm or earlier (local time)
+#	M - 2pm-5:59pm
+#	N - 6pm or later
+
+O_SCORING_DIFF
+	[INT] - difference between team's offensive scoring avg and opponent's defensive scoring avg
+
+D_SCORING_DIFF
+	[INT] - difference between team's defensive scoring avg and opponent's offensive scoring avg
+
+O_RUSHING_DIFF
+	[INT] - difference between team's offensive rushing yds/gm and opponent's defensive rushing yds/gm
+
+D_RUSHING_DIFF
+	[INT] - difference between team's defensive rushing yds/gm and opponent's offensive rushing yds/gm
+
+O_PASSING_DIFF
+	[INT] - difference between team's offensive passing yds/gm and opponent's defensive passing yds/gm
+
+D_PASSING_DIFF
+	[INT] - difference between team's defensive passing yds/gm and opponent's offensive passing yds/gm
+
+PENALTY_DIFF
+	[INT] - difference between team's penalty yds/gm and opponent's penalty yds/gm
+
+TO_DIFF
+	[INT] - difference between teams's turnover differential and opponents's turnover differential
+
+REST_DIFF
+	[INT] - difference in rest time between team and opponent
+
+WIN_DIFF
+	[INT] - difference between team's winning percentage and opponent's winning percentage
+	        eg: team_WINS/team_GAMES - opponent_WINS/opponent_GAMES
+
+CONF:
+	[STRING] - conference affiliation
+
+CONF_OPPONENT:
+	[STRING] - conference affiliation of opponent
