@@ -70,15 +70,17 @@ CREATE TABLE `past_games` (
 
 	t1_name CHAR(32) NOT NULL DEFAULT '',
 	t1_score TINYINT UNSIGNED DEFAULT NULL,
+	t1_last DATE NOT NULL DEFAULT '0000-00-00',
 
-	site ENUM('T1','T2','N','B') DEFAULT 'T1',
+	site ENUM('T1','N','B') DEFAULT 'T1',
 
 	t2_name CHAR(32) NOT NULL DEFAULT '',
 	t2_score TINYINT UNSIGNED DEFAULT NULL,
+	t2_last DATE NOT NULL DEFAULT '0000-00-00',
 
 	notes VARCHAR(63) NOT NULL DEFAULT '',
 
-	PRIMARY KEY (season,week,t1_name,t2_name),
+	PRIMARY KEY (gm_date,t1_name,t2_name),
 	KEY season (season),
 	CONSTRAINT sched_team1 FOREIGN KEY (t1_name)
 		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE,
