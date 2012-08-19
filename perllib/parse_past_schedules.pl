@@ -135,7 +135,7 @@ while ( my $sched_csv = shift ) {
 			$gm_record->t2_last( $last_games{$win_school->name()}||'0000-00-00' );
 		}
 
-		#$gm_record->save();
+		$gm_record->save();
 
 		$last_games{$win_school->name()} = $date unless $win_school->name() eq $fcs_school;
 		$last_games{$lose_school->name()} = $date unless $lose_school->name() eq $fcs_school;
