@@ -32,6 +32,17 @@ $content =~ s/[<]\/td[^>]*[>]/,/go;
 
 $content =~ s/[<]a href="([^"]+)"[>]([^<]+)[<]\/a[>]/$2,$1/go;
 
+my @cur_date = localtime;
+my $cur_yr = 1900+$cur_date[5];
+
+# create stub record
+my $school_record = CFS::School->new( db => $cfsdb,
+		name => 'FCS School',
+		yr_from => $cur_yr,
+		yr_to => $cur_yr
+	);
+$school_record->save();
+
 # extract each school
 my @csv = split /\n/, $content;
 while ( my $school = shift @csv ) {
@@ -41,13 +52,10 @@ while ( my $school = shift @csv ) {
 
 	$name =~ s/[&]amp;/&/o;
 
-	my @cur_date = localtime;
-	my $cur_yr = 1900+$cur_date[5];
-
 	$yr1 = 1901 if $yr1 < 1901;
 	$yr2 = $cur_yr if $yr2 > $cur_yr;
 
-	my $school_record = CFS::School->new( db => $cfsdb,
+	$school_record = CFS::School->new( db => $cfsdb,
 		name => $name,
 		yr_from => $yr1,
 		yr_to => $yr2,

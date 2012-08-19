@@ -71,7 +71,7 @@ CREATE TABLE `past_games` (
 	t1_name CHAR(32) NOT NULL DEFAULT '',
 	t1_score TINYINT UNSIGNED DEFAULT NULL,
 
-	site ENUM('','@') DEFAULT '',
+	site ENUM('T1','T2','N','B') DEFAULT 'T1',
 
 	t2_name CHAR(32) NOT NULL DEFAULT '',
 	t2_score TINYINT UNSIGNED DEFAULT NULL,

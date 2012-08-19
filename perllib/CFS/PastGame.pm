@@ -14,7 +14,7 @@ __PACKAGE__->meta->setup(
     gm_day   => { type => 'enum', check_in => [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ], default => 'Sat', not_null => 1 },
     t1_name  => { type => 'character', length => 32, not_null => 1 },
     t1_score => { type => 'integer' },
-    site     => { type => 'enum', check_in => [ '', '@' ], default => '' },
+    site     => { type => 'enum', check_in => [ 'T1', 'T2', 'N', 'B' ], default => 'T1' },
     t2_name  => { type => 'character', length => 32, not_null => 1 },
     t2_score => { type => 'integer' },
     notes    => { type => 'varchar', default => '', length => 63, not_null => 1 },
