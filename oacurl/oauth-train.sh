@@ -4,7 +4,7 @@
 
 ID=$1
 DATA_LOCATION=$2
-KEY='AIzaSyCB41eABQj1X1IhHFwtUMMwTDQG2oZ5-o0'
+KEY='AIzaSyAgoA529IJ7Z6sGdyYfMq0PyLNJLl8uCr8'
 
 post_data="{\"id\":\"$ID\",\"storageDataLocation\":\"$DATA_LOCATION\"}"
 

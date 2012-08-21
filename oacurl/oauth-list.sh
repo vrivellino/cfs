@@ -2,7 +2,7 @@
 # List all trained models.
 # Usage: oauth-list.sh
 
-KEY='AIzaSyCB41eABQj1X1IhHFwtUMMwTDQG2oZ5-o0'
+KEY='AIzaSyAgoA529IJ7Z6sGdyYfMq0PyLNJLl8uCr8'
 
 # List resources
 java -cp ./oacurl-1.3.0.jar com.google.oacurl.Fetch -X GET \

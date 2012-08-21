@@ -7,7 +7,7 @@ ID=$1
 LABEL="$2"
 INPUT="$3"
 
-KEY='AIzaSyCB41eABQj1X1IhHFwtUMMwTDQG2oZ5-o0'
+KEY='AIzaSyAgoA529IJ7Z6sGdyYfMq0PyLNJLl8uCr8'
 data="{\"label\" : \" $LABEL \", \"csvInstance\" : [ $INPUT ]}"
 
 # update the model

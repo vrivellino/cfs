@@ -2,7 +2,7 @@
 
 ID=$1
 
-KEY='AIzaSyCB41eABQj1X1IhHFwtUMMwTDQG2oZ5-o0'
+KEY='AIzaSyAgoA529IJ7Z6sGdyYfMq0PyLNJLl8uCr8'
 
 # Get analysis of model.
 
