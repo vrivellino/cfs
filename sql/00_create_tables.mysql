@@ -3,6 +3,7 @@ USE cfs;
 DROP TABLE IF EXISTS `past_games`;
 DROP TABLE IF EXISTS `stats`;
 DROP TABLE IF EXISTS `schools`;
+DROP TABLE IF EXISTS `google_oauth_tokens`;
 
 CREATE TABLE `schools` (
 	name VARCHAR(31) NOT NULL,
@@ -137,3 +138,14 @@ FROM
 
 WHERE
   pg.season = t1.season AND t1.name = pg.t1_name AND pg.season = t2.season AND t2.name = pg.t2_name;
+
+
+CREATE TABLE `google_oauth_tokens` (
+	id VARCHAR(32) NOT NULL DEFAULT '',
+	token VARCHAR(64) NOT NULL DEFAULT '',
+	expires INT UNSIGNED NOT NULL DEFAULT 0,
+	PRIMARY KEY (id),
+	UNIQUE KEY (token),
+	KEY expires (expires)
+);
+
