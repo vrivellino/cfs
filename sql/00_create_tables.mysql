@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS `past_games`;
 DROP TABLE IF EXISTS `stats`;
 DROP TABLE IF EXISTS `schools`;
 DROP TABLE IF EXISTS `google_oauth_tokens`;
+DROP TABLE IF EXISTS `games`;
 
 CREATE TABLE `schools` (
 	name VARCHAR(31) NOT NULL,
@@ -83,9 +84,9 @@ CREATE TABLE `past_games` (
 
 	PRIMARY KEY (gm_date,t1_name,t2_name),
 	KEY season (season),
-	CONSTRAINT sched_team1 FOREIGN KEY (t1_name)
+	CONSTRAINT pastgms_sched_team1 FOREIGN KEY (t1_name)
 		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE,
-	CONSTRAINT sched_team2 FOREIGN KEY (t2_name)
+	CONSTRAINT pastgms_sched_team2 FOREIGN KEY (t2_name)
 		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -148,4 +149,118 @@ CREATE TABLE `google_oauth_tokens` (
 	UNIQUE KEY (token),
 	KEY expires (expires)
 );
+
+CREATE TABLE `games` (
+	season YEAR(4) NOT NULL DEFAULT '0000',
+	week TINYINT UNSIGNED NOT NULL DEFAULT 0,
+	model VARCHAR(64) NOT NULL DEFAULT '',
+
+	prediction TINYINT DEFAULT NULL,
+	prediction_lock CHAR(36) DEFAULT NULL,
+
+	gm_date DATE NOT NULL DEFAULT '0000-00-00',
+	gm_day ENUM('Sun','Mon','Tue','Wed','Thu','Fri','Sat') NOT NULL DEFAULT 'Sat',
+
+	t1_name VARCHAR(32) NOT NULL DEFAULT '',
+	t1_score TINYINT UNSIGNED DEFAULT NULL,
+	t1_last DATE NOT NULL DEFAULT '0000-00-00',
+
+	site ENUM('T1','N','B') DEFAULT 'T1',
+
+	t2_name VARCHAR(32) NOT NULL DEFAULT '',
+	t2_score TINYINT UNSIGNED DEFAULT NULL,
+	t2_last DATE NOT NULL DEFAULT '0000-00-00',
+
+	notes VARCHAR(63) NOT NULL DEFAULT '',
+
+	PRIMARY KEY (gm_date,t1_name,t2_name),
+	KEY season (season),
+	KEY prediction_lock (prediction_lock),
+	CONSTRAINT gms_sched_team1 FOREIGN KEY (t1_name)
+		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT gms_sched_team2 FOREIGN KEY (t2_name)
+		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE OR REPLACE VIEW v_prediction_queue AS SELECT
+  g.season as season,
+  g.gm_date as gamedate,
+  t1.name as team1,
+  t2.name as team2,
+	g.prediction_lock as prediction_lock,
+
+  -- site
+  g.site as p_site,
+  -- offensive scoring total / differential
+  t1.ppg + t2.opp_ppg as p_o_score_sum,
+  t1.ppg - t2.opp_ppg as p_o_score_diff,
+  -- defensive scoring total / differential
+  t1.opp_ppg + t2.ppg as p_d_score_sum,
+  t1.opp_ppg - t2.ppg as p_d_score_diff,
+  -- offensive rushing total / differential
+  t1.o_rush_yds + t2.d_rush_yds as p_o_rush_sum,
+  t1.o_rush_yds - t2.d_rush_yds as p_o_rush_diff,
+  -- defensive rushing total / differential
+  t1.d_rush_yds + t2.o_rush_yds as p_d_rush_sum,
+  t1.d_rush_yds - t2.o_rush_yds as p_d_rush_diff,
+  -- offensive passing total / differential
+  t1.o_pass_yds + t2.d_pass_yds as p_o_pass_sum,
+  t1.o_pass_yds - t2.d_pass_yds as p_o_pass_diff,
+  -- defensive passing total / differential
+  t1.d_pass_yds + t2.o_pass_yds as p_d_pass_sum,
+  t1.d_pass_yds - t2.o_pass_yds as p_d_pass_diff,
+  -- penalty yards differential
+  (t1.o_pen_yds + t1.d_pen_yds) - (t2.o_pen_yds + t2.d_pen_yds) as p_pen_diff,
+  -- turnover differential
+  t1.d_to - t1.o_to - t2.d_to + t2.o_to as p_to_diff,
+  -- rest differential (assume max of 14 days rest per team)
+  IF(g.t1_last, CASE WHEN DATEDIFF(g.gm_date,g.t1_last) > 14 THEN 14 ELSE DATEDIFF(g.gm_date,g.t1_last) END, 14) - 
+    IF(g.t2_last, CASE WHEN DATEDIFF(g.gm_date,g.t2_last) > 14 THEN 14 ELSE DATEDIFF(g.gm_date,g.t2_last) END, 14)
+    as p_rest_diff,
+  -- winning pct diff
+  CONVERT(t1.win/t1.games - t2.win/t2.games, DECIMAL(4,3)) as p_winpct_diff,
+  -- conference affiliations
+  t1.conference as p_t1_conf,
+  t2.conference as p_t2_conf
+  
+FROM
+  games as g,
+  stats as t1,
+  stats as t2
+
+WHERE
+	g.prediction IS NULL AND g.season = t1.season AND t1.name = g.t1_name AND g.season = t2.season AND t2.name = g.t2_name;
+
+
+CREATE OR REPLACE VIEW v_game_results AS SELECT
+	season,
+	model,
+	gm_date,
+	IF ( site = 'B', 'Bowl', 'Reg Season' ) as game_type,
+
+	IF ( prediction < 0,
+		CONCAT(
+			TRIM(t2_name), ' [', ABS(prediction), ']',
+			IF ( site = 'T1', ' @ ', ' vs. '),
+			TRIM(t1_name)),
+		CONCAT(
+			TRIM(t2_name),
+			IF ( site = 'T1', ' @ ', ' vs. '),
+			TRIM(t1_name), ' [', prediction, ']')
+	) as game,
+	CONCAT(t2_score, '-',t1_score) as game_result,
+
+	CASE WHEN prediction < 0 THEN
+		IF ( t2_score > t1_score, 'CORRECT', 'INCORRECT' )
+	ELSE
+		IF ( t1_score > t2_score, 'CORRECT', 'INCORRECT' )
+	END as prediction_result,
+
+	notes
+
+FROM
+	games
+
+WHERE
+	prediction IS NOT NULL;
 

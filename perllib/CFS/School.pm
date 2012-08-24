@@ -32,6 +32,18 @@ __PACKAGE__->meta->setup(
   primary_key_columns => [ 'name' ],
 
   relationships => [
+    games_objects => {
+      class      => 'CFS::Game',
+      column_map => { name => 't2_name' },
+      type       => 'one to many',
+    },
+
+    games_objs => {
+      class      => 'CFS::Game',
+      column_map => { name => 't1_name' },
+      type       => 'one to many',
+    },
+
     stats => {
       class      => 'CFS::Stat',
       column_map => { name => 'name' },

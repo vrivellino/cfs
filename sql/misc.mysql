@@ -1,0 +1,21 @@
+-- QUERY USED TO POPULATE GAMES WITH TEST DATA
+-- 
+insert ignore into games (
+ select season, week, 'CFS20042010v1', NULL, NULL, gm_date, gm_day,
+        t1_name, t1_score, t1_last, site, t2_name, t2_score, t2_last, notes
+   from past_games
+   where season='2011'
+      and t1_name in ( select name from stats where season='2011' )
+      and t2_name in ( select name from stats where season='2011' )
+);
+
+
+
+-- export CSV of prediction results
+SELECT gm_date, game_type, game, game_result, prediction_result, notes
+INTO OUTFILE '/tmp/2011-prediction-results.csv'
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY '\\'
+LINES TERMINATED BY '\n'
+FROM v_game_results WHERE season='2011';
+

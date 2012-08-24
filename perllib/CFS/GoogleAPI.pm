@@ -140,14 +140,13 @@ sub predict() {
 	my $m = shift;
 	my @csv = @_;
 	if ( scalar @csv == 1 ) {
+		warn "CSV IS SCALAR";
 		$csv[0] =~ s/['"]//go;
 		@csv = split /,/, $csv[0];
 	}
 	foreach ( my $i = 0; $i < scalar @csv; $i++ ) {
 		$csv[$i] += 0 if $csv[$i] =~ m/^(-)?(\d+|\d+[.]\d+|[.]\d+)$/o;
 	}
-	#my $csv = shift or return 1;
-	#$csv =~ s/"/'/go;
 
 	my $hashref = $m->google_prediction_request('predict', input => { csvInstance => [@csv] }) or return undef;
 	return $hashref->{outputValue};
@@ -183,7 +182,10 @@ sub model_id() {
 		foreach my $i ( @{$m->{models}->{items}} ) {
 			$found_model = 1 if $new_model_id eq $i->{id};
 		}
-		die "Unknown Model Id: $new_model_id" unless $found_model;
+		unless ( $found_model ) {
+			warn "Unknown Model Id: $new_model_id";
+			return undef;
+		}
 		$m->{model_id} = $new_model_id;
 	}
 	return $m->{model_id};
@@ -200,7 +202,7 @@ sub load_token() {
 		return 1;
 	}
 
-	my $issue_ts = time;
+	my $issue_ts = time - 10;
 	my $expire_ts = $issue_ts + 3600;
 	my $jwt = Acme::JWT->encode(
 		{ iss => $m->{auth_iss}, scope => $m->{auth_scope},
