@@ -114,17 +114,17 @@ sub google_prediction_request() {
 	my $req = HTTP::Request->new($method => $url);
 	$req->header( 'Authorization' => 'Bearer '.$m->{token} );
 
-	## trace debugging
-	#$lwp->add_handler('request_send',  sub { print "--- REQUEST ---\n";  shift->dump; print "--- END ---\n"; return } );
-	#$lwp->add_handler('response_done', sub { print "--- RESPONSE ---\n"; shift->dump; print "--- END ---\n"; return } );
-
 	if ( %request_args ) {
-		$req->content_type( 'Content-Type: application/json; charset=UTF-8' );
+		$req->content_type( 'application/json; charset=UTF-8' );
 		my $json = encode_json(\%request_args);
 		print "$method $url\n";
 		print "$json\n\n";
 		$req->content($json);
 	}
+
+	## trace debugging
+	#$lwp->add_handler('request_send',  sub { print "--- REQUEST ---\n";  shift->dump; print "--- END ---\n"; return } );
+	#$lwp->add_handler('response_done', sub { print "--- RESPONSE ---\n"; shift->dump; print "--- END ---\n"; return } );
 
 	my $response = $lwp->request($req);
 	unless ( $response->is_success ) {
@@ -132,7 +132,8 @@ sub google_prediction_request() {
 		return 0;
 	}
 
-	return decode_json($response->content);
+	return decode_json($response->content) if $response->content;
+	return;
 }
 
 sub predict() {
@@ -159,6 +160,18 @@ sub print_model_list() {
 	foreach my $i ( @{$m->{models}->{items}} ) {
 		printf "%-32s%s\n", $i->{id}, $i->{trainingStatus};
 	}
+}
+
+sub train_model() {
+	my $m = shift;
+	my $id = shift or return 1;
+	my $data_loc = shift or return 1;
+	return $m->google_prediction_request('insert', id => $id, storageDataLocation => $data_loc);
+}
+
+sub delete_model() {
+	my $m = shift;
+	return $m->google_prediction_request('delete');
 }
 
 sub model_id() {
