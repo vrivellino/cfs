@@ -1,10 +1,27 @@
+DROP DATABASE IF EXISTS cfs;
+CREATE DATABASE cfs;
 USE cfs;
 
-DROP TABLE IF EXISTS `past_games`;
-DROP TABLE IF EXISTS `stats`;
-DROP TABLE IF EXISTS `schools`;
-DROP TABLE IF EXISTS `google_oauth_tokens`;
-DROP TABLE IF EXISTS `games`;
+
+CREATE TABLE `conference_codes` (
+	name VARCHAR(12) NOT NULL DEFAULT '',
+	code CHAR(2) NOT NULL DEFAULT '',
+	PRIMARY KEY (name)
+);
+INSERT INTO conference_codes (name,code) VALUES
+	('MWC',      'MW'),
+	('MAC',      'MA'),
+	('SEC',      'SE'),
+	('CUSA',     'CU'),
+	('Pac-10',   'P1'),
+	('Pac-12',   'P1'),
+	('Sun Belt', 'SB'),
+	('Ind',      'IN'),
+	('Big 12',   'B2'),
+	('WAC',      'WA'),
+	('Big East', 'BE'),
+	('ACC',      'AC'),
+	('Big Ten',  'BT');
 
 CREATE TABLE `schools` (
 	name VARCHAR(31) NOT NULL,
@@ -60,7 +77,9 @@ CREATE TABLE `stats` (
 
 	PRIMARY KEY (name,season),
 	CONSTRAINT stats_school_name FOREIGN KEY (name)
-		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
+		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT stats_conf_name FOREIGN KEY (conference)
+		REFERENCES conference_codes (name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE `past_games` (
@@ -97,48 +116,51 @@ CREATE OR REPLACE VIEW v_training_data AS SELECT
   t1.name as team1,
   t2.name as team2,
   -- final score differential
-  CONVERT(pg.t1_score, SIGNED) - CONVERT(pg.t2_score, SIGNED) as t_score_diff,
+  CONVERT(pg.t1_score, SIGNED) - CONVERT(pg.t2_score, SIGNED) as r_score_diff,
   -- site
-  pg.site as t_site,
+  pg.site as f_site,
   -- offensive scoring total / differential
-  t1.ppg + t2.opp_ppg as t_o_score_sum,
-  t1.ppg - t2.opp_ppg as t_o_score_diff,
+  t1.ppg + t2.opp_ppg as f_o_score_sum,
+  t1.ppg - t2.opp_ppg as f_o_score_diff,
   -- defensive scoring total / differential
-  t1.opp_ppg + t2.ppg as t_d_score_sum,
-  t1.opp_ppg - t2.ppg as t_d_score_diff,
+  t1.opp_ppg + t2.ppg as f_d_score_sum,
+  t1.opp_ppg - t2.ppg as f_d_score_diff,
   -- offensive rushing total / differential
-  t1.o_rush_yds + t2.d_rush_yds as t_o_rush_sum,
-  t1.o_rush_yds - t2.d_rush_yds as t_o_rush_diff,
+  t1.o_rush_yds + t2.d_rush_yds as f_o_rush_sum,
+  t1.o_rush_yds - t2.d_rush_yds as f_o_rush_diff,
   -- defensive rushing total / differential
-  t1.d_rush_yds + t2.o_rush_yds as t_d_rush_sum,
-  t1.d_rush_yds - t2.o_rush_yds as t_d_rush_diff,
+  t1.d_rush_yds + t2.o_rush_yds as f_d_rush_sum,
+  t1.d_rush_yds - t2.o_rush_yds as f_d_rush_diff,
   -- offensive passing total / differential
-  t1.o_pass_yds + t2.d_pass_yds as t_o_pass_sum,
-  t1.o_pass_yds - t2.d_pass_yds as t_o_pass_diff,
+  t1.o_pass_yds + t2.d_pass_yds as f_o_pass_sum,
+  t1.o_pass_yds - t2.d_pass_yds as f_o_pass_diff,
   -- defensive passing total / differential
-  t1.d_pass_yds + t2.o_pass_yds as t_d_pass_sum,
-  t1.d_pass_yds - t2.o_pass_yds as t_d_pass_diff,
+  t1.d_pass_yds + t2.o_pass_yds as f_d_pass_sum,
+  t1.d_pass_yds - t2.o_pass_yds as f_d_pass_diff,
   -- penalty yards differential
-  (t1.o_pen_yds + t1.d_pen_yds) - (t2.o_pen_yds + t2.d_pen_yds) as t_pen_diff,
+  (t1.o_pen_yds + t1.d_pen_yds) - (t2.o_pen_yds + t2.d_pen_yds) as f_pen_diff,
   -- turnover differential
-  t1.d_to - t1.o_to - t2.d_to + t2.o_to as t_to_diff,
+  t1.d_to - t1.o_to - t2.d_to + t2.o_to as f_to_diff,
   -- rest interface (assume max of 14 days rest per team)
   IF(pg.t1_last, CASE WHEN DATEDIFF(pg.gm_date,pg.t1_last) > 14 THEN 14 ELSE DATEDIFF(pg.gm_date,pg.t1_last) END, 14) - 
     IF(pg.t2_last, CASE WHEN DATEDIFF(pg.gm_date,pg.t2_last) > 14 THEN 14 ELSE DATEDIFF(pg.gm_date,pg.t2_last) END, 14)
-    as t_rest_diff,
+    as f_rest_diff,
   -- winning pct diff
-  CONVERT(t1.win/t1.games - t2.win/t2.games, DECIMAL(4,3)) as t_winpct_diff,
+  CONVERT(t1.win/t1.games - t2.win/t2.games, DECIMAL(4,3)) as f_winpct_diff,
   -- conference affiliations
-  t1.conference as t_t1_conf,
-  t2.conference as t_t2_conf
+  cc1.code as f_t1_conf,
+  cc2.code as f_t2_conf
   
 FROM
   past_games as pg,
   stats as t1,
-  stats as t2
+  stats as t2,
+	conference_codes as cc1,
+	conference_codes as cc2
 
 WHERE
-  pg.season = t1.season AND t1.name = pg.t1_name AND pg.season = t2.season AND t2.name = pg.t2_name;
+  pg.season = t1.season AND t1.name = pg.t1_name AND cc1.name = t1.conference AND
+	pg.season = t2.season AND t2.name = pg.t2_name AND cc2.name = t2.conference;
 
 
 CREATE TABLE `google_oauth_tokens` (
@@ -190,46 +212,50 @@ CREATE OR REPLACE VIEW v_prediction_queue AS SELECT
 	g.prediction_lock as prediction_lock,
 
   -- site
-  g.site as p_site,
+  g.site as f_site,
   -- offensive scoring total / differential
-  t1.ppg + t2.opp_ppg as p_o_score_sum,
-  t1.ppg - t2.opp_ppg as p_o_score_diff,
+  t1.ppg + t2.opp_ppg as f_o_score_sum,
+  t1.ppg - t2.opp_ppg as f_o_score_diff,
   -- defensive scoring total / differential
-  t1.opp_ppg + t2.ppg as p_d_score_sum,
-  t1.opp_ppg - t2.ppg as p_d_score_diff,
+  t1.opp_ppg + t2.ppg as f_d_score_sum,
+  t1.opp_ppg - t2.ppg as f_d_score_diff,
   -- offensive rushing total / differential
-  t1.o_rush_yds + t2.d_rush_yds as p_o_rush_sum,
-  t1.o_rush_yds - t2.d_rush_yds as p_o_rush_diff,
+  t1.o_rush_yds + t2.d_rush_yds as f_o_rush_sum,
+  t1.o_rush_yds - t2.d_rush_yds as f_o_rush_diff,
   -- defensive rushing total / differential
-  t1.d_rush_yds + t2.o_rush_yds as p_d_rush_sum,
-  t1.d_rush_yds - t2.o_rush_yds as p_d_rush_diff,
+  t1.d_rush_yds + t2.o_rush_yds as f_d_rush_sum,
+  t1.d_rush_yds - t2.o_rush_yds as f_d_rush_diff,
   -- offensive passing total / differential
-  t1.o_pass_yds + t2.d_pass_yds as p_o_pass_sum,
-  t1.o_pass_yds - t2.d_pass_yds as p_o_pass_diff,
+  t1.o_pass_yds + t2.d_pass_yds as f_o_pass_sum,
+  t1.o_pass_yds - t2.d_pass_yds as f_o_pass_diff,
   -- defensive passing total / differential
-  t1.d_pass_yds + t2.o_pass_yds as p_d_pass_sum,
-  t1.d_pass_yds - t2.o_pass_yds as p_d_pass_diff,
+  t1.d_pass_yds + t2.o_pass_yds as f_d_pass_sum,
+  t1.d_pass_yds - t2.o_pass_yds as f_d_pass_diff,
   -- penalty yards differential
-  (t1.o_pen_yds + t1.d_pen_yds) - (t2.o_pen_yds + t2.d_pen_yds) as p_pen_diff,
+  (t1.o_pen_yds + t1.d_pen_yds) - (t2.o_pen_yds + t2.d_pen_yds) as f_pen_diff,
   -- turnover differential
-  t1.d_to - t1.o_to - t2.d_to + t2.o_to as p_to_diff,
+  t1.d_to - t1.o_to - t2.d_to + t2.o_to as f_to_diff,
   -- rest differential (assume max of 14 days rest per team)
   IF(g.t1_last, CASE WHEN DATEDIFF(g.gm_date,g.t1_last) > 14 THEN 14 ELSE DATEDIFF(g.gm_date,g.t1_last) END, 14) - 
     IF(g.t2_last, CASE WHEN DATEDIFF(g.gm_date,g.t2_last) > 14 THEN 14 ELSE DATEDIFF(g.gm_date,g.t2_last) END, 14)
-    as p_rest_diff,
+    as f_rest_diff,
   -- winning pct diff
-  CONVERT(t1.win/t1.games - t2.win/t2.games, DECIMAL(4,3)) as p_winpct_diff,
+  CONVERT(t1.win/t1.games - t2.win/t2.games, DECIMAL(4,3)) as f_winpct_diff,
   -- conference affiliations
-  t1.conference as p_t1_conf,
-  t2.conference as p_t2_conf
+  cc1.code as f_t1_conf,
+  cc2.code as f_t2_conf
   
 FROM
   games as g,
   stats as t1,
-  stats as t2
+  stats as t2,
+	conference_codes as cc1,
+	conference_codes as cc2
 
 WHERE
-	g.prediction IS NULL AND g.season = t1.season AND t1.name = g.t1_name AND g.season = t2.season AND t2.name = g.t2_name;
+	g.prediction IS NULL
+	AND g.season = t1.season AND t1.name = g.t1_name AND cc1.name = t1.conference
+	AND g.season = t2.season AND t2.name = g.t2_name AND cc2.name = t2.conference;
 
 
 CREATE OR REPLACE VIEW v_game_results AS SELECT
@@ -249,6 +275,7 @@ CREATE OR REPLACE VIEW v_game_results AS SELECT
 			TRIM(t1_name), ' [', prediction, ']')
 	) as game,
 	CONCAT(t2_score, '-',t1_score) as game_result,
+	-- ABS(prediction) as abs_pred,
 
 	CASE WHEN prediction < 0 THEN
 		IF ( t2_score > t1_score, 'CORRECT', 'INCORRECT' )

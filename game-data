@@ -67,7 +67,7 @@ WIN_DIFF
 	        eg: team_WINS/team_GAMES - opponent_WINS/opponent_GAMES
 
 CONF:
-	[STRING] - conference affiliation
+	[STRING] - 2 character code for conference affiliation
 
 CONF_OPPONENT:
-	[STRING] - conference affiliation of opponent
+	[STRING] - 2 character code for conference affiliation of opponent

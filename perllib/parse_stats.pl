@@ -6,6 +6,7 @@ use warnings;
 require CFS::DB;
 require CFS::School;
 require CFS::Stat;
+require CFS::ConferenceCode;
 
 my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
 
@@ -136,10 +137,13 @@ while ( my $dir = shift ) {
 		die "Can't determine Def penalty yds/gm!" unless $d_pen_yds;
 		die "Can't determine Def TO/gm!" unless $d_to;
 
+		my $c_code = CFS::ConferenceCode->new( db => $cfsdb, name => $conf );
+		die "Unknown conference: $conf" unless $c_code->load(speculative => 1);
+
 		my $stat_record = CFS::Stat->new( db => $cfsdb,
 			name => $team,
 			season => $year,
-			conference => $conf,
+			conference => $c_code->name(),
 			games => $games,
 			win => $wins,
 			loss => $losses,

@@ -41,34 +41,34 @@ while ( my $row = $training_data_i->next ) {
 	$gm_record->load() or die "Failed to load game record";
 
 	## non-numeric features - strip leading or trailing space
-	my $site = $row->p_site();
+	my $site = $row->f_site();
 	$site =~ s/^\s*//o;
 	$site =~ s/\s*$//o;
-	my $t1_conf = $row->p_t1_conf();
+	my $t1_conf = $row->f_t1_conf();
 	$t1_conf =~ s/^\s*//o;
 	$t1_conf =~ s/\s*$//o;
-	my $t2_conf = $row->p_t2_conf();
+	my $t2_conf = $row->f_t2_conf();
 	$t2_conf =~ s/^\s*//o;
 	$t2_conf =~ s/\s*$//o;
 
 	my @csv = (
 		$site,
-		$row->p_o_score_sum(),
-		$row->p_o_score_diff(),
-		$row->p_d_score_sum(),
-		$row->p_d_score_diff(),
-		$row->p_o_rush_sum(),
-		$row->p_o_rush_diff(),
-		$row->p_d_rush_sum(),
-		$row->p_d_rush_diff(),
-		$row->p_o_pass_sum(),
-		$row->p_o_pass_diff(),
-		$row->p_d_pass_sum(),
-		$row->p_d_pass_diff(),
-		$row->p_pen_diff(),
-		$row->p_to_diff(),
-		$row->p_rest_diff(),
-		$row->p_winpct_diff(),
+		$row->f_o_score_sum(),
+		$row->f_o_score_diff(),
+		$row->f_d_score_sum(),
+		$row->f_d_score_diff(),
+		$row->f_o_rush_sum(),
+		$row->f_o_rush_diff(),
+		$row->f_d_rush_sum(),
+		$row->f_d_rush_diff(),
+		$row->f_o_pass_sum(),
+		$row->f_o_pass_diff(),
+		$row->f_d_pass_sum(),
+		$row->f_d_pass_diff(),
+		$row->f_pen_diff(),
+		$row->f_to_diff(),
+		$row->f_rest_diff(),
+		$row->f_winpct_diff(),
 		$t1_conf,
 		$t2_conf
 	);
