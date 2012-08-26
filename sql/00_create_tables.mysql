@@ -204,6 +204,30 @@ CREATE TABLE `games` (
 		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+CREATE TABLE `sim_games` (
+	season YEAR(4) NOT NULL DEFAULT '0000',
+	week TINYINT UNSIGNED NOT NULL DEFAULT 0,
+	model VARCHAR(64) NOT NULL DEFAULT '',
+
+	prediction TINYINT DEFAULT NULL,
+	prediction_lock CHAR(36) DEFAULT NULL,
+
+	t1_name VARCHAR(32) NOT NULL DEFAULT '',
+	t1_last DATE NOT NULL DEFAULT '0000-00-00',
+
+	site ENUM('T1','N','B') DEFAULT 'T1',
+
+	t2_name VARCHAR(32) NOT NULL DEFAULT '',
+	t2_last DATE NOT NULL DEFAULT '0000-00-00',
+
+	PRIMARY KEY (season,week,t1_name,t2_name),
+	KEY prediction_lock (prediction_lock),
+	CONSTRAINT pgms_sched_team1 FOREIGN KEY (t1_name)
+		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT pgms_sched_team2 FOREIGN KEY (t2_name)
+		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
 CREATE OR REPLACE VIEW v_prediction_queue AS SELECT
   g.season as season,
   g.gm_date as gamedate,
@@ -257,6 +281,60 @@ WHERE
 	AND g.season = t1.season AND t1.name = g.t1_name AND cc1.name = t1.conference
 	AND g.season = t2.season AND t2.name = g.t2_name AND cc2.name = t2.conference;
 
+CREATE OR REPLACE VIEW v_simulation_queue AS SELECT
+  g.season as season,
+  -- g.gm_date as gamedate,
+	g.week as week,
+  t1.name as team1,
+  t2.name as team2,
+	g.prediction_lock as prediction_lock,
+
+  -- site
+  g.site as f_site,
+  -- offensive scoring total / differential
+  t1.ppg + t2.opp_ppg as f_o_score_sum,
+  t1.ppg - t2.opp_ppg as f_o_score_diff,
+  -- defensive scoring total / differential
+  t1.opp_ppg + t2.ppg as f_d_score_sum,
+  t1.opp_ppg - t2.ppg as f_d_score_diff,
+  -- offensive rushing total / differential
+  t1.o_rush_yds + t2.d_rush_yds as f_o_rush_sum,
+  t1.o_rush_yds - t2.d_rush_yds as f_o_rush_diff,
+  -- defensive rushing total / differential
+  t1.d_rush_yds + t2.o_rush_yds as f_d_rush_sum,
+  t1.d_rush_yds - t2.o_rush_yds as f_d_rush_diff,
+  -- offensive passing total / differential
+  t1.o_pass_yds + t2.d_pass_yds as f_o_pass_sum,
+  t1.o_pass_yds - t2.d_pass_yds as f_o_pass_diff,
+  -- defensive passing total / differential
+  t1.d_pass_yds + t2.o_pass_yds as f_d_pass_sum,
+  t1.d_pass_yds - t2.o_pass_yds as f_d_pass_diff,
+  -- penalty yards differential
+  (t1.o_pen_yds + t1.d_pen_yds) - (t2.o_pen_yds + t2.d_pen_yds) as f_pen_diff,
+  -- turnover differential
+  t1.d_to - t1.o_to - t2.d_to + t2.o_to as f_to_diff,
+  -- rest differential (assume max of 14 days rest per team)
+  -- IF(g.t1_last, CASE WHEN DATEDIFF(g.gm_date,g.t1_last) > 14 THEN 14 ELSE DATEDIFF(g.gm_date,g.t1_last) END, 14) - 
+  --   IF(g.t2_last, CASE WHEN DATEDIFF(g.gm_date,g.t2_last) > 14 THEN 14 ELSE DATEDIFF(g.gm_date,g.t2_last) END, 14)
+  0.0 as f_rest_diff,
+  -- winning pct diff
+  CONVERT(t1.win/t1.games - t2.win/t2.games, DECIMAL(4,3)) as f_winpct_diff,
+  -- conference affiliations
+  cc1.code as f_t1_conf,
+  cc2.code as f_t2_conf
+  
+FROM
+  sim_games as g,
+  stats as t1,
+  stats as t2,
+	conference_codes as cc1,
+	conference_codes as cc2
+
+WHERE
+	g.prediction IS NULL
+	AND g.season = t1.season AND t1.name = g.t1_name AND cc1.name = t1.conference
+	AND g.season = t2.season AND t2.name = g.t2_name AND cc2.name = t2.conference;
+
 
 CREATE OR REPLACE VIEW v_game_results AS SELECT
 	season,
@@ -274,8 +352,8 @@ CREATE OR REPLACE VIEW v_game_results AS SELECT
 			IF ( site = 'T1', ' @ ', ' vs. '),
 			TRIM(t1_name), ' [', prediction, ']')
 	) as game,
+	ABS(prediction) as abs_pred,
 	CONCAT(t2_score, '-',t1_score) as game_result,
-	-- ABS(prediction) as abs_pred,
 
 	CASE WHEN prediction < 0 THEN
 		IF ( t2_score > t1_score, 'CORRECT', 'INCORRECT' )
@@ -291,3 +369,53 @@ FROM
 WHERE
 	prediction IS NOT NULL;
 
+
+DROP FUNCTION IF EXISTS `prediction_weight`;
+DELIMITER |
+CREATE FUNCTION `prediction_weight` (p TINYINT) RETURNS DECIMAL(4,3) DETERMINISTIC
+BEGIN
+	DECLARE weight DECIMAL(4,3);
+	SET weight = CASE
+		WHEN ABS(p) >=      100       THEN 1.000
+		WHEN ABS(p) BETWEEN 15 AND 99 THEN 0.950
+		WHEN ABS(p) BETWEEN 11 AND 14 THEN 0.850
+		WHEN ABS(p) BETWEEN 7  AND 10 THEN 0.750
+		WHEN ABS(p) BETWEEN 3  AND 6  THEN 0.625
+		WHEN ABS(p) BETWEEN 0  AND 2  THEN 0.500
+		ELSE 0.0
+	END;
+	RETURN IF ( p >= 0, weight, 1.0 - weight );
+END |
+DELIMITER ;
+
+
+CREATE OR REPLACE VIEW v_simulation_rankings AS SELECT
+	g.season as season,
+	g.week as week,
+	t.name as team,
+	CONCAT(t.win,'-',t.loss) as record,
+	COUNT(1) as sim_games,
+	AVG(
+		CASE WHEN g.t1_name = t.name THEN
+			IF( g.prediction > 0, 1, 0 )
+		ELSE
+			IF( g.prediction < 0, 1, 0 )
+		END ) as sim_pct,
+
+	CONVERT(AVG( IF (g.t1_name = t.name,
+		prediction_weight(  g.prediction),
+		prediction_weight(- g.prediction) )), DECIMAL(4,3)) as sim_weighted_pct
+
+FROM
+	stats as t,
+	sim_games as g
+
+WHERE
+	g.season = t.season AND
+	( g.t1_name = t.name OR g.t2_name = t.name )
+
+GROUP BY
+	team
+
+ORDER BY
+	sim_weighted_pct DESC, sim_pct DESC;

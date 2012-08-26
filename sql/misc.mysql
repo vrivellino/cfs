@@ -1,7 +1,6 @@
--- QUERY USED TO POPULATE GAMES WITH TEST DATA
--- 
+-- QUERY USED TO POPULATE 2011 GAMES FOR TEST SIMULATION
 insert ignore into games (
- select season, week, 'CFS20042010v1', NULL, NULL, gm_date, gm_day,
+ select season, week, 'CFS20042010v2', NULL, NULL, gm_date, gm_day,
         t1_name, t1_score, t1_last, site, t2_name, t2_score, t2_last, notes
    from past_games
    where season='2011'
@@ -33,17 +32,22 @@ GROUP BY
 
 -- view of performance by absolute value of prediction
 SELECT
+	-- CASE
+	-- 	WHEN abs_pred <= 3 THEN 'A: 0-3'
+	-- 	WHEN abs_pred > 3 AND abs_pred <= 7 THEN 'B: 4-7'
+	-- 	WHEN abs_pred > 7 AND abs_pred <= 14 THEN 'C: 8-14'
+	-- 	ELSE 'D: 14+' END as prediction_value,
 	CASE
-		WHEN abs_pred <=3 THEN 'A: 0-3'
-		WHEN abs_pred > 3 AND abs_pred <= 7 THEN 'B: 4-7'
-		WHEN abs_pred > 7 AND abs_pred <= 14 THEN 'C: 8-14'
-		ELSE 'D: 14+' END as prediction_value,
+	 	WHEN abs_pred < 17 THEN abs_pred
+		ELSE '17+' END as prediction_value,
 	COUNT( 1 ) as count,
 	COUNT( CASE WHEN prediction_result='CORRECT' THEN 1 END ) as correct,
 	COUNT( CASE WHEN prediction_result='INCORRECT' THEN 1 END ) as incorrect
 FROM
-	v_game_results2
-WHERE
-	game_type!='Bowl'
+	v_game_results
+-- WHERE
+-- 	game_type!='Bowl'
 GROUP BY
 	prediction_value;
+
+

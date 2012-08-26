@@ -58,7 +58,7 @@ __PACKAGE__->meta->setup(
     },
 
     t2s => {
-      map_class => 'CFS::PastGame',
+      map_class => 'CFS::SimGame',
       map_from  => 't1',
       map_to    => 't2',
       type      => 'many to many',

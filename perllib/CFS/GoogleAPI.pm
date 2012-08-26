@@ -22,7 +22,7 @@ sub new {
 		cfsdb => $args{cfsdb_handle} || undef,
 		token => undef,
 		models => {},
-		lwp => LWP::UserAgent->new
+		lwp => LWP::UserAgent->new(keep_alive => 1)
 	};
 
 	unless ( $m->{cfsdb} ) {
@@ -110,7 +110,7 @@ sub google_prediction_request() {
 		return 0;
 	}
 
-	my $lwp = $m->{lwp} || LWP::UserAgent->new;
+	my $lwp = $m->{lwp} || LWP::UserAgent->new(keep_alive => 1);
 	my $req = HTTP::Request->new($method => $url);
 	$req->header( 'Authorization' => 'Bearer '.$m->{token} );
 
@@ -209,7 +209,7 @@ sub load_token() {
 		  aud => $m->{auth_url}, iat => $issue_ts, exp => $expire_ts},
 		get_key(), 'RS256' );
 
-	my $lwp = $m->{lwp} || LWP::UserAgent->new;
+	my $lwp = $m->{lwp} || LWP::UserAgent->new(keep_alive => 1);
 	my $req = HTTP::Request->new(POST => $m->{auth_url});
 	$req->content_type('application/x-www-form-urlencoded');
 	$req->content("grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=$jwt");
