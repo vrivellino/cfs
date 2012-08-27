@@ -44,6 +44,12 @@ __PACKAGE__->meta->setup(
       type       => 'one to many',
     },
 
+    schools_repole_mappings => {
+      class      => 'CFS::SchoolsRepoleMapping',
+      column_map => { name => 'name' },
+      type       => 'one to many',
+    },
+
     stats => {
       class      => 'CFS::Stat',
       column_map => { name => 'name' },
@@ -58,7 +64,7 @@ __PACKAGE__->meta->setup(
     },
 
     t2s => {
-      map_class => 'CFS::SimGame',
+      map_class => 'CFS::PastGame',
       map_from  => 't1',
       map_to    => 't2',
       type      => 'many to many',

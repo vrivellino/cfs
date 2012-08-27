@@ -50,4 +50,11 @@ FROM
 GROUP BY
 	prediction_value;
 
+-- update lines of 2011 season
 
+
+-- view of performance vs spread
+
+SELECT COUNT(1) FROM games WHERE season='2011' AND site = 'B' AND (
+	(prediction > line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) > line) OR
+	(prediction < line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) < line));

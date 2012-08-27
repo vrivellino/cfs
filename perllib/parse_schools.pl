@@ -92,7 +92,7 @@ my @fcs_schools = ( 'Tennessee-Martin', 'Murray State', 'Georgia Southern', 'Nor
 'Hofstra', 'North Dakota State', 'Howard', 'Southern Utah', 'South Carolina State', 'Central Arkansas', 'Gardner-Webb', 'Elon',
 'West Virginia Tech', 'Delaware State', 'Norfolk State', 'Charleston Southern', 'Central Connecticut State', 'Arkansas-Pine Bluff',
 'North Carolina Central', 'Morehead State', 'South Dakota State', 'Towson', 'Coastal Carolina', 'Alabama A&M', 'North Dakota', 'Hampton',
-'South Dakota', 'Stony Brook', 'Austin Peay', 'Georgia State' );
+'South Dakota', 'Stony Brook', 'Austin Peay', 'Georgia State', 'Wagner', 'Northwestern Oklahoma State', 'Texas A&M-Commerce' );
 
 foreach my $fcs_name ( @fcs_schools ) {
 	$school_record = CFS::School->new( db => $cfsdb,

@@ -53,6 +53,51 @@ CREATE TABLE `schools` (
 	PRIMARY KEY (name)
 );
 
+CREATE TABLE `schools_repole_mappings` (
+	repole_name VARCHAR(31) NOT NULL DEFAULT '',
+	name VARCHAR(31) NOT NULL DEFAULT '',
+	PRIMARY KEY (repole_name),
+	CONSTRAINT repole_school_mapping_name FOREIGN KEY (name)
+		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
+);
+INSERT INTO schools_repole_mappings (repole_name,name) VALUES
+	('Alabama A+M', 'Alabama A&M'),
+	('Bowling Green', 'Bowling Green State'),
+	('Cal-San Luis Obispo', 'Cal Poly'),
+	('Florida A+M', 'Florida A&M'),
+	('Florida Intl', 'Florida International'),
+	('Grambling', 'Grambling State'),
+	('Jacksonville St', 'Jacksonville State'),
+	('Miami-Florida', 'Miami (FL)'),
+	('Miami-Ohio', 'Miami (OH)'),
+	('Middle Tennessee', 'Middle Tennessee State'),
+	('Nevada-Reno', 'Nevada'),
+	('No Carolina Central', 'North Carolina Central'),
+	('No Carolina State', 'North Carolina State'),
+	('North Dakota St', 'North Dakota State'),
+	('Northwestern St(LA)', 'Northwestern State'),
+	('NW Oklahoma', 'Northwestern Oklahoma State'),
+	('S E Louisiana', 'Southeastern Louisiana'),
+	('S E Missouri St', 'Southeast Missouri State'),
+	('S-M-U', 'Southern Methodist'),
+	('So Carolina State', 'South Carolina State'),
+	('Southern Cal', 'Southern California'),
+	('Southern Miss', 'Southern Mississippi'),
+	('Southern Univ', 'Southern'),
+	('Stephen F Austin', 'Stephen F. Austin'),
+	('Texas A+M', 'Texas A&M'),
+	('Texas A+M-Commerce', 'Texas A&M-Commerce'),
+	('The Citadel', 'Citadel'),
+	('U-A-B', 'Alabama-Birmingham'),
+	('U-C-F', 'Central Florida'),
+	('U.C.L.A.', 'UCLA'),
+	('UC-Davis', 'California-Davis'),
+	('UL-Lafayette', 'Louisiana-Lafayette'),
+	('UL-Monroe', 'Louisiana-Monroe'),
+	('UTEP', 'Texas-El Paso'),
+	('Virginia Military', 'Virginia Military Institute'),
+	('William + Mary', 'William & Mary');
+
 CREATE TABLE `stats` (
 	name VARCHAR(31) NOT NULL,
 	season YEAR(4) NOT NULL DEFAULT '0000',
@@ -99,6 +144,8 @@ CREATE TABLE `past_games` (
 	t2_score TINYINT UNSIGNED DEFAULT NULL,
 	t2_last DATE NOT NULL DEFAULT '0000-00-00',
 
+	line DECIMAL(3,1) DEFAULT NULL,
+
 	notes VARCHAR(63) NOT NULL DEFAULT '',
 
 	PRIMARY KEY (gm_date,t1_name,t2_name),
@@ -108,7 +155,6 @@ CREATE TABLE `past_games` (
 	CONSTRAINT pastgms_sched_team2 FOREIGN KEY (t2_name)
 		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
 );
-
 
 CREATE OR REPLACE VIEW v_training_data AS SELECT
   pg.season as season,
@@ -192,6 +238,8 @@ CREATE TABLE `games` (
 	t2_name VARCHAR(32) NOT NULL DEFAULT '',
 	t2_score TINYINT UNSIGNED DEFAULT NULL,
 	t2_last DATE NOT NULL DEFAULT '0000-00-00',
+
+	line DECIMAL(3,1) DEFAULT NULL,
 
 	notes VARCHAR(63) NOT NULL DEFAULT '',
 
@@ -395,14 +443,14 @@ CREATE OR REPLACE VIEW v_simulation_rankings AS SELECT
 	t.name as team,
 	CONCAT(t.win,'-',t.loss) as record,
 	COUNT(1) as sim_games,
-	AVG(
+	CONVERT( AVG(
 		CASE WHEN g.t1_name = t.name THEN
 			IF( g.prediction > 0, 1, 0 )
 		ELSE
 			IF( g.prediction < 0, 1, 0 )
-		END ) as sim_pct,
+		END ), DECIMAL(4,3)) as sim_pct,
 
-	CONVERT(AVG( IF (g.t1_name = t.name,
+	CONVERT( AVG( IF (g.t1_name = t.name,
 		prediction_weight(  g.prediction),
 		prediction_weight(- g.prediction) )), DECIMAL(4,3)) as sim_weighted_pct
 

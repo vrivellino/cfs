@@ -22,6 +22,7 @@ __PACKAGE__->meta->setup(
     t2_name         => { type => 'varchar', length => 32, not_null => 1 },
     t2_score        => { type => 'integer' },
     t2_last         => { type => 'date', default => '0000-00-00', not_null => 1 },
+    line            => { type => 'numeric', precision => 3, scale => 1 },
     notes           => { type => 'varchar', default => '', length => 63, not_null => 1 },
   ],
 
