@@ -125,3 +125,26 @@ sim_games table (if 'sim' is passed).
 Usage:
 
 C<< ./process_prediction_queue.pl [predict|sim] >>
+
+=head2 TODO
+
+=over
+
+=item
+
+Clean-up Rose::DB implementation and move auto-generated classes to isolated
+namespace.
+
+=item
+
+Clean-up of Google::API: better error handling, maybe make it CPAN'able?
+
+=item
+
+General code clean - get rid of some of the ugliness.  (eg: executing SQL
+directly in process_prediction_queue.pl
+
+=item
+
+Make prediction result DECIMAL(3,2) instead of an INT and round to nearest
+whole number or 0.5.  (Make it more like a betting line.)
