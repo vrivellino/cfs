@@ -50,11 +50,31 @@ FROM
 GROUP BY
 	prediction_value;
 
--- update lines of 2011 season
-
 
 -- view of performance vs spread
+SELECT
+	IF(site='B', 'Bowl', 'Reg Season') as type,
+	COUNT(1) as games,
+	SUM( IF(
+		(prediction > line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) > line) OR
+		(prediction < line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) < line), 1, 0) ) as correct,
+	SUM( IF(prediction = line OR CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) = line, 1, 0) ) as push,
+	SUM( IF(
+		(prediction < line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) > line) OR
+		(prediction > line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) < line), 1, 0) ) as incorrect
+FROM
+	games
+WHERE
+	season='2011'
+GROUP BY type;
 
-SELECT COUNT(1) FROM games WHERE season='2011' AND site = 'B' AND (
-	(prediction > line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) > line) OR
-	(prediction < line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) < line));
+-- copy 2011 stats to 2012 for week 1 predictions
+INSERT INTO stats (
+SELECT
+	name, '2012' as season, conference, games, win, loss, ppg, opp_ppg, o_pass_yds,
+	o_rush_yds, o_pen_yds, o_to, d_pass_yds, d_rush_yds, d_pen_yds, d_to
+FROM
+	stats
+WHERE
+	season='2011' );
+

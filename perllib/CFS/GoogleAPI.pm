@@ -16,14 +16,26 @@ sub new {
 
 	my $m = {
 		service_base => $args{service_base} || 'https://www.googleapis.com/prediction/v1.5/trainedmodels',
-		auth_iss => $args{client_id} || '140408034834@developer.gserviceaccount.com',
+		auth_iss => $args{client_id} || '',
 		auth_scope => $args{auth_scope} || 'https://www.googleapis.com/auth/prediction',
 		auth_url => $args{auth_url} || 'https://accounts.google.com/o/oauth2/token',
+		auth_ssl_key => $args{auth_ssl_key} || '',
+		auth_ssl_crt => $args{auth_ssl_crt} || '',
 		cfsdb => $args{cfsdb_handle} || undef,
 		token => undef,
 		models => {},
 		lwp => LWP::UserAgent->new(keep_alive => 1)
 	};
+
+	# extract client id
+	unless ( $m->{auth_iss} ) {
+		open ID_FILE, $ENV{HOME}.'/.google-api.id' or die "Failed to open ~/.google-api.id";
+		my $input = <ID_FILE> || '';
+		close ID_FILE;
+		chomp $input;
+		die "~/.google-api.id empty?" unless $input;
+		$m->{auth_iss} = $input;
+	}
 
 	unless ( $m->{cfsdb} ) {
 		$m->{cfsdb} = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die
@@ -207,7 +219,7 @@ sub load_token() {
 	my $jwt = Acme::JWT->encode(
 		{ iss => $m->{auth_iss}, scope => $m->{auth_scope},
 		  aud => $m->{auth_url}, iat => $issue_ts, exp => $expire_ts},
-		get_key(), 'RS256' );
+		$m->get_key(), 'RS256' );
 
 	my $lwp = $m->{lwp} || LWP::UserAgent->new(keep_alive => 1);
 	my $req = HTTP::Request->new(POST => $m->{auth_url});
@@ -234,41 +246,33 @@ sub load_token() {
 }
 
 
-## ghetto key management
+## ghetto key management - this needs love
 sub get_key() {
-	return '-----BEGIN PRIVATE KEY-----
-MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAObmRgu+18i2NjWE
-0rr9GefOxlduix5AaO9u6JN0Zs++c8UliTHrN9PEtSHZCcHZ5ktQb8PPke1zHD2k
-3sVHtgbJM1oV7tBmBK//Jr3oruySyaRhq/CJfrYBpiX2gHo3G2emsJuelc0WWXyJ
-SZAtG2rt6mJUvNNbdk8DupwPtaLXAgMBAAECgYEAyzM905pY9kb8v+6rMWoKgUkk
-nc8n2TCf6I63WQUocYzO/2HAMlEpqVFEgowpnRKxK/iW00D50HjsEofkkMNCOVwg
-ybMrqgY/hHycBn4LzvpIa7e5V8Ly+GfmtMEgnE8hy3iI8WZX3/inZ8XZPYt5SZ+K
-qvl1Ke9sn63cQ860HGkCQQD/uIrJjp7sX1isQT+RnVQ2F3HiWd+QQODcKsi7oA7h
-5uvv3cmbturOR5qOZ8u//XATYoVcxiDj9C8CkHuGx5EdAkEA5ybLpBz8j+83CVGh
-26VYS0OAWvaULeKiXBqF3eBIv3Y1VU3g0Tx8LlZVfHtjQrzLfmw1PoUi93RsImbK
-szsVgwJBAMTUOp9hk5nE2e/cWR2vx33LFfFv09Co32sX02H3lPz0TW5XfDLK3Hji
-TGiIJCAm5vlEv/nk1rQe44BJzYq0WVECQQC45eCJMyKX4+rrSmAleVpqQeF/YbRg
-C+SBtjmUpJ6sgFrjFHucAzz2N9sDyxM4RBqm0tm4W/j/ZiJFVmIYAlAPAkAIK/23
-ncxVIz62jOri/370sicg4ur1BHf08eisMS36zlCgSy3N55hs31w8VLZTUz7TGwSa
-t+EPthm63aPoQUhD
------END PRIVATE KEY-----';
+	my $m = shift;
+	return $m->{auth_ssl_key} if $m->{auth_ssl_key};
+
+	# extract ssl key
+	open ID_FILE, $ENV{HOME}.'/.google-api.key' or die "Failed to open ~/.google-api.key";
+	my $input = <ID_FILE> || '';
+	close ID_FILE;
+	chomp $input;
+	die "~/.google-api.key empty?" unless $input;
+	$m->{auth_ssl_key} = $input;
+	return $m->{auth_ssl_key};
 }
 
 sub get_cert() {
-	return '-----BEGIN CERTIFICATE-----
-MIICGTCCAYKgAwIBAgIIUJcO4IeH3uEwDQYJKoZIhvcNAQEFBQAwMjEwMC4GA1UE
-AxMnMTQwNDA4MDM0ODM0LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tMB4XDTEy
-MDgyMDAxMTgyNFoXDTIyMDgxODAxMTgyNFowMjEwMC4GA1UEAxMnMTQwNDA4MDM0
-ODM0LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tMIGfMA0GCSqGSIb3DQEBAQUA
-A4GNADCBiQKBgQDm5kYLvtfItjY1hNK6/RnnzsZXboseQGjvbuiTdGbPvnPFJYkx
-6zfTxLUh2QnB2eZLUG/Dz5Htcxw9pN7FR7YGyTNaFe7QZgSv/ya96K7sksmkYavw
-iX62AaYl9oB6NxtnprCbnpXNFll8iUmQLRtq7epiVLzTW3ZPA7qcD7Wi1wIDAQAB
-ozgwNjAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDAWBgNVHSUBAf8EDDAK
-BggrBgEFBQcDAjANBgkqhkiG9w0BAQUFAAOBgQCOWdH4MdBQFVz+l39p9Vo3qQaA
-ab+8+0aUpHoBpltLcuj52NDNlcpeQ+reTG5QunQlw2PScXBvvwsa4m5rbgLWoZAO
-tpFPMfkg2uFuFjt+IHX+feyiP74G+W9yXrj8jXcavYHr01Thw9O/meK/6RKi0zpJ
-AvJASHvlDUJeOJ1YUw==
------END CERTIFICATE-----';
+	my $m = shift;
+	return $m->{auth_ssl_crt} if $m->{auth_ssl_crt};
+
+	# extract ssl cert
+	open ID_FILE, $ENV{HOME}.'/.google-api.crt' or die "Failed to open ~/.google-api.crt";
+	my $input = <ID_FILE> || '';
+	close ID_FILE;
+	chomp $input;
+	die "~/.google-api.crt empty?" unless $input;
+	$m->{auth_ssl_crt} = $input;
+	return $m->{auth_ssl_crt};
 }
 
 
