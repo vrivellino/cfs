@@ -253,7 +253,7 @@ sub get_key() {
 
 	# extract ssl key
 	open ID_FILE, $ENV{HOME}.'/.google-api.key' or die "Failed to open ~/.google-api.key";
-	my $input = <ID_FILE> || '';
+	my $input = join('',<ID_FILE>) || '';
 	close ID_FILE;
 	chomp $input;
 	die "~/.google-api.key empty?" unless $input;
@@ -267,7 +267,7 @@ sub get_cert() {
 
 	# extract ssl cert
 	open ID_FILE, $ENV{HOME}.'/.google-api.crt' or die "Failed to open ~/.google-api.crt";
-	my $input = <ID_FILE> || '';
+	my $input = join('',<ID_FILE>) || '';
 	close ID_FILE;
 	chomp $input;
 	die "~/.google-api.crt empty?" unless $input;
