@@ -7,51 +7,93 @@ models.
 
 =over
 
-=item RESULT [INT] - difference between team's score and opponent's score
+=item
 
-=item SITE [STRING/ENUM]:
+RESULT [INT] - difference between team's score and opponent's score
+
+=item
+
+SITE [STRING/ENUM]:
 
 =over
 
-=item 'T1' - Regular Season game at Team1
+=item
 
-=item 'N'  - Regular Season Neutral site (including conf championships)
+'T1' - Regular Season game at Team1
 
-=item 'B'  - Bowl site
+=item
+
+'N'  - Regular Season Neutral site (including conf championships)
+
+=item
+
+'B'  - Bowl site
 
 =back
 
-=item O_SCORE_SUM [INT] - sum of team's offensive scoring avg and opponent's defensive scoring avg
+=item
 
-=item O_SCORING_DIFF [INT] - difference between team's offensive scoring avg and opponent's defensive scoring avg
+O_SCORE_SUM [INT] - sum of team's offensive scoring avg and opponent's defensive scoring avg
 
-=item D_SCORING_SUM [INT] - sum of team's defensive scoring avg and opponent's offensive scoring avg
+=item
 
-=item D_SCORING_DIFF [INT] - difference between team's defensive scoring avg and opponent's offensive scoring avg
+O_SCORING_DIFF [INT] - difference between team's offensive scoring avg and opponent's defensive scoring avg
 
-=item O_RUSHING_SUM [INT] - sum of team's offensive rushing yds/gm and opponent's defensive rushing yds/gm
+=item
 
-=item O_RUSHING_DIFF [INT] - difference between team's offensive rushing yds/gm and opponent's defensive rushing yds/gm
+D_SCORING_SUM [INT] - sum of team's defensive scoring avg and opponent's offensive scoring avg
 
-=item D_RUSHING_SUM [INT] - sum of team's defensive rushing yds/gm and opponent's offensive rushing yds/gm
+=item
 
-=item D_RUSHING_DIFF [INT] - difference between team's defensive rushing yds/gm and opponent's offensive rushing yds/gm
+D_SCORING_DIFF [INT] - difference between team's defensive scoring avg and opponent's offensive scoring avg
 
-=item O_PASSING_SUM [INT] - sum of team's offensive passing yds/gm and opponent's defensive passing yds/gm
+=item
 
-=item O_PASSING_DIFF [INT] - difference between team's offensive passing yds/gm and opponent's defensive passing yds/gm
+O_RUSHING_SUM [INT] - sum of team's offensive rushing yds/gm and opponent's defensive rushing yds/gm
 
-=item D_PASSING_SUM [INT] - sum of team's defensive passing yds/gm and opponent's offensive passing yds/gm
+=item
 
-=item D_PASSING_DIFF [INT] - difference between team's defensive passing yds/gm and opponent's offensive passing yds/gm
+O_RUSHING_DIFF [INT] - difference between team's offensive rushing yds/gm and opponent's defensive rushing yds/gm
 
-=item PENALTY_DIFF [INT] - difference between team's penalty yds/gm and opponent's penalty yds/gm
+=item
 
-=item TO_DIFF [INT] - difference between teams's turnover differential and opponents's turnover differential
+D_RUSHING_SUM [INT] - sum of team's defensive rushing yds/gm and opponent's offensive rushing yds/gm
 
-=item REST_DIFF [INT] - difference in rest time between team and opponent
+=item
 
-=item WIN_DIFF [INT] - difference between team's winning percentage and opponent's winning percentage
+D_RUSHING_DIFF [INT] - difference between team's defensive rushing yds/gm and opponent's offensive rushing yds/gm
+
+=item
+
+O_PASSING_SUM [INT] - sum of team's offensive passing yds/gm and opponent's defensive passing yds/gm
+
+=item
+
+O_PASSING_DIFF [INT] - difference between team's offensive passing yds/gm and opponent's defensive passing yds/gm
+
+=item
+
+D_PASSING_SUM [INT] - sum of team's defensive passing yds/gm and opponent's offensive passing yds/gm
+
+=item
+
+D_PASSING_DIFF [INT] - difference between team's defensive passing yds/gm and opponent's offensive passing yds/gm
+
+=item
+
+PENALTY_DIFF [INT] - difference between team's penalty yds/gm and opponent's penalty yds/gm
+
+=item
+
+TO_DIFF [INT] - difference between teams's turnover differential and opponents's turnover differential
+
+=item
+
+REST_DIFF [INT] - difference in rest time between team and opponent
+
+=item
+
+WIN_DIFF [INT] - difference between team's winning percentage and opponent's winning percentage
 
 =over
 
@@ -61,8 +103,12 @@ models.
 
 =back
 
-=item CONF [STRING] - 2 character code for conference affiliation
+=item
 
-=item CONF_OPPONENT [STRING] - 2 character code for conference affiliation of opponent
+CONF [STRING] - 2 character code for conference affiliation
+
+=item
+
+CONF_OPPONENT [STRING] - 2 character code for conference affiliation of opponent
 
 =back
