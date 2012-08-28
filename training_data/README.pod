@@ -5,6 +5,8 @@
 Below is the description of each field in the CSV files used to train the
 models.
 
+=over
+
 =item RESULT [INT] - difference between team's score and opponent's score
 
 =item SITE [STRING/ENUM]:
@@ -50,8 +52,17 @@ models.
 =item REST_DIFF [INT] - difference in rest time between team and opponent
 
 =item WIN_DIFF [INT] - difference between team's winning percentage and opponent's winning percentage
+
+=over
+
+=item
+
 (eg: team_WINS/team_GAMES - opponent_WINS/opponent_GAMES)
+
+=back
 
 =item CONF [STRING] - 2 character code for conference affiliation
 
 =item CONF_OPPONENT [STRING] - 2 character code for conference affiliation of opponent
+
+=back
