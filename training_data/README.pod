@@ -8,10 +8,15 @@ models.
 =item RESULT [INT] - difference between team's score and opponent's score
 
 =item SITE [STRING/ENUM]:
+
 =over
+
 =item 'T1' - Regular Season game at Team1
+
 =item 'N'  - Regular Season Neutral site (including conf championships)
+
 =item 'B'  - Bowl site
+
 =back
 
 =item O_SCORE_SUM [INT] - sum of team's offensive scoring avg and opponent's defensive scoring avg
@@ -45,7 +50,7 @@ models.
 =item REST_DIFF [INT] - difference in rest time between team and opponent
 
 =item WIN_DIFF [INT] - difference between team's winning percentage and opponent's winning percentage
-eg: team_WINS/team_GAMES - opponent_WINS/opponent_GAMES
+(eg: team_WINS/team_GAMES - opponent_WINS/opponent_GAMES)
 
 =item CONF [STRING] - 2 character code for conference affiliation
 
