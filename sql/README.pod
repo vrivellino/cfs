@@ -1,0 +1,21 @@
+=pod
+
+=head1 CFS Database
+
+=head2 SQL
+
+=head3 00_create_tables.mysql
+
+SQL used to blow away current database and start with (mostly) empty tables.
+It does populate a few tables with data needed by bootstrap script.
+
+=head3 misc.mysql
+
+Miscelaneous SQL queries I have used for the 2011 trial-run and analysis of
+results.
+
+=head2 MySQLDump
+
+=head3 cfs_dump.mysql
+
+Generated simply by running: C<< mysqldump -u root cfs > cfs_dump.mysql >>
