@@ -123,22 +123,22 @@ while ( my $dir = shift ) {
 		close HTML;
 
 		# sanity checks
-		die "Can't determine year!" unless $year;
-		die "Can't determine conference affiliation!" unless $conf;
-		die "Can't determine win/loss record!" unless $games;
-		die "Can't determine PPG!" unless $ppg;
-		die "Can't determine opponent PPG!" unless $opp_ppg;
-		die "Can't determine Off passing yds/gm!" unless $o_pass_yds;
-		die "Can't determine Off rushing yds/gm!" unless $o_rush_yds;
-		die "Can't determine Off penalty yds/gm!" unless $o_pen_yds;
-		die "Can't determine Off TO/gm!" unless $o_to;
-		die "Can't determine Def passing yds/gm!" unless $d_pass_yds;
-		die "Can't determine Def rushing yds/gm!" unless $d_rush_yds;
-		die "Can't determine Def penalty yds/gm!" unless $d_pen_yds;
-		die "Can't determine Def TO/gm!" unless $d_to;
+		die "$html_file: Can't determine year!" unless $year;
+		die "$html_file: Can't determine conference affiliation!" unless $conf;
+		die "$html_file: Can't determine win/loss record!" unless $games;
+		die "$html_file: Can't determine PPG!" unless $ppg;
+		die "$html_file: Can't determine opponent PPG!" unless $opp_ppg;
+		die "$html_file: Can't determine Off passing yds/gm!" unless $o_pass_yds;
+		die "$html_file: Can't determine Off rushing yds/gm!" unless $o_rush_yds;
+		die "$html_file: Can't determine Off penalty yds/gm!" unless $o_pen_yds;
+		die "$html_file: Can't determine Off TO/gm!" unless $o_to;
+		die "$html_file: Can't determine Def passing yds/gm!" unless $d_pass_yds;
+		die "$html_file: Can't determine Def rushing yds/gm!" unless $d_rush_yds;
+		die "$html_file: Can't determine Def penalty yds/gm!" unless $d_pen_yds;
+		die "$html_file: Can't determine Def TO/gm!" unless $d_to;
 
 		my $c_code = CFS::ConferenceCode->new( db => $cfsdb, name => $conf );
-		die "Unknown conference: $conf" unless $c_code->load(speculative => 1);
+		die "$html_file: Unknown conference: $conf" unless $c_code->load(speculative => 1);
 
 		my $stat_record = CFS::Stat->new( db => $cfsdb,
 			name => $team,
