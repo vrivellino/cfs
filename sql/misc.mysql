@@ -78,3 +78,25 @@ FROM
 WHERE
 	season='2011' );
 
+
+-- Georgia Tech rest diff
+SELECT
+	season,
+	gm_date as Date,
+	CONCAT( t1_name, IF(site='T1',' @ ', ' vs. '), t2_name ) as Game,
+	CASE
+		WHEN t1_name = 'Georgia Tech' THEN IF ( t1_score > t2_score, 'Win', 'Loss' )
+		ELSE IF ( t2_score > t1_score, 'Win', 'Loss' )
+	END as Result,
+
+	CASE
+		WHEN t1_name = 'Georgia Tech' THEN DATEDIFF(gm_date,t2_last)
+		ELSE DATEDIFF(gm_date,t1_last)
+	END as OppRest
+FROM
+	past_games
+WHERE
+	(( t1_name = 'Georgia Tech' AND DATEDIFF(gm_date,t2_last) > 8 ) OR
+	( t2_name = 'Georgia Tech' AND DATEDIFF(gm_date,t1_last) > 8 )) AND
+	season >= '2008'
+ORDER BY Date ASC;
