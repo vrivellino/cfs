@@ -11,7 +11,7 @@ __PACKAGE__->meta->setup(
     season          => { type => 'scalar', default => '0000', length => 4, not_null => 1 },
     week            => { type => 'integer', default => '0', not_null => 1 },
     model           => { type => 'varchar', default => '', length => 64, not_null => 1 },
-    prediction      => { type => 'integer' },
+    prediction      => { type => 'numeric', precision => 4, scale => 1 },
     prediction_lock => { type => 'character', length => 36 },
     gm_date         => { type => 'date', not_null => 1 },
     gm_day          => { type => 'enum', check_in => [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ], default => 'Sat', not_null => 1 },

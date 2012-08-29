@@ -7,6 +7,7 @@ use Date::Calc qw(Decode_Month);
 require CFS::DB;
 require CFS::PastGame;
 require CFS::School;
+require CFS::SchoolNameOverride;
 
 my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
 
@@ -57,6 +58,11 @@ while ( my $sched_csv = shift ) {
 
 		$win = $fcs_school if $fcs_cache{$win};
 		$lose = $fcs_school if $fcs_cache{$lose};
+
+		my $name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $win );
+		$win = $name_override->name if $name_override->load( speculative => 1 );
+		$name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $lose );
+		$lose = $name_override->name if $name_override->load( speculative => 1 );
 
 		# make sure the teams exist
 		my $win_school = CFS::School->new(db => $cfsdb, name => $win );

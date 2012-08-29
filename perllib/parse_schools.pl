@@ -5,6 +5,7 @@ use warnings;
 
 require CFS::DB;
 require CFS::School;
+require CFS::SchoolNameOverride;
 
 my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
 
@@ -55,6 +56,9 @@ while ( my $school = shift @csv ) {
 	next unless $n;
 
 	$name =~ s/[&]amp;/&/o;
+
+	my $name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $name );
+	$name = $name_override->name if $name_override->load( speculative => 1 );
 
 	$yr1 = 1901 if $yr1 < 1901;
 	$yr2 = $cur_yr if $yr2 > $cur_yr;

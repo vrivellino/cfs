@@ -96,20 +96,37 @@ while ( $running  ) {
 			$t2_conf
 		);
 		$api->model_id($gm_record->model()||'_X_UNKNOWN_X_') or die "Invalid model id: ".$gm_record->model();
-		my $prediction = $api->predict(@csv);
-		unless ( defined $prediction ) {
+		my $prediction_val = $api->predict(@csv);
+		unless ( defined $prediction_val ) {
 			$gm_record->prediction_lock(undef);
 			$gm_record->save();
 			$running = 0;
 		}
 
-		if ( $prediction > 0 ) {
-			$prediction = ceil($prediction);
-		} elsif ( $prediction < 1 ) {
-			$prediction = floor($prediction);
+		my $prediction = $prediction_val;
+		if ( $prediction_val > 0 ) {
+			my $i = floor($prediction_val);
+			my $d = $prediction_val - $i;
+			if ( $d >= 0 && $d <= 0.25 ) {
+				$prediction = $i;
+			} elsif ( $d > 0.25 && $d <= 0.75 ) {
+				$prediction = $i + 0.5;
+			} else {
+				$prediction = $i + 1;
+			}
+		} elsif ( $prediction_val < 1 ) {
+			my $i = ceil($prediction_val);
+			my $d = $prediction_val - $i;
+			if ( $d <= 0 && $d >= -0.25 ) {
+				$prediction = $i;
+			} elsif ( $d < -0.25 && $d >= -0.75 ) {
+				$prediction = $i - 0.5;
+			} else {
+				$prediction = $i - 1;
+			}
 		}
 
-		print "RESULT: $prediction\n";
+		print "RESULT: $prediction_val -> $prediction\n";
 		$gm_record->prediction($prediction);
 		$gm_record->prediction_lock(undef);
 		$gm_record->save();
@@ -117,3 +134,5 @@ while ( $running  ) {
 	sleep 2 if $running;
 }
 
+# clean any locked records
+my $result = CFS::VPredictionQueue::Manager->update_objects(db => $cfsdb, set => [ prediction_lock => undef ], where => [ prediction_lock => $uuid ] );

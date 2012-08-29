@@ -7,6 +7,7 @@ use Date::Calc qw(Decode_Month);
 require CFS::DB;
 require CFS::Game;
 require CFS::School;
+require CFS::SchoolNameOverride;
 
 my $MODEL = 'CFS20042011v2';
 
@@ -40,6 +41,8 @@ while ( my $line = <CSV> ) {
 	my ($n, $wk, $date, $day, $win, $win_score, $site, $lose, $lose_score, $notes) = split /,/, $line
 		or die "Failed to split line: $line";
 
+	die "Can't determine week: $line" unless $wk =~ m/\d+/o;
+
 	next if $wk < $start_week || $wk > $end_week;
 
 	if ( $date =~ m/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+) (\d\d\d\d)$/o ) {
@@ -48,6 +51,7 @@ while ( my $line = <CSV> ) {
 		$year = $3 - 1 if $m == 1;
 		$date = sprintf '%0.4d-%0.2d-%0.2d', $3, $m, $2;
 	}
+	die "Can't determine year: $line" unless $year;
 
 	# strip out rankings
 	my $win_rank = 99;
@@ -62,6 +66,11 @@ while ( my $line = <CSV> ) {
 
 	$win = $fcs_school if $fcs_cache{$win};
 	$lose = $fcs_school if $fcs_cache{$lose};
+
+	my $name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $win );
+	$win = $name_override->name if $name_override->load( speculative => 1 );
+	$name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $lose );
+	$lose = $name_override->name if $name_override->load( speculative => 1 );
 
 	# make sure the teams exist
 	my $win_school = CFS::School->new(db => $cfsdb, name => $win );
@@ -93,10 +102,6 @@ while ( my $line = <CSV> ) {
 	} else {
 		die "Can't determine site: $line";
 	}
-
-	# basic sanity checks
-	die "Can't determine year: $line" unless $year;
-	die "Can't determine week: $line" unless $wk =~ m/\d+/o;
 
 	my $gm_record = CFS::Game->new( db => $cfsdb,
 		season => $year,

@@ -11,7 +11,7 @@ __PACKAGE__->meta->setup(
     season          => { type => 'scalar', length => 4, not_null => 1 },
     week            => { type => 'integer', not_null => 1 },
     model           => { type => 'varchar', default => '', length => 64, not_null => 1 },
-    prediction      => { type => 'integer' },
+    prediction      => { type => 'numeric', precision => 4, scale => 1 },
     prediction_lock => { type => 'character', length => 36 },
     t1_name         => { type => 'varchar', length => 32, not_null => 1 },
     t1_last         => { type => 'date', default => '0000-00-00', not_null => 1 },

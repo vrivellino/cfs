@@ -5,6 +5,7 @@ use warnings;
 
 require CFS::DB;
 require CFS::School;
+require CFS::SchoolNameOverride;
 require CFS::Stat;
 require CFS::ConferenceCode;
 
@@ -139,6 +140,9 @@ while ( my $dir = shift ) {
 
 		my $c_code = CFS::ConferenceCode->new( db => $cfsdb, name => $conf );
 		die "$html_file: Unknown conference: $conf" unless $c_code->load(speculative => 1);
+
+		my $name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $team );
+		$team = $name_override->name if $name_override->load( speculative => 1 );
 
 		my $stat_record = CFS::Stat->new( db => $cfsdb,
 			name => $team,

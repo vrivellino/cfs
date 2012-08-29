@@ -6,6 +6,7 @@ use warnings;
 require CFS::DB;
 require CFS::PastGame::Manager;
 require CFS::School;
+require CFS::SchoolNameOverride;
 require CFS::SchoolsRepoleMapping;
 
 my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
@@ -46,6 +47,11 @@ while ( my $lines_csv = shift ) {
 			$year = $3 - 1 if $1 == 1;
 			$date = sprintf '%0.4d-%0.2d-%0.2d', $3, $1, $2;
 		}
+
+		my $name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $h_team );
+		$h_team = $name_override->name if $name_override->load( speculative => 1 );
+		$name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $v_team );
+		$v_team = $name_override->name if $name_override->load( speculative => 1 );
 
 		# make sure the teams exist
 		my $h_school = CFS::School->new(db => $cfsdb, name => $h_team );
