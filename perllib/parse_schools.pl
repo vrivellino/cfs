@@ -87,7 +87,7 @@ while ( my $school = shift @csv ) {
 	$school_record->save();
 }
 
-# known FCS schools
+# FCS schools not found
 my @fcs_schools = ( 'Tennessee-Martin', 'Murray State', 'Georgia Southern', 'Northern Iowa', 'Western Illinois', 'Eastern Washington',
 'Southeast Missouri State', 'Youngstown State', 'Liberty', 'Northeastern', 'Sacramento State', 'Tennessee Tech', 'Weber State',
 'Portland State', 'Morgan State', 'North Carolina A&T', 'Eastern Illinois', 'Missouri State', 'James Madison', 'Virginia Union',
@@ -96,7 +96,8 @@ my @fcs_schools = ( 'Tennessee-Martin', 'Murray State', 'Georgia Southern', 'Nor
 'Hofstra', 'North Dakota State', 'Howard', 'Southern Utah', 'South Carolina State', 'Central Arkansas', 'Gardner-Webb', 'Elon',
 'West Virginia Tech', 'Delaware State', 'Norfolk State', 'Charleston Southern', 'Central Connecticut State', 'Arkansas-Pine Bluff',
 'North Carolina Central', 'Morehead State', 'South Dakota State', 'Towson', 'Coastal Carolina', 'Alabama A&M', 'North Dakota', 'Hampton',
-'South Dakota', 'Stony Brook', 'Austin Peay', 'Georgia State', 'Wagner', 'Northwestern Oklahoma State', 'Texas A&M-Commerce' );
+'South Dakota', 'Stony Brook', 'Austin Peay', 'Georgia State', 'Wagner', 'Northwestern Oklahoma State', 'Texas A&M-Commerce',
+'Western New Mexico' );
 
 foreach my $fcs_name ( @fcs_schools ) {
 	$school_record = CFS::School->new( db => $cfsdb,

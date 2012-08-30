@@ -144,7 +144,3 @@ Clean-up of Google::API: better error handling, maybe make it CPAN'able?
 General code clean - get rid of some of the ugliness.  (eg: executing SQL
 directly in process_prediction_queue.pl
 
-=item
-
-Make prediction result DECIMAL(3,2) instead of an INT and round to nearest
-whole number or 0.5.  (Make it more like a betting line.)

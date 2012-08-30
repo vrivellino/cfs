@@ -25,19 +25,24 @@ while ( my $lines_csv = shift ) {
 	# sanity check - make sure we're looking at lines.csv
 	my $hdr_str = 'Date,Visitor,Visitor Score,Home Team,Home Score,Line';
 	die "First line is unexpected - expecting: $hdr_str"
-		unless $line eq $hdr_str;
+		unless $line =~ m/^$hdr_str/;
 
 	while ( my $line = <CSV> ) {
 		chomp $line;
-		next if $line eq $hdr_str;
+		next if $line =~ m/^$hdr_str/;
 
 		my $year = '';
-		my ($date, $v_team, $v_score, $h_team, $h_score, $spread ) = split /,/, $line
-			or die "Failed to split line: $line";
+		my @csv = split /,/, $line or die "Failed to split line: $line";
+		my $date    = $csv[0];
+		my $v_team  = $csv[1];
+		my $v_score = $csv[2];
+		my $h_team  = $csv[3];
+		my $h_score = $csv[4];
+		my $spread  = $csv[5];
 
 		next if $spread eq ' ';
 		unless ( $spread =~ m/^(-)?\d+([.]\d+)?$/o ) {
-			warn "Invalid line ($spread): $line";
+			warn "Invalid line ($spread): $line\n";
 			next;
 		}
 
@@ -73,6 +78,9 @@ while ( my $lines_csv = shift ) {
 			$v_team = $mapping->name;
 		}
 
+		my $game_found = 0;
+
+		# look in past_games
 		my $gm_record = CFS::PastGame->new( db => $cfsdb,
 			season => $year,
 			gm_date => $date,
@@ -80,17 +88,42 @@ while ( my $lines_csv = shift ) {
 			t2_name => $v_team
 		);
 
-		unless ( $gm_record->load(speculative => 1) ) {
+		if ( $gm_record->load(speculative => 1) ) {
+			$gm_record->line($spread);
+			$gm_record->save;
+			$game_found = 1;
+		} else {
 			$gm_record->t1_name($v_team);
 			$gm_record->t2_name($h_team);
-			$spread = - $spread;
-			unless ( $gm_record->load(speculative => 1) ) {
-				warn "Failed to find game $date / $h_team / $v_team: $line";
-				next;
+			if ( $gm_record->load(speculative => 1) ) {
+				$gm_record->line(-$spread);
+				$gm_record->save;
+				$game_found = 1;
 			}
 		}
 
-		$gm_record->line($spread);
-		$gm_record->save;
+		# .. then in current games
+		$gm_record = CFS::Game->new( db => $cfsdb,
+			season => $year,
+			gm_date => $date,
+			t1_name => $h_team,
+			t2_name => $v_team
+		);
+
+		if ( $gm_record->load(speculative => 1) ) {
+			$gm_record->line($spread);
+			$gm_record->save;
+			$game_found = 1;
+		} else {
+			$gm_record->t1_name($v_team);
+			$gm_record->t2_name($h_team);
+			if ( $gm_record->load(speculative => 1) ) {
+				$gm_record->line(-$spread);
+				$gm_record->save;
+				$game_found = 1;
+			}
+		}
+
+		warn "Failed to find game: $date / $h_team / $v_team: $line" unless $game_found;
 	}
 }
