@@ -26,19 +26,24 @@ $sim = 1 if $queue eq 'sim';
 my $aRef = $cfsdb->dbh->selectcol_arrayref('SELECT UUID()');
 my $uuid = $aRef->[0] or die "Failed to extract UUID";
 
-my $sth;
+my $sth_lock;
+my $sth_unlock;
 if ( $sim ) {
-	$sth = $cfsdb->dbh->prepare('UPDATE sim_games SET prediction_lock=? WHERE prediction_lock IS NULL AND prediction IS NULL LIMIT ?')
+	$sth_lock = $cfsdb->dbh->prepare('UPDATE sim_games SET prediction_lock=? WHERE prediction_lock IS NULL AND prediction IS NULL LIMIT ?')
+		or die "DBI prepare() failed";
+	$sth_unlock = $cfsdb->dbh->prepare('UPDATE sim_games SET prediction_lock=NULL WHERE prediction_lock=?')
 		or die "DBI prepare() failed";
 } else {
-	$sth = $cfsdb->dbh->prepare('UPDATE games SET prediction_lock=? WHERE prediction_lock IS NULL AND prediction IS NULL LIMIT ?')
+	$sth_lock = $cfsdb->dbh->prepare('UPDATE games SET prediction_lock=? WHERE prediction_lock IS NULL AND prediction IS NULL LIMIT ?')
+		or die "DBI prepare() failed";
+	$sth_unlock = $cfsdb->dbh->prepare('UPDATE games SET prediction_lock=NULL WHERE prediction_lock=?')
 		or die "DBI prepare() failed";
 }
 
 my $running = 1;
 while ( $running  ) {
 
-	my $n = $sth->execute($uuid, $CHUNK)
+	my $n = $sth_lock->execute($uuid, $CHUNK)
 		or die "DBI execute() failed";
 
 	my $prediction_data;
@@ -131,8 +136,9 @@ while ( $running  ) {
 		$gm_record->prediction_lock(undef);
 		$gm_record->save();
 	}
+	# clean any locked records
+	$n = $sth_unlock->execute($uuid)
+		or die "DBI execute() failed";
 	sleep 2 if $running;
 }
 
-# clean any locked records
-my $result = CFS::VPredictionQueue::Manager->update_objects(db => $cfsdb, set => [ prediction_lock => undef ], where => [ prediction_lock => $uuid ] );
