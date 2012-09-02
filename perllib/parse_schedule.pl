@@ -110,13 +110,13 @@ while ( my $line = <CSV> ) {
 		gm_date => $date,
 		gm_day => $day,
 		t1_name => $win_school->name(),
-		t1_score => $win_score,
 		t1_last => $last_games{$win_school->name()} || '0000-00-00',
 		t2_name => $lose_school->name(),
-		t2_score => $lose_score,
 		t2_last => $last_games{$lose_school->name()} || '0000-00-00',
 		notes => $notes
 	);
+	$gm_record->t1_score($win_score) if $win_score =~ m/^\d+$/o;
+	$gm_record->t2_score($lose_score) if $lose_score =~ m/^\d+$/o;
 
 	my $flip_teams = 0;
 
@@ -136,10 +136,10 @@ while ( my $line = <CSV> ) {
 
 	if ( $flip_teams ) {
 		$gm_record->t1_name( $lose_school->name() );
-		$gm_record->t1_score( $lose_score );
+		$gm_record->t1_score($lose_score) if $lose_score =~ m/^\d+$/o;
 		$gm_record->t1_last( $last_games{$lose_school->name()}||'0000-00-00' );
 		$gm_record->t2_name( $win_school->name() );
-		$gm_record->t2_score( $win_score );
+		$gm_record->t2_score($win_score) if $win_score =~ m/^\d+$/o;
 		$gm_record->t2_last( $last_games{$win_school->name()}||'0000-00-00' );
 	}
 

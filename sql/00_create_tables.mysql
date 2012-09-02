@@ -233,7 +233,7 @@ CREATE TABLE `google_oauth_tokens` (
 	PRIMARY KEY (id),
 	UNIQUE KEY (token),
 	KEY expires (expires)
-);
+) ENGINE=MEMORY;
 
 CREATE TABLE `games` (
 	season YEAR(4) NOT NULL DEFAULT '0000',
@@ -432,7 +432,9 @@ FROM
 	games
 
 WHERE
-	prediction IS NOT NULL;
+	prediction IS NOT NULL AND
+	t1_score IS NOT NULL AND
+	t2_score IS NOT NULL ;
 
 
 DROP FUNCTION IF EXISTS `prediction_weight`;
