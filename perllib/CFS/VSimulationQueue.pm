@@ -20,8 +20,8 @@ __PACKAGE__->meta->setup(
     f_d_score_diff  => { type => 'numeric', default => '0.0', not_null => 1, precision => 5, scale => 1 },
     f_o_rush_sum    => { type => 'numeric', default => '0.0', not_null => 1, precision => 6, scale => 1 },
     f_o_rush_diff   => { type => 'numeric', default => '0.0', not_null => 1, precision => 6, scale => 1 },
-    f_d_rush_sum    => { type => 'numeric', not_null => 1, precision => 6, scale => 1 },
-    f_d_rush_diff   => { type => 'numeric', default => '0.0', not_null => 1, precision => 6, scale => 1 },
+    f_d_rush_sum    => { type => 'numeric', default => '0.0', not_null => 1, precision => 6, scale => 1 },
+    f_d_rush_diff   => { type => 'numeric', not_null => 1, precision => 6, scale => 1 },
     f_o_pass_sum    => { type => 'numeric', default => '0.0', not_null => 1, precision => 6, scale => 1 },
     f_o_pass_diff   => { type => 'numeric', default => '0.0', not_null => 1, precision => 6, scale => 1 },
     f_d_pass_sum    => { type => 'numeric', default => '0.0', not_null => 1, precision => 6, scale => 1 },
@@ -34,7 +34,7 @@ __PACKAGE__->meta->setup(
     f_t2_conf       => { type => 'character', default => '', length => 2, not_null => 1 },
   ],
 
-  primary_key_columns => [ 'f_d_rush_sum' ],
+  primary_key_columns => [ 'f_d_rush_diff' ],
 );
 
 1;
