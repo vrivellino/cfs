@@ -68,8 +68,7 @@ CREATE TABLE `schools_repole_mappings` (
 	repole_name VARCHAR(31) NOT NULL DEFAULT '',
 	name VARCHAR(31) NOT NULL DEFAULT '',
 	PRIMARY KEY (repole_name),
-	CONSTRAINT repole_school_mapping_name FOREIGN KEY (name)
-		REFERENCES schools (name) ON DELETE CASCADE ON UPDATE CASCADE
+	UNIQUE KEY name (name)
 );
 INSERT INTO schools_repole_mappings (repole_name,name) VALUES
 	('Alabama A+M', 'Alabama A&M'),
