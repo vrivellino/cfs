@@ -2,8 +2,8 @@
 
 use strict;
 use warnings;
-use Date::Calc qw(Decode_Month);
 
+use Date::Calc qw(Decode_Month);
 require CFS::DB;
 require CFS::PastGame;
 require CFS::School;

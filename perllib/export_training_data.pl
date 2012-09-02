@@ -5,7 +5,7 @@ use warnings;
 
 require CFS::DB;
 require CFS::VTrainingData;
-use CFS::VTrainingData::Manager;
+require CFS::VTrainingData::Manager;
 
 my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
 

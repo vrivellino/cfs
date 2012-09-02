@@ -2,8 +2,9 @@
 
 use strict;
 use warnings;
-use CFS::DB;
-use Rose::DB::Object::Loader;
+
+require CFS::DB;
+require Rose::DB::Object::Loader;
 
 sub mk_path($);
 

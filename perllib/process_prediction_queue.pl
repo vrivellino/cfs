@@ -3,13 +3,13 @@
 use strict;
 use warnings;
 
+use POSIX qw(ceil floor);
 require CFS::DB;
 require CFS::Game;
 require CFS::Game::Manager;
 require CFS::VSimulationQueue::Manager;
 require CFS::VPredictionQueue::Manager;
 require CFS::GoogleAPI;
-use POSIX qw(ceil floor);
 
 my $CHUNK = 30;
 

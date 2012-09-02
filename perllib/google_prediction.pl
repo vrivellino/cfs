@@ -3,8 +3,8 @@
 use strict;
 use warnings;
 
-use CFS::GoogleAPI;
 use Data::Dumper;
+require  CFS::GoogleAPI;
 
 my $cmd = lc shift || 'list';
 
