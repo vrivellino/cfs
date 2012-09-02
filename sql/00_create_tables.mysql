@@ -540,6 +540,43 @@ WHERE
 	t1_score IS NOT NULL AND
 	t2_score IS NOT NULL ;
 
+CREATE OR REPLACE VIEW v_game_results_ats AS SELECT
+	season,
+	model,
+	gm_date,
+	IF ( site = 'B', 'Bowl', 'Reg Season' ) as game_type,
+
+	IF ( prediction < 0,
+		CONCAT(
+			TRIM(t2_name), ' [', ABS(prediction), ']',
+			IF ( site = 'T1', ' @ ', ' vs. '),
+			TRIM(t1_name)),
+		CONCAT(
+			TRIM(t2_name),
+			IF ( site = 'T1', ' @ ', ' vs. '),
+			TRIM(t1_name), ' [', prediction, ']')
+	) as game,
+	- line as line,
+	ABS(prediction-line) as line_pred_diff,
+	CONCAT(t2_score, '-',t1_score) as game_result,
+
+	CASE
+		WHEN prediction = line OR CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) = line THEN 'PUSH'
+		WHEN
+			(prediction > line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) > line) OR
+			(prediction < line AND CONVERT(t1_score, SIGNED) - CONVERT(t2_score, SIGNED) < line) THEN 'CORRECT'
+		ELSE 'INCORRECT'
+	END as prediction_result,
+	notes
+
+FROM
+	games
+
+WHERE
+	prediction IS NOT NULL AND
+	t1_score IS NOT NULL AND
+	t2_score IS NOT NULL ;
+
 
 DROP FUNCTION IF EXISTS `prediction_weight`;
 DELIMITER |
