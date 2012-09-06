@@ -11,7 +11,7 @@ require CFS::SchoolNameOverride;
 
 my $MODEL = 'CFS20042011v2';
 
-my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
+my $cfsdb = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die;
 
 my %fcs_cache = ();
 my $fcs_school = 'FCS School';

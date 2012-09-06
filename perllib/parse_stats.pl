@@ -9,7 +9,7 @@ require CFS::SchoolNameOverride;
 require CFS::Stat;
 require CFS::ConferenceCode;
 
-my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
+my $cfsdb = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die;
 
 die "I need a stats directory!" unless $ARGV[0];
 
@@ -73,21 +73,25 @@ while ( my $dir = shift ) {
 				$content = <HTML>; #Pass Attempts
 				$content = <HTML>; #Pass Completion Perecentage
 				$content = <HTML>; #Passing Yards
-				if ( $content =~ m/[<]td align="right" [>]([\d.]+)[<]\/td[>]/o ) {
+				if ( $content =~ m/[<]td align="right" [>](-)?([\d.]+)[<]\/td[>]/o ) {
 					if ( $is_offense ) {
-						$o_pass_yds = $1;
+						$o_pass_yds = $2;
+						$o_pass_yds = 0 if $1;
 					} else {
-						$d_pass_yds = $1;
+						$d_pass_yds = $2;
+						$d_pass_yds = 0 if $1;
 					}
 				}
 				$content = <HTML>; #Passing Touchdowns
 				$content = <HTML>; #Rush Attempts
 				$content = <HTML>; #Rushing Yards
-				if ( $content =~ m/[<]td align="right" [>]([\d.]+)[<]\/td[>]/o ) {
+				if ( $content =~ m/[<]td align="right" [>](-)?([\d.]+)[<]\/td[>]/o ) {
 					if ( $is_offense ) {
-						$o_rush_yds = $1;
+						$o_rush_yds = $2;
+						$o_rush_yds = 0 if $1;
 					} else {
-						$d_rush_yds = $1;
+						$d_rush_yds = $2;
+						$d_rush_yds = 0 if $1;
 					}
 				}
 				$content = <HTML>; #Rushing Yards Per Attempt
@@ -123,20 +127,27 @@ while ( my $dir = shift ) {
 
 		close HTML;
 
+		my $warnmsg = '';
+
 		# sanity checks
-		die "$html_file: Can't determine year!" unless $year;
-		die "$html_file: Can't determine conference affiliation!" unless $conf;
-		die "$html_file: Can't determine win/loss record!" unless $games;
-		die "$html_file: Can't determine PPG!" unless $ppg;
-		die "$html_file: Can't determine opponent PPG!" unless $opp_ppg;
-		die "$html_file: Can't determine Off passing yds/gm!" unless $o_pass_yds;
-		die "$html_file: Can't determine Off rushing yds/gm!" unless $o_rush_yds;
-		die "$html_file: Can't determine Off penalty yds/gm!" unless $o_pen_yds;
-		die "$html_file: Can't determine Off TO/gm!" unless $o_to;
-		die "$html_file: Can't determine Def passing yds/gm!" unless $d_pass_yds;
-		die "$html_file: Can't determine Def rushing yds/gm!" unless $d_rush_yds;
-		die "$html_file: Can't determine Def penalty yds/gm!" unless $d_pen_yds;
-		die "$html_file: Can't determine Def TO/gm!" unless $d_to;
+		$warnmsg = "$html_file: Can't determine year!" unless $year;
+		$warnmsg = "$html_file: Can't determine conference affiliation!" unless $conf;
+		$warnmsg = "$html_file: Can't determine win/loss record!" unless $games;
+		$warnmsg = "$html_file: Can't determine PPG!" unless defined $ppg;
+		$warnmsg = "$html_file: Can't determine opponent PPG!" unless defined $opp_ppg;
+		$warnmsg = "$html_file: Can't determine Off passing yds/gm!" unless defined $o_pass_yds;
+		$warnmsg = "$html_file: Can't determine Off rushing yds/gm!" unless defined $o_rush_yds;
+		$warnmsg = "$html_file: Can't determine Off penalty yds/gm!" unless defined $o_pen_yds;
+		$warnmsg = "$html_file: Can't determine Off TO/gm!" unless defined $o_to;
+		$warnmsg = "$html_file: Can't determine Def passing yds/gm!" unless defined $d_pass_yds;
+		$warnmsg = "$html_file: Can't determine Def rushing yds/gm!" unless defined $d_rush_yds;
+		$warnmsg = "$html_file: Can't determine Def penalty yds/gm!" unless defined $d_pen_yds;
+		$warnmsg = "$html_file: Can't determine Def TO/gm!" unless defined $d_to;
+
+		if ( $warnmsg ) {
+			warn $warnmsg;
+			next;
+		}
 
 		my $c_code = CFS::ConferenceCode->new( db => $cfsdb, name => $conf );
 		die "$html_file: Unknown conference: $conf" unless $c_code->load(speculative => 1);
@@ -144,24 +155,26 @@ while ( my $dir = shift ) {
 		my $name_override = CFS::SchoolNameOverride->new( db => $cfsdb, original_name => $team );
 		$team = $name_override->name if $name_override->load( speculative => 1 );
 
-		my $stat_record = CFS::Stat->new( db => $cfsdb,
-			name => $team,
-			season => $year,
-			conference => $c_code->name(),
-			games => $games,
-			win => $wins,
-			loss => $losses,
-			ppg => $ppg,
-			opp_ppg => $opp_ppg,
-			o_pass_yds => $o_pass_yds,
-			o_rush_yds => $o_rush_yds,
-			o_pen_yds => $o_pen_yds,
-			o_to => $o_to,
-			d_pass_yds => $d_pass_yds,
-			d_rush_yds => $d_rush_yds,
-			d_pen_yds => $d_pen_yds,
-			d_to => $d_to
-		);
+
+		my $stat_record = CFS::Stat->new( db => $cfsdb, name => $team, season => $year );
+		# load it, if it's there
+		$stat_record->load( speculative => 1 );
+
+		# re-write stats
+		$stat_record->conference($c_code->name());
+		$stat_record->games($games);
+		$stat_record->win($wins);
+		$stat_record->loss($losses);
+		$stat_record->ppg($ppg);
+		$stat_record->opp_ppg($opp_ppg);
+		$stat_record->o_pass_yds($o_pass_yds);
+		$stat_record->o_rush_yds($o_rush_yds);
+		$stat_record->o_pen_yds($o_pen_yds);
+		$stat_record->o_to($o_to);
+		$stat_record->d_pass_yds($d_pass_yds);
+		$stat_record->d_rush_yds($d_rush_yds);
+		$stat_record->d_pen_yds($d_pen_yds);
+		$stat_record->d_to($d_to);
 
 		$stat_record->save();
 	}

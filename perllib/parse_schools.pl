@@ -7,7 +7,7 @@ require CFS::DB;
 require CFS::School;
 require CFS::SchoolNameOverride;
 
-my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
+my $cfsdb = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die;
 
 # convert to CSV
 my @content = <>;

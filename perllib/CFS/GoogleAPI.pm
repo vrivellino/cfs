@@ -38,7 +38,7 @@ sub new {
 	}
 
 	unless ( $m->{cfsdb} ) {
-		$m->{cfsdb} = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die
+		$m->{cfsdb} = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die
 	}
 
 	my $count = CFS::GoogleOauthToken::Manager->delete_google_oauth_tokens( db => $m->{cfsdb},

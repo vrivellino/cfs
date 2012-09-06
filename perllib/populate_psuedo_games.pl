@@ -23,7 +23,7 @@ my $SEASON = '2011';
 my $WEEK = 99;
 my $MODEL = 'CFS20042011v2';
 
-my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
+my $cfsdb = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die;
 
 my $teams = CFS::Stat::Manager->get_objects(db => $cfsdb, query => [ season => $SEASON ]);
 

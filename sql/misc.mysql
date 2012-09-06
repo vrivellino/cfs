@@ -100,3 +100,88 @@ WHERE
 	( t2_name = 'Georgia Tech' AND DATEDIFF(gm_date,t1_last) > 8 )) AND
 	season >= '2008'
 ORDER BY Date ASC;
+
+INSERT INTO stats SET
+	name='Washington State',
+	season='2012',
+	conference='Pac-12',
+	games=1,
+	win=0,
+	loss=1,
+
+	ppg=6,
+	opp_ppg=30,
+
+	o_pass_yds=229,
+	o_rush_yds=0,
+	o_pen_yds=40,
+	o_to=2,
+
+	d_pass_yds=303,
+	d_rush_yds=123,
+	d_pen_yds=33,
+	d_to=0;
+INSERT INTO stats SET
+	name='Brigham Young',
+	season='2012',
+	conference='Ind',
+	games=1,
+	win=1,
+	loss=0,
+
+	ppg=30,
+	opp_ppg=6,
+
+	o_pass_yds=303,
+	o_rush_yds=123,
+	o_pen_yds=56,
+	o_to=0,
+
+	d_pass_yds=229,
+	d_rush_yds=0,
+	d_pen_yds=56,
+	d_to=2;
+
+
+-- base population of 2012 stats
+INSERT INTO stats (name,season,conference) (
+SELECT
+	name, '2012' as season, conference
+FROM
+	stats
+WHERE
+	season='2011' );
+
+UPDATE stats SET conference='SEC' WHERE name='Texas A&M' AND season='2012';
+UPDATE stats SET conference='Big 12' WHERE name='TCU' AND season='2012';
+
+
+-- prediction export
+SELECT
+	gm_date,
+	-- IF ( site = 'B', 'Bowl', 'Reg Season' ) as game_type,
+
+	IF ( prediction < 0,
+		CONCAT(
+			'<strong>',
+			TRIM(t2_name), '</strong> [', ABS(prediction), ']',
+			IF ( site = 'T1', ' @ ', ' vs. '),
+			TRIM(t1_name)),
+		CONCAT(
+			TRIM(t2_name),
+			IF ( site = 'T1', ' @ ', ' vs. '),
+			'<string>',
+			TRIM(t1_name), '</strong> [', prediction, ']')
+	) as game,
+	- line as line,
+	notes
+
+FROM
+	games
+
+WHERE
+	prediction IS NOT NULL AND
+	season='2012' AND
+	week=2;
+
+

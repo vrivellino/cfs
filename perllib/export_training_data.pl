@@ -7,7 +7,7 @@ require CFS::DB;
 require CFS::VTrainingData;
 require CFS::VTrainingData::Manager;
 
-my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
+my $cfsdb = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die;
 
 die "I need season(s) to export!" unless $ARGV[0];
 

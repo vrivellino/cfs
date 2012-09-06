@@ -13,7 +13,7 @@ require CFS::GoogleAPI;
 
 my $CHUNK = 30;
 
-my $cfsdb = CFS::DB->new(default_connect_options=>{RaiseError=>1,PrintError=>1}) or die;
+my $cfsdb = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die;
 my $api = CFS::GoogleAPI->new(cfsdb => $cfsdb) or die "Something bad happened";
 
 my $queue = shift or die "First arg should be 'predict' or 'sim'";
@@ -45,6 +45,7 @@ while ( $running  ) {
 
 	my $n = $sth_lock->execute($uuid, $CHUNK)
 		or die "DBI execute() failed";
+	#print "Locked $n rows.\n";
 
 	my $prediction_data;
 	if ( $sim ) {
