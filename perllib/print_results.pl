@@ -21,7 +21,7 @@ my $games = CFS::Game::Manager->get_objects(db=>$cfsdb,
 print
 	"<table>\n",
 	"<thead>\n",
-	"<tr><th>Date</th><th>Game</th><th>Line</th><th>Result</th><th>Result ATS</th></tr>\n",
+	"<tr><th>Date</th><th>Game (line)</th><th>Score</th><th>Bodak's Pick</th></tr>\n",
 	"</thead>\n",
 	"<tbody>\n\n";
 
@@ -57,44 +57,64 @@ foreach my $gm ( @$games ) {
 	$correct_ats = 1 if ( $prediction > $line && $h_score - $v_score > $line )||
 	                    ( $prediction < $line && $h_score - $v_score < $line );
 		
-	print "<tr><td>$date</td><td>";
+	print "<tr><td>$date</td>";
+
+	if ( $line > 0 ) {
+		print "<td>$v<br />$site $h (-$line)</td>";
+	} elsif ( $line < 0 ) {
+		print "<td>$v ($line)<br />$site $h</td>";
+	} else {
+		print "<td>$v <br />$site $h</td>";
+	}
+
+	print "<td>$v_score<br />$h_score</td>";
 
 	my $p = abs $prediction;
-	if ( $prediction < 0 && $prediction < $line ) {
-		print "<strong><em>$v</em></strong> [$p] $site $h";
-	} elsif ( $prediction < 0 && $prediction > $line ) {
-		print "<strong>$v</strong> [$p] $site <em>$h</em>";
-	} elsif ( $prediction < 0 ) {
-		print "<strong>$v</strong> [$p] $site $h";
-	} elsif ( $prediction > 0 && $prediction > $line ) {
-		print "$v $site <strong><em>$h</em></strong> [$p]";
-	} elsif ( $prediction > 0 && $prediction < $line ) {
-		print "<em>$v</em> $site <strong>$h</strong> [$p]";
-	} elsif ( $prediction > 0 ) {
-		print "$v $site <strong>$h</strong> [$p]";
-	} else {
-		print "$v $site $h";
-	}
+	my $color = 'green';
+	$color = 'red' unless $correct;
 
-	$total++;
+	my $pre = '<span style="color: red"><em>';
+	my $post = '</em></span>';
 	if ( $correct ) {
-		$su_count++;
-		print '</td><td>', - $line, '</td><td>', "<span style=\"color: green\"><strong>$v_score-$h_score</strong></span></td>";
-	} else {
-		print '</td><td>', - $line, '</td><td>', "<span style=\"color: red\">$v_score-$h_score</span></td>";
+		$pre = '<span style="color: green"><strong>';
+		$post = '</strong></span>';
 	}
 
-	if ( $correct_ats > 0 ) {
-		$ats_correct++;
-		print '<td><span style="color: green"><strong>Correct</strong></span></td>';
-	} elsif ( $correct_ats < 0 ) {
-		$ats_incorrect++;
-		print '<td><span style="color: red">Incorrect</span></td>';
+	if ( $prediction > 0 ) {
+		print "<td>$pre$h to win$post<br />";
+	} elsif ( $prediction < 0 ) {
+		print "<td>$pre$v to win$post<br />";
 	} else {
-		print '<td>Push</td>';
+		print "<td>Unknown<br />";
+	}
+
+	$pre = '';
+	$post = '';
+	if ( $correct_ats < 0 ) {
+		$pre = '<span style="color: red"><em>';
+		$post = '</em></span>';
+	} elsif ( $correct_ats > 0 ) {
+		$pre = '<span style="color: green"><strong>';
+		$post = '</strong></span>';
+	}
+
+	if ( $prediction > $line ) {
+		print "$pre$h to cover$post</td>";
+	} elsif ( $prediction < $line ) {
+		print "$pre$v to cover$post</td>";
+	} else {
+		print "Push predicted</td>";
 	}
 
 	print "</tr>\n";
+
+	$total++;
+	$su_count++ if $correct;
+	if ( $correct_ats > 0 ) {
+		$ats_correct++;
+	} elsif ( $correct_ats < 0 ) {
+		$ats_incorrect++;
+	}
 }
 
 print "</tbody></table>\n";
