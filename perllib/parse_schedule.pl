@@ -103,47 +103,74 @@ while ( my $line = <CSV> ) {
 		die "Can't determine site: $line";
 	}
 
+	# check for existing record - if it exists, update score
 	my $gm_record = CFS::Game->new( db => $cfsdb,
-		season => $year,
-		model => $MODEL,
-		week => $wk,
-		gm_date => $date,
-		gm_day => $day,
+		season => $year, gm_date => $date,
 		t1_name => $win_school->name(),
-		t1_last => $last_games{$win_school->name()} || '0000-00-00',
-		t2_name => $lose_school->name(),
-		t2_last => $last_games{$lose_school->name()} || '0000-00-00',
-		notes => $notes
-	);
-	$gm_record->t1_score($win_score) if $win_score =~ m/^\d+$/o;
-	$gm_record->t2_score($lose_score) if $lose_score =~ m/^\d+$/o;
+		t2_name => $lose_school->name() );
 
-	my $flip_teams = 0;
+	if ( $gm_record->load(speculative => 1) ) {
+		$gm_record->t1_score($win_score) if $win_score =~ m/^\d+$/o;
+		$gm_record->t2_score($lose_score) if $lose_score =~ m/^\d+$/o;
+		$gm_record->save;
 
-	if ( $site eq 'T2' ) {
-		# if site is T2, it's regular season, so flip
-		$gm_record->site('T1');
-		$flip_teams = 1;
-	} elsif ( $site eq 'B' || $site eq 'N' ) {
-		$gm_record->site($site);
-		## if site is bowl or neutral, make higher ranked team home team
-		#$flip_teams = 1 if $lose_rank < $win_rank;
-		# alternate flipping of neutral/bowl games
-		$flip_teams = 1 if $neutral_site_count++ % 2;
 	} else {
-		$gm_record->site('T1');
-	}
+		$gm_record = CFS::Game->new( db => $cfsdb,
+			season => $year, gm_date => $date,
+			t2_name => $win_school->name(),
+			t1_name => $lose_school->name() );
 
-	if ( $flip_teams ) {
-		$gm_record->t1_name( $lose_school->name() );
-		$gm_record->t1_score($lose_score) if $lose_score =~ m/^\d+$/o;
-		$gm_record->t1_last( $last_games{$lose_school->name()}||'0000-00-00' );
-		$gm_record->t2_name( $win_school->name() );
-		$gm_record->t2_score($win_score) if $win_score =~ m/^\d+$/o;
-		$gm_record->t2_last( $last_games{$win_school->name()}||'0000-00-00' );
-	}
+		if ( $gm_record->load(speculative => 1) ) {
+			$gm_record->t2_score($win_score) if $win_score =~ m/^\d+$/o;
+			$gm_record->t1_score($lose_score) if $lose_score =~ m/^\d+$/o;
+			$gm_record->save;
 
-	$gm_record->save();
+		# games record doesn't exist, create new one
+		} else {
+
+			$gm_record = CFS::Game->new( db => $cfsdb,
+				season => $year,
+				model => $MODEL,
+				week => $wk,
+				gm_date => $date,
+				gm_day => $day,
+				t1_name => $win_school->name(),
+				t1_last => $last_games{$win_school->name()} || '0000-00-00',
+				t2_name => $lose_school->name(),
+				t2_last => $last_games{$lose_school->name()} || '0000-00-00',
+				notes => $notes
+			);
+			$gm_record->t1_score($win_score) if $win_score =~ m/^\d+$/o;
+			$gm_record->t2_score($lose_score) if $lose_score =~ m/^\d+$/o;
+
+			my $flip_teams = 0;
+
+			if ( $site eq 'T2' ) {
+				# if site is T2, it's regular season, so flip
+				$gm_record->site('T1');
+				$flip_teams = 1;
+			} elsif ( $site eq 'B' || $site eq 'N' ) {
+				$gm_record->site($site);
+				## if site is bowl or neutral, make higher ranked team home team
+				#$flip_teams = 1 if $lose_rank < $win_rank;
+				# alternate flipping of neutral/bowl games
+				$flip_teams = 1 if $neutral_site_count++ % 2;
+			} else {
+				$gm_record->site('T1');
+			}
+
+			if ( $flip_teams ) {
+				$gm_record->t1_name( $lose_school->name() );
+				$gm_record->t1_score($lose_score) if $lose_score =~ m/^\d+$/o;
+				$gm_record->t1_last( $last_games{$lose_school->name()}||'0000-00-00' );
+				$gm_record->t2_name( $win_school->name() );
+				$gm_record->t2_score($win_score) if $win_score =~ m/^\d+$/o;
+				$gm_record->t2_last( $last_games{$win_school->name()}||'0000-00-00' );
+			}
+
+			$gm_record->save();
+		}
+	}
 
 	$last_games{$win_school->name()} = $date unless $win_school->name() eq $fcs_school;
 	$last_games{$lose_school->name()} = $date unless $lose_school->name() eq $fcs_school;
