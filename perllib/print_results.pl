@@ -85,7 +85,7 @@ foreach my $gm ( @$games ) {
 	} elsif ( $prediction < 0 ) {
 		print "<td>$pre$v to win$post<br />";
 	} else {
-		print "<td>Unknown<br />";
+		print "<td>Pick'em<br />";
 	}
 
 	$pre = '';
