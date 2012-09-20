@@ -184,4 +184,13 @@ WHERE
 	season='2012' AND
 	week=2;
 
-
+-- lock games w/ FCS opponents
+UPDATE
+	games
+SET
+	prediction_lock=''
+WHERE
+	season='2012' AND
+	prediction_lock IS NULL AND
+	( t1_name NOT IN (SELECT name FROM stats WHERE season='2012') OR
+	  t2_name NOT IN (SELECT name FROM stats WHERE season='2012') );
