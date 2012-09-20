@@ -45,9 +45,9 @@ foreach my $gm ( @$games ) {
 
 	print "<tr><td>$date</td>";
 
-	if ( $line > 0 ) {
+	if ( defined $line && $line > 0 ) {
 		print "<td>$v<br />$site $h (-$line)</td>";
-	} elsif ( $line < 0 ) {
+	} elsif ( defined $line && $line < 0 ) {
 		print "<td>$v ($line)<br />$site $h</td>";
 	} else {
 		print "<td>$v <br />$site $h</td>";
@@ -63,12 +63,16 @@ foreach my $gm ( @$games ) {
 		print "<td>Pick'em<br />";
 	}
 
-	if ( $prediction > $line ) {
-		print "$h to cover</td>";
-	} elsif ( $prediction < $line ) {
-		print "$v to cover</td>";
+	if ( defined $line ) {
+		if ( $prediction > $line ) {
+			print "$h to cover</td>";
+		} elsif ( $prediction < $line ) {
+			print "$v to cover</td>";
+		} else {
+			print "Push predicted</td>";
+		}
 	} else {
-		print "Push predicted</td>";
+		print "No line</td>";
 	}
 
 	print "<td>$notes</td>" if $print_notes;
