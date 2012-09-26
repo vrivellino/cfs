@@ -42,12 +42,12 @@ while ( my $dir = shift ) {
 			}
 
 			# extract conference affiliation
-			if ( $content =~ m/Conference:[<]\/strong[>] [<]a href="\/cfb\/conferences\/[^"]+"[>]([^<]+)[<]\/a[>]/o ) {
+			if ( $content =~ m/Conference:[<]\/span[>] [<]a href="\/cfb\/conferences\/[^"]+"[>]([^<]+)[<]\/a[>]/o ) {
 				$conf = $1;
 			}
 
 			# extract W-L record
-			if ( $content =~ m/Record:[<]\/strong[>] (\d+)-(\d+)(-\d+)?,/o ) {
+			if ( $content =~ m/Record:[<]\/span[>] (\d+)-(\d+)(-\d+)?,/o ) {
 				$wins = $1;
 				$losses = $2;
 				$ties = $3 || 0;
@@ -56,12 +56,12 @@ while ( my $dir = shift ) {
 			}
 
 			# extract points scored per game
-			if ( $content =~ m/[>]PTS\/G:[<]\/strong[>] ([\d.]+) /o ) {
+			if ( $content =~ m/[>]PS\/G:[<]\/span[>] ([\d.]+) /o ) {
 				$ppg = $1;
 			}
 
 			# extract points allowed per game
-			if ( $content =~ m/[>]Opp PTS\/G:[<]\/strong[>] ([\d.]+) /o ) {
+			if ( $content =~ m/[>]PA\/G:[<]\/span[>] ([\d.]+) /o ) {
 				$opp_ppg = $1;
 			}
 
