@@ -4,8 +4,13 @@ SOURCE_DATA_DIR="$(dirname $0)/../source_data"
 
 year=$1
 if [ -z "$year" ]; then
-	echo "Usage: $(basename $0) <YEAR>"
+	echo "Usage: $(basename $0) <YEAR> [-force]"
 	exit 1
+fi
+
+force=''
+if [ "$2" = '-force' ]; then
+	force='yes'
 fi
 
 while read line ; do
@@ -17,7 +22,7 @@ while read line ; do
 	if [ $year -ge $first -a $year -le $last ]; then
 		mkdir -p "$SOURCE_DATA_DIR/$year/stats"
 		#mkdir -p "./$year/schedules"
-		if [ ! -f "$SOURCE_DATA_DIR/$year/stats/$name.html" ]; then
+		if [ -n "$force" ] || [ ! -f "$SOURCE_DATA_DIR/$year/stats/$name.html" ]; then
 			wget -O "$SOURCE_DATA_DIR/$year/stats/$name.html" "http://www.sports-reference.com${url}${year}.html"
 			usleep 500000
 		fi
