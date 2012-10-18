@@ -623,7 +623,8 @@ WHERE
 	( g.t1_name = t.name OR g.t2_name = t.name )
 
 GROUP BY
-	team
+	season, week, team
 
 ORDER BY
+	season ASC, week ASC,
 	sim_weighted_pct DESC, sim_pct DESC;
