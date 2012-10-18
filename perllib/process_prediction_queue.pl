@@ -6,6 +6,7 @@ use warnings;
 use POSIX qw(ceil floor);
 require CFS::DB;
 require CFS::Game;
+require CFS::SimGame;
 require CFS::Game::Manager;
 require CFS::VSimulationQueue::Manager;
 require CFS::VPredictionQueue::Manager;
