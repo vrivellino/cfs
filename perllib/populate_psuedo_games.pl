@@ -19,8 +19,8 @@ sub dump_response {
 	print $d->Dump;
 }
 
-my $SEASON = '2011';
-my $WEEK = 99;
+my $SEASON = '2012';
+my $WEEK = 7;
 my $MODEL = 'CFS20042011v2';
 
 my $cfsdb = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die;
