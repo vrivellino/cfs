@@ -30,12 +30,21 @@ if ( $otype eq 'html' ) {
 } else {
 	printf "%-6s%-32s%-9s %14s  %12s\n", 'Rank', 'Team', "$yr W-L", 'Simulated-Win%', 'Weighted-Pct';
 }
-my $i = 0;
+my $i = 1;
 foreach my $row ( @$rankings ) {
 	if ( $otype eq 'html' ) {
-		print '<tr><td>', ++$i, '</td><td>', $row->team, '</td><td>', $row->record, '</td><td>', $row->sim_pct, '</td><td>', $row->sim_weighted_pct, "</td></tr>\n";
+		print
+			"</tbody>\n",
+			"</table>\n\n",
+			"<table>\n",
+			"<thead>\n",
+			"<tr><th>Rank</th><th>Team</th><th>$yr<br/>W-L</th><th>Simulated<br/>Win Pct</th><th>Weighted<br/>Pct</th></tr>\n",
+			"</thead>\n",
+			"<tbody>\n\n" if $i == 26;
+
+		print '<tr><td>', $i++, '</td><td>', $row->team, '</td><td>', $row->record, '</td><td>', $row->sim_pct, '</td><td>', $row->sim_weighted_pct, "</td></tr>\n";
 	} else {
-		printf "%-6d%-32s%-9s %14.3f  %12.3f\n", ++$i, $row->team, $row->record, $row->sim_pct, $row->sim_weighted_pct;
+		printf "%-6d%-32s%-9s %14.3f  %12.3f\n", $i++, $row->team, $row->record, $row->sim_pct, $row->sim_weighted_pct;
 	}
 }
 
