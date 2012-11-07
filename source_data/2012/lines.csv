@@ -553,118 +553,118 @@ Date,Visitor,Visitor Score,Home Team,Home Score,Line
 10/27/2012,Western Kentucky,14,Florida Intl,6,-6.0
 10/27/2012,North Texas,21,Middle Tennessee,38,3.5
 10/27/2012,Troy,27,Florida Atlantic,34,-7.0
-11/01/2012,Eastern Michigan, ,Ohio, ,16.5
-11/01/2012,Virginia Tech, ,Miami-Florida, ,-2.0
-11/01/2012,Middle Tennessee, ,Western Kentucky, ,9.5
-11/02/2012,Washington, ,California, ,4.0
-11/03/2012,Penn State, ,Purdue, ,-3.5
-11/03/2012,Air Force, ,Army, ,-7.5
-11/03/2012,Akron, ,Kent State, ,21.0
-11/03/2012,Vanderbilt, ,Kentucky, ,-8.5
-11/03/2012,Massachusetts, ,Northern Illinois, ,35.0
-11/03/2012,Temple, ,Louisville, ,14.0
-11/03/2012,Boston College, ,Wake Forest, ,4.0
-11/03/2012,Houston, ,East Carolina, ,-3.0
-11/03/2012,Iowa, ,Indiana, ,1.0
-11/03/2012,Georgia Tech, ,Maryland, ,-7.0
-11/03/2012,Clemson, ,Duke, ,-14.5
-11/03/2012,Tulsa, ,Arkansas, ,6.0
-11/03/2012,New Mexico State, ,Auburn, ,22.0
-11/03/2012,Stanford, ,Colorado, ,-28.0
-11/03/2012,Texas State, ,Utah State, ,26.0
-11/03/2012,Alabama, ,Louisiana State, ,-10.0
-11/03/2012,Colorado State, ,Wyoming, ,9.5
-11/03/2012,Virginia, ,No Carolina State, ,12.0
-11/03/2012,Arizona State, ,Oregon State, ,5.5
-11/03/2012,Missouri, ,Florida, ,16.0
-11/03/2012,Nebraska, ,Michigan State, ,1.5
-11/03/2012,Texas Christian, ,West Virginia, ,6.5
-11/03/2012,Illinois, ,Ohio State, ,24.5
-11/03/2012,Pittsburgh, ,Notre Dame, ,17.0
-11/03/2012,Texas-San Antonio, ,Louisiana Tech, ,31.5
-11/03/2012,San Jose State, ,Idaho, ,-17.5
-11/03/2012,S-M-U, ,U-C-F, ,11.0
-11/03/2012,Connecticut, ,South Florida, ,8.5
-11/03/2012,Western Michigan, ,Central Michigan, ,-2.5
-11/03/2012,Miami-Ohio, ,Buffalo, ,3.0
-11/03/2012,Mississippi, ,Georgia, ,13.5
-11/03/2012,Syracuse, ,Cincinnati, ,5.0
-11/03/2012,Washington State, ,Utah, ,12.0
-11/03/2012,U-A-B, ,Southern Miss, ,3.0
-11/03/2012,Memphis, ,Marshall, ,20.5
-11/03/2012,Michigan, ,Minnesota, ,-12.5
-11/03/2012,Oklahoma State, ,Kansas State, ,8.5
-11/03/2012,Texas, ,Texas Tech, ,6.5
-11/03/2012,Texas A+M, ,Mississippi State, ,-6.5
-11/03/2012,Kansas, ,Baylor, ,17.0
-11/03/2012,Oklahoma, ,Iowa State, ,-10.5
-11/03/2012,Oregon, ,Southern Cal, ,-7.5
-11/03/2012,Rice, ,Tulane, ,-3.5
-11/03/2012,Hawaii, ,Fresno State, ,33.5
-11/03/2012,Arizona, ,U.C.L.A., ,3.5
-11/03/2012,New Mexico, ,Nevada-Las Vegas, ,4.0
-11/03/2012,San Diego State, ,Boise State, ,14.0
-11/03/2012,Florida Atlantic, ,Navy, ,14.0
-11/03/2012,Florida Intl, ,South Alabama, ,-4.0
-11/03/2012,Troy, ,Tennessee, ,18.0
-11/03/2012,Arkansas State, ,North Texas, ,-4.5
-11/03/2012,UL-Lafayette, ,UL-Monroe, ,10.5
-11/06/2012,Ball State, ,Toledo, , 
-11/07/2012,Bowling Green, ,Ohio, , 
-11/08/2012,Florida State, ,Virginia Tech, , 
-11/08/2012,UL-Monroe, ,Arkansas State, , 
-11/09/2012,Pittsburgh, ,Connecticut, , 
-11/10/2012,Northwestern, ,Michigan, , 
-11/10/2012,Maryland, ,Clemson, , 
-11/10/2012,Wake Forest, ,No Carolina State, , 
-11/10/2012,Army, ,Rutgers, , 
-11/10/2012,Louisville, ,Syracuse, , 
-11/10/2012,Miami-Florida, ,Virginia, , 
-11/10/2012,Minnesota, ,Illinois, , 
-11/10/2012,Wisconsin, ,Indiana, , 
-11/10/2012,Purdue, ,Iowa, , 
-11/10/2012,Vanderbilt, ,Mississippi, , 
-11/10/2012,Georgia Tech, ,North Carolina, , 
-11/10/2012,Central Michigan, ,Eastern Michigan, , 
-11/10/2012,Kent State, ,Miami-Ohio, , 
-11/10/2012,Idaho, ,Brigham Young, , 
-11/10/2012,Massachusetts, ,Akron, , 
-11/10/2012,Western Michigan, ,Buffalo, , 
-11/10/2012,Texas A+M, ,Alabama, , 
-11/10/2012,Georgia, ,Auburn, , 
-11/10/2012,Penn State, ,Nebraska, , 
-11/10/2012,Notre Dame, ,Boston College, , 
-11/10/2012,Arizona State, ,Southern Cal, , 
-11/10/2012,Utah, ,Washington, , 
+11/01/2012,Eastern Michigan,14,Ohio,45,16.0
+11/01/2012,Virginia Tech,12,Miami-Florida,30,-1.5
+11/01/2012,Middle Tennessee,34,Western Kentucky,29,9.5
+11/02/2012,Washington,21,California,13,4.0
+11/03/2012,Penn State,34,Purdue,9,-3.5
+11/03/2012,Air Force,21,Army,41,-7.0
+11/03/2012,Akron,24,Kent State,35,19.0
+11/03/2012,Vanderbilt,40,Kentucky,0,-7.0
+11/03/2012,Massachusetts,0,Northern Illinois,63,35.0
+11/03/2012,Temple,17,Louisville,45,16.5
+11/03/2012,Boston College,14,Wake Forest,28,3.5
+11/03/2012,Houston,28,East Carolina,48,-3.0
+11/03/2012,Iowa,21,Indiana,24,2.5
+11/03/2012,Georgia Tech,33,Maryland,13,-7.5
+11/03/2012,Clemson,56,Duke,20,-13.0
+11/03/2012,Tulsa,15,Arkansas,19,8.5
+11/03/2012,New Mexico State,7,Auburn,42,23.0
+11/03/2012,Stanford,48,Colorado,0,-28.0
+11/03/2012,Texas State,7,Utah State,38,26.5
+11/03/2012,Alabama,21,Louisiana State,17,-8.0
+11/03/2012,Colorado State,31,Wyoming,45,7.0
+11/03/2012,Virginia,33,No Carolina State,6,10.5
+11/03/2012,Arizona State,26,Oregon State,36,3.5
+11/03/2012,Missouri,7,Florida,14,17.5
+11/03/2012,Nebraska,28,Michigan State,24,0.0
+11/03/2012,Texas Christian,39,West Virginia,38,4.0
+11/03/2012,Illinois,22,Ohio State,52,27.0
+11/03/2012,Pittsburgh,26,Notre Dame,29,16.0
+11/03/2012,Texas-San Antonio,27,Louisiana Tech,51,30.5
+11/03/2012,San Jose State,42,Idaho,13,-21.0
+11/03/2012,S-M-U,17,U-C-F,42,9.5
+11/03/2012,Connecticut,6,South Florida,13,7.5
+11/03/2012,Western Michigan,42,Central Michigan,31,-1.0
+11/03/2012,Miami-Ohio,24,Buffalo,27,3.0
+11/03/2012,Mississippi,10,Georgia,37,13.5
+11/03/2012,Syracuse,24,Cincinnati,35,5.5
+11/03/2012,Washington State,6,Utah,49,12.0
+11/03/2012,U-A-B,27,Southern Miss,19,3.5
+11/03/2012,Memphis,28,Marshall,38,19.0
+11/03/2012,Michigan,35,Minnesota,13,-9.0
+11/03/2012,Oklahoma State,30,Kansas State,44,8.5
+11/03/2012,Texas,31,Texas Tech,22,7.0
+11/03/2012,Texas A+M,38,Mississippi State,13,-6.0
+11/03/2012,Kansas,14,Baylor,41,16.5
+11/03/2012,Oklahoma,35,Iowa State,20,-13.0
+11/03/2012,Oregon,62,Southern Cal,51,-8.5
+11/03/2012,Rice,49,Tulane,47,-6.0
+11/03/2012,Hawaii,10,Fresno State,45,33.0
+11/03/2012,Arizona,10,U.C.L.A.,66,3.0
+11/03/2012,New Mexico,7,Nevada-Las Vegas,35,3.0
+11/03/2012,San Diego State,21,Boise State,19,16.5
+11/03/2012,Florida Atlantic,17,Navy,24,17.0
+11/03/2012,Florida Intl,28,South Alabama,20,-3.5
+11/03/2012,Troy,48,Tennessee,55,18.5
+11/03/2012,Arkansas State,37,North Texas,19,-4.0
+11/03/2012,UL-Lafayette,40,UL-Monroe,24,9.5
+11/06/2012,Ball State, ,Toledo, ,6.0
+11/07/2012,Bowling Green, ,Ohio, ,3.5
+11/08/2012,Florida State, ,Virginia Tech, ,-13.5
+11/08/2012,UL-Monroe, ,Arkansas State, ,6.0
+11/09/2012,Pittsburgh, ,Connecticut, ,-3.5
+11/10/2012,Northwestern, ,Michigan, ,12.0
+11/10/2012,Maryland, ,Clemson, ,31.0
+11/10/2012,Wake Forest, ,No Carolina State, ,9.0
+11/10/2012,Army, ,Rutgers, ,17.5
+11/10/2012,Louisville, ,Syracuse, ,-2.0
+11/10/2012,Miami-Florida, ,Virginia, ,-2.5
+11/10/2012,Minnesota, ,Illinois, ,-3.0
+11/10/2012,Wisconsin, ,Indiana, ,-5.5
+11/10/2012,Purdue, ,Iowa, ,3.5
+11/10/2012,Vanderbilt, ,Mississippi, ,2.5
+11/10/2012,Georgia Tech, ,North Carolina, ,9.0
+11/10/2012,Central Michigan, ,Eastern Michigan, ,-2.0
+11/10/2012,Kent State, ,Miami-Ohio, ,-6.0
+11/10/2012,Idaho, ,Brigham Young, ,37.0
+11/10/2012,Massachusetts, ,Akron, ,14.0
+11/10/2012,Western Michigan, ,Buffalo, ,-3.0
+11/10/2012,Texas A+M, ,Alabama, ,13.5
+11/10/2012,Georgia, ,Auburn, ,-15.0
+11/10/2012,Penn State, ,Nebraska, ,7.0
+11/10/2012,Notre Dame, ,Boston College, ,-18.5
+11/10/2012,Arizona State, ,Southern Cal, ,10.0
+11/10/2012,Utah, ,Washington, ,-1.5
 11/10/2012,Wyoming, ,New Mexico, , 
-11/10/2012,Air Force, ,San Diego State, , 
-11/10/2012,San Jose State, ,New Mexico State, , 
-11/10/2012,Oregon, ,California, , 
-11/10/2012,West Virginia, ,Oklahoma State, , 
+11/10/2012,San Jose State, ,New Mexico State, ,-22.5
+11/10/2012,Oregon, ,California, ,-27.0
+11/10/2012,West Virginia, ,Oklahoma State, ,8.0
 11/10/2012,Kansas State, ,Texas Christian, , 
-11/10/2012,Cincinnati, ,Temple, , 
-11/10/2012,Missouri, ,Tennessee, , 
-11/10/2012,Iowa State, ,Texas, , 
-11/10/2012,Southern Miss, ,S-M-U, , 
-11/10/2012,Marshall, ,U-A-B, , 
-11/10/2012,Tulsa, ,Houston, , 
-11/10/2012,Nevada-Las Vegas, ,Colorado State, , 
-11/10/2012,Boise State, ,Hawaii, , 
-11/10/2012,U.C.L.A., ,Washington State, , 
-11/10/2012,U-C-F, ,UTEP, , 
+11/10/2012,Cincinnati, ,Temple, ,-11.0
+11/10/2012,Missouri, ,Tennessee, ,3.5
+11/10/2012,Iowa State, ,Texas, ,10.0
+11/10/2012,Air Force, ,San Diego State, ,9.5
+11/10/2012,Southern Miss, ,S-M-U, ,13.0
+11/10/2012,Marshall, ,U-A-B, ,-3.0
+11/10/2012,Tulsa, ,Houston, ,-2.5
+11/10/2012,Nevada-Las Vegas, ,Colorado State, ,-2.5
+11/10/2012,Boise State, ,Hawaii, ,-29.0
+11/10/2012,U.C.L.A., ,Washington State, ,-15.0
+11/10/2012,U-C-F, ,UTEP, ,-12.0
 11/10/2012,Colorado, ,Arizona, , 
-11/10/2012,Arkansas, ,South Carolina, , 
-11/10/2012,Kansas, ,Texas Tech, , 
-11/10/2012,Louisiana Tech, ,Texas State, , 
-11/10/2012,Baylor, ,Oklahoma, , 
-11/10/2012,Tulane, ,Memphis, , 
-11/10/2012,Oregon State, ,Stanford, , 
-11/10/2012,Mississippi State, ,Louisiana State, , 
-11/10/2012,Fresno State, ,Nevada-Reno, , 
-11/10/2012,Florida Atlantic, ,Western Kentucky, , 
-11/10/2012,Navy, ,Troy, , 
-11/10/2012,South Alabama, ,North Texas, , 
-11/10/2012,UL-Lafayette, ,Florida, , 
+11/10/2012,Arkansas, ,South Carolina, ,14.0
+11/10/2012,Kansas, ,Texas Tech, ,25.0
+11/10/2012,Louisiana Tech, ,Texas State, ,-20.0
+11/10/2012,Baylor, ,Oklahoma, ,20.0
+11/10/2012,Tulane, ,Memphis, ,-1.0
+11/10/2012,Oregon State, ,Stanford, ,5.5
+11/10/2012,Mississippi State, ,Louisiana State, ,14.0
+11/10/2012,Fresno State, ,Nevada-Reno, ,-2.5
+11/10/2012,Florida Atlantic, ,Western Kentucky, ,16.5
+11/10/2012,Navy, ,Troy, ,0.0
+11/10/2012,South Alabama, ,North Texas, ,9.5
+11/10/2012,UL-Lafayette, ,Florida, ,26.0
 11/10/2012,McNeese State, ,Texas-San Antonio, , 
 11/14/2012,Ohio, ,Ball State, , 
 11/14/2012,Toledo, ,Northern Illinois, , 
