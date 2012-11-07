@@ -30,6 +30,32 @@ WHERE
 GROUP BY
 	month;
 
+-- view of performance by week
+SELECT
+	week,
+	COUNT(1) as games,
+	COUNT( CASE WHEN prediction_result='CORRECT' THEN 1 END ) as correct,
+	COUNT( CASE WHEN prediction_result='INCORRECT' THEN 1 END ) as incorrect
+FROM
+	v_game_results
+WHERE
+	season='2012'
+GROUP BY
+	week;
+
+SELECT
+	week,
+	COUNT(1) as games,
+	COUNT( CASE WHEN prediction_result='CORRECT' THEN 1 END ) as correct,
+	COUNT( CASE WHEN prediction_result='INCORRECT' THEN 1 END ) as incorrect,
+	COUNT( CASE WHEN prediction_result='PUSH' THEN 1 END ) as push
+FROM
+	v_game_results_ats
+WHERE
+	season='2012'
+GROUP BY
+	week;
+
 -- view of performance by absolute value of prediction
 SELECT
 	-- CASE
