@@ -9,6 +9,7 @@ __PACKAGE__->meta->setup(
 
   columns => [
     season            => { type => 'scalar', default => '0000', length => 4, not_null => 1 },
+    week              => { type => 'integer', default => '0', not_null => 1 },
     model             => { type => 'varchar', default => '', length => 64, not_null => 1 },
     gm_date           => { type => 'date', default => '0000-00-00', not_null => 1 },
     game_type         => { type => 'varchar', default => '', length => 10, not_null => 1 },

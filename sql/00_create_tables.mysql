@@ -507,6 +507,7 @@ WHERE
 
 CREATE OR REPLACE VIEW v_game_results AS SELECT
 	season,
+	week,
 	model,
 	gm_date,
 	IF ( site = 'B', 'Bowl', 'Reg Season' ) as game_type,
@@ -542,6 +543,7 @@ WHERE
 
 CREATE OR REPLACE VIEW v_game_results_ats AS SELECT
 	season,
+	week,
 	model,
 	gm_date,
 	IF ( site = 'B', 'Bowl', 'Reg Season' ) as game_type,
