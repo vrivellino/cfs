@@ -77,6 +77,7 @@ GROUP BY
 	prediction_value;
 
 
+
 -- view of performance vs spread
 SELECT
 	IF(site='B', 'Bowl', 'Reg Season') as type,
@@ -220,3 +221,64 @@ WHERE
 	prediction_lock IS NULL AND
 	( t1_name NOT IN (SELECT name FROM stats WHERE season='2012') OR
 	  t2_name NOT IN (SELECT name FROM stats WHERE season='2012') );
+
+
+-- view of performance by team
+SELECT
+	s.name as team,
+
+	COUNT(1) as games,
+
+	SUM(
+		CASE WHEN g.prediction < 0 THEN
+			IF ( g.t2_score > g.t1_score, 1, 0 )
+		WHEN g.prediction > 0 THEN
+			IF ( g.t1_score > g.t2_score, 1, 0 )
+		ELSE
+			0
+		END) as correct,
+
+	SUM(
+		CASE WHEN g.prediction > 0 THEN
+			IF ( g.t2_score > g.t1_score, 1, 0 )
+		WHEN g.prediction < 0 THEN
+			IF ( g.t1_score > g.t2_score, 1, 0 )
+		ELSE
+			0
+		END) as incorrect,
+	
+	SUM( IF ( g.prediction = 0, 1, 0 ) ) as no_prediction,
+
+	SUM(
+		CASE WHEN g.prediction > g.line THEN
+			IF (CONVERT(g.t1_score, SIGNED) - CONVERT(g.t2_score, SIGNED) > g.line, 1, 0)
+		WHEN g.prediction < g.line THEN
+			IF (CONVERT(g.t1_score, SIGNED) - CONVERT(g.t2_score, SIGNED) < g.line, 1, 0)
+		ELSE
+			0
+		END) as correct_ats,
+
+	SUM(
+		CASE WHEN g.prediction < g.line THEN
+			IF (CONVERT(g.t1_score, SIGNED) - CONVERT(g.t2_score, SIGNED) > g.line, 1, 0)
+		WHEN g.prediction > g.line THEN
+			IF (CONVERT(g.t1_score, SIGNED) - CONVERT(g.t2_score, SIGNED) < g.line, 1, 0)
+		ELSE
+			0
+		END) as incorrect_ats,
+
+	SUM( IF (g.prediction = g.line OR CONVERT(g.t1_score, SIGNED) - CONVERT(g.t2_score, SIGNED) = g.line, 1, 0) ) as push_ats
+
+FROM
+	games as g,
+	stats as s
+
+WHERE
+	g.prediction IS NOT NULL AND
+	g.t1_score IS NOT NULL AND
+	g.t2_score IS NOT NULL AND
+	g.season='2012' AND s.season='2012' AND
+	( g.t1_name = s.name OR g.t2_name = s.name )
+
+GROUP BY
+	team;
