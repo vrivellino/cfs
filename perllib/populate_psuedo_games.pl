@@ -20,7 +20,7 @@ sub dump_response {
 }
 
 my $SEASON = '2012';
-my $WEEK = 10;
+my $WEEK = 11;
 my $MODEL = 'CFS20042011v2';
 
 my $cfsdb = CFS::DB->new(default_connect_options=>{AutoCommit=>1,RaiseError=>1,PrintError=>1}) or die;
