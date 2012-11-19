@@ -36,6 +36,7 @@ foreach my $row ( @$rankings ) {
 		print
 			"</tbody>\n",
 			"</table>\n\n",
+			"<!--more-->\n",
 			"<table>\n",
 			"<thead>\n",
 			"<tr><th>Rank</th><th>Team</th><th>$yr<br/>W-L</th><th>Simulated<br/>Win Pct</th><th>Weighted<br/>Pct</th></tr>\n",
