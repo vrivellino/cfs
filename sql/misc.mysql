@@ -58,6 +58,26 @@ GROUP BY
 
 -- view of performance by absolute value of prediction
 SELECT
+	CASE
+		WHEN ABS(line_pred_diff) > 3 THEN 3.5
+		ELSE ABS(line_pred_diff)
+	END as abs_line_pred_diff,
+	COUNT( CASE WHEN prediction_result='CORRECT' THEN 1 END ) /
+		COUNT( CASE WHEN prediction_result IN ('CORRECT','INCORRECT') THEN 1 END) as pct,
+	COUNT( 1 ) as count,
+	COUNT( CASE WHEN prediction_result='CORRECT' THEN 1 END ) as correct,
+	COUNT( CASE WHEN prediction_result='INCORRECT' THEN 1 END ) as incorrect,
+	COUNT( CASE WHEN prediction_result='PUSH' THEN 1 END ) as push
+FROM
+	v_game_results_ats
+WHERE
+	season='2012'
+-- 	game_type!='Bowl'
+GROUP BY
+	abs_line_pred_diff
+ORDER BY abs_line_pred_diff DESC;
+
+SELECT
 	-- CASE
 	-- 	WHEN abs_pred <= 3 THEN 'A: 0-3'
 	-- 	WHEN abs_pred > 3 AND abs_pred <= 7 THEN 'B: 4-7'
@@ -66,12 +86,14 @@ SELECT
 	CASE
 	 	WHEN abs_pred < 17 THEN abs_pred
 		ELSE '17+' END as prediction_value,
+	COUNT( CASE WHEN prediction_result='CORRECT' THEN 1 END ) / COUNT(1) as pct,
 	COUNT( 1 ) as count,
 	COUNT( CASE WHEN prediction_result='CORRECT' THEN 1 END ) as correct,
 	COUNT( CASE WHEN prediction_result='INCORRECT' THEN 1 END ) as incorrect
 FROM
 	v_game_results
--- WHERE
+WHERE
+	season='2012'
 -- 	game_type!='Bowl'
 GROUP BY
 	prediction_value;
