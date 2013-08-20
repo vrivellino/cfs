@@ -797,24 +797,64 @@ Rk,Wk,Date,Day,Winner/Tie,Pts,,Loser/Tie,Pts,Notes
 784,13,Nov 24 2012,Sat,Virginia Tech,17,,Virginia,14,
 785,13,Nov 24 2012,Sat,Western Kentucky,25,,North Texas,24,
 Rk,Wk,Date,Day,Winner/Tie,Pts,,Loser/Tie,Pts,Notes
-786,14,Nov 29 2012,Thu,Louisville,,@,Rutgers,,
-787,14,Nov 30 2012,Fri,(19) Northern Illinois,,,(18) Kent State,,MAC Championship (Detroit MI)
-788,14,Nov 30 2012,Fri,(17) UCLA,,@,(8) Stanford,,Pac 12 Championship (Stanford CA)
-789,14,Dec 1 2012,Sat,(25) Boise State,,@,Nevada,,
-790,14,Dec 1 2012,Sat,Central Florida,,@,Tulsa,,CUSA Championship (Tulsa OK)
-791,14,Dec 1 2012,Sat,Cincinnati,,@,Connecticut,,
-792,14,Dec 1 2012,Sat,(3) Georgia,,,(2) Alabama,,SEC Championship (Atlanta GA)
-793,14,Dec 1 2012,Sat,Georgia Tech,,,(13) Florida State,,ACC Championship (Charlotte NC)
-794,14,Dec 1 2012,Sat,Kansas,,@,West Virginia,,
-795,14,Dec 1 2012,Sat,Louisiana-Lafayette,,@,Florida Atlantic,,
-796,14,Dec 1 2012,Sat,Middle Tennessee State,,@,Arkansas State,,
-797,14,Dec 1 2012,Sat,New Mexico State,,@,Texas State,,
-798,14,Dec 1 2012,Sat,Nicholls State,,@,(16) Oregon State,,
-799,14,Dec 1 2012,Sat,(12) Oklahoma,,@,Texas Christian,,
-800,14,Dec 1 2012,Sat,(24) Oklahoma State,,@,Baylor,,
-801,14,Dec 1 2012,Sat,Pittsburgh,,@,South Florida,,
-802,14,Dec 1 2012,Sat,South Alabama,,@,Hawaii,,
-803,14,Dec 1 2012,Sat,(23) Texas,,@,(7) Kansas State,,
-804,14,Dec 1 2012,Sat,Wisconsin,,,(14) Nebraska,,Big Ten Championship (Indianapolis IN)
+786,14,Nov 29 2012,Thu,Louisville,20,@,Rutgers,17,
+787,14,Nov 30 2012,Fri,(19) Northern Illinois,44,,(18) Kent State,37,MAC Championship (Detroit MI)
+788,14,Nov 30 2012,Fri,(8) Stanford,27,,(17) UCLA,24,Pac 12 Championship (Stanford CA)
+789,14,Dec 1 2012,Sat,(2) Alabama,32,,(3) Georgia,28,SEC Championship (Atlanta GA)
+790,14,Dec 1 2012,Sat,Arkansas State,45,,Middle Tennessee State,0,
+791,14,Dec 1 2012,Sat,Baylor,41,,(24) Oklahoma State,34,
+792,14,Dec 1 2012,Sat,(25) Boise State,27,@,Nevada,21,
+793,14,Dec 1 2012,Sat,Cincinnati,34,@,Connecticut,17,
+794,14,Dec 1 2012,Sat,(13) Florida State,21,,Georgia Tech,15,ACC Championship (Charlotte NC)
+795,14,Dec 1 2012,Sat,Hawaii,23,,South Alabama,7,
+796,14,Dec 1 2012,Sat,(7) Kansas State,42,,(23) Texas,24,
+797,14,Dec 1 2012,Sat,Louisiana-Lafayette,35,@,Florida Atlantic,21,
+798,14,Dec 1 2012,Sat,(12) Oklahoma,24,@,Texas Christian,17,
+799,14,Dec 1 2012,Sat,(16) Oregon State,77,,Nicholls State,3,
+800,14,Dec 1 2012,Sat,Pittsburgh,27,@,South Florida,3,
+801,14,Dec 1 2012,Sat,Texas State,66,,New Mexico State,28,
+802,14,Dec 1 2012,Sat,Tulsa,33,,Central Florida,27,CUSA Championship (Tulsa OK)
+803,14,Dec 1 2012,Sat,West Virginia,59,,Kansas,10,
+804,14,Dec 1 2012,Sat,Wisconsin,70,,(14) Nebraska,31,Big Ten Championship (Indianapolis IN)
 Rk,Wk,Date,Day,Winner/Tie,Pts,,Loser/Tie,Pts,Notes
-805,15,Dec 8 2012,Sat,Navy,,,Army,,Philadelphia PA
+805,15,Dec 8 2012,Sat,Navy,17,,Army,13,Philadelphia PA
+Rk,Wk,Date,Day,Winner/Tie,Pts,,Loser/Tie,Pts,Notes
+806,16,Dec 15 2012,Sat,Nevada,,,Arizona,,New Mexico Bowl (Albuquerque NM)
+807,16,Dec 15 2012,Sat,(18) Utah State,,,Toledo,,Famous Idaho Potato Bowl (Boise ID)
+Rk,Wk,Date,Day,Winner/Tie,Pts,,Loser/Tie,Pts,Notes
+808,17,Dec 20 2012,Thu,Brigham Young,,@,San Diego State,,Poinsettia Bowl (San Diego CA)
+809,17,Dec 21 2012,Fri,Central Florida,,,Ball State,,Beef O'Brady's Bowl (St. Petersburg FL)
+810,17,Dec 22 2012,Sat,Louisiana-Lafayette,,,East Carolina,,New Orleans Bowl (New Orleans LA)
+811,17,Dec 22 2012,Sat,Washington,,,(20) Boise State,,Las Vegas Bowl (Las Vegas NV)
+812,17,Dec 24 2012,Mon,Southern Methodist,,,Fresno State,,Hawaii Bowl (Honolulu HI)
+Rk,Wk,Date,Day,Winner/Tie,Pts,,Loser/Tie,Pts,Notes
+813,18,Dec 26 2012,Wed,Western Kentucky,,,Central Michigan,,Little Caesars Bowl (Detroit MI)
+814,18,Dec 27 2012,Thu,Duke,,,Cincinnati,,Belk Bowl (Charlotte NC)
+815,18,Dec 27 2012,Thu,(24) San Jose State,,,Bowling Green State,,Military Bowl (Washington DC)
+816,18,Dec 27 2012,Thu,(17) UCLA,,,Baylor,,Holiday Bowl (San Diego CA)
+817,18,Dec 28 2012,Fri,Ohio,,,Louisiana-Monroe,,Independence Bowl (Shreveport LA)
+818,18,Dec 28 2012,Fri,Texas Tech,,,Minnesota,,Meineke Car Care Bowl of Texas (Houston TX)
+819,18,Dec 28 2012,Fri,Virginia Tech,,,Rutgers,,Russell Athletic Bowl (Orlando FL)
+820,18,Dec 29 2012,Sat,Navy,,,Arizona State,,Fight Hunger Bowl (San Francisco CA)
+821,18,Dec 29 2012,Sat,Rice,,,Air Force,,Armed Forces Bowl (Fort Worth TX)
+822,18,Dec 29 2012,Sat,Texas,,,(15) Oregon State,,Alamo Bowl (San Antonio TX)
+823,18,Dec 29 2012,Sat,Texas Christian,,,Michigan State,,Buffalo Wild Wings Bowl (Phoenix AZ)
+824,18,Dec 29 2012,Sat,West Virginia,,,Syracuse,,Pinstripe Bowl (New York NY)
+Rk,Wk,Date,Day,Winner/Tie,Pts,,Loser/Tie,Pts,Notes
+825,19,Dec 31 2012,Mon,(9) Louisiana State,,,(14) Clemson,,Chick-Fil-A Bowl (Atlanta GA)
+826,19,Dec 31 2012,Mon,North Carolina State,,@,Vanderbilt,,Music City Bowl (Nashville TN)
+827,19,Dec 31 2012,Mon,Southern California,,,Georgia Tech,,Sun Bowl (El Paso TX)
+828,19,Dec 31 2012,Mon,Tulsa,,,Iowa State,,Liberty Bowl (Memphis TN)
+Rk,Wk,Date,Day,Winner/Tie,Pts,,Loser/Tie,Pts,Notes
+829,20,Jan 1 2013,Tue,(23) Nebraska,,,(6) Georgia,,Capital One Bowl (Orlando FL)
+830,20,Jan 1 2013,Tue,(16) Northern Illinois,,,(13) Florida State,,Orange Bowl (Miami FL)
+831,20,Jan 1 2013,Tue,(21) Northwestern,,,Mississippi State,,Gator Bowl (Jacksonville FL)
+832,20,Jan 1 2013,Tue,Purdue,,,Oklahoma State,,Heart of Dallas Bowl (Dallas TX)
+833,20,Jan 1 2013,Tue,(11) South Carolina,,,(19) Michigan,,Outback Bowl (Tampa FL)
+834,20,Jan 1 2013,Tue,Wisconsin,,,(8) Stanford,,Rose Bowl (Pasadena CA)
+835,20,Jan 2 2013,Wed,(22) Louisville,,,(4) Florida,,Sugar Bowl (New Orleans LA)
+836,20,Jan 3 2013,Thu,(5) Oregon,,,(7) Kansas State,,Fiesta Bowl (Glendale AZ)
+837,20,Jan 4 2013,Fri,(10) Texas A&M,,,(12) Oklahoma,,Cotton Bowl (Arlington TX)
+838,20,Jan 5 2013,Sat,Pittsburgh,,,Mississippi,,BBVA Compass Bowl (Birmingham AL)
+839,20,Jan 6 2013,Sun,(25) Kent State,,,Arkansas State,,GoDaddy.com Bowl (Mobile AL)
+840,20,Jan 7 2013,Mon,(1) Notre Dame,,,(2) Alabama,,BCS Championship (Miami FL)
